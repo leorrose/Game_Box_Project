@@ -27,7 +27,7 @@ namespace GameBox
                 return;
             }
 
-            else if (Tb_Feedback.ToString().Length > 0)
+            else if (Tb_Feedback.Text.ToString().Length > 0)
             {
                 GameBox.Program.Insert_Feedback(Tb_feedback_name.Text, Tb_Feedback.Text);
                 MessageBox.Show("Thank you for your feedback!");

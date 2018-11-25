@@ -202,9 +202,9 @@
             // 
             // Bt_credits
             // 
-            this.Bt_credits.Location = new System.Drawing.Point(904, 530);
+            this.Bt_credits.Location = new System.Drawing.Point(904, 507);
             this.Bt_credits.Name = "Bt_credits";
-            this.Bt_credits.Size = new System.Drawing.Size(75, 23);
+            this.Bt_credits.Size = new System.Drawing.Size(82, 46);
             this.Bt_credits.TabIndex = 27;
             this.Bt_credits.Text = "Credits";
             this.Bt_credits.UseVisualStyleBackColor = true;

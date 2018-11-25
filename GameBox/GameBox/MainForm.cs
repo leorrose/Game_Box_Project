@@ -109,6 +109,7 @@ namespace GameBox
             GameBox.Program.InsertLogin(Tb_guest_name.Text, "Guest"); /* insert guest login in database*/
             Guest_wait g = new Guest_wait(this);
             Tb_guest_name.Text = "";
+            Program.GameChoice = false;
             g.Show(); /* open nex screen */
             this.Hide(); /* hide this screen */
 
