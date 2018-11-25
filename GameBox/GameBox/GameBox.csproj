@@ -91,11 +91,11 @@
     <Compile Include="Guest_wait.Designer.cs">
       <DependentUpon>Guest_wait.cs</DependentUpon>
     </Compile>
-    <Compile Include="Instructions.cs">
+    <Compile Include="Print_screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Instructions.Designer.cs">
-      <DependentUpon>Instructions.cs</DependentUpon>
+    <Compile Include="Print_screen.Designer.cs">
+      <DependentUpon>Print_screen.cs</DependentUpon>
     </Compile>
     <Compile Include="login_form.cs">
       <SubType>Form</SubType>
@@ -156,8 +156,8 @@
     <EmbeddedResource Include="Guest_wait.resx">
       <DependentUpon>Guest_wait.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Instructions.resx">
-      <DependentUpon>Instructions.cs</DependentUpon>
+    <EmbeddedResource Include="Print_screen.resx">
+      <DependentUpon>Print_screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login_form.resx">
       <DependentUpon>login_form.cs</DependentUpon>

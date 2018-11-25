@@ -36,7 +36,7 @@
             this.CB_music2 = new System.Windows.Forms.CheckBox();
             this.Bt_login_exit = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Bt_manager_tips = new System.Windows.Forms.Button();
             this.Bt_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -123,16 +123,17 @@
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Bt_FeedBack_report);
             // 
-            // button6
+            // Bt_manager_tips
             // 
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Location = new System.Drawing.Point(26, 513);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(210, 38);
-            this.button6.TabIndex = 30;
-            this.button6.Text = "Tip";
-            this.button6.UseVisualStyleBackColor = true;
+            this.Bt_manager_tips.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_manager_tips.Location = new System.Drawing.Point(26, 513);
+            this.Bt_manager_tips.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Bt_manager_tips.Name = "Bt_manager_tips";
+            this.Bt_manager_tips.Size = new System.Drawing.Size(210, 38);
+            this.Bt_manager_tips.TabIndex = 30;
+            this.Bt_manager_tips.Text = "Tip";
+            this.Bt_manager_tips.UseVisualStyleBackColor = true;
+            this.Bt_manager_tips.Click += new System.EventHandler(this.button6_Click);
             // 
             // Bt_back
             // 
@@ -150,10 +151,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(998, 562);
+            this.ClientSize = new System.Drawing.Size(976, 562);
             this.ControlBox = false;
             this.Controls.Add(this.Bt_back);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.Bt_manager_tips);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.Bt_login_exit);
             this.Controls.Add(this.CB_music2);
@@ -179,7 +180,7 @@
         private System.Windows.Forms.CheckBox CB_music2;
         private System.Windows.Forms.Button Bt_login_exit;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button Bt_manager_tips;
         private System.Windows.Forms.Button Bt_back;
     }
 }

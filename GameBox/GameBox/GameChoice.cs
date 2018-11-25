@@ -58,6 +58,7 @@ namespace GameBox
         private void Bt_back_Click(object sender, EventArgs e) /* function to go back */
         {
             return_back.Show(); /*show last screen */
+            MessageBox.Show(Program.user1 +" Disconected ", "Sign Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close(); /* hide this screen */
         }
 
