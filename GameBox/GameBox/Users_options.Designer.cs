@@ -46,7 +46,7 @@ namespace GameBox
             // 
             // Bt_Givefeedback
             // 
-            this.Bt_Givefeedback.Location = new System.Drawing.Point(400, 275);
+            this.Bt_Givefeedback.Location = new System.Drawing.Point(400, 406);
             this.Bt_Givefeedback.Name = "Bt_Givefeedback";
             this.Bt_Givefeedback.Size = new System.Drawing.Size(159, 32);
             this.Bt_Givefeedback.TabIndex = 1;
@@ -76,7 +76,7 @@ namespace GameBox
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(400, 397);
+            this.button5.Location = new System.Drawing.Point(400, 276);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(159, 32);
             this.button5.TabIndex = 5;
