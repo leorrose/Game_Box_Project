@@ -31,12 +31,14 @@ namespace GameBox
             {
                 GameBox.Program.Insert_Feedback(Tb_feedback_name.Text, Tb_Feedback.Text);
                 MessageBox.Show("Thank you for your feedback!");
+
             }
             else
             {
                 MessageBox.Show("No Text Inserted!");
                 return;
             }
+            Tb_Feedback.Text = "";
         }
 
         private void Bt_Feedback_exit(object sender, EventArgs e)

@@ -50,6 +50,8 @@ namespace GameBox
             }
             GameBox.Program.ManagerConected = true; 
             Managers_option man = new Managers_option(this);
+            Tb_manager_name.Text = "";
+            Tb_manager_password.Text = "";
             man.Show(); /* next screen */
             this.Hide(); /* hide this screen */
         }
@@ -89,6 +91,8 @@ namespace GameBox
             Program.cnt_players = 1; /* count players update */
             GameBox.Program.InsertLogin(Tb_user_name.Text, "Player"); /* insert login time to login database*/
             GameChoice first = new GameChoice(this);
+            Tb_user_name.Text = "";
+            Tb_user_password.Text = "";
             first.Show(); /* open nex screen */
             this.Hide(); /* hide this screen */
         }
@@ -104,6 +108,7 @@ namespace GameBox
             GameBox.Program.guest = Tb_guest_name.Text;  /* save guests name */
             GameBox.Program.InsertLogin(Tb_guest_name.Text, "Guest"); /* insert guest login in database*/
             Guest_wait g = new Guest_wait(this);
+            Tb_guest_name.Text = "";
             g.Show(); /* open nex screen */
             this.Hide(); /* hide this screen */
 

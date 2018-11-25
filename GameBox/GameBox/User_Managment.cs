@@ -34,6 +34,7 @@ namespace GameBox
             }
             else
                 MessageBox.Show("user dose not exsist!");
+            Tb_User_remove_Name.Text = "";
         }
 
         private void Bt_Add_user(object sender, EventArgs e) /* function to add user to database */
@@ -53,6 +54,8 @@ namespace GameBox
                 GameBox.Program.Insert_User__Scores(Tb_User_add_Name.Text); /*insurt user to score database */
                 MessageBox.Show("User Created!", "Succesfull", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            Tb_User_add_Name.Text = "";
+            Tb_User_add_Password.Text = "";
         }
 
         private void Bt_User_Managment_exit_Click(object sender, EventArgs e)

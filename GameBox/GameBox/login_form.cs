@@ -73,6 +73,7 @@ namespace GameBox
                     MessageBox.Show("Invalid Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
+                
             }
             else if (COB_user2.Text == "Sign up") /* if conbo box is on sign up */
             {
@@ -88,6 +89,8 @@ namespace GameBox
             GameBox.Program.cnt_players = 2; /* count players update */
             GameBox.Program.InsertLogin(TB_user_name2.Text, "Player"); /* insert login time to login database*/
             Users_options uo = new Users_options(this);
+            TB_password2.Text = "";
+            TB_user_name2.Text = "";
             this.Hide();  /* open nex screen */
             uo.Show(); /* hide this screen */
         }

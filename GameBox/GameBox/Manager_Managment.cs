@@ -60,6 +60,8 @@ namespace GameBox
                 GameBox.Program.InsertManager(Tb_Manager_add_Name.Text,Tb_Manager_add_Password.Text); /*insurt user to score database */
                 MessageBox.Show("Manager Created!", "Succesfull", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
+            Tb_Manager_add_Name.Text = "";
+            Tb_Manager_add_Password.Text = "";
         }
 
         private void Bt_remove_manager_click(object sender, EventArgs e)
@@ -76,7 +78,7 @@ namespace GameBox
             }
             else
                 MessageBox.Show("Manager dose not exsist!");
-
+            Tb_Manager_remove_Name.Text = "";
         }
 
         private void Bt_Manager_managment_back_Click(object sender, EventArgs e)

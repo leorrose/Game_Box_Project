@@ -59,9 +59,9 @@
             this.label1.ForeColor = System.Drawing.Color.Gold;
             this.label1.Location = new System.Drawing.Point(446, 409);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 38);
+            this.label1.Size = new System.Drawing.Size(49, 38);
             this.label1.TabIndex = 1;
-            this.label1.Text = "7";
+            this.label1.Text = "30";
             // 
             // timer1
             // 
@@ -86,7 +86,7 @@
             this.label2.ForeColor = System.Drawing.Color.Gold;
             this.label2.Location = new System.Drawing.Point(287, 253);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(367, 25);
+            this.label2.Size = new System.Drawing.Size(390, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Registered users don\'t need to wait!";
             // 

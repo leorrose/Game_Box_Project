@@ -130,7 +130,7 @@
             this.Bt_One_players_SAL.Name = "Bt_One_players_SAL";
             this.Bt_One_players_SAL.Size = new System.Drawing.Size(135, 37);
             this.Bt_One_players_SAL.TabIndex = 14;
-            this.Bt_One_players_SAL.Text = "One Player";
+            this.Bt_One_players_SAL.Text = "VS computer";
             this.Bt_One_players_SAL.UseVisualStyleBackColor = true;
             this.Bt_One_players_SAL.Visible = false;
             this.Bt_One_players_SAL.Click += new System.EventHandler(this.One_Player_SAL_click);
@@ -141,7 +141,7 @@
             this.Bt_Two_players_SAL.Name = "Bt_Two_players_SAL";
             this.Bt_Two_players_SAL.Size = new System.Drawing.Size(135, 37);
             this.Bt_Two_players_SAL.TabIndex = 15;
-            this.Bt_Two_players_SAL.Text = "Two Players";
+            this.Bt_Two_players_SAL.Text = "VS player";
             this.Bt_Two_players_SAL.UseVisualStyleBackColor = true;
             this.Bt_Two_players_SAL.Visible = false;
             this.Bt_Two_players_SAL.Click += new System.EventHandler(this.Two_Players_SAL_Click);
@@ -152,7 +152,7 @@
             this.Bt_Two_players_Reversi.Name = "Bt_Two_players_Reversi";
             this.Bt_Two_players_Reversi.Size = new System.Drawing.Size(141, 37);
             this.Bt_Two_players_Reversi.TabIndex = 16;
-            this.Bt_Two_players_Reversi.Text = "Two Player";
+            this.Bt_Two_players_Reversi.Text = "VS player";
             this.Bt_Two_players_Reversi.UseVisualStyleBackColor = true;
             this.Bt_Two_players_Reversi.Visible = false;
             this.Bt_Two_players_Reversi.Click += new System.EventHandler(this.Two_players_reversi_click);

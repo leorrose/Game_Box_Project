@@ -52,6 +52,11 @@ namespace GameBox
             GameBox.Program.Upadte_User_Scores(Tb_Existing_Name.Text, Tb_New_Name.Text);
             GameBox.Program.user1 = Tb_New_Name.Text;
             MessageBox.Show("user updated");
+            Tb_Existing_Name.Text = "";
+            Tb_Existing_Password.Text = "";
+            Tb_New_Password.Text = "";
+            Tb_New_Name.Text = "";
+
         }
 
 

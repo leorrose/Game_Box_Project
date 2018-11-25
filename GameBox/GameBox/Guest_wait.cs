@@ -19,7 +19,7 @@ namespace GameBox
             return_back = form;
             timer1.Start();
         }
-        int duration = 7;
+        int duration = 29;
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = duration.ToString();

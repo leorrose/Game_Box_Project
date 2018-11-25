@@ -27,7 +27,6 @@ namespace GameBox
                 button4.Enabled = false;
                 button3.Enabled = false;
                 Bt_Givefeedback.Enabled = false;
-
             }
         }
 

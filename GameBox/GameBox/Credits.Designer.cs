@@ -35,9 +35,9 @@
             // Bt_ok
             // 
             this.Bt_ok.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_ok.Location = new System.Drawing.Point(691, 488);
+            this.Bt_ok.Location = new System.Drawing.Point(657, 474);
             this.Bt_ok.Name = "Bt_ok";
-            this.Bt_ok.Size = new System.Drawing.Size(90, 43);
+            this.Bt_ok.Size = new System.Drawing.Size(112, 50);
             this.Bt_ok.TabIndex = 0;
             this.Bt_ok.Text = "OK";
             this.Bt_ok.UseVisualStyleBackColor = true;
