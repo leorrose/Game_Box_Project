@@ -29,6 +29,7 @@ namespace GameBox
         private void Bt_back_Click(object sender, EventArgs e) /* go back screen */
         {
             return_back.Show(); /*upon last screen */
+            MessageBox.Show("Manager Disconected ", "Sign Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close(); /* hide this screen */
         }
 
@@ -65,6 +66,12 @@ namespace GameBox
             Reports rep = new Reports(this, "FeedBacks");
             this.Hide();
             rep.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Print_screen ins = new Print_screen("Tips");
+            ins.ShowDialog();
         }
     }
 }
