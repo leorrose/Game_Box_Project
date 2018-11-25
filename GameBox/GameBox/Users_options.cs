@@ -21,6 +21,14 @@ namespace GameBox
                 Lb_title.Text = "Snake And Ladders :";
             else
                 Lb_title.Text = "Reversi :";
+            if(Program.TypeUser==false)
+            {
+                Bt_Continue_change_details.Enabled = false;
+                button4.Enabled = false;
+                button3.Enabled = false;
+                Bt_Givefeedback.Enabled = false;
+
+            }
         }
 
         private void Bt_UserOptions_exit_Click(object sender, EventArgs e) /*exit function */
@@ -40,6 +48,9 @@ namespace GameBox
         private void Bt_UserOPtions_Back(object sender, EventArgs e)/* function to go back */
         {
             return_back.Show();
+            if(Program.user2!= "")
+                MessageBox.Show(Program.user2 + " Disconected ", "Sign Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Program.user2 = "";
             this.Close();
         }
 
@@ -66,19 +77,24 @@ namespace GameBox
 
         private void Bt_Play_game(object sender, EventArgs e) /* function to continue to game  */
         {
-
+            if (Program.TypeUser == false )
+            {
+                Print_screen ins = new Print_screen("Ads");
+                ins.ShowDialog();
+            }
         }
 
 
 
         private void Bt_get_tip(object sender, EventArgs e)
         {
-
+            Print_screen ins = new Print_screen("Tips");
+            ins.ShowDialog();
         }
 
         private void Bt_Instructions(object sender, EventArgs e)
         {
-            Instructions ins = new Instructions();
+            Print_screen ins = new Print_screen("Instructions");
             ins.ShowDialog();
         }
     }
