@@ -17,11 +17,7 @@ namespace GameBox
         {
             InitializeComponent();
             return_back = form;
-            if (Program.GameChoice == false)
-                Lb_title.Text = "Snake And Ladders :";
-            else
-                Lb_title.Text = "Reversi :";
-            if(Program.TypeUser==false)
+                if(Program.TypeUser==false)
             {
                 Bt_Continue_change_details.Enabled = false;
                 button4.Enabled = false;
@@ -47,8 +43,12 @@ namespace GameBox
         private void Bt_UserOPtions_Back(object sender, EventArgs e)/* function to go back */
         {
             return_back.Show();
-            if(Program.user2!= "")
-                MessageBox.Show(Program.user2 + " Disconected ", "Sign Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (Program.TypeUser == false)
+                this.Close();
+            else if (Program.cnt_players == 2)
+                MessageBox.Show(Program.user2 + " disconected ", "Sign Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show(Program.user1 + " disconected ", "Sign Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Program.user2 = "";
             this.Close();
         }
@@ -81,6 +81,9 @@ namespace GameBox
                 Print_screen ins = new Print_screen("Ads");
                 ins.ShowDialog();
             }
+            GameChoice ga = new GameChoice(this);
+            this.Hide();
+            ga.Show();
         }
 
 

@@ -19,24 +19,21 @@ namespace GameBox
             return_back = form;
             timer1.Start();
         }
-        int duration = 29;
+        int duration = 4;
         private void timer1_Tick(object sender, EventArgs e)
         {
             label1.Text = duration.ToString();
             if (duration == 0)
             {
                 timer1.Stop();
-                Bt_ok.Enabled = true;
+                Users_options uo = new Users_options(return_back);
+                this.Hide();
+                uo.Show();
             }
             duration--;
         }
 
-        private void Bt_ok_Click(object sender, EventArgs e)
-        {
-            Users_options uo = new Users_options(return_back);
-            this.Hide();
-            uo.Show();
-        }
+
 
         private void bt_exit_Click(object sender, EventArgs e)
         {

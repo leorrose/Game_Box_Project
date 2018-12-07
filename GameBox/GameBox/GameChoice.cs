@@ -47,52 +47,24 @@ namespace GameBox
             }
         }
 
-        private void NextScreen (Boolean gamechoise)  //move to next screen
-        {
-            GameBox.Program.GameChoice = gamechoise;    //update choosen game
-            login_form login = new login_form(this);  //open next screen
-            this.Hide();               //hide current screen and show next screen.
-            login.Show();
-        }
+      
 
         private void Bt_back_Click(object sender, EventArgs e) /* function to go back */
         {
             return_back.Show(); /*show last screen */
-            MessageBox.Show(Program.user1 +" Disconected ", "Sign Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close(); /* hide this screen */
         }
 
-        private void Bt_reversi_show_click(object sender, EventArgs e)
+    
+
+        private void bt_reversi_Click(object sender, EventArgs e)
         {
-            Bt_One_players_SAL.Visible = false;
-            Bt_Two_players_SAL.Visible = false;
-            Bt_Two_players_Reversi.Visible = true;
 
         }
 
-        private void Bt_SAL_show_Click(object sender, EventArgs e)
+        private void bt_snake_and_ladders_Click(object sender, EventArgs e)
         {
-            Bt_One_players_SAL.Visible = true;
-            Bt_Two_players_SAL.Visible = true;
-            Bt_Two_players_Reversi.Visible = false;
-        }
 
-        private void Two_players_reversi_click(object sender, EventArgs e)  /* function to continue 2 playes to reversi */
-        {
-            NextScreen(true);
-        }
-
-        private void One_Player_SAL_click(object sender, EventArgs e)  /* function to continue 1 player to snake and laders */
-        {
-            Users_options uo = new Users_options(this);
-            Program.GameChoice = false;
-            this.Hide();
-            uo.Show();
-        }
-
-        private void Two_Players_SAL_Click(object sender, EventArgs e) /* function to continue 2 players to snake and laders */
-        {
-            NextScreen(false);
         }
     }
 }

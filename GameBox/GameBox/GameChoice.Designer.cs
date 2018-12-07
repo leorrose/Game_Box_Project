@@ -33,11 +33,8 @@
             this.Bt_Exit = new System.Windows.Forms.Button();
             this.CB_music = new System.Windows.Forms.CheckBox();
             this.Bt_back = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.Bt_One_players_SAL = new System.Windows.Forms.Button();
-            this.Bt_Two_players_SAL = new System.Windows.Forms.Button();
-            this.Bt_Two_players_Reversi = new System.Windows.Forms.Button();
+            this.bt_reversi = new System.Windows.Forms.Button();
+            this.bt_snake_and_ladders = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -104,58 +101,25 @@
             this.Bt_back.UseVisualStyleBackColor = true;
             this.Bt_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
-            // button1
+            // bt_reversi
             // 
-            this.button1.Location = new System.Drawing.Point(106, 197);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 86);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Reversi";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Bt_reversi_show_click);
+            this.bt_reversi.Location = new System.Drawing.Point(98, 245);
+            this.bt_reversi.Name = "bt_reversi";
+            this.bt_reversi.Size = new System.Drawing.Size(141, 86);
+            this.bt_reversi.TabIndex = 12;
+            this.bt_reversi.Text = "Reversi";
+            this.bt_reversi.UseVisualStyleBackColor = true;
+            this.bt_reversi.Click += new System.EventHandler(this.bt_reversi_Click);
             // 
-            // button2
+            // bt_snake_and_ladders
             // 
-            this.button2.Location = new System.Drawing.Point(774, 197);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 86);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Snake and Ladders";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Bt_SAL_show_Click);
-            // 
-            // Bt_One_players_SAL
-            // 
-            this.Bt_One_players_SAL.Location = new System.Drawing.Point(774, 343);
-            this.Bt_One_players_SAL.Name = "Bt_One_players_SAL";
-            this.Bt_One_players_SAL.Size = new System.Drawing.Size(135, 37);
-            this.Bt_One_players_SAL.TabIndex = 14;
-            this.Bt_One_players_SAL.Text = "VS computer";
-            this.Bt_One_players_SAL.UseVisualStyleBackColor = true;
-            this.Bt_One_players_SAL.Visible = false;
-            this.Bt_One_players_SAL.Click += new System.EventHandler(this.One_Player_SAL_click);
-            // 
-            // Bt_Two_players_SAL
-            // 
-            this.Bt_Two_players_SAL.Location = new System.Drawing.Point(774, 398);
-            this.Bt_Two_players_SAL.Name = "Bt_Two_players_SAL";
-            this.Bt_Two_players_SAL.Size = new System.Drawing.Size(135, 37);
-            this.Bt_Two_players_SAL.TabIndex = 15;
-            this.Bt_Two_players_SAL.Text = "VS player";
-            this.Bt_Two_players_SAL.UseVisualStyleBackColor = true;
-            this.Bt_Two_players_SAL.Visible = false;
-            this.Bt_Two_players_SAL.Click += new System.EventHandler(this.Two_Players_SAL_Click);
-            // 
-            // Bt_Two_players_Reversi
-            // 
-            this.Bt_Two_players_Reversi.Location = new System.Drawing.Point(106, 343);
-            this.Bt_Two_players_Reversi.Name = "Bt_Two_players_Reversi";
-            this.Bt_Two_players_Reversi.Size = new System.Drawing.Size(141, 37);
-            this.Bt_Two_players_Reversi.TabIndex = 16;
-            this.Bt_Two_players_Reversi.Text = "VS player";
-            this.Bt_Two_players_Reversi.UseVisualStyleBackColor = true;
-            this.Bt_Two_players_Reversi.Visible = false;
-            this.Bt_Two_players_Reversi.Click += new System.EventHandler(this.Two_players_reversi_click);
+            this.bt_snake_and_ladders.Location = new System.Drawing.Point(776, 245);
+            this.bt_snake_and_ladders.Name = "bt_snake_and_ladders";
+            this.bt_snake_and_ladders.Size = new System.Drawing.Size(141, 86);
+            this.bt_snake_and_ladders.TabIndex = 13;
+            this.bt_snake_and_ladders.Text = "Snake and Ladders";
+            this.bt_snake_and_ladders.UseVisualStyleBackColor = true;
+            this.bt_snake_and_ladders.Click += new System.EventHandler(this.bt_snake_and_ladders_Click);
             // 
             // GameChoice
             // 
@@ -166,11 +130,8 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(998, 562);
             this.ControlBox = false;
-            this.Controls.Add(this.Bt_Two_players_Reversi);
-            this.Controls.Add(this.Bt_Two_players_SAL);
-            this.Controls.Add(this.Bt_One_players_SAL);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bt_snake_and_ladders);
+            this.Controls.Add(this.bt_reversi);
             this.Controls.Add(this.Bt_back);
             this.Controls.Add(this.CB_music);
             this.Controls.Add(this.Bt_Exit);
@@ -192,11 +153,8 @@
         private System.Windows.Forms.Button Bt_Exit;
         private System.Windows.Forms.CheckBox CB_music;
         private System.Windows.Forms.Button Bt_back;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button Bt_One_players_SAL;
-        private System.Windows.Forms.Button Bt_Two_players_SAL;
-        private System.Windows.Forms.Button Bt_Two_players_Reversi;
+        private System.Windows.Forms.Button bt_reversi;
+        private System.Windows.Forms.Button bt_snake_and_ladders;
     }
 }
 

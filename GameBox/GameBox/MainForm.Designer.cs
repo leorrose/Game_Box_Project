@@ -50,11 +50,12 @@
             this.Bt_Continue_As_Manager = new System.Windows.Forms.Button();
             this.Bt_Continue_As_Player = new System.Windows.Forms.Button();
             this.Bt_Continue_As_Guest = new System.Windows.Forms.Button();
+            this.cob_players = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // Tb_user_password
             // 
-            this.Tb_user_password.Location = new System.Drawing.Point(361, 320);
+            this.Tb_user_password.Location = new System.Drawing.Point(361, 310);
             this.Tb_user_password.Name = "Tb_user_password";
             this.Tb_user_password.PasswordChar = '*';
             this.Tb_user_password.Size = new System.Drawing.Size(168, 22);
@@ -72,7 +73,7 @@
             // 
             // Tb_user_name
             // 
-            this.Tb_user_name.Location = new System.Drawing.Point(361, 286);
+            this.Tb_user_name.Location = new System.Drawing.Point(361, 272);
             this.Tb_user_name.Name = "Tb_user_name";
             this.Tb_user_name.Size = new System.Drawing.Size(168, 22);
             this.Tb_user_name.TabIndex = 2;
@@ -80,7 +81,7 @@
             // 
             // Tb_guest_name
             // 
-            this.Tb_guest_name.Location = new System.Drawing.Point(361, 404);
+            this.Tb_guest_name.Location = new System.Drawing.Point(361, 421);
             this.Tb_guest_name.Name = "Tb_guest_name";
             this.Tb_guest_name.Size = new System.Drawing.Size(168, 22);
             this.Tb_guest_name.TabIndex = 3;
@@ -103,7 +104,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Login",
             "Sign up"});
-            this.comboBox1.Location = new System.Drawing.Point(361, 359);
+            this.comboBox1.Location = new System.Drawing.Point(361, 349);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(168, 24);
             this.comboBox1.TabIndex = 0;
@@ -137,7 +138,7 @@
             // Bt_Guest_login
             // 
             this.Bt_Guest_login.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_Guest_login.Location = new System.Drawing.Point(566, 404);
+            this.Bt_Guest_login.Location = new System.Drawing.Point(566, 407);
             this.Bt_Guest_login.Name = "Bt_Guest_login";
             this.Bt_Guest_login.Size = new System.Drawing.Size(96, 46);
             this.Bt_Guest_login.TabIndex = 8;
@@ -193,7 +194,7 @@
             this.lb_player_name.BackColor = System.Drawing.Color.Transparent;
             this.lb_player_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.lb_player_name.ForeColor = System.Drawing.Color.Red;
-            this.lb_player_name.Location = new System.Drawing.Point(211, 286);
+            this.lb_player_name.Location = new System.Drawing.Point(220, 275);
             this.lb_player_name.Name = "lb_player_name";
             this.lb_player_name.Size = new System.Drawing.Size(139, 17);
             this.lb_player_name.TabIndex = 23;
@@ -252,7 +253,7 @@
             this.lb_password_player.BackColor = System.Drawing.Color.Transparent;
             this.lb_password_player.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.lb_password_player.ForeColor = System.Drawing.Color.Red;
-            this.lb_password_player.Location = new System.Drawing.Point(213, 320);
+            this.lb_password_player.Location = new System.Drawing.Point(216, 313);
             this.lb_password_player.Name = "lb_password_player";
             this.lb_password_player.Size = new System.Drawing.Size(143, 17);
             this.lb_password_player.TabIndex = 30;
@@ -265,7 +266,7 @@
             this.lb_guest_name.BackColor = System.Drawing.Color.Transparent;
             this.lb_guest_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.lb_guest_name.ForeColor = System.Drawing.Color.Red;
-            this.lb_guest_name.Location = new System.Drawing.Point(213, 404);
+            this.lb_guest_name.Location = new System.Drawing.Point(213, 421);
             this.lb_guest_name.Name = "lb_guest_name";
             this.lb_guest_name.Size = new System.Drawing.Size(139, 17);
             this.lb_guest_name.TabIndex = 31;
@@ -307,6 +308,18 @@
             this.Bt_Continue_As_Guest.UseVisualStyleBackColor = true;
             this.Bt_Continue_As_Guest.Click += new System.EventHandler(this.Bt_Continue_As_Guest_Click);
             // 
+            // cob_players
+            // 
+            this.cob_players.FormattingEnabled = true;
+            this.cob_players.Items.AddRange(new object[] {
+            "1 Player",
+            "2 Players"});
+            this.cob_players.Location = new System.Drawing.Point(361, 379);
+            this.cob_players.Name = "cob_players";
+            this.cob_players.Size = new System.Drawing.Size(168, 24);
+            this.cob_players.TabIndex = 35;
+            this.cob_players.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -314,6 +327,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(998, 562);
+            this.ControlBox = false;
+            this.Controls.Add(this.cob_players);
             this.Controls.Add(this.Bt_Continue_As_Guest);
             this.Controls.Add(this.Bt_Continue_As_Player);
             this.Controls.Add(this.Bt_Continue_As_Manager);
@@ -335,6 +350,8 @@
             this.Controls.Add(this.Tb_user_name);
             this.Controls.Add(this.Tb_manager_password);
             this.Controls.Add(this.Tb_user_password);
+            this.MaximumSize = new System.Drawing.Size(1016, 609);
+            this.MinimumSize = new System.Drawing.Size(1016, 609);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
@@ -366,5 +383,6 @@
         private System.Windows.Forms.Button Bt_Continue_As_Manager;
         private System.Windows.Forms.Button Bt_Continue_As_Player;
         private System.Windows.Forms.Button Bt_Continue_As_Guest;
+        private System.Windows.Forms.ComboBox cob_players;
     }
 }

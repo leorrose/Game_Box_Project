@@ -16,6 +16,7 @@ namespace GameBox
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
+            cob_players.SelectedIndex = 0;
             Program.user1 = "";
             Program.cnt_players = 0;
             Program.ManagerConected = false;
@@ -87,14 +88,27 @@ namespace GameBox
                 MessageBox.Show("User Created!", "Succesfull", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             GameBox.Program.user1 = Tb_user_name.Text; /* save users name */
-            GameBox.Program.TypeUser = true; 
-            Program.cnt_players = 1; /* count players update */
+            GameBox.Program.TypeUser = true;
             GameBox.Program.InsertLogin(Tb_user_name.Text, "Player"); /* insert login time to login database*/
-            GameChoice first = new GameChoice(this);
             Tb_user_name.Text = "";
             Tb_user_password.Text = "";
-            first.Show(); /* open nex screen */
-            this.Hide(); /* hide this screen */
+            if (cob_players.SelectedIndex == 0)
+            {
+                Program.cnt_players = 1; /* count players update */
+                Users_options us = new Users_options(this);
+                us.Show(); /* open nex screen */
+                this.Hide(); /* hide this screen */
+            }
+            else
+            {
+                Program.cnt_players = 2;
+                login_form log = new login_form(this);
+                log.Show();
+                this.Hide();
+            }
+           
+           
+        
         }
 
         private void Bt_Guest_login_Click(object sender, EventArgs e) /* guest login */
@@ -105,6 +119,7 @@ namespace GameBox
                 return;
             }
             GameBox.Program.TypeUser = false;
+            Program.cnt_players = 1;
             GameBox.Program.guest = Tb_guest_name.Text;  /* save guests name */
             GameBox.Program.InsertLogin(Tb_guest_name.Text, "Guest"); /* insert guest login in database*/
             Guest_wait g = new Guest_wait(this);
@@ -132,6 +147,7 @@ namespace GameBox
             Tb_user_name.Visible = true;
             Tb_user_password.Visible = true;
             comboBox1.Visible = true;
+            cob_players.Visible = true;
         }
 
         private void Bt_Continue_As_Manager_Click(object sender, EventArgs e) /* hide managers buttons and lable */
@@ -150,6 +166,7 @@ namespace GameBox
             Tb_user_name.Visible = false;
             Tb_user_password.Visible = false;
             comboBox1.Visible = false;
+            cob_players.Visible = false;
         }
 
         private void Bt_Continue_As_Guest_Click(object sender, EventArgs e) /* hide guest buttons and lable */
@@ -168,6 +185,7 @@ namespace GameBox
             Tb_user_name.Visible = false;
             Tb_user_password.Visible = false;
             comboBox1.Visible = false;
+            cob_players.Visible = false;
         }
 
         private void Bt_credits_Click(object sender, EventArgs e) /* continue to credits screen */

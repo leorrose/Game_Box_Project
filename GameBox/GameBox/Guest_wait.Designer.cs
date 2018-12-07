@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Guest_wait));
-            this.Bt_ok = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bt_exit = new System.Windows.Forms.Button();
@@ -39,29 +38,17 @@
             this.Bt_back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Bt_ok
-            // 
-            this.Bt_ok.Enabled = false;
-            this.Bt_ok.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Bt_ok.Location = new System.Drawing.Point(498, 409);
-            this.Bt_ok.Name = "Bt_ok";
-            this.Bt_ok.Size = new System.Drawing.Size(88, 35);
-            this.Bt_ok.TabIndex = 0;
-            this.Bt_ok.Text = "OK";
-            this.Bt_ok.UseVisualStyleBackColor = true;
-            this.Bt_ok.Click += new System.EventHandler(this.Bt_ok_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Monotype Hadassah", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(446, 409);
+            this.label1.Location = new System.Drawing.Point(476, 370);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 38);
+            this.label1.Size = new System.Drawing.Size(32, 32);
             this.label1.TabIndex = 1;
-            this.label1.Text = "30";
+            this.label1.Text = "5";
             // 
             // timer1
             // 
@@ -96,7 +83,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gold;
-            this.label3.Location = new System.Drawing.Point(408, 357);
+            this.label3.Location = new System.Drawing.Point(398, 322);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(201, 34);
             this.label3.TabIndex = 4;
@@ -125,7 +112,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bt_exit);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.Bt_ok);
             this.Name = "Guest_wait";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Guest_wait";
@@ -135,8 +121,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Bt_ok;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Button bt_exit;

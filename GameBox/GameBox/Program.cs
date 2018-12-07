@@ -25,7 +25,7 @@ namespace GameBox
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new Snake_and_ladders());
 
         }
         public static string user1 = "", user2 = "";

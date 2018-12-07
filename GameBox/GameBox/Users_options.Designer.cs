@@ -170,11 +170,11 @@ namespace GameBox
             this.Lb_title.BackColor = System.Drawing.Color.Transparent;
             this.Lb_title.Font = new System.Drawing.Font("Modern No. 20", 22.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_title.ForeColor = System.Drawing.Color.Gold;
-            this.Lb_title.Location = new System.Drawing.Point(352, 86);
+            this.Lb_title.Location = new System.Drawing.Point(410, 96);
             this.Lb_title.Name = "Lb_title";
-            this.Lb_title.Size = new System.Drawing.Size(115, 40);
+            this.Lb_title.Size = new System.Drawing.Size(140, 40);
             this.Lb_title.TabIndex = 33;
-            this.Lb_title.Text = "label1";
+            this.Lb_title.Text = "Options";
             // 
             // Users_options
             // 
