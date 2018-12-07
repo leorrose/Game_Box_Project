@@ -61,120 +61,129 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Change_details.cs">
+    <Compile Include="Screens\Print_instructions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Change_details.Designer.cs">
+    <Compile Include="Screens\Print_instructions.Designer.cs">
+      <DependentUpon>Print_instructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\Change_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Change_details.Designer.cs">
       <DependentUpon>Change_details.cs</DependentUpon>
     </Compile>
-    <Compile Include="Credits.cs">
+    <Compile Include="Screens\Credits.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Credits.Designer.cs">
+    <Compile Include="Screens\Credits.Designer.cs">
       <DependentUpon>Credits.cs</DependentUpon>
     </Compile>
-    <Compile Include="Feedback_form.cs">
+    <Compile Include="Screens\Feedback_form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Feedback_form.Designer.cs">
+    <Compile Include="Screens\Feedback_form.Designer.cs">
       <DependentUpon>Feedback_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameChoice.cs">
+    <Compile Include="Screens\GameChoice.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameChoice.Designer.cs">
+    <Compile Include="Screens\GameChoice.Designer.cs">
       <DependentUpon>GameChoice.cs</DependentUpon>
     </Compile>
-    <Compile Include="Guest_wait.cs">
+    <Compile Include="Screens\Guest_wait.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Guest_wait.Designer.cs">
+    <Compile Include="Screens\Guest_wait.Designer.cs">
       <DependentUpon>Guest_wait.cs</DependentUpon>
     </Compile>
-    <Compile Include="Print_screen.cs">
+    <Compile Include="Screens\Print_screen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Print_screen.Designer.cs">
+    <Compile Include="Screens\Print_screen.Designer.cs">
       <DependentUpon>Print_screen.cs</DependentUpon>
     </Compile>
-    <Compile Include="login_form.cs">
+    <Compile Include="Screens\login_form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login_form.Designer.cs">
+    <Compile Include="Screens\login_form.Designer.cs">
       <DependentUpon>login_form.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Screens\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Screens\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Managers_option.cs">
+    <Compile Include="Screens\Managers_option.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Managers_option.Designer.cs">
+    <Compile Include="Screens\Managers_option.Designer.cs">
       <DependentUpon>Managers_option.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manager_Managment.cs">
+    <Compile Include="Screens\Manager_Managment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manager_Managment.Designer.cs">
+    <Compile Include="Screens\Manager_Managment.Designer.cs">
       <DependentUpon>Manager_Managment.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Reports.cs">
+    <Compile Include="Screens\Reports.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Reports.Designer.cs">
+    <Compile Include="Screens\Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
     </Compile>
-    <Compile Include="Snake and ladders.cs">
+    <Compile Include="Screens\Snake and ladders.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Snake and ladders.Designer.cs">
+    <Compile Include="Screens\Snake and ladders.Designer.cs">
       <DependentUpon>Snake and ladders.cs</DependentUpon>
     </Compile>
-    <Compile Include="Users_options.cs">
+    <Compile Include="Screens\Users_options.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Users_options.Designer.cs">
+    <Compile Include="Screens\Users_options.Designer.cs">
       <DependentUpon>Users_options.cs</DependentUpon>
     </Compile>
-    <Compile Include="User_Managment.cs">
+    <Compile Include="Screens\User_Managment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User_Managment.Designer.cs">
+    <Compile Include="Screens\User_Managment.Designer.cs">
       <DependentUpon>User_Managment.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Change_details.resx">
+    <EmbeddedResource Include="Screens\Change_details.resx">
       <DependentUpon>Change_details.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Credits.resx">
+    <EmbeddedResource Include="Screens\Credits.resx">
       <DependentUpon>Credits.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Feedback_form.resx">
+    <EmbeddedResource Include="Screens\Feedback_form.resx">
       <DependentUpon>Feedback_form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GameChoice.resx">
+    <EmbeddedResource Include="Screens\GameChoice.resx">
       <DependentUpon>GameChoice.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Guest_wait.resx">
+    <EmbeddedResource Include="Screens\Guest_wait.resx">
       <DependentUpon>Guest_wait.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Print_screen.resx">
+    <EmbeddedResource Include="Screens\Print_instructions.resx">
+      <DependentUpon>Print_instructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Print_screen.resx">
       <DependentUpon>Print_screen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login_form.resx">
+    <EmbeddedResource Include="Screens\login_form.resx">
       <DependentUpon>login_form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Screens\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Managers_option.resx">
+    <EmbeddedResource Include="Screens\Managers_option.resx">
       <DependentUpon>Managers_option.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manager_Managment.resx">
+    <EmbeddedResource Include="Screens\Manager_Managment.resx">
       <DependentUpon>Manager_Managment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -187,16 +196,16 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Reports.resx">
+    <EmbeddedResource Include="Screens\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Snake and ladders.resx">
+    <EmbeddedResource Include="Screens\Snake and ladders.resx">
       <DependentUpon>Snake and ladders.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Users_options.resx">
+    <EmbeddedResource Include="Screens\Users_options.resx">
       <DependentUpon>Users_options.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User_Managment.resx">
+    <EmbeddedResource Include="Screens\User_Managment.resx">
       <DependentUpon>User_Managment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -235,48 +244,50 @@
     <Folder Include="program\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Ads.mdf">
+    <Content Include="DataBase\Ads.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Ads_log.ldf">
+    <Content Include="DataBase\Ads_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Ads.mdf</DependentUpon>
     </Content>
-    <Content Include="Feedbacks.mdf">
+    <Content Include="DataBase\Feedbacks.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Feedbacks_log.ldf">
+    <Content Include="DataBase\Feedbacks_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Feedbacks.mdf</DependentUpon>
     </Content>
-    <Content Include="Instructions.mdf">
+    <Content Include="DataBase\Instructions.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Instructions_log.ldf">
+    <Content Include="DataBase\Instructions_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Instructions.mdf</DependentUpon>
     </Content>
-    <Content Include="Logins.mdf">
+    <Content Include="DataBase\Logins.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Logins_log.ldf">
+    <Content Include="DataBase\Logins_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Logins.mdf</DependentUpon>
     </Content>
-    <Content Include="Managers.mdf">
+    <Content Include="DataBase\Managers.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Managers_log.ldf">
+    <Content Include="DataBase\Managers_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Managers.mdf</DependentUpon>
     </Content>
-    <Content Include="Players.mdf">
+    <Content Include="DataBase\Players.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Players_log.ldf">
+    <Content Include="DataBase\Players_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Players.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\28e2ab88a124342560aca2cc0fbc3ceb.png" />
+    <None Include="Resources\backbutton2.png" />
     <None Include="Resources\copyright-black-metal-sign-background-copyspace-32441277.jpg" />
     <None Include="Resources\snakeandladders.jpg" />
     <None Include="Resources\5.png" />
@@ -287,27 +298,25 @@
     <None Include="Resources\3.png" />
     <None Include="Resources\4.png" />
     <None Include="Resources\6.png" />
-    <Content Include="Scores.mdf">
+    <None Include="Resources\Game-Board-8x8-grid%28Green%29%28Reversi%29.gif" />
+    <None Include="Resources\images %282%29.jpg" />
+    <None Include="Resources\הורד %282%29.png" />
+    <None Include="Resources\הורד %281%29.png" />
+    <Content Include="DataBase\Scores.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Scores_log.ldf">
+    <Content Include="DataBase\Scores_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Scores.mdf</DependentUpon>
     </Content>
-    <Content Include="Tips.mdf">
+    <Content Include="DataBase\Tips.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Tips_log.ldf">
+    <Content Include="DataBase\Tips_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Tips.mdf</DependentUpon>
     </Content>
     <None Include="Resources\if_game_512535.ico" />
-    <None Include="Resources\Image1.jpg" />
-    <None Include="Resources\רקע מנהל %282%29.jpg" />
-    <None Include="Resources\רקע מנהל.jpg" />
-    <None Include="Resources\games.jpg" />
-    <None Include="Resources\password.jpg" />
-    <None Include="Resources\10283124.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
