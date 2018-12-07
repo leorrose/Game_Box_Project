@@ -14,7 +14,7 @@ namespace GameBox
     {
         int dice_value;
         Random ran = new Random();
-        int x, y, p1=1, p2=1,start_x,start_y;
+        int x, y, p1 = 1, p2 = 1, start_x, start_y;
 
         public Snake_and_ladders()
         {
@@ -23,133 +23,148 @@ namespace GameBox
             start_y = pb_player1.Location.Y;
             x = start_x;
             y = start_y;
-          
+
         }
 
         private void bt_roll_Click(object sender, EventArgs e)
         {
-            dice_value = ran.Next(1, 6);
-            move(ref x,ref y, ref p1, pb_player1);
-            pb_player1.Visible = true;
+            dice_value = ran.Next(1, 7);
+            pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + dice_value.ToString() + ".png");
+            pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            move(ref x, ref y, ref p1, pb_player1, dice_value);
+            snakes_ladders(ref x, ref y, ref p1, pb_player1);
 
         }
 
-        
+       
 
-
-
-
-
-
-
-
-        private void move(ref int x ,ref int y ,ref int pos , PictureBox pb)
+        private void move(ref int x, ref int y, ref int pos, PictureBox pb, int dice)
         {
-            if (pos == 10 || pos == 20 || pos == 30 || pos == 40 || pos == 50 || pos == 60 || pos == 70 || pos == 80 || pos == 90)
+            if (pos + dice > 100)
             {
-                pos++;
-                x =start_x;
-                y -= 64;
+                pos = 100;
+                x = 742;
+                y = 16;
+                pb.Location = new Point(x, y);
+                MessageBox.Show("win");
+
             }
-            //-----------------------------------snakes------------------------------------------------
-            //else if (pos == 25)
-            //{
-            //    pos = 5;
-            //    x = 30;
-            //    y = 735;
-
-            //}
-
-            //else if (pos == 34)
-            //{
-            //    pos = 1;
-            //    x = 30;
-            //    y = 735;
-
-            //}
-
-            //else if (pos == 47)
-            //{
-            //    pos = 19;
-            //    x = 672;
-            //    y = 655;
-            //}
-
-            //else if (pos == 65)
-            //{
-            //    pos = 52;
-            //    x = 147;
-            //    y = 335;
-            //}
-
-            //else if (pos == 91)
-            //{
-            //    pos = 61;
-            //    x = 30;
-            //    y = 255;
-            //}
-
-            //else if (pos == 87)
-            //{
-            //    pos = 57;
-            //    x = 672;
-            //    y = 335;
-            //}
-
-            //else if (pos == 99)
-            //{
-            //    pos = 69;
-            //    x = 886;
-            //    y = 255;
-            //}
-            ////---------------------laddars--------------------------------
-            //else if (pos == 3)
-            //{
-            //    pos = 51;
-            //    x = 30;
-            //    y = 335;
-            //}
-            //else if (pos == 6)
-            //{
-            //    pos = 27;
-            //    x = 672;
-            //    y = 575;
-            //}
-            //else if (pos == 20)
-            //{
-            //    pos = 70;
-            //    x = 993;
-            //    y = 255;
-            //}
-            //else if (pos == 36)
-            //{
-            //    pos = 55;
-            //    x = 458;
-            //    y = 335;
-            //}
-            //else if (pos == 63)
-            //{
-            //    pos = 95;
-            //    x = 458;
-            //    y = 15;
-            //}
-            //else if (pos == 68)
-            //{
-            //    pos = 98;
-            //    x = 779;
-            //    y = 15;
-            //}
-
             else
             {
-                x += 80;
-                pos++;
+                for (int i = 0; i < dice; i++)
+                {
+
+                    if (pos == 10 || pos == 20 || pos == 30 || pos == 40 || pos == 50 || pos == 60 || pos == 70 || pos == 80 || pos == 90)
+                    {
+                        pos++;
+                        x = start_x;
+                        y -= 64;
+                    }
+                    else
+                    {
+                        x += 80;
+                        pos++;
+                    }
+
+
+                    pb.Location = new Point(x, y);
+                }
+
+            }
+
+        }
+
+        private void snakes_ladders(ref int x,ref int y,ref int pos, PictureBox pb)
+        {
+            //--------------------------snakes-------------------------------
+              if (pos == 25)
+            {
+                pos = 5;
+                x = 342;
+                y = start_y;
+
+            }
+
+            else if (pos == 34)
+            {
+                pos = 1;
+                x = start_x;
+                y = start_y;
+
+            }
+
+            else if (pos == 47)
+            {
+                pos = 19;
+                x = 662;
+                y = 533;
+            }
+
+            else if (pos == 65)
+            {
+                pos = 52;
+                x = 102;
+                y = 277;
+            }
+
+            else if (pos == 91)
+            {
+                pos = 61;
+                x = start_x;
+                y = 213;
+            }
+
+            else if (pos == 87)
+            {
+                pos = 57;
+                y = 277;
+            }
+
+            else if (pos == 99)
+            {
+                pos = 69;
+                y = 213;
+            }
+            //---------------------laddars--------------------------------
+            else if (pos == 3)
+            {
+                pos = 51;
+                x = start_x;
+                y = 277;
+            }
+            else if (pos == 6)
+            {
+                pos = 27;
+                x = 502;
+                y = 464;
+            }
+            else if (pos == 20)
+            {
+                pos = 70;
+                y = 208;
+            }
+            else if (pos == 36)
+            {
+                pos = 55;
+                x = 342;
+                y = 277;
+            }
+            else if (pos == 63)
+            {
+                pos = 95;
+                x = 342;
+                y = 16;
+            }
+            else if (pos == 68)
+            {
+                pos = 98;
+                y = 16;
             }
 
             pb.Location = new Point(x, y);
-
         }
-
+    
 
 
         private void bt_Exit_Click(object sender, EventArgs e)

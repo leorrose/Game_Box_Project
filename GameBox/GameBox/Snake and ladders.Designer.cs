@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Snake_and_ladders));
             this.pb_player2 = new System.Windows.Forms.PictureBox();
-            this.panel_dice = new System.Windows.Forms.Panel();
             this.bt_music = new System.Windows.Forms.Button();
             this.bt_Exit = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -39,9 +38,11 @@
             this.lb_player2_name = new System.Windows.Forms.Label();
             this.pb_player1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pb_dice = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_dice)).BeginInit();
             this.SuspendLayout();
             // 
             // pb_player2
@@ -54,16 +55,6 @@
             this.pb_player2.Size = new System.Drawing.Size(53, 45);
             this.pb_player2.TabIndex = 6;
             this.pb_player2.TabStop = false;
-            // 
-            // panel_dice
-            // 
-            this.panel_dice.BackColor = System.Drawing.Color.Transparent;
-            this.panel_dice.BackgroundImage = global::GameBox.Properties.Resources.roll_the_dice;
-            this.panel_dice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_dice.Location = new System.Drawing.Point(1117, 303);
-            this.panel_dice.Name = "panel_dice";
-            this.panel_dice.Size = new System.Drawing.Size(181, 148);
-            this.panel_dice.TabIndex = 1;
             // 
             // bt_music
             // 
@@ -151,12 +142,24 @@
             this.panel1.Size = new System.Drawing.Size(1077, 799);
             this.panel1.TabIndex = 10;
             // 
+            // pb_dice
+            // 
+            this.pb_dice.BackColor = System.Drawing.Color.Transparent;
+            this.pb_dice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pb_dice.Location = new System.Drawing.Point(1108, 309);
+            this.pb_dice.Name = "pb_dice";
+            this.pb_dice.Size = new System.Drawing.Size(187, 133);
+            this.pb_dice.TabIndex = 11;
+            this.pb_dice.TabStop = false;
+            // 
             // Snake_and_ladders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1333, 800);
             this.ControlBox = false;
+            this.Controls.Add(this.pb_dice);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_player2_name);
             this.Controls.Add(this.pb_player2);
@@ -165,7 +168,6 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.bt_Exit);
             this.Controls.Add(this.bt_music);
-            this.Controls.Add(this.panel_dice);
             this.MaximumSize = new System.Drawing.Size(1351, 847);
             this.MinimumSize = new System.Drawing.Size(1351, 847);
             this.Name = "Snake_and_ladders";
@@ -174,13 +176,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_player2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_dice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Panel panel_dice;
         private System.Windows.Forms.Button bt_music;
         private System.Windows.Forms.Button bt_Exit;
         private System.Windows.Forms.Button button2;
@@ -190,5 +192,6 @@
         private System.Windows.Forms.Label lb_player2_name;
         private System.Windows.Forms.PictureBox pb_player1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pb_dice;
     }
 }

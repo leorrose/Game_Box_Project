@@ -193,16 +193,6 @@ namespace GameBox.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap roll_the_dice {
-            get {
-                object obj = ResourceManager.GetObject("roll_the_dice", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap snakeandladders {
             get {
                 object obj = ResourceManager.GetObject("snakeandladders", resourceCulture);
