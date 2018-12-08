@@ -43,6 +43,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.bt_instraction = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -170,13 +171,24 @@
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
+            // bt_instraction
+            // 
+            this.bt_instraction.Location = new System.Drawing.Point(1158, 735);
+            this.bt_instraction.Name = "bt_instraction";
+            this.bt_instraction.Size = new System.Drawing.Size(106, 42);
+            this.bt_instraction.TabIndex = 12;
+            this.bt_instraction.Text = "Instractions";
+            this.bt_instraction.UseVisualStyleBackColor = true;
+            this.bt_instraction.Click += new System.EventHandler(this.bt_instraction_Click);
+            // 
             // Snake_and_ladders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.PapayaWhip;
             this.ClientSize = new System.Drawing.Size(1333, 800);
             this.ControlBox = false;
+            this.Controls.Add(this.bt_instraction);
             this.Controls.Add(this.pb_dice);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_player2_name);
@@ -214,5 +226,6 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Button bt_instraction;
     }
 }

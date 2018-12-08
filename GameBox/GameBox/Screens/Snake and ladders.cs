@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace GameBox
 {
@@ -22,6 +23,12 @@ namespace GameBox
         public Snake_and_ladders()
         {
             InitializeComponent();
+        }
+
+        private void bt_instraction_Click(object sender, EventArgs e)
+        {
+            Print_instructions ins = new Print_instructions();
+            ins.ShowDialog();
         }
 
         private void Snake_and_ladders_Load(object sender, EventArgs e)
@@ -72,7 +79,6 @@ namespace GameBox
                 timer1.Stop();
                     shuffle_dice(dice_value, pb_dice, turn);
                 pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
-
             }
 
         }

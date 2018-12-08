@@ -32,7 +32,7 @@ namespace GameBox
         public static string guest = "";
         public static Boolean TypeUser; // Guest=false, player=true 
         public static Boolean GameChoice; /* true = reversi, false = LAS */
-        public static int cnt_players = 0;  //1= 1 player , 2 = 2 players
+        public static int cnt_players = 1;  //1= 1 player , 2 = 2 players
         public static Boolean music_OnOff = true; //Music on = true , Music off == false
         public static Boolean ManagerConected; // true= manager,false = not manager 
         public static WindowsMediaPlayer Wmp = new WindowsMediaPlayer();  //background music
