@@ -217,6 +217,8 @@ namespace GameBox
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.Bt_Givefeedback);
+            this.MaximumSize = new System.Drawing.Size(1016, 609);
+            this.MinimumSize = new System.Drawing.Size(1016, 609);
             this.Name = "Users_options";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Users_options";

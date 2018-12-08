@@ -175,7 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(976, 562);
+            this.ClientSize = new System.Drawing.Size(998, 562);
             this.ControlBox = false;
             this.Controls.Add(this.CB_music);
             this.Controls.Add(this.Bt_back);
@@ -187,6 +187,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1016, 609);
+            this.MinimumSize = new System.Drawing.Size(1016, 609);
             this.Name = "Managers_option";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Managers_option";

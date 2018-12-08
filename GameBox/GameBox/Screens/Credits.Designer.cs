@@ -55,6 +55,8 @@
             this.ClientSize = new System.Drawing.Size(998, 562);
             this.ControlBox = false;
             this.Controls.Add(this.Bt_ok);
+            this.MaximumSize = new System.Drawing.Size(1016, 609);
+            this.MinimumSize = new System.Drawing.Size(1016, 609);
             this.Name = "Credits";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Credits";

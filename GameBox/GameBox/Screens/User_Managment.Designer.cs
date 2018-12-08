@@ -252,6 +252,8 @@
             this.Controls.Add(this.Tb_User_add_Name);
             this.Controls.Add(this.Bt_remove);
             this.Controls.Add(this.Bt_add);
+            this.MaximumSize = new System.Drawing.Size(1016, 609);
+            this.MinimumSize = new System.Drawing.Size(1016, 609);
             this.Name = "User_Managment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "User_Managment";

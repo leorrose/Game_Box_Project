@@ -142,6 +142,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bt_exit);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(1016, 609);
+            this.MinimumSize = new System.Drawing.Size(1016, 609);
             this.Name = "Guest_wait";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Guest_wait";

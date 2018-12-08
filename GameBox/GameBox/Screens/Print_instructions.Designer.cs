@@ -69,6 +69,8 @@
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Bt_ok);
+            this.MaximumSize = new System.Drawing.Size(1016, 609);
+            this.MinimumSize = new System.Drawing.Size(1016, 609);
             this.Name = "Print_instructions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Print_instructions";

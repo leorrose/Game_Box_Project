@@ -125,6 +125,8 @@
             this.Controls.Add(this.Bt_Reports_Back);
             this.Controls.Add(this.Bt_Reports_Exit);
             this.Controls.Add(this.dataGridView1);
+            this.MaximumSize = new System.Drawing.Size(1016, 609);
+            this.MinimumSize = new System.Drawing.Size(1016, 609);
             this.Name = "Reports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reports";

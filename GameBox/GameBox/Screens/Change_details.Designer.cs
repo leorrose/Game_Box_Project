@@ -227,6 +227,8 @@
             this.Controls.Add(this.Tb_New_Password);
             this.Controls.Add(this.Tb_Existing_Password);
             this.Controls.Add(this.Bt_Update);
+            this.MaximumSize = new System.Drawing.Size(1016, 609);
+            this.MinimumSize = new System.Drawing.Size(1016, 609);
             this.Name = "Change_details";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change_details";
