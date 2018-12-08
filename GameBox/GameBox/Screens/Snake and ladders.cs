@@ -61,25 +61,16 @@ namespace GameBox
 
             private void timer1_Tick(object sender, EventArgs e)
         {
-            int picture;
+            int num;
             seconds1 += 1;
             Random ran = new Random();
+            num = ran.Next(1, 7);
             if (seconds1 <= 10)
-            {
-                picture = ran.Next(1, 7);
-                if (!turn) 
-                    pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + picture.ToString() + "r.png");
-                else
-                    pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + picture.ToString() + "y.png");
-                pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
-            }
+                shuffle_dice(num, pb_dice, turn);
             else
             {
                 timer1.Stop();
-                if (!turn)
-                    pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + dice_value.ToString() + "r.png");
-                else
-                    pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + dice_value.ToString() + "y.png");
+                    shuffle_dice(dice_value, pb_dice, turn);
                 pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
 
             }
@@ -147,6 +138,60 @@ namespace GameBox
            
         }
 
+        private void shuffle_dice(int num , PictureBox pb , bool turn)
+        {
+            switch(num)
+            {
+                case 1:
+                    if(turn)  // player 1 turn, dice should be red
+                        pb.Image = Properties.Resources._1y;
+                    else
+                        pb.Image = Properties.Resources._1r;
+                    pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+
+                case 2:
+                    if (turn)  // player 1 turn, dice should be red
+                        pb.Image = Properties.Resources._2y;
+                    else
+                        pb.Image = Properties.Resources._2r;
+                    pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+
+                case 3:
+                    if (turn)  // player 1 turn, dice should be red
+                        pb.Image = Properties.Resources._3y;
+                    else
+                        pb.Image = Properties.Resources._3r;
+                    pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+
+                case 4:
+                    if (turn)  // player 1 turn, dice should be red
+                        pb.Image = Properties.Resources._4y;
+                    else
+                        pb.Image = Properties.Resources._4r;
+                    pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+
+                case 5:
+                    if (turn)  // player 1 turn, dice should be red
+                        pb.Image = Properties.Resources._5y;
+                    else
+                        pb.Image = Properties.Resources._5r;
+                    pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+
+                case 6:
+                    if (turn)  // player 1 turn, dice should be red
+                        pb.Image = Properties.Resources._6y;
+                    else
+                        pb.Image = Properties.Resources._6r;
+                    pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
+                    break;
+            }
+
+        }
        
 
         private void move(ref int x, ref int y, ref int pos, PictureBox pb, int dice)
