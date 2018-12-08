@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Screens\Reversi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Reversi.Designer.cs">
+      <DependentUpon>Reversi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Print_instructions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Feedback_form.resx">
       <DependentUpon>Feedback_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Reversi.resx">
+      <DependentUpon>Reversi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\GameChoice.resx">
       <DependentUpon>GameChoice.cs</DependentUpon>
@@ -286,6 +295,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Players.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\black-b_tton-icon-png-11.png" />
+    <None Include="Resources\2000px-B_tton_Icon_White.svg.png" />
     <None Include="Resources\3y.png" />
     <None Include="Resources\2y.png" />
     <None Include="Resources\1y.png" />

@@ -19,6 +19,8 @@ namespace GameBox
         public GameChoice(Form form)
         {
             InitializeComponent();
+            if (Program.cnt_players != 2)
+                bt_reversi.Enabled = false;
             GameBox.Program.Wmp.URL = "music.mp3";
             return_back = form;
             Program.GameChoice = false;
@@ -55,12 +57,14 @@ namespace GameBox
 
     
 
-        private void bt_reversi_Click(object sender, EventArgs e)
+        private void Bt_reversi_Click(object sender, EventArgs e)
         {
-
+            Reversi NewGame = new Reversi(this,return_back);
+            this.Hide();
+            NewGame.Show();
         }
 
-        private void bt_snake_and_ladders_Click(object sender, EventArgs e)
+        private void Bt_snake_and_ladders_Click(object sender, EventArgs e)
         {
 
         }

@@ -92,7 +92,7 @@
             this.bt_reversi.TabIndex = 12;
             this.bt_reversi.Text = "Reversi";
             this.bt_reversi.UseVisualStyleBackColor = false;
-            this.bt_reversi.Click += new System.EventHandler(this.bt_reversi_Click);
+            this.bt_reversi.Click += new System.EventHandler(this.Bt_reversi_Click);
             // 
             // bt_snake_and_ladders
             // 
@@ -106,7 +106,7 @@
             this.bt_snake_and_ladders.TabIndex = 13;
             this.bt_snake_and_ladders.Text = "Snake and Ladders";
             this.bt_snake_and_ladders.UseVisualStyleBackColor = false;
-            this.bt_snake_and_ladders.Click += new System.EventHandler(this.bt_snake_and_ladders_Click);
+            this.bt_snake_and_ladders.Click += new System.EventHandler(this.Bt_snake_and_ladders_Click);
             // 
             // CB_music
             // 
