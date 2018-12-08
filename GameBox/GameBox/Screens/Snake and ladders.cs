@@ -14,7 +14,29 @@ namespace GameBox
     {
         int dice_value;
         Random ran = new Random();
+        int seconds = 0;
         int x, y, p1 = 1, p2 = 1, start_x, start_y;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            int picture;
+            seconds += 1;
+            Random ran = new Random();
+            if(seconds <= 10)
+            {
+                picture = ran.Next(1, 7);
+                pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + picture.ToString() + ".png");
+                pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+            else
+            {
+                timer1.Stop();
+                pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + dice_value.ToString() + ".png");
+                pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
+
+            }
+
+        }
 
         public Snake_and_ladders()
         {
@@ -23,17 +45,18 @@ namespace GameBox
             start_y = pb_player1.Location.Y;
             x = start_x;
             y = start_y;
+            timer1.Interval = 100;
+            timer1.Stop();
 
         }
 
         private void bt_roll_Click(object sender, EventArgs e)
         {
             dice_value = ran.Next(1, 7);
-            pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + dice_value.ToString() + ".png");
-            pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
-
+            timer1.Start();       //shuffle dice and show the correct number on last iteration.
             move(ref x, ref y, ref p1, pb_player1, dice_value);
             snakes_ladders(ref x, ref y, ref p1, pb_player1);
+            seconds = 0;
 
         }
 
@@ -165,11 +188,12 @@ namespace GameBox
             pb.Location = new Point(x, y);
         }
     
+      
 
 
         private void bt_Exit_Click(object sender, EventArgs e)
         {
-            Program.Exit();
+            this.Close();
         }
 
         

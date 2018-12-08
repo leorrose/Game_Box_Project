@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Snake_and_ladders));
             this.pb_player2 = new System.Windows.Forms.PictureBox();
             this.bt_music = new System.Windows.Forms.Button();
@@ -39,6 +40,7 @@
             this.pb_player1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pb_dice = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pb_player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -145,12 +147,17 @@
             // pb_dice
             // 
             this.pb_dice.BackColor = System.Drawing.Color.Transparent;
+            this.pb_dice.BackgroundImage = global::GameBox.Properties.Resources.Roll_the_dice;
             this.pb_dice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pb_dice.Location = new System.Drawing.Point(1108, 309);
             this.pb_dice.Name = "pb_dice";
             this.pb_dice.Size = new System.Drawing.Size(187, 133);
             this.pb_dice.TabIndex = 11;
             this.pb_dice.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Snake_and_ladders
             // 
@@ -193,5 +200,6 @@
         private System.Windows.Forms.PictureBox pb_player1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pb_dice;
+        private System.Windows.Forms.Timer timer1;
     }
 }

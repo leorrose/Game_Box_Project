@@ -305,6 +305,7 @@
             this.Bt_Continue_As_Manager.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Continue_As_Manager.BackgroundImage")));
             this.Bt_Continue_As_Manager.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_Continue_As_Manager.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_Continue_As_Manager.FlatAppearance.BorderSize = 0;
             this.Bt_Continue_As_Manager.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_Continue_As_Manager.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_Continue_As_Manager.Location = new System.Drawing.Point(36, 151);

@@ -286,6 +286,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Players.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Roll the dice.png" />
     <None Include="Resources\28e2ab88a124342560aca2cc0fbc3ceb.png" />
     <None Include="Resources\backbutton2.png" />
     <None Include="Resources\copyright-black-metal-sign-background-copyspace-32441277.jpg" />
