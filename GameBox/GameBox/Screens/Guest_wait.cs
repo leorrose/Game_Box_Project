@@ -45,5 +45,10 @@ namespace GameBox
             return_back.Show();
             this.Close();
         }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -286,19 +286,25 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Players.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\3y.png" />
+    <None Include="Resources\2y.png" />
+    <None Include="Resources\1y.png" />
+    <None Include="Resources\6y.png" />
+    <None Include="Resources\5y.png" />
+    <None Include="Resources\4y.png" />
+    <None Include="Resources\2r.png" />
+    <None Include="Resources\1r.png" />
+    <None Include="Resources\6r.png" />
+    <None Include="Resources\5r.png" />
+    <None Include="Resources\4r.png" />
+    <None Include="Resources\3r.png" />
     <None Include="Resources\Roll the dice.png" />
     <None Include="Resources\28e2ab88a124342560aca2cc0fbc3ceb.png" />
     <None Include="Resources\backbutton2.png" />
     <None Include="Resources\copyright-black-metal-sign-background-copyspace-32441277.jpg" />
     <None Include="Resources\snakeandladders.jpg" />
-    <None Include="Resources\5.png" />
     <None Include="Resources\red.png" />
     <None Include="Resources\yellow.png" />
-    <None Include="Resources\1.png" />
-    <None Include="Resources\2.png" />
-    <None Include="Resources\3.png" />
-    <None Include="Resources\4.png" />
-    <None Include="Resources\6.png" />
     <None Include="Resources\Game-Board-8x8-grid%28Green%29%28Reversi%29.gif" />
     <None Include="Resources\images %282%29.jpg" />
     <None Include="Resources\הורד %282%29.png" />

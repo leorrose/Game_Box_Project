@@ -41,6 +41,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.pb_dice = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pb_player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -52,7 +54,7 @@
             this.pb_player2.BackColor = System.Drawing.Color.Transparent;
             this.pb_player2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pb_player2.BackgroundImage")));
             this.pb_player2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pb_player2.Location = new System.Drawing.Point(1108, 75);
+            this.pb_player2.Location = new System.Drawing.Point(30, 735);
             this.pb_player2.Name = "pb_player2";
             this.pb_player2.Size = new System.Drawing.Size(53, 45);
             this.pb_player2.TabIndex = 6;
@@ -91,11 +93,11 @@
             // 
             // bt_roll
             // 
-            this.bt_roll.BackColor = System.Drawing.SystemColors.Control;
-            this.bt_roll.Font = new System.Drawing.Font("Modern No. 20", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_roll.Location = new System.Drawing.Point(1152, 488);
+            this.bt_roll.BackColor = System.Drawing.Color.Red;
+            this.bt_roll.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_roll.Location = new System.Drawing.Point(1103, 488);
             this.bt_roll.Name = "bt_roll";
-            this.bt_roll.Size = new System.Drawing.Size(100, 56);
+            this.bt_roll.Size = new System.Drawing.Size(218, 60);
             this.bt_roll.TabIndex = 7;
             this.bt_roll.Text = "Roll!";
             this.bt_roll.UseVisualStyleBackColor = false;
@@ -139,6 +141,7 @@
             this.panel1.BackgroundImage = global::GameBox.Properties.Resources.snakeandladders;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.pb_player1);
+            this.panel1.Controls.Add(this.pb_player2);
             this.panel1.Location = new System.Drawing.Point(3, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1077, 799);
@@ -159,6 +162,14 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // timer3
+            // 
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
             // Snake_and_ladders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -169,7 +180,6 @@
             this.Controls.Add(this.pb_dice);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lb_player2_name);
-            this.Controls.Add(this.pb_player2);
             this.Controls.Add(this.lb_player1_name);
             this.Controls.Add(this.bt_roll);
             this.Controls.Add(this.button2);
@@ -180,6 +190,7 @@
             this.Name = "Snake_and_ladders";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Snake_and_ladders";
+            this.Load += new System.EventHandler(this.Snake_and_ladders_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_player2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player1)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -201,5 +212,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pb_dice;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer timer3;
     }
 }

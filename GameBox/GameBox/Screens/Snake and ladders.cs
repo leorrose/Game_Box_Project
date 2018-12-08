@@ -12,66 +12,155 @@ namespace GameBox
 {
     public partial class Snake_and_ladders : Form
     {
-        int dice_value;
         Random ran = new Random();
-        int seconds = 0;
-        int x, y, p1 = 1, p2 = 1, start_x, start_y;
+        int x1, y1,x2,y2, p1 = 1, p2 = 1, start_x, start_y, seconds1 = 0, seconds2 = 0, dice_value;
 
-        private void timer1_Tick(object sender, EventArgs e)
+     
+
+        bool turn = true; // true= player1 turn, false = player2/comuter turn;
+
+        public Snake_and_ladders()
+        {
+            InitializeComponent();
+        }
+
+        private void Snake_and_ladders_Load(object sender, EventArgs e)
+        {
+            start_x = pb_player1.Location.X ;
+            start_y = pb_player1.Location.Y;
+            x1 = start_x;
+            y1 = start_y;
+            x2 = start_x ;
+            y2 = start_y ;
+            timer1.Interval = 100;
+            timer2.Interval = 1000;
+            timer3.Interval = 500;
+            timer1.Stop();
+            bt_roll.Text = Program.user1 + " ROLL!";
+            labels();
+         
+        }
+
+        private void labels()
+        {
+            if (Program.TypeUser) // if the player is a user.
+            {
+                lb_player1_name.Text = Program.user1 + " position: " + p1.ToString();
+                if (Program.cnt_players == 2)
+                    lb_player2_name.Text = Program.user2 + " position: " + p2.ToString();
+                else
+                    lb_player2_name.Text = "Computer position: " + p2.ToString();
+                  
+            }
+            else  // if the player is a guest.
+            {
+                lb_player1_name.Text = Program.guest + " position: " + p1.ToString();
+                lb_player2_name.Text = "Com position: " + p2.ToString();
+            }
+        }
+
+            private void timer1_Tick(object sender, EventArgs e)
         {
             int picture;
-            seconds += 1;
+            seconds1 += 1;
             Random ran = new Random();
-            if(seconds <= 10)
+            if (seconds1 <= 10)
             {
                 picture = ran.Next(1, 7);
-                pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + picture.ToString() + ".png");
+                if (!turn) 
+                    pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + picture.ToString() + "r.png");
+                else
+                    pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + picture.ToString() + "y.png");
                 pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
             }
             else
             {
                 timer1.Stop();
-                pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + dice_value.ToString() + ".png");
+                if (!turn)
+                    pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + dice_value.ToString() + "r.png");
+                else
+                    pb_dice.Image = Image.FromFile(@"C:\Users\Ori\Desktop\game project\Poject_Yesodot_Group_6\GameBox\GameBox\Resources\" + dice_value.ToString() + "y.png");
                 pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
 
             }
 
         }
 
-        public Snake_and_ladders()
+        private void timer2_Tick(object sender, EventArgs e)
         {
-            InitializeComponent();
-            start_x = pb_player1.Location.X;
-            start_y = pb_player1.Location.Y;
-            x = start_x;
-            y = start_y;
-            timer1.Interval = 100;
-            timer1.Stop();
+            bt_roll.Visible = false;
+            if (seconds2 >= 0)
+                seconds2--;
+            else
+            {
+                timer2.Stop();
+                timer1.Start();
+                dice_value = ran.Next(1, 7);
+                move(ref x2, ref y2, ref p2, pb_player2, dice_value);
+                snakes_ladders(ref x2, ref y2, ref p2, pb_player2);
+                bt_roll.Visible = true;
+                seconds1 = 0;
+                turn = true;
+            }
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
 
         }
 
         private void bt_roll_Click(object sender, EventArgs e)
         {
+            bt_roll.Visible = false;
             dice_value = ran.Next(1, 7);
             timer1.Start();       //shuffle dice and show the correct number on last iteration.
-            move(ref x, ref y, ref p1, pb_player1, dice_value);
-            snakes_ladders(ref x, ref y, ref p1, pb_player1);
-            seconds = 0;
-
+            if (turn)
+            {
+                move(ref x1, ref y1, ref p1, pb_player1, dice_value);
+                snakes_ladders(ref x1, ref y1, ref p1, pb_player1);
+                seconds1 = 0;
+                
+                turn = false;
+                if (Program.cnt_players == 2)
+                {
+                    bt_roll.BackColor = Color.Yellow;
+                    bt_roll.Visible = true;
+                }
+            }
+            else if(Program.cnt_players == 2 && !turn)
+            {
+                bt_roll.BackColor = Color.Red;
+                move(ref x2, ref y2, ref p2, pb_player2, dice_value);
+                snakes_ladders(ref x2, ref y2, ref p2, pb_player2);
+                seconds1 = 0;
+                turn = true;
+                bt_roll.Visible = true;
+            }
+            if (Program.cnt_players == 1 && !turn)
+            {
+                seconds1 = 0;
+                seconds2 = 3;
+                timer2.Start();
+                seconds2 = 0;
+            }
+            labels();
+           
         }
 
        
 
         private void move(ref int x, ref int y, ref int pos, PictureBox pb, int dice)
         {
-            if (pos + dice > 100)
+            if (pos + dice >= 100)
             {
                 pos = 100;
                 x = 742;
                 y = 16;
                 pb.Location = new Point(x, y);
-                MessageBox.Show("win");
-
+                if(turn)
+                    MessageBox.Show("player 1 win");
+                else
+                    MessageBox.Show("player 2 win");
             }
             else
             {

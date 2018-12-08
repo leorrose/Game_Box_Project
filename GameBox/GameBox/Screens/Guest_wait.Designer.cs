@@ -37,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.Bt_back = new System.Windows.Forms.Button();
             this.CB_music = new System.Windows.Forms.CheckBox();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -128,6 +129,10 @@
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
             // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Guest_wait
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -160,5 +165,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Bt_back;
         private System.Windows.Forms.CheckBox CB_music;
+        private System.Windows.Forms.Timer timer2;
     }
 }
