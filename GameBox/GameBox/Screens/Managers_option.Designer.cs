@@ -29,97 +29,97 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Managers_option));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.Bt_login_exit = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.Bt_user_add = new System.Windows.Forms.Button();
+            this.BT_login_reports = new System.Windows.Forms.Button();
+            this.Bt_manager_add = new System.Windows.Forms.Button();
+            this.Bt_score_report = new System.Windows.Forms.Button();
+            this.Bt_manager_exit = new System.Windows.Forms.Button();
+            this.Bt_feedback = new System.Windows.Forms.Button();
             this.Bt_manager_tips = new System.Windows.Forms.Button();
-            this.Bt_back = new System.Windows.Forms.Button();
+            this.Bt_manager_back = new System.Windows.Forms.Button();
             this.CB_music = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
-            // button1
+            // Bt_user_add
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(26, 223);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(210, 44);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Add/Remove user";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Bt_add_remove_user);
+            this.Bt_user_add.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_user_add.BackgroundImage")));
+            this.Bt_user_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_user_add.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_user_add.Location = new System.Drawing.Point(26, 223);
+            this.Bt_user_add.Name = "Bt_user_add";
+            this.Bt_user_add.Size = new System.Drawing.Size(210, 44);
+            this.Bt_user_add.TabIndex = 0;
+            this.Bt_user_add.Text = "Add/Remove user";
+            this.Bt_user_add.UseVisualStyleBackColor = true;
+            this.Bt_user_add.Click += new System.EventHandler(this.Bt_add_remove_user);
             // 
-            // button2
+            // BT_login_reports
             // 
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(26, 172);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(210, 44);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Logins report";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Bt_logins_report);
+            this.BT_login_reports.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BT_login_reports.BackgroundImage")));
+            this.BT_login_reports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BT_login_reports.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.BT_login_reports.Location = new System.Drawing.Point(26, 172);
+            this.BT_login_reports.Name = "BT_login_reports";
+            this.BT_login_reports.Size = new System.Drawing.Size(210, 44);
+            this.BT_login_reports.TabIndex = 1;
+            this.BT_login_reports.Text = "Logins report";
+            this.BT_login_reports.UseVisualStyleBackColor = true;
+            this.BT_login_reports.Click += new System.EventHandler(this.Bt_logins_report);
             // 
-            // button3
+            // Bt_manager_add
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(26, 274);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(210, 44);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Add/Remove manager";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Bt_add_remove_manager);
+            this.Bt_manager_add.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_manager_add.BackgroundImage")));
+            this.Bt_manager_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_manager_add.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_manager_add.Location = new System.Drawing.Point(26, 274);
+            this.Bt_manager_add.Name = "Bt_manager_add";
+            this.Bt_manager_add.Size = new System.Drawing.Size(210, 44);
+            this.Bt_manager_add.TabIndex = 2;
+            this.Bt_manager_add.Text = "Add/Remove manager";
+            this.Bt_manager_add.UseVisualStyleBackColor = true;
+            this.Bt_manager_add.Click += new System.EventHandler(this.Bt_add_remove_manager);
             // 
-            // button4
+            // Bt_score_report
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(26, 324);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(210, 44);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Scores report";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Bt_scores_report);
+            this.Bt_score_report.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_score_report.BackgroundImage")));
+            this.Bt_score_report.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_score_report.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_score_report.Location = new System.Drawing.Point(26, 324);
+            this.Bt_score_report.Name = "Bt_score_report";
+            this.Bt_score_report.Size = new System.Drawing.Size(210, 44);
+            this.Bt_score_report.TabIndex = 3;
+            this.Bt_score_report.Text = "Scores report";
+            this.Bt_score_report.UseVisualStyleBackColor = true;
+            this.Bt_score_report.Click += new System.EventHandler(this.Bt_scores_report);
             // 
-            // Bt_login_exit
+            // Bt_manager_exit
             // 
-            this.Bt_login_exit.BackColor = System.Drawing.Color.Transparent;
-            this.Bt_login_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_login_exit.BackgroundImage")));
-            this.Bt_login_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bt_login_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_login_exit.FlatAppearance.BorderSize = 0;
-            this.Bt_login_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_login_exit.Location = new System.Drawing.Point(886, 7);
-            this.Bt_login_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Bt_login_exit.Name = "Bt_login_exit";
-            this.Bt_login_exit.Size = new System.Drawing.Size(100, 55);
-            this.Bt_login_exit.TabIndex = 28;
-            this.Bt_login_exit.UseVisualStyleBackColor = false;
-            this.Bt_login_exit.Click += new System.EventHandler(this.Bt_login_exit_Click);
+            this.Bt_manager_exit.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_manager_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_manager_exit.BackgroundImage")));
+            this.Bt_manager_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_manager_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_manager_exit.FlatAppearance.BorderSize = 0;
+            this.Bt_manager_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_manager_exit.Location = new System.Drawing.Point(886, 7);
+            this.Bt_manager_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Bt_manager_exit.Name = "Bt_manager_exit";
+            this.Bt_manager_exit.Size = new System.Drawing.Size(100, 55);
+            this.Bt_manager_exit.TabIndex = 28;
+            this.Bt_manager_exit.UseVisualStyleBackColor = false;
+            this.Bt_manager_exit.Click += new System.EventHandler(this.Bt_login_exit_Click);
             // 
-            // button5
+            // Bt_feedback
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(26, 376);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(210, 44);
-            this.button5.TabIndex = 29;
-            this.button5.Text = "Feedback report";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Bt_FeedBack_report);
+            this.Bt_feedback.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_feedback.BackgroundImage")));
+            this.Bt_feedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_feedback.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_feedback.Location = new System.Drawing.Point(26, 376);
+            this.Bt_feedback.Name = "Bt_feedback";
+            this.Bt_feedback.Size = new System.Drawing.Size(210, 44);
+            this.Bt_feedback.TabIndex = 29;
+            this.Bt_feedback.Text = "Feedback report";
+            this.Bt_feedback.UseVisualStyleBackColor = true;
+            this.Bt_feedback.Click += new System.EventHandler(this.Bt_FeedBack_report);
             // 
             // Bt_manager_tips
             // 
@@ -136,19 +136,19 @@
             this.Bt_manager_tips.UseVisualStyleBackColor = true;
             this.Bt_manager_tips.Click += new System.EventHandler(this.button6_Click);
             // 
-            // Bt_back
+            // Bt_manager_back
             // 
-            this.Bt_back.BackColor = System.Drawing.Color.Transparent;
-            this.Bt_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_back.BackgroundImage")));
-            this.Bt_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bt_back.FlatAppearance.BorderSize = 0;
-            this.Bt_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_back.Location = new System.Drawing.Point(780, 7);
-            this.Bt_back.Name = "Bt_back";
-            this.Bt_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_back.TabIndex = 31;
-            this.Bt_back.UseVisualStyleBackColor = false;
-            this.Bt_back.Click += new System.EventHandler(this.Bt_back_Click);
+            this.Bt_manager_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_manager_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_manager_back.BackgroundImage")));
+            this.Bt_manager_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_manager_back.FlatAppearance.BorderSize = 0;
+            this.Bt_manager_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_manager_back.Location = new System.Drawing.Point(780, 7);
+            this.Bt_manager_back.Name = "Bt_manager_back";
+            this.Bt_manager_back.Size = new System.Drawing.Size(100, 55);
+            this.Bt_manager_back.TabIndex = 31;
+            this.Bt_manager_back.UseVisualStyleBackColor = false;
+            this.Bt_manager_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
             // CB_music
             // 
@@ -182,14 +182,14 @@
             this.ClientSize = new System.Drawing.Size(998, 562);
             this.ControlBox = false;
             this.Controls.Add(this.CB_music);
-            this.Controls.Add(this.Bt_back);
+            this.Controls.Add(this.Bt_manager_back);
             this.Controls.Add(this.Bt_manager_tips);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.Bt_login_exit);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Bt_feedback);
+            this.Controls.Add(this.Bt_manager_exit);
+            this.Controls.Add(this.Bt_score_report);
+            this.Controls.Add(this.Bt_manager_add);
+            this.Controls.Add(this.BT_login_reports);
+            this.Controls.Add(this.Bt_user_add);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1016, 609);
             this.MinimumSize = new System.Drawing.Size(1016, 609);
@@ -202,14 +202,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button Bt_login_exit;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button Bt_user_add;
+        private System.Windows.Forms.Button BT_login_reports;
+        private System.Windows.Forms.Button Bt_manager_add;
+        private System.Windows.Forms.Button Bt_score_report;
+        private System.Windows.Forms.Button Bt_manager_exit;
+        private System.Windows.Forms.Button Bt_feedback;
         private System.Windows.Forms.Button Bt_manager_tips;
-        private System.Windows.Forms.Button Bt_back;
+        private System.Windows.Forms.Button Bt_manager_back;
         private System.Windows.Forms.CheckBox CB_music;
     }
 }

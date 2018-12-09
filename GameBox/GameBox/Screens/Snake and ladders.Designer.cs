@@ -33,7 +33,7 @@
             this.pb_player2 = new System.Windows.Forms.PictureBox();
             this.bt_music = new System.Windows.Forms.Button();
             this.bt_Exit = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Bt_SAL_back = new System.Windows.Forms.Button();
             this.bt_roll = new System.Windows.Forms.Button();
             this.lb_player1_name = new System.Windows.Forms.Label();
             this.lb_player2_name = new System.Windows.Forms.Label();
@@ -83,15 +83,16 @@
             this.bt_Exit.UseVisualStyleBackColor = true;
             this.bt_Exit.Click += new System.EventHandler(this.bt_Exit_Click);
             // 
-            // button2
+            // Bt_SAL_back
             // 
-            this.button2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(1167, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 44);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Back";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Bt_SAL_back.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_SAL_back.Location = new System.Drawing.Point(1167, 12);
+            this.Bt_SAL_back.Name = "Bt_SAL_back";
+            this.Bt_SAL_back.Size = new System.Drawing.Size(75, 44);
+            this.Bt_SAL_back.TabIndex = 4;
+            this.Bt_SAL_back.Text = "Back";
+            this.Bt_SAL_back.UseVisualStyleBackColor = true;
+            this.Bt_SAL_back.Click += new System.EventHandler(this.Bt_SAL_back_Click);
             // 
             // bt_roll
             // 
@@ -195,7 +196,7 @@
             this.Controls.Add(this.lb_player2_name);
             this.Controls.Add(this.lb_player1_name);
             this.Controls.Add(this.bt_roll);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.Bt_SAL_back);
             this.Controls.Add(this.bt_Exit);
             this.Controls.Add(this.bt_music);
             this.MaximumSize = new System.Drawing.Size(1351, 847);
@@ -216,7 +217,7 @@
         #endregion
         private System.Windows.Forms.Button bt_music;
         private System.Windows.Forms.Button bt_Exit;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Bt_SAL_back;
         private System.Windows.Forms.PictureBox pb_player2;
         private System.Windows.Forms.Button bt_roll;
         private System.Windows.Forms.Label lb_player1_name;

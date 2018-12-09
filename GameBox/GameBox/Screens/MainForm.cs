@@ -202,9 +202,9 @@ namespace GameBox
             cr.ShowDialog();
         }
 
-        private void CB_music_CheckedChanged(object sender, EventArgs e)
+        private void CB_music_click(object sender, EventArgs e)
         {
-            if (Program.music_OnOff == true )  //pause music
+            if (Program.music_OnOff == true)  //pause music
             {
                 Program.music_OnOff = false;
                 GameBox.Program.Wmp.controls.pause();

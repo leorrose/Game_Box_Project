@@ -31,21 +31,13 @@ namespace GameBox
             }
             if (Program.cnt_players != 2)
                 bt_reversi.Enabled = false;
-            GameBox.Program.Wmp.URL = "music.mp3";
             return_back = form;
-            Program.GameChoice = false;
         }
 
        private void Bt_Exit_Click(object sender, EventArgs e)  //exit the program
         {
             Program.Exit();
         }
-
-        private void CB_music_CheckedChanged(object sender, EventArgs e) //music buttons
-        {
-
-        }
-
 
 
         private void Bt_back_Click(object sender, EventArgs e) /* function to go back */
@@ -65,10 +57,12 @@ namespace GameBox
 
         private void Bt_snake_and_ladders_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Snake_and_ladders game = new Snake_and_ladders(this, return_back);
+            game.Show();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void CB_music_click(object sender, EventArgs e)
         {
             if (Program.music_OnOff == true)  //pause music
             {
@@ -84,6 +78,20 @@ namespace GameBox
                 CB_music.BackgroundImage = Properties.Resources.Music;
                 CB_music.BackgroundImageLayout = ImageLayout.Stretch;
             }
+        }
+
+        private void reversi_insruction_Click(object sender, EventArgs e)
+        {
+            Program.GameChoice = true;
+            Print_instructions ins = new Print_instructions();
+            ins.Show();
+        }
+
+        private void SAl_instruction_Click(object sender, EventArgs e)
+        {
+            Program.GameChoice = false;
+            Print_instructions ins = new Print_instructions();
+            ins.Show();
         }
     }
 }

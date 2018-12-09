@@ -232,7 +232,7 @@
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
-            this.CB_music.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.CB_music.CheckedChanged += new System.EventHandler(this.CB_music_click);
             // 
             // Manager_Managment
             // 

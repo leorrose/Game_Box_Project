@@ -98,15 +98,15 @@
             this.Lb_player1 = new System.Windows.Forms.Label();
             this.Lb_Score1 = new System.Windows.Forms.Label();
             this.Lb_Score2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.Bt_Reversi_back = new System.Windows.Forms.Button();
+            this.Bt_reversi_exit = new System.Windows.Forms.Button();
             this.CB_music = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.Lb_Player_turn = new System.Windows.Forms.Label();
-            this.Bt_instuctions = new System.Windows.Forms.Button();
+            this.Bt_reversi_instuctions = new System.Windows.Forms.Button();
             this.panel_board.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_D5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_E4)).BeginInit();
@@ -948,32 +948,32 @@
             this.Lb_Score2.TabIndex = 5;
             this.Lb_Score2.Text = "2";
             // 
-            // button1
+            // Bt_Reversi_back
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(1131, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 48);
-            this.button1.TabIndex = 6;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Bt_Reversi_back);
+            this.Bt_Reversi_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_Reversi_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Reversi_back.BackgroundImage")));
+            this.Bt_Reversi_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Reversi_back.FlatAppearance.BorderSize = 0;
+            this.Bt_Reversi_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_Reversi_back.Location = new System.Drawing.Point(1131, 8);
+            this.Bt_Reversi_back.Name = "Bt_Reversi_back";
+            this.Bt_Reversi_back.Size = new System.Drawing.Size(82, 48);
+            this.Bt_Reversi_back.TabIndex = 6;
+            this.Bt_Reversi_back.UseVisualStyleBackColor = false;
+            this.Bt_Reversi_back.Click += new System.EventHandler(this.Bt_Reversi_back_click);
             // 
-            // button2
+            // Bt_reversi_exit
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(1219, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(82, 48);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Bt_Reversi_Exit);
+            this.Bt_reversi_exit.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_reversi_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_reversi_exit.BackgroundImage")));
+            this.Bt_reversi_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_reversi_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_reversi_exit.Location = new System.Drawing.Point(1219, 7);
+            this.Bt_reversi_exit.Name = "Bt_reversi_exit";
+            this.Bt_reversi_exit.Size = new System.Drawing.Size(82, 48);
+            this.Bt_reversi_exit.TabIndex = 7;
+            this.Bt_reversi_exit.UseVisualStyleBackColor = false;
+            this.Bt_reversi_exit.Click += new System.EventHandler(this.Bt_Reversi_Exit_click);
             // 
             // CB_music
             // 
@@ -1047,16 +1047,17 @@
             this.Lb_Player_turn.Text = "Player 1";
             this.Lb_Player_turn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Bt_instuctions
+            // Bt_reversi_instuctions
             // 
-            this.Bt_instuctions.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_instuctions.BackgroundImage")));
-            this.Bt_instuctions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bt_instuctions.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_instuctions.Location = new System.Drawing.Point(1131, 62);
-            this.Bt_instuctions.Name = "Bt_instuctions";
-            this.Bt_instuctions.Size = new System.Drawing.Size(170, 47);
-            this.Bt_instuctions.TabIndex = 69;
-            this.Bt_instuctions.UseVisualStyleBackColor = true;
+            this.Bt_reversi_instuctions.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_reversi_instuctions.BackgroundImage")));
+            this.Bt_reversi_instuctions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_reversi_instuctions.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_reversi_instuctions.Location = new System.Drawing.Point(1131, 62);
+            this.Bt_reversi_instuctions.Name = "Bt_reversi_instuctions";
+            this.Bt_reversi_instuctions.Size = new System.Drawing.Size(170, 47);
+            this.Bt_reversi_instuctions.TabIndex = 69;
+            this.Bt_reversi_instuctions.UseVisualStyleBackColor = true;
+            this.Bt_reversi_instuctions.Click += new System.EventHandler(this.Bt_reversi_instuctions_Click);
             // 
             // Reversi
             // 
@@ -1065,15 +1066,15 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1313, 814);
-            this.Controls.Add(this.Bt_instuctions);
+            this.Controls.Add(this.Bt_reversi_instuctions);
             this.Controls.Add(this.Lb_Player_turn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CB_music);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Bt_reversi_exit);
+            this.Controls.Add(this.Bt_Reversi_back);
             this.Controls.Add(this.Lb_Score2);
             this.Controls.Add(this.Lb_Score1);
             this.Controls.Add(this.Lb_player1);
@@ -1225,15 +1226,15 @@
         private System.Windows.Forms.Label Lb_player1;
         private System.Windows.Forms.Label Lb_Score1;
         private System.Windows.Forms.Label Lb_Score2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button Bt_Reversi_back;
+        private System.Windows.Forms.Button Bt_reversi_exit;
         private System.Windows.Forms.Button CB_music;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label Lb_Player_turn;
-        private System.Windows.Forms.Button Bt_instuctions;
+        private System.Windows.Forms.Button Bt_reversi_instuctions;
     }
 }
 

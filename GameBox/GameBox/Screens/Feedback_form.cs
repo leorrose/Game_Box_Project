@@ -30,9 +30,38 @@ namespace GameBox
             return_back = form;
         }
 
-        private void Bt_Insert_feedback(object sender, EventArgs e)
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if(Tb_feedback_name.Text != GameBox.Program.user1 && Tb_feedback_name.Text != GameBox.Program.user2)
+            if (Program.music_OnOff == true )  //pause music
+            {
+                Program.music_OnOff = false;
+                GameBox.Program.Wmp.controls.pause();
+                CB_music.BackgroundImage = Properties.Resources.Mute;
+                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else     //play music
+            {
+                Program.music_OnOff = true;
+                GameBox.Program.Wmp.controls.play();
+                CB_music.BackgroundImage = Properties.Resources.Music;
+                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+        }
+
+        private void Bt_Feedback_back_click(object sender, EventArgs e)
+        {
+            return_back.Show();
+            this.Close();
+        }
+
+        private void Bt_Feedback_exit_click(object sender, EventArgs e)
+        {
+            Program.Exit();
+        }
+
+        private void Bt_Insert_feedback_click(object sender, EventArgs e)
+        {
+            if (Tb_feedback_name.Text != GameBox.Program.user1 && Tb_feedback_name.Text != GameBox.Program.user2)
             {
                 MessageBox.Show("Invalid Name!");
                 return;
@@ -50,35 +79,6 @@ namespace GameBox
                 return;
             }
             Tb_Feedback.Text = "";
-        }
-
-        private void Bt_Feedback_exit(object sender, EventArgs e)
-        {
-            Program.Exit();
-        }
-
-        private void Bt_Feedback_back(object sender, EventArgs e)
-        { 
-            return_back.Show();
-            this.Close();
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-                        if (Program.music_OnOff == true )  //pause music
-            {
-                Program.music_OnOff = false;
-                GameBox.Program.Wmp.controls.pause();
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else     //play music
-            {
-                Program.music_OnOff = true;
-                GameBox.Program.Wmp.controls.play();
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
         }
     }
 }

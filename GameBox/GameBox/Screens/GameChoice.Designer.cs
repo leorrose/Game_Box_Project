@@ -30,11 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameChoice));
             this.label1 = new System.Windows.Forms.Label();
-            this.Bt_Exit = new System.Windows.Forms.Button();
-            this.Bt_back = new System.Windows.Forms.Button();
+            this.Bt_selectgame_Exit = new System.Windows.Forms.Button();
+            this.Bt_selectgame_back = new System.Windows.Forms.Button();
             this.bt_reversi = new System.Windows.Forms.Button();
             this.bt_snake_and_ladders = new System.Windows.Forms.Button();
             this.CB_music = new System.Windows.Forms.CheckBox();
+            this.SAl_instruction = new System.Windows.Forms.Button();
+            this.reversi_insruction = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -50,38 +52,38 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "SELECT GAME";
             // 
-            // Bt_Exit
+            // Bt_selectgame_Exit
             // 
-            this.Bt_Exit.BackColor = System.Drawing.Color.Transparent;
-            this.Bt_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Exit.BackgroundImage")));
-            this.Bt_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bt_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_Exit.FlatAppearance.BorderSize = 0;
-            this.Bt_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Exit.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_Exit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Bt_Exit.Location = new System.Drawing.Point(885, 9);
-            this.Bt_Exit.Margin = new System.Windows.Forms.Padding(4);
-            this.Bt_Exit.Name = "Bt_Exit";
-            this.Bt_Exit.Size = new System.Drawing.Size(100, 55);
-            this.Bt_Exit.TabIndex = 8;
-            this.Bt_Exit.UseVisualStyleBackColor = false;
-            this.Bt_Exit.Click += new System.EventHandler(this.Bt_Exit_Click);
+            this.Bt_selectgame_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_selectgame_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_selectgame_Exit.BackgroundImage")));
+            this.Bt_selectgame_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_selectgame_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_selectgame_Exit.FlatAppearance.BorderSize = 0;
+            this.Bt_selectgame_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_selectgame_Exit.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_selectgame_Exit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Bt_selectgame_Exit.Location = new System.Drawing.Point(885, 9);
+            this.Bt_selectgame_Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.Bt_selectgame_Exit.Name = "Bt_selectgame_Exit";
+            this.Bt_selectgame_Exit.Size = new System.Drawing.Size(100, 55);
+            this.Bt_selectgame_Exit.TabIndex = 8;
+            this.Bt_selectgame_Exit.UseVisualStyleBackColor = false;
+            this.Bt_selectgame_Exit.Click += new System.EventHandler(this.Bt_Exit_Click);
             // 
-            // Bt_back
+            // Bt_selectgame_back
             // 
-            this.Bt_back.BackColor = System.Drawing.Color.Transparent;
-            this.Bt_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_back.BackgroundImage")));
-            this.Bt_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bt_back.FlatAppearance.BorderSize = 0;
-            this.Bt_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_back.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_back.Location = new System.Drawing.Point(776, 9);
-            this.Bt_back.Name = "Bt_back";
-            this.Bt_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_back.TabIndex = 11;
-            this.Bt_back.UseVisualStyleBackColor = false;
-            this.Bt_back.Click += new System.EventHandler(this.Bt_back_Click);
+            this.Bt_selectgame_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_selectgame_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_selectgame_back.BackgroundImage")));
+            this.Bt_selectgame_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_selectgame_back.FlatAppearance.BorderSize = 0;
+            this.Bt_selectgame_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_selectgame_back.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_selectgame_back.Location = new System.Drawing.Point(776, 9);
+            this.Bt_selectgame_back.Name = "Bt_selectgame_back";
+            this.Bt_selectgame_back.Size = new System.Drawing.Size(100, 55);
+            this.Bt_selectgame_back.TabIndex = 11;
+            this.Bt_selectgame_back.UseVisualStyleBackColor = false;
+            this.Bt_selectgame_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
             // bt_reversi
             // 
@@ -132,7 +134,33 @@
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
-            this.CB_music.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.CB_music.CheckedChanged += new System.EventHandler(this.CB_music_click);
+            // 
+            // SAl_instruction
+            // 
+            this.SAl_instruction.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SAl_instruction.BackgroundImage")));
+            this.SAl_instruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SAl_instruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SAl_instruction.Location = new System.Drawing.Point(776, 354);
+            this.SAl_instruction.Name = "SAl_instruction";
+            this.SAl_instruction.Size = new System.Drawing.Size(141, 39);
+            this.SAl_instruction.TabIndex = 31;
+            this.SAl_instruction.Text = "Instructions";
+            this.SAl_instruction.UseVisualStyleBackColor = true;
+            this.SAl_instruction.Click += new System.EventHandler(this.SAl_instruction_Click);
+            // 
+            // reversi_insruction
+            // 
+            this.reversi_insruction.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("reversi_insruction.BackgroundImage")));
+            this.reversi_insruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.reversi_insruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.reversi_insruction.Location = new System.Drawing.Point(98, 354);
+            this.reversi_insruction.Name = "reversi_insruction";
+            this.reversi_insruction.Size = new System.Drawing.Size(141, 39);
+            this.reversi_insruction.TabIndex = 32;
+            this.reversi_insruction.Text = "Instructions";
+            this.reversi_insruction.UseVisualStyleBackColor = true;
+            this.reversi_insruction.Click += new System.EventHandler(this.reversi_insruction_Click);
             // 
             // GameChoice
             // 
@@ -143,11 +171,13 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(998, 562);
             this.ControlBox = false;
+            this.Controls.Add(this.reversi_insruction);
+            this.Controls.Add(this.SAl_instruction);
             this.Controls.Add(this.CB_music);
             this.Controls.Add(this.bt_snake_and_ladders);
             this.Controls.Add(this.bt_reversi);
-            this.Controls.Add(this.Bt_back);
-            this.Controls.Add(this.Bt_Exit);
+            this.Controls.Add(this.Bt_selectgame_back);
+            this.Controls.Add(this.Bt_selectgame_Exit);
             this.Controls.Add(this.label1);
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -165,11 +195,13 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button Bt_Exit;
-        private System.Windows.Forms.Button Bt_back;
+        private System.Windows.Forms.Button Bt_selectgame_Exit;
+        private System.Windows.Forms.Button Bt_selectgame_back;
         private System.Windows.Forms.Button bt_reversi;
         private System.Windows.Forms.Button bt_snake_and_ladders;
         private System.Windows.Forms.CheckBox CB_music;
+        private System.Windows.Forms.Button SAl_instruction;
+        private System.Windows.Forms.Button reversi_insruction;
     }
 }
 

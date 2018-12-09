@@ -1489,21 +1489,6 @@ namespace GameBox
             }
         }
 
-        private void Bt_Reversi_back(object sender, EventArgs e)
-        {
-            DialogResult res = MessageBox.Show("Data will not be saved!" , "Leave Game?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (res == DialogResult.Yes)
-            {
-                this.Close();
-                ReturnForm.Show();
-            }
-        }
-
-        private void Bt_Reversi_Exit(object sender, EventArgs e)
-        {
-            Program.Exit();
-        }
-
         private void Bt_reversi_music(object sender, EventArgs e)
         {
             if (Program.music_OnOff == true)  //pause music
@@ -1520,6 +1505,28 @@ namespace GameBox
                 CB_music.BackgroundImage = Properties.Resources.Green_music;
                 CB_music.BackgroundImageLayout = ImageLayout.Stretch;
             }
+        }
+
+        private void Bt_Reversi_back_click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Data will not be saved!", "Leave Game?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                this.Close();
+                ReturnForm.Show();
+            }
+        }
+
+        private void Bt_Reversi_Exit_click(object sender, EventArgs e)
+        {
+            Program.Exit();
+        }
+
+        private void Bt_reversi_instuctions_Click(object sender, EventArgs e)
+        {
+            Program.GameChoice = true;
+            Print_instructions ins = new Print_instructions();
+            ins.Show();
         }
     }
 }

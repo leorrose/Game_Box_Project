@@ -32,11 +32,10 @@ namespace GameBox
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Users_options));
             this.Bt_Givefeedback = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.Bt_top_players = new System.Windows.Forms.Button();
+            this.Bt_personal_scores = new System.Windows.Forms.Button();
+            this.Bt_play_game = new System.Windows.Forms.Button();
+            this.Bt_get_tip = new System.Windows.Forms.Button();
             this.Bt_usersOptions_exit = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.Bt_Continue_change_details = new System.Windows.Forms.Button();
@@ -57,70 +56,57 @@ namespace GameBox
             this.Bt_Givefeedback.UseVisualStyleBackColor = true;
             this.Bt_Givefeedback.Click += new System.EventHandler(this.Bt_Give_feedback);
             // 
-            // button3
+            // Bt_top_players
             // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(387, 333);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 32);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Top players";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Bt_Top_Players);
+            this.Bt_top_players.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_top_players.BackgroundImage")));
+            this.Bt_top_players.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_top_players.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_top_players.Location = new System.Drawing.Point(387, 333);
+            this.Bt_top_players.Name = "Bt_top_players";
+            this.Bt_top_players.Size = new System.Drawing.Size(179, 32);
+            this.Bt_top_players.TabIndex = 3;
+            this.Bt_top_players.Text = "Top players";
+            this.Bt_top_players.UseVisualStyleBackColor = true;
+            this.Bt_top_players.Click += new System.EventHandler(this.Bt_Top_Players_click);
             // 
-            // button4
+            // Bt_personal_scores
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(387, 216);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(179, 32);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Personal Scores";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.Bt_Personal_scores);
+            this.Bt_personal_scores.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_personal_scores.BackgroundImage")));
+            this.Bt_personal_scores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_personal_scores.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_personal_scores.Location = new System.Drawing.Point(387, 216);
+            this.Bt_personal_scores.Name = "Bt_personal_scores";
+            this.Bt_personal_scores.Size = new System.Drawing.Size(179, 32);
+            this.Bt_personal_scores.TabIndex = 4;
+            this.Bt_personal_scores.Text = "Personal Scores";
+            this.Bt_personal_scores.UseVisualStyleBackColor = true;
+            this.Bt_personal_scores.Click += new System.EventHandler(this.Bt_Personal_scores_click);
             // 
-            // button5
+            // Bt_play_game
             // 
-            this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button5.Location = new System.Drawing.Point(387, 274);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(179, 32);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Play Game";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Bt_Play_game);
+            this.Bt_play_game.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_play_game.BackgroundImage")));
+            this.Bt_play_game.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_play_game.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_play_game.Location = new System.Drawing.Point(387, 274);
+            this.Bt_play_game.Name = "Bt_play_game";
+            this.Bt_play_game.Size = new System.Drawing.Size(179, 32);
+            this.Bt_play_game.TabIndex = 5;
+            this.Bt_play_game.Text = "Play Game";
+            this.Bt_play_game.UseVisualStyleBackColor = true;
+            this.Bt_play_game.Click += new System.EventHandler(this.Bt_Play_game_click);
             // 
-            // button6
+            // Bt_get_tip
             // 
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(799, 456);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(159, 32);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "Get Tip";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Bt_get_tip);
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Location = new System.Drawing.Point(799, 505);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(159, 32);
-            this.button7.TabIndex = 7;
-            this.button7.Text = "Instructions";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.Bt_Instructions);
+            this.Bt_get_tip.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_get_tip.BackgroundImage")));
+            this.Bt_get_tip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_get_tip.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_get_tip.Location = new System.Drawing.Point(827, 507);
+            this.Bt_get_tip.Name = "Bt_get_tip";
+            this.Bt_get_tip.Size = new System.Drawing.Size(159, 32);
+            this.Bt_get_tip.TabIndex = 6;
+            this.Bt_get_tip.Text = "Get Tip";
+            this.Bt_get_tip.UseVisualStyleBackColor = true;
+            this.Bt_get_tip.Click += new System.EventHandler(this.Bt_get_tip_click);
             // 
             // Bt_usersOptions_exit
             // 
@@ -215,11 +201,10 @@ namespace GameBox
             this.Controls.Add(this.Bt_Continue_change_details);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.Bt_usersOptions_exit);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Bt_get_tip);
+            this.Controls.Add(this.Bt_play_game);
+            this.Controls.Add(this.Bt_personal_scores);
+            this.Controls.Add(this.Bt_top_players);
             this.Controls.Add(this.Bt_Givefeedback);
             this.MaximumSize = new System.Drawing.Size(1016, 609);
             this.MinimumSize = new System.Drawing.Size(1016, 609);
@@ -238,11 +223,10 @@ namespace GameBox
         public Button b8_click { get; private set; }
 
  
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button Bt_top_players;
+        private System.Windows.Forms.Button Bt_personal_scores;
+        private System.Windows.Forms.Button Bt_play_game;
+        private System.Windows.Forms.Button Bt_get_tip;
         private System.Windows.Forms.Button Bt_usersOptions_exit;
         private System.Windows.Forms.Button button8;
         private Button Bt_Continue_change_details;

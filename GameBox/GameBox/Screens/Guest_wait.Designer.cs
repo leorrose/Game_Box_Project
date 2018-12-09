@@ -32,10 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Guest_wait));
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.bt_exit = new System.Windows.Forms.Button();
+            this.bt_guistwait_exit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.Bt_back = new System.Windows.Forms.Button();
+            this.Bt_guistwait_back = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.CB_music = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
@@ -57,19 +57,19 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // bt_exit
+            // bt_guistwait_exit
             // 
-            this.bt_exit.BackColor = System.Drawing.Color.Transparent;
-            this.bt_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_exit.BackgroundImage")));
-            this.bt_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bt_exit.FlatAppearance.BorderSize = 0;
-            this.bt_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_exit.Location = new System.Drawing.Point(886, 12);
-            this.bt_exit.Name = "bt_exit";
-            this.bt_exit.Size = new System.Drawing.Size(100, 55);
-            this.bt_exit.TabIndex = 2;
-            this.bt_exit.UseVisualStyleBackColor = false;
-            this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
+            this.bt_guistwait_exit.BackColor = System.Drawing.Color.Transparent;
+            this.bt_guistwait_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_guistwait_exit.BackgroundImage")));
+            this.bt_guistwait_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_guistwait_exit.FlatAppearance.BorderSize = 0;
+            this.bt_guistwait_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_guistwait_exit.Location = new System.Drawing.Point(886, 12);
+            this.bt_guistwait_exit.Name = "bt_guistwait_exit";
+            this.bt_guistwait_exit.Size = new System.Drawing.Size(100, 55);
+            this.bt_guistwait_exit.TabIndex = 2;
+            this.bt_guistwait_exit.UseVisualStyleBackColor = false;
+            this.bt_guistwait_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // label2
             // 
@@ -95,19 +95,19 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Please wait...";
             // 
-            // Bt_back
+            // Bt_guistwait_back
             // 
-            this.Bt_back.BackColor = System.Drawing.Color.Transparent;
-            this.Bt_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_back.BackgroundImage")));
-            this.Bt_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bt_back.FlatAppearance.BorderSize = 0;
-            this.Bt_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_back.Location = new System.Drawing.Point(780, 12);
-            this.Bt_back.Name = "Bt_back";
-            this.Bt_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_back.TabIndex = 5;
-            this.Bt_back.UseVisualStyleBackColor = false;
-            this.Bt_back.Click += new System.EventHandler(this.Bt_back_Click);
+            this.Bt_guistwait_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_guistwait_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_guistwait_back.BackgroundImage")));
+            this.Bt_guistwait_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_guistwait_back.FlatAppearance.BorderSize = 0;
+            this.Bt_guistwait_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_guistwait_back.Location = new System.Drawing.Point(780, 12);
+            this.Bt_guistwait_back.Name = "Bt_guistwait_back";
+            this.Bt_guistwait_back.Size = new System.Drawing.Size(100, 55);
+            this.Bt_guistwait_back.TabIndex = 5;
+            this.Bt_guistwait_back.UseVisualStyleBackColor = false;
+            this.Bt_guistwait_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
             // timer2
             // 
@@ -134,7 +134,7 @@
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
-            this.CB_music.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.CB_music.CheckedChanged += new System.EventHandler(this.CB_music_click);
             // 
             // Guest_wait
             // 
@@ -145,10 +145,10 @@
             this.ClientSize = new System.Drawing.Size(998, 562);
             this.ControlBox = false;
             this.Controls.Add(this.CB_music);
-            this.Controls.Add(this.Bt_back);
+            this.Controls.Add(this.Bt_guistwait_back);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.bt_exit);
+            this.Controls.Add(this.bt_guistwait_exit);
             this.Controls.Add(this.label1);
             this.MaximumSize = new System.Drawing.Size(1016, 609);
             this.MinimumSize = new System.Drawing.Size(1016, 609);
@@ -163,10 +163,10 @@
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Button bt_exit;
+        private System.Windows.Forms.Button bt_guistwait_exit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button Bt_back;
+        private System.Windows.Forms.Button Bt_guistwait_back;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.CheckBox CB_music;
     }

@@ -90,7 +90,7 @@ namespace GameBox
             this.Close();
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        private void CB_music_click(object sender, EventArgs e)
         {
             if (Program.music_OnOff == true)  //pause music
             {

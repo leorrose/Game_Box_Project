@@ -41,10 +41,7 @@ namespace GameBox
             Program.Exit();
 
         }
-        private void CB_music2_CheckedChanged(object sender, EventArgs e)
-        {
 
-        }
         private void Bt_Player2_continue_Click(object sender, EventArgs e) /* login player 2 */
         {
             if(TB_user_name2.Text==Program.user1)
@@ -99,7 +96,8 @@ namespace GameBox
             this.Close(); /* hide this screen*/
         }
 
-        private void CB_music2_CheckedChanged_1(object sender, EventArgs e)
+
+        private void Cb_music(object sender, EventArgs e)
         {
             if (Program.music_OnOff == true)  //pause music
             {

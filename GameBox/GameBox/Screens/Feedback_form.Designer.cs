@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Feedback_form));
             this.Tb_Feedback = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.Bt_insert_feedback = new System.Windows.Forms.Button();
+            this.Bt_feedback_exit = new System.Windows.Forms.Button();
+            this.Bt_feedback_back = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.Tb_feedback_name = new System.Windows.Forms.TextBox();
             this.CB_music = new System.Windows.Forms.CheckBox();
@@ -60,46 +60,46 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Leave a feedback:";
             // 
-            // button1
+            // Bt_insert_feedback
             // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(655, 488);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 44);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Insert Feedback";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Bt_Insert_feedback);
+            this.Bt_insert_feedback.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_insert_feedback.BackgroundImage")));
+            this.Bt_insert_feedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_insert_feedback.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_insert_feedback.Location = new System.Drawing.Point(655, 488);
+            this.Bt_insert_feedback.Name = "Bt_insert_feedback";
+            this.Bt_insert_feedback.Size = new System.Drawing.Size(138, 44);
+            this.Bt_insert_feedback.TabIndex = 3;
+            this.Bt_insert_feedback.Text = "Insert Feedback";
+            this.Bt_insert_feedback.UseVisualStyleBackColor = true;
+            this.Bt_insert_feedback.Click += new System.EventHandler(this.Bt_Insert_feedback_click);
             // 
-            // button2
+            // Bt_feedback_exit
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Location = new System.Drawing.Point(889, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 55);
-            this.button2.TabIndex = 4;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.Bt_Feedback_exit);
+            this.Bt_feedback_exit.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_feedback_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_feedback_exit.BackgroundImage")));
+            this.Bt_feedback_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_feedback_exit.FlatAppearance.BorderSize = 0;
+            this.Bt_feedback_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_feedback_exit.Location = new System.Drawing.Point(889, 12);
+            this.Bt_feedback_exit.Name = "Bt_feedback_exit";
+            this.Bt_feedback_exit.Size = new System.Drawing.Size(100, 55);
+            this.Bt_feedback_exit.TabIndex = 4;
+            this.Bt_feedback_exit.UseVisualStyleBackColor = false;
+            this.Bt_feedback_exit.Click += new System.EventHandler(this.Bt_Feedback_exit_click);
             // 
-            // button3
+            // Bt_feedback_back
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(783, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 55);
-            this.button3.TabIndex = 5;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.Bt_Feedback_back);
+            this.Bt_feedback_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_feedback_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_feedback_back.BackgroundImage")));
+            this.Bt_feedback_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_feedback_back.FlatAppearance.BorderSize = 0;
+            this.Bt_feedback_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_feedback_back.Location = new System.Drawing.Point(783, 12);
+            this.Bt_feedback_back.Name = "Bt_feedback_back";
+            this.Bt_feedback_back.Size = new System.Drawing.Size(100, 55);
+            this.Bt_feedback_back.TabIndex = 5;
+            this.Bt_feedback_back.UseVisualStyleBackColor = false;
+            this.Bt_feedback_back.Click += new System.EventHandler(this.Bt_Feedback_back_click);
             // 
             // label2
             // 
@@ -155,9 +155,9 @@
             this.Controls.Add(this.CB_music);
             this.Controls.Add(this.Tb_feedback_name);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Bt_feedback_back);
+            this.Controls.Add(this.Bt_feedback_exit);
+            this.Controls.Add(this.Bt_insert_feedback);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Tb_Feedback);
             this.MaximumSize = new System.Drawing.Size(1016, 609);
@@ -174,9 +174,9 @@
 
         private System.Windows.Forms.RichTextBox Tb_Feedback;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Bt_insert_feedback;
+        private System.Windows.Forms.Button Bt_feedback_exit;
+        private System.Windows.Forms.Button Bt_feedback_back;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Tb_feedback_name;
         private System.Windows.Forms.CheckBox CB_music;

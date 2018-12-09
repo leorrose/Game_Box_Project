@@ -169,7 +169,7 @@
         aQGMYkP/2Q==
 </value>
   </data>
-  <data name="Bt_MainForm_exit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Bt_login_exit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAG4AAAAyCAYAAAC9F+53AAAABGdBTUEAALGPC/xhBQAABv5JREFUeF7t
         nH1MlVUcxw+IqMBQ0QzNMNdEZVlOl82XCJGk1BRxlitU7EXX1ESZL4miDqeTLdKarEyHr2sWKiikglzk
@@ -205,7 +205,7 @@
         QmCC
 </value>
   </data>
-  <data name="Bt_back.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Bt_login_back.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHoAAAAyCAYAAACTUs/lAAAABGdBTUEAALGPC/xhBQAAB15JREFUeF7t
         nH1MFVcaxo0xxoBNLVWLSq01qdWGpZpY16x2oyxSxaiUorW7LaHEusZNXGPMxk1cN9lssta4tCXaWMVb

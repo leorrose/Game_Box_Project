@@ -30,8 +30,8 @@ namespace GameBox
             if(Program.TypeUser==false)
             {
                 Bt_Continue_change_details.Enabled = false;
-                button4.Enabled = false;
-                button3.Enabled = false;
+                Bt_personal_scores.Enabled = false;
+                Bt_top_players.Enabled = false;
                 Bt_Givefeedback.Enabled = false;
             }
         }
@@ -68,46 +68,6 @@ namespace GameBox
             this.Hide();
         }
 
-        private void Bt_Personal_scores(object sender, EventArgs e) /* function to show user scores info */
-        {
-            Reports rep = new Reports(this, "Personal scores");
-            this.Hide();
-            rep.Show();
-        }
-
-        private void Bt_Top_Players(object sender, EventArgs e) /* function to shpw top users by  score */
-        {
-            Reports rep = new Reports(this, "Top Players");
-            this.Hide();
-            rep.Show();
-        }
-
-        private void Bt_Play_game(object sender, EventArgs e) /* function to continue to game  */
-        {
-            if (Program.TypeUser == false )
-            {
-                Print_screen ins = new Print_screen("Ads");
-                ins.ShowDialog();
-            }
-            GameChoice ga = new GameChoice(this);
-            this.Hide();
-            ga.Show();
-        }
-
-
-
-        private void Bt_get_tip(object sender, EventArgs e)
-        {
-            Print_screen ins = new Print_screen("Tips");
-            ins.ShowDialog();
-        }
-
-        private void Bt_Instructions(object sender, EventArgs e)
-        {
-            Print_instructions ins = new Print_instructions();
-            ins.ShowDialog();
-        }
-
         private void CB_music_CheckedChanged(object sender, EventArgs e)
         {
             if (Program.music_OnOff == true)  //pause music
@@ -124,6 +84,38 @@ namespace GameBox
                 CB_music.BackgroundImage = Properties.Resources.Music;
                 CB_music.BackgroundImageLayout = ImageLayout.Stretch;
             }
+        }
+
+        private void Bt_get_tip_click(object sender, EventArgs e)
+        {
+            Print_screen ins = new Print_screen("Tips");
+            ins.ShowDialog();
+        }
+
+        private void Bt_Top_Players_click(object sender, EventArgs e)
+        {
+            Reports rep = new Reports(this, "Top Players");
+            this.Hide();
+            rep.Show();
+        }
+
+        private void Bt_Play_game_click(object sender, EventArgs e)
+        {
+            if (Program.TypeUser == false)
+            {
+                Print_screen ins = new Print_screen("Ads");
+                ins.ShowDialog();
+            }
+            GameChoice ga = new GameChoice(this);
+            this.Hide();
+            ga.Show();
+        }
+
+        private void Bt_Personal_scores_click(object sender, EventArgs e)
+        {
+            Reports rep = new Reports(this, "Personal scores");
+            this.Hide();
+            rep.Show();
         }
     }
 }

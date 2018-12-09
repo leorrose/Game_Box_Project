@@ -36,8 +36,8 @@
             this.COB_user2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.Bt_MainForm_exit = new System.Windows.Forms.Button();
-            this.Bt_back = new System.Windows.Forms.Button();
+            this.Bt_login_exit = new System.Windows.Forms.Button();
+            this.Bt_login_back = new System.Windows.Forms.Button();
             this.CB_music = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
@@ -129,35 +129,35 @@
             this.label5.TabIndex = 12;
             this.label5.Text = "Password(5 chars)";
             // 
-            // Bt_MainForm_exit
+            // Bt_login_exit
             // 
-            this.Bt_MainForm_exit.BackColor = System.Drawing.Color.Transparent;
-            this.Bt_MainForm_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_MainForm_exit.BackgroundImage")));
-            this.Bt_MainForm_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bt_MainForm_exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_MainForm_exit.FlatAppearance.BorderSize = 0;
-            this.Bt_MainForm_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_MainForm_exit.Location = new System.Drawing.Point(886, 11);
-            this.Bt_MainForm_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Bt_MainForm_exit.Name = "Bt_MainForm_exit";
-            this.Bt_MainForm_exit.Size = new System.Drawing.Size(100, 55);
-            this.Bt_MainForm_exit.TabIndex = 30;
-            this.Bt_MainForm_exit.UseVisualStyleBackColor = false;
-            this.Bt_MainForm_exit.Click += new System.EventHandler(this.Bt_login_exit_Click);
+            this.Bt_login_exit.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_login_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_login_exit.BackgroundImage")));
+            this.Bt_login_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_login_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_login_exit.FlatAppearance.BorderSize = 0;
+            this.Bt_login_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_login_exit.Location = new System.Drawing.Point(886, 11);
+            this.Bt_login_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Bt_login_exit.Name = "Bt_login_exit";
+            this.Bt_login_exit.Size = new System.Drawing.Size(100, 55);
+            this.Bt_login_exit.TabIndex = 30;
+            this.Bt_login_exit.UseVisualStyleBackColor = false;
+            this.Bt_login_exit.Click += new System.EventHandler(this.Bt_login_exit_Click);
             // 
-            // Bt_back
+            // Bt_login_back
             // 
-            this.Bt_back.BackColor = System.Drawing.Color.Transparent;
-            this.Bt_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_back.BackgroundImage")));
-            this.Bt_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bt_back.FlatAppearance.BorderSize = 0;
-            this.Bt_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_back.Location = new System.Drawing.Point(780, 11);
-            this.Bt_back.Name = "Bt_back";
-            this.Bt_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_back.TabIndex = 31;
-            this.Bt_back.UseVisualStyleBackColor = false;
-            this.Bt_back.Click += new System.EventHandler(this.Bt_back_Click);
+            this.Bt_login_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_login_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_login_back.BackgroundImage")));
+            this.Bt_login_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_login_back.FlatAppearance.BorderSize = 0;
+            this.Bt_login_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Bt_login_back.Location = new System.Drawing.Point(780, 11);
+            this.Bt_login_back.Name = "Bt_login_back";
+            this.Bt_login_back.Size = new System.Drawing.Size(100, 55);
+            this.Bt_login_back.TabIndex = 31;
+            this.Bt_login_back.UseVisualStyleBackColor = false;
+            this.Bt_login_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
             // CB_music
             // 
@@ -180,7 +180,7 @@
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
-            this.CB_music.CheckedChanged += new System.EventHandler(this.CB_music2_CheckedChanged_1);
+            this.CB_music.CheckedChanged += new System.EventHandler(this.Cb_music);
             // 
             // login_form
             // 
@@ -192,8 +192,8 @@
             this.ClientSize = new System.Drawing.Size(998, 562);
             this.ControlBox = false;
             this.Controls.Add(this.CB_music);
-            this.Controls.Add(this.Bt_back);
-            this.Controls.Add(this.Bt_MainForm_exit);
+            this.Controls.Add(this.Bt_login_back);
+            this.Controls.Add(this.Bt_login_exit);
             this.Controls.Add(this.COB_user2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -221,8 +221,8 @@
         private System.Windows.Forms.ComboBox COB_user2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button Bt_MainForm_exit;
-        private System.Windows.Forms.Button Bt_back;
+        private System.Windows.Forms.Button Bt_login_exit;
+        private System.Windows.Forms.Button Bt_login_back;
         private System.Windows.Forms.CheckBox CB_music;
     }
 }
