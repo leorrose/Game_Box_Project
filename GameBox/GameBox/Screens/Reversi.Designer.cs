@@ -904,11 +904,11 @@
             this.Lb_player2.BackColor = System.Drawing.Color.Transparent;
             this.Lb_player2.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_player2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Lb_player2.Location = new System.Drawing.Point(1046, 346);
+            this.Lb_player2.Location = new System.Drawing.Point(1175, 345);
             this.Lb_player2.Name = "Lb_player2";
             this.Lb_player2.Size = new System.Drawing.Size(114, 31);
             this.Lb_player2.TabIndex = 1;
-            this.Lb_player2.Text = "Player1";
+            this.Lb_player2.Text = "Player2";
             this.Lb_player2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lb_player1
@@ -917,11 +917,11 @@
             this.Lb_player1.BackColor = System.Drawing.Color.Transparent;
             this.Lb_player1.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_player1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Lb_player1.Location = new System.Drawing.Point(1178, 346);
+            this.Lb_player1.Location = new System.Drawing.Point(1055, 345);
             this.Lb_player1.Name = "Lb_player1";
             this.Lb_player1.Size = new System.Drawing.Size(114, 31);
             this.Lb_player1.TabIndex = 2;
-            this.Lb_player1.Text = "Player2";
+            this.Lb_player1.Text = "Player1";
             this.Lb_player1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lb_Score1
@@ -1003,7 +1003,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.LimeGreen;
             this.pictureBox2.BackgroundImage = global::GameBox.Properties.Resources.Black;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1199, 262);
+            this.pictureBox2.Location = new System.Drawing.Point(1204, 262);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(63, 54);
             this.pictureBox2.TabIndex = 65;

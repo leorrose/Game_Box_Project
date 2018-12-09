@@ -22,12 +22,12 @@ namespace GameBox
             InitializeComponent();
             if (Program.music_OnOff == false)
             {
-                CB_music.BackgroundImage = Properties.Resources.Mute;
+                CB_music.BackgroundImage = Properties.Resources.Green_mute;
                 CB_music.BackgroundImageLayout = ImageLayout.Stretch;
             }
             else
             {
-                CB_music.BackgroundImage = Properties.Resources.Music;
+                CB_music.BackgroundImage = Properties.Resources.Green_music;
                 CB_music.BackgroundImageLayout = ImageLayout.Stretch;
             }
             Lb_Player_turn.Text = Program.user1;
@@ -1510,14 +1510,14 @@ namespace GameBox
             {
                 Program.music_OnOff = false;
                 GameBox.Program.Wmp.controls.pause();
-                CB_music.BackgroundImage = Properties.Resources.Mute;
+                CB_music.BackgroundImage = Properties.Resources.Green_mute;
                 CB_music.BackgroundImageLayout = ImageLayout.Stretch;
             }
             else     //play music
             {
                 Program.music_OnOff = true;
                 GameBox.Program.Wmp.controls.play();
-                CB_music.BackgroundImage = Properties.Resources.Music;
+                CB_music.BackgroundImage = Properties.Resources.Green_music;
                 CB_music.BackgroundImageLayout = ImageLayout.Stretch;
             }
         }
