@@ -100,7 +100,7 @@
             this.Lb_Score2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.CB_music = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -975,17 +975,17 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Bt_Reversi_Exit);
             // 
-            // button3
+            // CB_music
             // 
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(12, 8);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 48);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "Music";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Bt_reversi_music);
+            this.CB_music.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CB_music.BackgroundImage")));
+            this.CB_music.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CB_music.Location = new System.Drawing.Point(12, 8);
+            this.CB_music.Name = "CB_music";
+            this.CB_music.Size = new System.Drawing.Size(82, 48);
+            this.CB_music.TabIndex = 8;
+            this.CB_music.UseVisualStyleBackColor = true;
+            this.CB_music.Click += new System.EventHandler(this.Bt_reversi_music);
             // 
             // pictureBox1
             // 
@@ -1071,7 +1071,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.CB_music);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Lb_Score2);
@@ -1227,7 +1227,7 @@
         private System.Windows.Forms.Label Lb_Score2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button CB_music;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;

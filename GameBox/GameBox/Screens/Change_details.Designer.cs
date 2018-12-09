@@ -146,28 +146,30 @@
             // 
             // Bt_Change_details_exit
             // 
-            this.Bt_Change_details_exit.BackColor = System.Drawing.Color.White;
+            this.Bt_Change_details_exit.BackColor = System.Drawing.Color.Transparent;
             this.Bt_Change_details_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Change_details_exit.BackgroundImage")));
             this.Bt_Change_details_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_Change_details_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_Change_details_exit.FlatAppearance.BorderSize = 0;
             this.Bt_Change_details_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Change_details_exit.Location = new System.Drawing.Point(904, 3);
+            this.Bt_Change_details_exit.Location = new System.Drawing.Point(886, 3);
             this.Bt_Change_details_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_Change_details_exit.Name = "Bt_Change_details_exit";
-            this.Bt_Change_details_exit.Size = new System.Drawing.Size(82, 56);
+            this.Bt_Change_details_exit.Size = new System.Drawing.Size(100, 55);
             this.Bt_Change_details_exit.TabIndex = 34;
             this.Bt_Change_details_exit.UseVisualStyleBackColor = false;
             this.Bt_Change_details_exit.Click += new System.EventHandler(this.Bt_Change_details_exit_Click);
             // 
             // Bt_Change_Details_back
             // 
-            this.Bt_Change_Details_back.BackColor = System.Drawing.Color.Black;
+            this.Bt_Change_Details_back.BackColor = System.Drawing.Color.Transparent;
             this.Bt_Change_Details_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Change_Details_back.BackgroundImage")));
             this.Bt_Change_Details_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Change_Details_back.FlatAppearance.BorderSize = 0;
             this.Bt_Change_Details_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Change_Details_back.Location = new System.Drawing.Point(816, 3);
+            this.Bt_Change_Details_back.Location = new System.Drawing.Point(780, 3);
             this.Bt_Change_Details_back.Name = "Bt_Change_Details_back";
-            this.Bt_Change_Details_back.Size = new System.Drawing.Size(82, 57);
+            this.Bt_Change_Details_back.Size = new System.Drawing.Size(100, 55);
             this.Bt_Change_Details_back.TabIndex = 35;
             this.Bt_Change_Details_back.UseVisualStyleBackColor = false;
             this.Bt_Change_Details_back.Click += new System.EventHandler(this.Bt_Change_Details_back_Click);
@@ -197,14 +199,15 @@
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CB_music.Location = new System.Drawing.Point(13, 15);
+            this.CB_music.Location = new System.Drawing.Point(13, 5);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
-            this.CB_music.Size = new System.Drawing.Size(68, 44);
-            this.CB_music.TabIndex = 38;
+            this.CB_music.Size = new System.Drawing.Size(157, 53);
+            this.CB_music.TabIndex = 39;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
+            this.CB_music.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Change_details
             // 

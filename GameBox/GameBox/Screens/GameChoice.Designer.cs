@@ -42,7 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Orange;
+            this.label1.ForeColor = System.Drawing.Color.Beige;
             this.label1.Location = new System.Drawing.Point(292, 467);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -52,30 +52,33 @@
             // 
             // Bt_Exit
             // 
-            this.Bt_Exit.BackColor = System.Drawing.Color.White;
+            this.Bt_Exit.BackColor = System.Drawing.Color.Transparent;
             this.Bt_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Exit.BackgroundImage")));
             this.Bt_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_Exit.FlatAppearance.BorderSize = 0;
             this.Bt_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_Exit.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_Exit.Location = new System.Drawing.Point(905, 9);
+            this.Bt_Exit.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Bt_Exit.Location = new System.Drawing.Point(885, 9);
             this.Bt_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.Bt_Exit.Name = "Bt_Exit";
-            this.Bt_Exit.Size = new System.Drawing.Size(80, 48);
+            this.Bt_Exit.Size = new System.Drawing.Size(100, 55);
             this.Bt_Exit.TabIndex = 8;
             this.Bt_Exit.UseVisualStyleBackColor = false;
             this.Bt_Exit.Click += new System.EventHandler(this.Bt_Exit_Click);
             // 
             // Bt_back
             // 
-            this.Bt_back.BackColor = System.Drawing.Color.Black;
-            this.Bt_back.BackgroundImage = global::GameBox.Properties.Resources.Back;
+            this.Bt_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_back.BackgroundImage")));
             this.Bt_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_back.FlatAppearance.BorderSize = 0;
             this.Bt_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_back.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_back.Location = new System.Drawing.Point(817, 9);
+            this.Bt_back.Location = new System.Drawing.Point(776, 9);
             this.Bt_back.Name = "Bt_back";
-            this.Bt_back.Size = new System.Drawing.Size(81, 48);
+            this.Bt_back.Size = new System.Drawing.Size(100, 55);
             this.Bt_back.TabIndex = 11;
             this.Bt_back.UseVisualStyleBackColor = false;
             this.Bt_back.Click += new System.EventHandler(this.Bt_back_Click);
@@ -121,14 +124,15 @@
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CB_music.Location = new System.Drawing.Point(13, 13);
+            this.CB_music.Location = new System.Drawing.Point(13, 9);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
-            this.CB_music.Size = new System.Drawing.Size(68, 44);
-            this.CB_music.TabIndex = 29;
+            this.CB_music.Size = new System.Drawing.Size(157, 53);
+            this.CB_music.TabIndex = 30;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
+            this.CB_music.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // GameChoice
             // 

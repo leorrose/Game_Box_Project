@@ -203,9 +203,39 @@ namespace GameBox.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap button_back {
+            get {
+                object obj = ResourceManager.GetObject("button_back", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button_backround {
             get {
                 object obj = ResourceManager.GetObject("Button_backround", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_exit {
+            get {
+                object obj = ResourceManager.GetObject("button_exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_instructions {
+            get {
+                object obj = ResourceManager.GetObject("button_instructions", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +253,19 @@ namespace GameBox.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Exit {
+        internal static System.Drawing.Bitmap Green_music {
             get {
-                object obj = ResourceManager.GetObject("Exit", resourceCulture);
+                object obj = ResourceManager.GetObject("Green_music", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Green_mute {
+            get {
+                object obj = ResourceManager.GetObject("Green_mute", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -257,6 +297,16 @@ namespace GameBox.Properties {
             get {
                 object obj = ResourceManager.GetObject("Mute", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] PlayMusic {
+            get {
+                object obj = ResourceManager.GetObject("PlayMusic", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         

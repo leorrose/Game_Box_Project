@@ -46,7 +46,7 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.DarkSlateBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 68);
+            this.dataGridView1.Location = new System.Drawing.Point(33, 81);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -56,25 +56,28 @@
             // 
             // Bt_Reports_Exit
             // 
+            this.Bt_Reports_Exit.BackColor = System.Drawing.Color.Transparent;
             this.Bt_Reports_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Reports_Exit.BackgroundImage")));
             this.Bt_Reports_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Reports_Exit.FlatAppearance.BorderSize = 0;
             this.Bt_Reports_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Reports_Exit.Location = new System.Drawing.Point(894, 12);
+            this.Bt_Reports_Exit.Location = new System.Drawing.Point(886, 12);
             this.Bt_Reports_Exit.Name = "Bt_Reports_Exit";
-            this.Bt_Reports_Exit.Size = new System.Drawing.Size(92, 48);
+            this.Bt_Reports_Exit.Size = new System.Drawing.Size(100, 55);
             this.Bt_Reports_Exit.TabIndex = 1;
-            this.Bt_Reports_Exit.UseVisualStyleBackColor = true;
+            this.Bt_Reports_Exit.UseVisualStyleBackColor = false;
             this.Bt_Reports_Exit.Click += new System.EventHandler(this.Bt_Reports_Exit_click);
             // 
             // Bt_Reports_Back
             // 
-            this.Bt_Reports_Back.BackColor = System.Drawing.Color.Black;
-            this.Bt_Reports_Back.BackgroundImage = global::GameBox.Properties.Resources.Back;
+            this.Bt_Reports_Back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_Reports_Back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Reports_Back.BackgroundImage")));
             this.Bt_Reports_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Reports_Back.FlatAppearance.BorderSize = 0;
             this.Bt_Reports_Back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Reports_Back.Location = new System.Drawing.Point(796, 12);
+            this.Bt_Reports_Back.Location = new System.Drawing.Point(780, 12);
             this.Bt_Reports_Back.Name = "Bt_Reports_Back";
-            this.Bt_Reports_Back.Size = new System.Drawing.Size(92, 48);
+            this.Bt_Reports_Back.Size = new System.Drawing.Size(100, 55);
             this.Bt_Reports_Back.TabIndex = 2;
             this.Bt_Reports_Back.UseVisualStyleBackColor = false;
             this.Bt_Reports_Back.Click += new System.EventHandler(this.Bt_reports_Back_click);
@@ -84,8 +87,8 @@
             this.lb_title.AutoSize = true;
             this.lb_title.BackColor = System.Drawing.Color.Transparent;
             this.lb_title.Font = new System.Drawing.Font("Modern No. 20", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_title.ForeColor = System.Drawing.Color.Gold;
-            this.lb_title.Location = new System.Drawing.Point(55, 12);
+            this.lb_title.ForeColor = System.Drawing.Color.Beige;
+            this.lb_title.Location = new System.Drawing.Point(239, 24);
             this.lb_title.Name = "lb_title";
             this.lb_title.Size = new System.Drawing.Size(0, 41);
             this.lb_title.TabIndex = 50;
@@ -103,14 +106,15 @@
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CB_music.Location = new System.Drawing.Point(716, 12);
+            this.CB_music.Location = new System.Drawing.Point(13, 12);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
-            this.CB_music.Size = new System.Drawing.Size(68, 48);
-            this.CB_music.TabIndex = 51;
+            this.CB_music.Size = new System.Drawing.Size(157, 53);
+            this.CB_music.TabIndex = 52;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
+            this.CB_music.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Reports
             // 

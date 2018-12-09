@@ -19,6 +19,16 @@ namespace GameBox
         public GameChoice(Form form)
         {
             InitializeComponent();
+            if (Program.music_OnOff == false)
+            {
+                CB_music.BackgroundImage = Properties.Resources.Mute;
+                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else
+            {
+                CB_music.BackgroundImage = Properties.Resources.Music;
+                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
             if (Program.cnt_players != 2)
                 bt_reversi.Enabled = false;
             GameBox.Program.Wmp.URL = "music.mp3";
@@ -33,21 +43,10 @@ namespace GameBox
 
         private void CB_music_CheckedChanged(object sender, EventArgs e) //music buttons
         {
-            if(!CB_music.Checked)  //pause music
-            {
-                CB_music.Text = "Music off";
-                GameBox.Program.music_OnOff = false;
-                GameBox.Program.Wmp.controls.pause();
-            }
-            else     //play music
-            {
-                CB_music.Text = "Music on";
-                GameBox.Program.music_OnOff = true;
-                GameBox.Program.Wmp.controls.play();
-            }
+
         }
 
-      
+
 
         private void Bt_back_Click(object sender, EventArgs e) /* function to go back */
         {
@@ -67,6 +66,24 @@ namespace GameBox
         private void Bt_snake_and_ladders_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Program.music_OnOff == true)  //pause music
+            {
+                Program.music_OnOff = false;
+                GameBox.Program.Wmp.controls.pause();
+                CB_music.BackgroundImage = Properties.Resources.Mute;
+                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else     //play music
+            {
+                Program.music_OnOff = true;
+                GameBox.Program.Wmp.controls.play();
+                CB_music.BackgroundImage = Properties.Resources.Music;
+                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
         }
     }
 }

@@ -55,7 +55,7 @@
             // 
             // Tb_user_password
             // 
-            this.Tb_user_password.BackColor = System.Drawing.Color.SandyBrown;
+            this.Tb_user_password.BackColor = System.Drawing.Color.Salmon;
             this.Tb_user_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_user_password.Location = new System.Drawing.Point(379, 310);
             this.Tb_user_password.Name = "Tb_user_password";
@@ -66,7 +66,7 @@
             // 
             // Tb_manager_password
             // 
-            this.Tb_manager_password.BackColor = System.Drawing.Color.SandyBrown;
+            this.Tb_manager_password.BackColor = System.Drawing.Color.Salmon;
             this.Tb_manager_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_manager_password.Location = new System.Drawing.Point(379, 212);
             this.Tb_manager_password.Name = "Tb_manager_password";
@@ -77,7 +77,7 @@
             // 
             // Tb_user_name
             // 
-            this.Tb_user_name.BackColor = System.Drawing.Color.SandyBrown;
+            this.Tb_user_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_user_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_user_name.Location = new System.Drawing.Point(379, 272);
             this.Tb_user_name.Name = "Tb_user_name";
@@ -87,7 +87,7 @@
             // 
             // Tb_guest_name
             // 
-            this.Tb_guest_name.BackColor = System.Drawing.Color.SandyBrown;
+            this.Tb_guest_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_guest_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_guest_name.Location = new System.Drawing.Point(379, 421);
             this.Tb_guest_name.Name = "Tb_guest_name";
@@ -97,7 +97,7 @@
             // 
             // Tb_manager_name
             // 
-            this.Tb_manager_name.BackColor = System.Drawing.Color.SandyBrown;
+            this.Tb_manager_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_manager_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_manager_name.Location = new System.Drawing.Point(379, 168);
             this.Tb_manager_name.Name = "Tb_manager_name";
@@ -107,7 +107,7 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.SandyBrown;
+            this.comboBox1.BackColor = System.Drawing.Color.Salmon;
             this.comboBox1.DisplayMember = "0";
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox1.FormattingEnabled = true;
@@ -249,7 +249,7 @@
             this.CB_music.Location = new System.Drawing.Point(13, 13);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
-            this.CB_music.Size = new System.Drawing.Size(68, 44);
+            this.CB_music.Size = new System.Drawing.Size(157, 53);
             this.CB_music.TabIndex = 28;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -265,10 +265,10 @@
             this.Bt_MainForm_exit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.Bt_MainForm_exit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.Bt_MainForm_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_MainForm_exit.Location = new System.Drawing.Point(904, 11);
+            this.Bt_MainForm_exit.Location = new System.Drawing.Point(886, 11);
             this.Bt_MainForm_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_MainForm_exit.Name = "Bt_MainForm_exit";
-            this.Bt_MainForm_exit.Size = new System.Drawing.Size(82, 43);
+            this.Bt_MainForm_exit.Size = new System.Drawing.Size(100, 55);
             this.Bt_MainForm_exit.TabIndex = 29;
             this.Bt_MainForm_exit.UseVisualStyleBackColor = true;
             this.Bt_MainForm_exit.Click += new System.EventHandler(this.Bt_MainForm_exit_Click);
@@ -347,7 +347,7 @@
             // 
             // cob_players
             // 
-            this.cob_players.BackColor = System.Drawing.Color.SandyBrown;
+            this.cob_players.BackColor = System.Drawing.Color.Salmon;
             this.cob_players.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cob_players.FormattingEnabled = true;
             this.cob_players.Items.AddRange(new object[] {

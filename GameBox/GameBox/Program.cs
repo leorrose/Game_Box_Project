@@ -25,7 +25,9 @@ namespace GameBox
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Reversi(new MainForm(), new MainForm()));
+            Program.Wmp.URL = "C:\\Users\\ליאור רוז\\Desktop\\Poject_Yesodot_Group_6\\GameBox\\GameBox\\Resources\\PlayMusic.mp3";
+            Program.Wmp.controls.play();
+            Application.Run(new MainForm());
 
         }
         public static string user1 = "", user2 = "";

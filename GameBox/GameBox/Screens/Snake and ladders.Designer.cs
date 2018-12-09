@@ -70,6 +70,7 @@
             this.bt_music.TabIndex = 2;
             this.bt_music.Text = "music";
             this.bt_music.UseVisualStyleBackColor = true;
+            this.bt_music.Click += new System.EventHandler(this.bt_music_Click);
             // 
             // bt_Exit
             // 

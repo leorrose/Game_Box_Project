@@ -23,12 +23,40 @@ namespace GameBox
         public Snake_and_ladders()
         {
             InitializeComponent();
+            if (Program.music_OnOff == false)
+            {
+                bt_music.BackgroundImage = Properties.Resources.Mute;
+                bt_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else
+            {
+                bt_music.BackgroundImage = Properties.Resources.Music;
+                bt_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
         }
 
         private void bt_instraction_Click(object sender, EventArgs e)
         {
             Print_instructions ins = new Print_instructions();
             ins.ShowDialog();
+        }
+
+        private void bt_music_Click(object sender, EventArgs e)
+        {
+            if (Program.music_OnOff == true)  //pause music
+            {
+                Program.music_OnOff = false;
+                GameBox.Program.Wmp.controls.pause();
+                bt_music.BackgroundImage = Properties.Resources.Mute;
+                bt_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else     //play music
+            {
+                Program.music_OnOff = true;
+                GameBox.Program.Wmp.controls.play();
+                bt_music.BackgroundImage = Properties.Resources.Music;
+                bt_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
         }
 
         private void Snake_and_ladders_Load(object sender, EventArgs e)

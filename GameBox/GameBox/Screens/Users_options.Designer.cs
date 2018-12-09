@@ -124,29 +124,32 @@ namespace GameBox
             // 
             // Bt_usersOptions_exit
             // 
+            this.Bt_usersOptions_exit.BackColor = System.Drawing.Color.Transparent;
             this.Bt_usersOptions_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_usersOptions_exit.BackgroundImage")));
             this.Bt_usersOptions_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_usersOptions_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_usersOptions_exit.FlatAppearance.BorderSize = 0;
             this.Bt_usersOptions_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_usersOptions_exit.Location = new System.Drawing.Point(904, 11);
+            this.Bt_usersOptions_exit.Location = new System.Drawing.Point(886, 11);
             this.Bt_usersOptions_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_usersOptions_exit.Name = "Bt_usersOptions_exit";
-            this.Bt_usersOptions_exit.Size = new System.Drawing.Size(82, 56);
+            this.Bt_usersOptions_exit.Size = new System.Drawing.Size(100, 55);
             this.Bt_usersOptions_exit.TabIndex = 30;
-            this.Bt_usersOptions_exit.UseVisualStyleBackColor = true;
+            this.Bt_usersOptions_exit.UseVisualStyleBackColor = false;
             this.Bt_usersOptions_exit.Click += new System.EventHandler(this.Bt_UserOptions_exit_Click);
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.Black;
-            this.button8.BackgroundImage = global::GameBox.Properties.Resources.Back;
+            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Location = new System.Drawing.Point(816, 11);
+            this.button8.Location = new System.Drawing.Point(780, 11);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(82, 56);
+            this.button8.Size = new System.Drawing.Size(100, 55);
             this.button8.TabIndex = 31;
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.Bt_UserOPtions_Back);
@@ -189,14 +192,15 @@ namespace GameBox
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CB_music.Location = new System.Drawing.Point(13, 23);
+            this.CB_music.Location = new System.Drawing.Point(13, 13);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
-            this.CB_music.Size = new System.Drawing.Size(68, 44);
+            this.CB_music.Size = new System.Drawing.Size(157, 53);
             this.CB_music.TabIndex = 34;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
+            this.CB_music.CheckedChanged += new System.EventHandler(this.CB_music_CheckedChanged);
             // 
             // Users_options
             // 

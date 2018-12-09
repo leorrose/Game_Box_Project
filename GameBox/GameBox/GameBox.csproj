@@ -295,6 +295,16 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Players.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\button %2810%29.png" />
+    <None Include="Resources\button %288%29.png" />
+    <None Include="Resources\Bit Rush Arcade Ahri  Login Screen - League of Legends2.mp3" />
+    <None Include="Resources\Bit Rush Arcade Ahri  Login Screen - League of Legends1.mp3" />
+    <None Include="Resources\Bit Rush Arcade Ahri  Login Screen - League of Legends.mp3" />
+    <None Include="Resources\button_instructions.png" />
+    <None Include="Resources\button_exit.png" />
+    <None Include="Resources\button_back.png" />
+    <None Include="Resources\button %285%29.png" />
+    <None Include="Resources\button %284%29.png" />
     <None Include="Resources\black-b_tton-icon-png-11.png" />
     <None Include="Resources\2000px-B_tton_Icon_White.svg.png" />
     <None Include="Resources\3y.png" />

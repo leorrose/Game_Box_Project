@@ -53,8 +53,8 @@
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(142, 42);
+            this.label1.ForeColor = System.Drawing.Color.Beige;
+            this.label1.Location = new System.Drawing.Point(177, 42);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(417, 62);
             this.label1.TabIndex = 2;
@@ -75,26 +75,28 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Location = new System.Drawing.Point(889, 12);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 44);
+            this.button2.Size = new System.Drawing.Size(100, 55);
             this.button2.TabIndex = 4;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.Bt_Feedback_exit);
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.BackgroundImage = global::GameBox.Properties.Resources.Back;
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.FlatAppearance.BorderSize = 0;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Location = new System.Drawing.Point(783, 12);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(100, 44);
+            this.button3.Size = new System.Drawing.Size(100, 55);
             this.button3.TabIndex = 5;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.Bt_Feedback_back);
@@ -103,7 +105,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.ForeColor = System.Drawing.Color.Gold;
+            this.label2.ForeColor = System.Drawing.Color.Beige;
             this.label2.Location = new System.Drawing.Point(684, 415);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 17);
@@ -112,7 +114,7 @@
             // 
             // Tb_feedback_name
             // 
-            this.Tb_feedback_name.BackColor = System.Drawing.Color.SandyBrown;
+            this.Tb_feedback_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_feedback_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_feedback_name.Location = new System.Drawing.Point(655, 451);
             this.Tb_feedback_name.Name = "Tb_feedback_name";
@@ -135,11 +137,12 @@
             this.CB_music.Location = new System.Drawing.Point(13, 12);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
-            this.CB_music.Size = new System.Drawing.Size(68, 44);
-            this.CB_music.TabIndex = 29;
+            this.CB_music.Size = new System.Drawing.Size(157, 53);
+            this.CB_music.TabIndex = 30;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
+            this.CB_music.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Feedback_form
             // 

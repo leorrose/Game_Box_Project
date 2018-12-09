@@ -15,6 +15,16 @@ namespace GameBox
         public MainForm()
         {
             InitializeComponent();
+            if (Program.music_OnOff == false)
+            {
+                CB_music.BackgroundImage = Properties.Resources.Mute;
+                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else
+            {
+                CB_music.BackgroundImage = Properties.Resources.Music;
+                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
             comboBox1.SelectedIndex = 0;
             cob_players.SelectedIndex = 0;
             Program.user1 = "";
@@ -194,7 +204,20 @@ namespace GameBox
 
         private void CB_music_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (Program.music_OnOff == true )  //pause music
+            {
+                Program.music_OnOff = false;
+                GameBox.Program.Wmp.controls.pause();
+                CB_music.BackgroundImage = Properties.Resources.Mute;
+                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
+            else     //play music
+            {
+                Program.music_OnOff = true;
+                GameBox.Program.Wmp.controls.play();
+                CB_music.BackgroundImage = Properties.Resources.Music;
+                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+            }
         }
     }
 }

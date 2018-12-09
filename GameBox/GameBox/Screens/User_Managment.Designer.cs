@@ -75,7 +75,7 @@
             // 
             // Tb_User_add_Name
             // 
-            this.Tb_User_add_Name.BackColor = System.Drawing.Color.SandyBrown;
+            this.Tb_User_add_Name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_User_add_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_User_add_Name.Location = new System.Drawing.Point(842, 331);
             this.Tb_User_add_Name.Name = "Tb_User_add_Name";
@@ -85,7 +85,7 @@
             // 
             // Tb_User_add_Password
             // 
-            this.Tb_User_add_Password.BackColor = System.Drawing.Color.SandyBrown;
+            this.Tb_User_add_Password.BackColor = System.Drawing.Color.Salmon;
             this.Tb_User_add_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_User_add_Password.Location = new System.Drawing.Point(842, 359);
             this.Tb_User_add_Password.Name = "Tb_User_add_Password";
@@ -96,7 +96,7 @@
             // 
             // Tb_User_remove_Name
             // 
-            this.Tb_User_remove_Name.BackColor = System.Drawing.Color.SandyBrown;
+            this.Tb_User_remove_Name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_User_remove_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_User_remove_Name.Location = new System.Drawing.Point(153, 332);
             this.Tb_User_remove_Name.Name = "Tb_User_remove_Name";
@@ -145,29 +145,32 @@
             // 
             // Bt_User_managment_back
             // 
-            this.Bt_User_managment_back.BackColor = System.Drawing.Color.Black;
-            this.Bt_User_managment_back.BackgroundImage = global::GameBox.Properties.Resources.Back;
+            this.Bt_User_managment_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_User_managment_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_User_managment_back.BackgroundImage")));
             this.Bt_User_managment_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_User_managment_back.FlatAppearance.BorderSize = 0;
             this.Bt_User_managment_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_User_managment_back.Location = new System.Drawing.Point(833, 11);
+            this.Bt_User_managment_back.Location = new System.Drawing.Point(780, 12);
             this.Bt_User_managment_back.Name = "Bt_User_managment_back";
-            this.Bt_User_managment_back.Size = new System.Drawing.Size(75, 50);
+            this.Bt_User_managment_back.Size = new System.Drawing.Size(100, 55);
             this.Bt_User_managment_back.TabIndex = 33;
             this.Bt_User_managment_back.UseVisualStyleBackColor = false;
             this.Bt_User_managment_back.Click += new System.EventHandler(this.Bt_User_managment_back_Click);
             // 
             // Bt_User_Managment_exit
             // 
+            this.Bt_User_Managment_exit.BackColor = System.Drawing.Color.Transparent;
             this.Bt_User_Managment_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_User_Managment_exit.BackgroundImage")));
             this.Bt_User_Managment_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_User_Managment_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_User_Managment_exit.FlatAppearance.BorderSize = 0;
             this.Bt_User_Managment_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_User_Managment_exit.Location = new System.Drawing.Point(914, 11);
+            this.Bt_User_Managment_exit.Location = new System.Drawing.Point(886, 12);
             this.Bt_User_Managment_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_User_Managment_exit.Name = "Bt_User_Managment_exit";
-            this.Bt_User_Managment_exit.Size = new System.Drawing.Size(72, 50);
+            this.Bt_User_Managment_exit.Size = new System.Drawing.Size(100, 55);
             this.Bt_User_Managment_exit.TabIndex = 34;
-            this.Bt_User_Managment_exit.UseVisualStyleBackColor = true;
+            this.Bt_User_Managment_exit.UseVisualStyleBackColor = false;
             this.Bt_User_Managment_exit.Click += new System.EventHandler(this.Bt_User_Managment_exit_Click);
             // 
             // Remove_user_show
@@ -221,14 +224,15 @@
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CB_music.Location = new System.Drawing.Point(13, 17);
+            this.CB_music.Location = new System.Drawing.Point(9, 14);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
-            this.CB_music.Size = new System.Drawing.Size(68, 44);
+            this.CB_music.Size = new System.Drawing.Size(157, 53);
             this.CB_music.TabIndex = 39;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
+            this.CB_music.CheckedChanged += new System.EventHandler(this.CB_music_CheckedChanged);
             // 
             // User_Managment
             // 

@@ -94,16 +94,18 @@
             // 
             // Bt_login_exit
             // 
+            this.Bt_login_exit.BackColor = System.Drawing.Color.Transparent;
             this.Bt_login_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_login_exit.BackgroundImage")));
             this.Bt_login_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_login_exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_login_exit.FlatAppearance.BorderSize = 0;
             this.Bt_login_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_login_exit.Location = new System.Drawing.Point(895, 7);
+            this.Bt_login_exit.Location = new System.Drawing.Point(886, 7);
             this.Bt_login_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_login_exit.Name = "Bt_login_exit";
-            this.Bt_login_exit.Size = new System.Drawing.Size(72, 50);
+            this.Bt_login_exit.Size = new System.Drawing.Size(100, 55);
             this.Bt_login_exit.TabIndex = 28;
-            this.Bt_login_exit.UseVisualStyleBackColor = true;
+            this.Bt_login_exit.UseVisualStyleBackColor = false;
             this.Bt_login_exit.Click += new System.EventHandler(this.Bt_login_exit_Click);
             // 
             // button5
@@ -136,13 +138,14 @@
             // 
             // Bt_back
             // 
-            this.Bt_back.BackColor = System.Drawing.Color.Black;
-            this.Bt_back.BackgroundImage = global::GameBox.Properties.Resources.Back;
+            this.Bt_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_back.BackgroundImage")));
             this.Bt_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_back.FlatAppearance.BorderSize = 0;
             this.Bt_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_back.Location = new System.Drawing.Point(812, 7);
+            this.Bt_back.Location = new System.Drawing.Point(780, 7);
             this.Bt_back.Name = "Bt_back";
-            this.Bt_back.Size = new System.Drawing.Size(75, 50);
+            this.Bt_back.Size = new System.Drawing.Size(100, 55);
             this.Bt_back.TabIndex = 31;
             this.Bt_back.UseVisualStyleBackColor = false;
             this.Bt_back.Click += new System.EventHandler(this.Bt_back_Click);
@@ -163,11 +166,12 @@
             this.CB_music.Location = new System.Drawing.Point(26, 13);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
-            this.CB_music.Size = new System.Drawing.Size(68, 44);
+            this.CB_music.Size = new System.Drawing.Size(157, 53);
             this.CB_music.TabIndex = 32;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
+            this.CB_music.CheckedChanged += new System.EventHandler(this.CB_music_CheckedChanged);
             // 
             // Managers_option
             // 

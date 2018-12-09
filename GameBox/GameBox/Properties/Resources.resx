@@ -136,20 +136,11 @@
   <data name="Button_backround" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\הורד (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\הורד (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="reversi_board" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Game-Board-8x8-grid(Green)(Reversi).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backbutton2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\28e2ab88a124342560aca2cc0fbc3ceb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Roll_the_dice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Roll the dice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -195,5 +186,29 @@
   </data>
   <data name="white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2000px-B_tton_Icon_White.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="button_instructions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button_instructions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green_music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Green_mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bit Rush Arcade Ahri  Login Screen - League of Legends1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button (10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
