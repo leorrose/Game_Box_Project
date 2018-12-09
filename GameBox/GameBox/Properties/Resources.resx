@@ -133,14 +133,11 @@
   <data name="yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\yellow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Button_backround" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Button_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reversi_board" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Game-Board-8x8-grid(Green)(Reversi).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backbutton2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Roll_the_dice" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Roll the dice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,19 +178,19 @@
   <data name="_6y" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\6y.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Black" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Black_piece" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\black-b_tton-icon-png-11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="white_piece" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2000px-B_tton_Icon_White.svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Green_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button_back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Green_exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button_exit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button_instructions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="Green_instructions" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button_instructions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Green_music" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -210,5 +207,20 @@
   </data>
   <data name="Mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button (8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Back_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Exit_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Instructions_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Instructions_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Music_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Music_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Mute_red" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mute_red.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

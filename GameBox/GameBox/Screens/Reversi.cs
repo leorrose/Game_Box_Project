@@ -58,528 +58,528 @@ namespace GameBox
                     case 1:
                         if (arr[0, 0] == 1)
                         {
-                            pictureBox_A1.BackgroundImage = Properties.Resources.white;
+                            pictureBox_A1.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_A1.BackgroundImageLayout = ImageLayout.Stretch; 
                         }
                         else if (arr[0, 0] == 2)
                         {
-                            pictureBox_A1.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_A1.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_A1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 2:
                         if (arr[1, 0] == 1)
                         {
-                            pictureBox_A2.BackgroundImage = Properties.Resources.white;
+                            pictureBox_A2.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_A2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[1, 0] == 2)
                         {
-                            pictureBox_A2.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_A2.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_A2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 3:
                         if (arr[2, 0] == 1)
                         {
-                            pictureBox_A3.BackgroundImage = Properties.Resources.white;
+                            pictureBox_A3.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_A3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[2, 0] == 2)
                         {
-                            pictureBox_A3.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_A3.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_A3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 4:
                         if (arr[3, 0] == 1)
                         {
-                            pictureBox_A4.BackgroundImage = Properties.Resources.white;
+                            pictureBox_A4.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_A4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[3, 0] == 2)
                         {
-                            pictureBox_A4.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_A4.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_A4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 5:
                         if (arr[4, 0] == 1)
                         {
-                            pictureBox_A5.BackgroundImage = Properties.Resources.white;
+                            pictureBox_A5.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_A5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[4, 0] == 2)
                         {
-                            pictureBox_A5.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_A5.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_A5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 6:
                         if (arr[5, 0] == 1)
                         {
-                            pictureBox_A6.BackgroundImage = Properties.Resources.white;
+                            pictureBox_A6.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_A6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[5, 0] == 2)
                         {
-                            pictureBox_A6.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_A6.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_A6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 7:
                         if (arr[6, 0] == 1)
                         {
-                            pictureBox_A7.BackgroundImage = Properties.Resources.white;
+                            pictureBox_A7.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_A7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[6, 0] == 2)
                         {
-                            pictureBox_A7.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_A7.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_A7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 8:
                         if (arr[7, 0] == 1)
                         {
-                            pictureBox_A8.BackgroundImage = Properties.Resources.white;
+                            pictureBox_A8.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_A8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[7, 0] == 2)
                         {
-                            pictureBox_A8.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_A8.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_A8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 9:
                         if (arr[0, 1] == 1)
                         {
-                            pictureBox_B1.BackgroundImage = Properties.Resources.white;
+                            pictureBox_B1.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_B1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[0, 1] == 2)
                         {
-                            pictureBox_B1.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_B1.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_B1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 10:
                         if (arr[1, 1] == 1)
                         {
-                            pictureBox_B2.BackgroundImage = Properties.Resources.white;
+                            pictureBox_B2.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_B2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[1, 1] == 2)
                         {
-                            pictureBox_B2.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_B2.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_B2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 11:
                         if (arr[2, 1] == 1)
                         {
-                            pictureBox_B3.BackgroundImage = Properties.Resources.white;
+                            pictureBox_B3.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_B3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[2, 1] == 2)
                         {
-                            pictureBox_B3.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_B3.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_B3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 12:
                         if (arr[3, 1] == 1)
                         {
-                            pictureBox_B4.BackgroundImage = Properties.Resources.white;
+                            pictureBox_B4.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_B4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[3, 1] == 2)
                         {
-                            pictureBox_B4.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_B4.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_B4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 13:
                         if (arr[4, 1] == 1)
                         {
-                            pictureBox_B5.BackgroundImage = Properties.Resources.white;
+                            pictureBox_B5.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_B5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[4, 1] == 2)
                         {
-                            pictureBox_B5.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_B5.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_B5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 14:
                         if (arr[5, 1] == 1)
                         {
-                            pictureBox_B6.BackgroundImage = Properties.Resources.white;
+                            pictureBox_B6.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_B6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[5, 1] == 2)
                         {
-                            pictureBox_B6.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_B6.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_B6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 15:
                         if (arr[6,1] == 1)
                         {
-                            pictureBox_B7.BackgroundImage = Properties.Resources.white;
+                            pictureBox_B7.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_B7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[6,1] == 2)
                         {
-                            pictureBox_B7.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_B7.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_B7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 16:
                         if (arr[7, 1] == 1)
                         {
-                            pictureBox_B8.BackgroundImage = Properties.Resources.white;
+                            pictureBox_B8.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_B8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[7, 1] == 2)
                         {
-                            pictureBox_B8.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_B8.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_B8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 17:
                         if (arr[0, 2] == 1)
                         {
-                            pictureBox_C1.BackgroundImage = Properties.Resources.white;
+                            pictureBox_C1.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_C1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[0, 2] == 2)
                         {
-                            pictureBox_C1.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_C1.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_C1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 18:
                         if (arr[1, 2] == 1)
                         {
-                            pictureBox_C2.BackgroundImage = Properties.Resources.white;
+                            pictureBox_C2.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_C2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[1, 2] == 2)
                         {
-                            pictureBox_C2.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_C2.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_C2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 19:
                         if (arr[2, 2] == 1)
                         {
-                            pictureBox_C3.BackgroundImage = Properties.Resources.white;
+                            pictureBox_C3.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_C3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[2, 2] == 2)
                         {
-                            pictureBox_C3.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_C3.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_C3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 20:
                         if (arr[3, 2] == 1)
                         {
-                            pictureBox_C4.BackgroundImage = Properties.Resources.white;
+                            pictureBox_C4.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_C4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[3, 2] == 2)
                         {
-                            pictureBox_C4.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_C4.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_C4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 21:
                         if (arr[4, 2] == 1)
                         {
-                            pictureBox_C5.BackgroundImage = Properties.Resources.white;
+                            pictureBox_C5.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_C5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[4, 2] == 2)
                         {
-                            pictureBox_C5.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_C5.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_C5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 22:
                         if (arr[5, 2] == 1)
                         {
-                            pictureBox_C6.BackgroundImage = Properties.Resources.white;
+                            pictureBox_C6.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_C6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[5,2] == 2)
                         {
-                            pictureBox_C6.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_C6.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_C6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 23:
                         if (arr[6, 2] == 1)
                         {
-                            pictureBox_C7.BackgroundImage = Properties.Resources.white;
+                            pictureBox_C7.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_C7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[6, 2] == 2)
                         {
-                            pictureBox_C7.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_C7.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_C7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 24:
                         if (arr[7, 2] == 1)
                         {
-                            pictureBox_C8.BackgroundImage = Properties.Resources.white;
+                            pictureBox_C8.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_C8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[7, 2] == 2)
                         {
-                            pictureBox_C8.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_C8.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_C8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 25:
                         if (arr[0, 3] == 1)
                         {
-                            pictureBox_D1.BackgroundImage = Properties.Resources.white;
+                            pictureBox_D1.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_D1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[0, 3] == 2)
                         {
-                            pictureBox_D1.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_D1.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_D1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 26:
                         if (arr[1,3] == 1)
                         {
-                            pictureBox_D2.BackgroundImage = Properties.Resources.white;
+                            pictureBox_D2.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_D2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[1, 3] == 2)
                         {
-                            pictureBox_D2.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_D2.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_D2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 27:
                         if (arr[2, 3] == 1)
                         {
-                            pictureBox_D3.BackgroundImage = Properties.Resources.white;
+                            pictureBox_D3.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_D3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[2, 3] == 2)
                         {
-                            pictureBox_D3.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_D3.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_D3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 28:
                         if (arr[3, 3] == 1)
                         {
-                            pictureBox_D4.BackgroundImage = Properties.Resources.white;
+                            pictureBox_D4.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_D4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[3, 3] == 2)
                         {
-                            pictureBox_D4.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_D4.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_D4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 29:
                         if (arr[4, 3] == 1)
                         {
-                            pictureBox_D5.BackgroundImage = Properties.Resources.white;
+                            pictureBox_D5.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_D5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[4, 3] == 2)
                         {
-                            pictureBox_D5.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_D5.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_D5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 30:
                         if (arr[5, 3] == 1)
                         {
-                            pictureBox_D6.BackgroundImage = Properties.Resources.white;
+                            pictureBox_D6.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_D6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[5, 3] == 2)
                         {
-                            pictureBox_D6.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_D6.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_D6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 31:
                         if (arr[6, 3] == 1)
                         {
-                            pictureBox_D7.BackgroundImage = Properties.Resources.white;
+                            pictureBox_D7.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_D7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[6, 3] == 2)
                         {
-                            pictureBox_D7.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_D7.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_D7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 32:
                         if (arr[7, 3] == 1)
                         {
-                            pictureBox_D8.BackgroundImage = Properties.Resources.white;
+                            pictureBox_D8.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_D8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[7, 3] == 2)
                         {
-                            pictureBox_D8.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_D8.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_D8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 33:
                         if (arr[0, 4] == 1)
                         {
-                            pictureBox_E1.BackgroundImage = Properties.Resources.white;
+                            pictureBox_E1.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_E1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[0, 4] == 2)
                         {
-                            pictureBox_E1.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_E1.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_E1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 34:
                         if (arr[1, 4] == 1)
                         {
-                            pictureBox_E2.BackgroundImage = Properties.Resources.white;
+                            pictureBox_E2.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_E2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[1, 4] == 2)
                         {
-                            pictureBox_E2.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_E2.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_E2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 35:
                         if (arr[2, 4] == 1)
                         {
-                            pictureBox_E3.BackgroundImage = Properties.Resources.white;
+                            pictureBox_E3.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_E3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[2, 4] == 2)
                         {
-                            pictureBox_E3.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_E3.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_E3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 36:
                         if (arr[3, 4] == 1)
                         {
-                            pictureBox_E4.BackgroundImage = Properties.Resources.white;
+                            pictureBox_E4.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_E4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[3, 4] == 2)
                         {
-                            pictureBox_E4.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_E4.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_E4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 37:
                         if (arr[4, 4] == 1)
                         {
-                            pictureBox_E5.BackgroundImage = Properties.Resources.white;
+                            pictureBox_E5.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_E5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[4, 4] == 2)
                         {
-                            pictureBox_E5.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_E5.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_E5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 38:
                         if (arr[5, 4] == 1)
                         {
-                            pictureBox_E6.BackgroundImage = Properties.Resources.white;
+                            pictureBox_E6.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_E6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[5, 4] == 2)
                         {
-                            pictureBox_E6.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_E6.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_E6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 39:
                         if (arr[6, 4] == 1)
                         {
-                            pictureBox_E7.BackgroundImage = Properties.Resources.white;
+                            pictureBox_E7.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_E7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[6, 4] == 2)
                         {
-                            pictureBox_E7.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_E7.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_E7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 40:
                         if (arr[7, 4] == 1)
                         {
-                            pictureBox_E8.BackgroundImage = Properties.Resources.white;
+                            pictureBox_E8.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_E8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[7, 4] == 2)
                         {
-                            pictureBox_E8.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_E8.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_E8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 41:
                         if (arr[0, 5] == 1)
                         {
-                            pictureBox_F1.BackgroundImage = Properties.Resources.white;
+                            pictureBox_F1.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_F1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[0, 5] == 2)
                         {
-                            pictureBox_F1.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_F1.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_F1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 42:
                         if (arr[1, 5] == 1)
                         {
-                            pictureBox_F2.BackgroundImage = Properties.Resources.white;
+                            pictureBox_F2.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_F2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[1, 5] == 2)
                         {
-                            pictureBox_F2.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_F2.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_F2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 43:
                         if (arr[2, 5] == 1)
                         {
-                            pictureBox_F3.BackgroundImage = Properties.Resources.white;
+                            pictureBox_F3.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_F3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[2, 5] == 2)
                         {
-                            pictureBox_F3.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_F3.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_F3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 44:
                         if (arr[3, 5] == 1)
                         {
-                            pictureBox_F4.BackgroundImage = Properties.Resources.white;
+                            pictureBox_F4.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_F4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[3, 5] == 2)
                         {
-                            pictureBox_F4.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_F4.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_F4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
@@ -587,240 +587,240 @@ namespace GameBox
                     case 45:
                         if (arr[4, 5] == 1)
                         {
-                            pictureBox_F5.BackgroundImage = Properties.Resources.white;
+                            pictureBox_F5.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_F5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[4, 5] == 2)
                         {
-                            pictureBox_F5.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_F5.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_F5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 46:
                         if (arr[5, 5] == 1)
                         {
-                            pictureBox_F6.BackgroundImage = Properties.Resources.white;
+                            pictureBox_F6.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_F6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[5, 5] == 2)
                         {
-                            pictureBox_F6.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_F6.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_F6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 47:
                         if (arr[6, 5] == 1)
                         {
-                            pictureBox_F7.BackgroundImage = Properties.Resources.white;
+                            pictureBox_F7.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_F7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[6, 5] == 2)
                         {
-                            pictureBox_F7.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_F7.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_F7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 48:
                         if (arr[7, 5] == 1)
                         {
-                            pictureBox_F8.BackgroundImage = Properties.Resources.white;
+                            pictureBox_F8.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_F8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[7, 5] == 2)
                         {
-                            pictureBox_F8.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_F8.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_F8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 49:
                         if (arr[0, 6] == 1)
                         {
-                            pictureBox_G1.BackgroundImage = Properties.Resources.white;
+                            pictureBox_G1.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_G1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[0, 6] == 2)
                         {
-                            pictureBox_G1.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_G1.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_G1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 50:
                         if (arr[1, 6] == 1)
                         {
-                            pictureBox_G2.BackgroundImage = Properties.Resources.white;
+                            pictureBox_G2.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_G2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[1, 6] == 2)
                         {
-                            pictureBox_G2.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_G2.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_G2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 51:
                         if (arr[2, 6] == 1)
                         {
-                            pictureBox_G3.BackgroundImage = Properties.Resources.white;
+                            pictureBox_G3.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_G3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[2, 6] == 2)
                         {
-                            pictureBox_G3.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_G3.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_G3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 52:
                         if (arr[3, 6] == 1)
                         {
-                            pictureBox_G4.BackgroundImage = Properties.Resources.white;
+                            pictureBox_G4.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_G4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[3, 6] == 2)
                         {
-                            pictureBox_G4.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_G4.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_G4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 53:
                         if (arr[4, 6] == 1)
                         {
-                            pictureBox_G5.BackgroundImage = Properties.Resources.white;
+                            pictureBox_G5.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_G5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[4, 6] == 2)
                         {
-                            pictureBox_G5.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_G5.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_G5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 54:
                         if (arr[5, 6] == 1)
                         {
-                            pictureBox_G6.BackgroundImage = Properties.Resources.white;
+                            pictureBox_G6.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_G6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[5, 6] == 2)
                         {
-                            pictureBox_G6.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_G6.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_G6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 55:
                         if (arr[6, 6] == 1)
                         {
-                            pictureBox_G7.BackgroundImage = Properties.Resources.white;
+                            pictureBox_G7.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_G7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[6, 6] == 2)
                         {
-                            pictureBox_G7.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_G7.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_G7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 56:
                         if (arr[7, 6] == 1)
                         {
-                            pictureBox_G8.BackgroundImage = Properties.Resources.white;
+                            pictureBox_G8.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_G8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[7, 6] == 2)
                         {
-                            pictureBox_G8.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_G8.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_G8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 57:
                         if (arr[0, 7] == 1)
                         {
-                            pictureBox_H1.BackgroundImage = Properties.Resources.white;
+                            pictureBox_H1.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_H1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[0, 7] == 2)
                         {
-                            pictureBox_H1.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_H1.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_H1.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 58:
                         if (arr[1, 7] == 1)
                         {
-                            pictureBox_H2.BackgroundImage = Properties.Resources.white;
+                            pictureBox_H2.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_H2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[1, 7] == 2)
                         {
-                            pictureBox_H2.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_H2.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_H2.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 59:
                         if (arr[2, 7] == 1)
                         {
-                            pictureBox_H3.BackgroundImage = Properties.Resources.white;
+                            pictureBox_H3.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_H3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[2, 7] == 2)
                         {
-                            pictureBox_H3.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_H3.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_H3.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 60:
                         if (arr[3, 7] == 1)
                         {
-                            pictureBox_H4.BackgroundImage = Properties.Resources.white;
+                            pictureBox_H4.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_H4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[3, 7] == 2)
                         {
-                            pictureBox_H4.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_H4.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_H4.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 61:
                         if (arr[4, 7] == 1)
                         {
-                            pictureBox_H5.BackgroundImage = Properties.Resources.white;
+                            pictureBox_H5.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_H5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[4, 7] == 2)
                         {
-                            pictureBox_H5.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_H5.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_H5.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 62:
                         if (arr[5, 7] == 1)
                         {
-                            pictureBox_H6.BackgroundImage = Properties.Resources.white;
+                            pictureBox_H6.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_H6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[5, 7] == 2)
                         {
-                            pictureBox_H6.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_H6.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_H6.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 63:
                         if (arr[6, 7] == 1)
                         {
-                            pictureBox_H7.BackgroundImage = Properties.Resources.white;
+                            pictureBox_H7.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_H7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[6, 7] == 2)
                         {
-                            pictureBox_H7.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_H7.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_H7.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;
                     case 64:
                         if (arr[7, 7] == 1)
                         {
-                            pictureBox_H8.BackgroundImage = Properties.Resources.white;
+                            pictureBox_H8.BackgroundImage = Properties.Resources.white_piece;
                             pictureBox_H8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         else if (arr[7, 7] == 2)
                         {
-                            pictureBox_H8.BackgroundImage = Properties.Resources.Black;
+                            pictureBox_H8.BackgroundImage = Properties.Resources.Black_piece;
                             pictureBox_H8.BackgroundImageLayout = ImageLayout.Stretch;
                         }
                         break;

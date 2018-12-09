@@ -295,6 +295,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Players.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Instructions_red.png" />
+    <None Include="Resources\Mute_red.png" />
+    <None Include="Resources\Back_red.png" />
+    <None Include="Resources\Exit_red.png" />
+    <None Include="Resources\Music_red.png" />
     <None Include="Resources\button %2810%29.png" />
     <None Include="Resources\button %288%29.png" />
     <None Include="Resources\Bit Rush Arcade Ahri  Login Screen - League of Legends2.mp3" />

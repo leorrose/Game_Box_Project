@@ -252,7 +252,7 @@
             // pictureBox_D5
             // 
             this.pictureBox_D5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_D5.BackgroundImage = global::GameBox.Properties.Resources.white;
+            this.pictureBox_D5.BackgroundImage = global::GameBox.Properties.Resources.white_piece;
             this.pictureBox_D5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox_D5.Location = new System.Drawing.Point(303, 404);
             this.pictureBox_D5.Name = "pictureBox_D5";
@@ -264,7 +264,7 @@
             // pictureBox_E4
             // 
             this.pictureBox_E4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_E4.BackgroundImage = global::GameBox.Properties.Resources.white;
+            this.pictureBox_E4.BackgroundImage = global::GameBox.Properties.Resources.white_piece;
             this.pictureBox_E4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox_E4.Location = new System.Drawing.Point(403, 304);
             this.pictureBox_E4.Name = "pictureBox_E4";
@@ -648,7 +648,7 @@
             // pictureBox_D4
             // 
             this.pictureBox_D4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_D4.BackgroundImage = global::GameBox.Properties.Resources.Black;
+            this.pictureBox_D4.BackgroundImage = global::GameBox.Properties.Resources.Black_piece;
             this.pictureBox_D4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox_D4.Location = new System.Drawing.Point(303, 304);
             this.pictureBox_D4.Name = "pictureBox_D4";
@@ -990,7 +990,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.LimeGreen;
-            this.pictureBox1.BackgroundImage = global::GameBox.Properties.Resources.white;
+            this.pictureBox1.BackgroundImage = global::GameBox.Properties.Resources.white_piece;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(1073, 262);
             this.pictureBox1.Name = "pictureBox1";
@@ -1001,7 +1001,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.LimeGreen;
-            this.pictureBox2.BackgroundImage = global::GameBox.Properties.Resources.Black;
+            this.pictureBox2.BackgroundImage = global::GameBox.Properties.Resources.Black_piece;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(1204, 262);
             this.pictureBox2.Name = "pictureBox2";

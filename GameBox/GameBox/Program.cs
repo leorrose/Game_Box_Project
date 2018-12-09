@@ -27,7 +27,7 @@ namespace GameBox
             Application.SetCompatibleTextRenderingDefault(false);
             Program.Wmp.URL = "C:\\Users\\ליאור רוז\\Desktop\\Poject_Yesodot_Group_6\\GameBox\\GameBox\\Resources\\PlayMusic.mp3";
             Program.Wmp.controls.play();
-            Application.Run(new Snake_and_ladders());
+            Application.Run(new MainForm());
 
         }
         public static string user1 = "", user2 = "";
