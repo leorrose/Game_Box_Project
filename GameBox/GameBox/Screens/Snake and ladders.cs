@@ -212,8 +212,9 @@ namespace GameBox
                 {
                     bt_roll.BackColor = Color.Red;
                     bt_roll.Text = Program.user1 + " ROLL!";
-                    bt_roll.Visible = true;
+                    
                 }
+                bt_roll.Visible = true;
             }
             if (p2 == 100)
             {
