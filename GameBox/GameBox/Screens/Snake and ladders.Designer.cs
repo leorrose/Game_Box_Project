@@ -44,6 +44,7 @@
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.bt_instraction = new System.Windows.Forms.Button();
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pb_player2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_player1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -183,6 +184,10 @@
             this.bt_instraction.UseVisualStyleBackColor = true;
             this.bt_instraction.Click += new System.EventHandler(this.bt_instraction_Click);
             // 
+            // timer4
+            // 
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
             // Snake_and_ladders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -229,5 +234,6 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Button bt_instraction;
+        private System.Windows.Forms.Timer timer4;
     }
 }

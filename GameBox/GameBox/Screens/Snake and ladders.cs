@@ -14,7 +14,7 @@ namespace GameBox
     public partial class Snake_and_ladders : Form
     {
         Random ran = new Random();
-        int x1, y1,x2,y2, p1 = 1, p2 = 1, start_x, start_y, seconds1 = 0, seconds2 = 0, dice_value;
+        int x1, y1,x2,y2, p1 = 1, p2 = 1, start_x, start_y, seconds1 = 0, seconds2 = 0, dice_value,seconds3=0;
 
      
 
@@ -43,6 +43,7 @@ namespace GameBox
             Print_instructions ins = new Print_instructions();
             ins.ShowDialog();
         }
+
 
         private void bt_music_Click(object sender, EventArgs e)
         {
@@ -78,11 +79,11 @@ namespace GameBox
             y2 = start_y ;
             timer1.Interval = 100;
             timer2.Interval = 1000;
-            timer3.Interval = 500;
+            timer3.Interval = 400;
+            timer4.Interval = 400;
             timer1.Stop();
             bt_roll.Text = Program.user1 + " ROLL!";
-            labels();
-         
+            labels();     
         }
 
         private void labels()
@@ -117,7 +118,6 @@ namespace GameBox
                     shuffle_dice(dice_value, pb_dice, turn);
                 pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
             }
-
         }
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -130,17 +130,103 @@ namespace GameBox
                 timer2.Stop();
                 timer1.Start();
                 dice_value = ran.Next(1, 7);
-                move(ref x2, ref y2, ref p2, pb_player2, dice_value);
-                snakes_ladders(ref x2, ref y2, ref p2, pb_player2);
-                bt_roll.Visible = true;
+                seconds3 = dice_value;
+                timer4.Start();
                 seconds1 = 0;
-                turn = true;
+               turn = true;
             }
         }
 
-        private void timer3_Tick(object sender, EventArgs e)
+        private void timer3_Tick(object sender, EventArgs e) //timer for the moves of player1.
         {
+            if (seconds3 > dice_value) ; //pause to wait for shuffle dice to end.
+                
+           else if (seconds3 > 0)
+            {
+                    if (p1 == 10 || p1 == 20 || p1 == 30 || p1 == 40 || p1 == 50 || p1 == 60 || p1 == 70 || p1 == 80 || p1 == 90)
+                    {
+                        p1++;
+                        x1 = start_x;
+                        y1 -= 64;
+                    }
+                    else
+                    {
+                        x1 += 80;
+                        p1++;
+                    }
+                    pb_player1.Location = new Point(x1, y1);
+               
+            }
 
+            else
+            {
+                timer3.Stop();
+                snakes_ladders(ref x1, ref y1, ref p1, pb_player1);
+                if (Program.cnt_players == 2)
+                {
+                    bt_roll.BackColor = Color.Yellow;
+                    bt_roll.Text = Program.user2 + " ROLL!";
+                    bt_roll.Visible = true;
+                }
+            }
+            if (p1 == 100)
+            {
+                p1 = 100;
+                x1 = 742;
+                y1 = 16;
+                pb_player1.Location = new Point(x1, y1);
+                timer3.Stop();
+                MessageBox.Show("player 1 win");
+
+            }
+            seconds3--;
+            labels();
+        }
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            if (seconds3 > dice_value) ; //pause to wait for shuffle dice to end.
+
+            else if (seconds3 > 0)
+            {
+                if (p2 == 10 || p2 == 20 || p2 == 30 || p2 == 40 || p2 == 50 || p2 == 60 || p2 == 70 || p2 == 80 || p2 == 90)
+                {
+                    p2++;
+                    x2 = start_x;
+                    y2 -= 64;
+                }
+                else
+                {
+                    x2 += 80;
+                    p2++;
+                }
+                pb_player2.Location = new Point(x2, y2);
+
+            }
+
+            else
+            {
+                timer4.Stop();
+                snakes_ladders(ref x2, ref y2, ref p2, pb_player2);
+                if (Program.cnt_players == 2)
+                {
+                    bt_roll.BackColor = Color.Red;
+                    bt_roll.Text = Program.user1 + " ROLL!";
+                    bt_roll.Visible = true;
+                }
+            }
+            if (p2 == 100)
+            {
+                p2 = 100;
+                x2 = 742;
+                y2 = 16;
+                pb_player2.Location = new Point(x2, y2);
+                timer4.Stop();
+                MessageBox.Show("player 2 win");
+
+            }
+            seconds3--;
+            labels();
         }
 
         private void bt_roll_Click(object sender, EventArgs e)
@@ -148,37 +234,27 @@ namespace GameBox
             bt_roll.Visible = false;
             dice_value = ran.Next(1, 7);
             timer1.Start();       //shuffle dice and show the correct number on last iteration.
-            if (turn)
-            {
-                move(ref x1, ref y1, ref p1, pb_player1, dice_value);
-                snakes_ladders(ref x1, ref y1, ref p1, pb_player1);
+            seconds3 = dice_value+3;
+            if (turn) //player 1 turn
+            { 
+                timer3.Start();
                 seconds1 = 0;
-                
                 turn = false;
-                if (Program.cnt_players == 2)
-                {
-                    bt_roll.BackColor = Color.Yellow;
-                    bt_roll.Visible = true;
-                }
             }
-            else if(Program.cnt_players == 2 && !turn)
+            else if (Program.cnt_players == 2 && !turn) //player2 turn
             {
                 bt_roll.BackColor = Color.Red;
-                move(ref x2, ref y2, ref p2, pb_player2, dice_value);
-                snakes_ladders(ref x2, ref y2, ref p2, pb_player2);
+                timer4.Start();
                 seconds1 = 0;
                 turn = true;
-                bt_roll.Visible = true;
             }
-            if (Program.cnt_players == 1 && !turn)
+            if (Program.cnt_players == 1 && !turn) //computer turn.
             {
                 seconds1 = 0;
                 seconds2 = 3;
                 timer2.Start();
-                seconds2 = 0;
             }
             labels();
-           
         }
 
         private void shuffle_dice(int num , PictureBox pb , bool turn)
@@ -237,44 +313,6 @@ namespace GameBox
         }
        
 
-        private void move(ref int x, ref int y, ref int pos, PictureBox pb, int dice)
-        {
-            if (pos + dice >= 100)
-            {
-                pos = 100;
-                x = 742;
-                y = 16;
-                pb.Location = new Point(x, y);
-                if(turn)
-                    MessageBox.Show("player 1 win");
-                else
-                    MessageBox.Show("player 2 win");
-            }
-            else
-            {
-                for (int i = 0; i < dice; i++)
-                {
-
-                    if (pos == 10 || pos == 20 || pos == 30 || pos == 40 || pos == 50 || pos == 60 || pos == 70 || pos == 80 || pos == 90)
-                    {
-                        pos++;
-                        x = start_x;
-                        y -= 64;
-                    }
-                    else
-                    {
-                        x += 80;
-                        pos++;
-                    }
-
-
-                    pb.Location = new Point(x, y);
-                }
-
-            }
-
-        }
-
         private void snakes_ladders(ref int x,ref int y,ref int pos, PictureBox pb)
         {
             //--------------------------snakes-------------------------------
@@ -283,7 +321,7 @@ namespace GameBox
                 pos = 5;
                 x = 342;
                 y = start_y;
-
+                MessageBox.Show("You got a snake!", "", MessageBoxButtons.OK);
             }
 
             else if (pos == 34)
@@ -291,7 +329,7 @@ namespace GameBox
                 pos = 1;
                 x = start_x;
                 y = start_y;
-
+                MessageBox.Show("You got a snake!", "", MessageBoxButtons.OK);
             }
 
             else if (pos == 47)
@@ -299,6 +337,7 @@ namespace GameBox
                 pos = 19;
                 x = 662;
                 y = 533;
+                MessageBox.Show("You got a snake!", "", MessageBoxButtons.OK);
             }
 
             else if (pos == 65)
@@ -306,6 +345,7 @@ namespace GameBox
                 pos = 52;
                 x = 102;
                 y = 277;
+                MessageBox.Show("You got a snake!", "", MessageBoxButtons.OK);
             }
 
             else if (pos == 91)
@@ -313,18 +353,21 @@ namespace GameBox
                 pos = 61;
                 x = start_x;
                 y = 213;
+                MessageBox.Show("You got a snake!", "", MessageBoxButtons.OK);
             }
 
             else if (pos == 87)
             {
                 pos = 57;
                 y = 277;
+                MessageBox.Show("You got a snake!", "", MessageBoxButtons.OK);
             }
 
             else if (pos == 99)
             {
                 pos = 69;
                 y = 213;
+                MessageBox.Show("You got a snake!", "", MessageBoxButtons.OK);
             }
             //---------------------laddars--------------------------------
             else if (pos == 3)
@@ -332,41 +375,44 @@ namespace GameBox
                 pos = 51;
                 x = start_x;
                 y = 277;
+                MessageBox.Show("You got a ladder!", "", MessageBoxButtons.OK);
             }
             else if (pos == 6)
             {
                 pos = 27;
                 x = 502;
                 y = 464;
+                MessageBox.Show("You got a ladder!", "", MessageBoxButtons.OK);
             }
             else if (pos == 20)
             {
                 pos = 70;
                 y = 208;
+                MessageBox.Show("You got a ladder!", "", MessageBoxButtons.OK);
             }
             else if (pos == 36)
             {
                 pos = 55;
                 x = 342;
                 y = 277;
+                MessageBox.Show("You got a ladder!", "", MessageBoxButtons.OK);
             }
             else if (pos == 63)
             {
                 pos = 95;
                 x = 342;
                 y = 16;
+                MessageBox.Show("You got a ladder!", "", MessageBoxButtons.OK);
             }
             else if (pos == 68)
             {
                 pos = 98;
                 y = 16;
+                MessageBox.Show("You got a ladder!", "", MessageBoxButtons.OK);
             }
 
             pb.Location = new Point(x, y);
         }
-    
-      
-
 
         private void bt_Exit_Click(object sender, EventArgs e)
         {
