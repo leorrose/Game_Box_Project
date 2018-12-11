@@ -25,7 +25,11 @@ namespace GameBox
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Program.Wmp.URL = "C:\\Users\\ליאור רוז\\Desktop\\Poject_Yesodot_Group_6\\GameBox\\GameBox\\Resources\\PlayMusic.mp3";
+            string Url = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location); /* get exe path */
+            for (int i = 0; i <= 8; i++)
+                Url = Url.Remove(Url.Length - 1); /* remove unnecassery files */
+            Url += "Resources\\PlayMusic.mp3";
+            Program.Wmp.URL = Url;
             Program.Wmp.controls.play();
             Application.Run(new MainForm());
 
