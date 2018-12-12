@@ -179,6 +179,6 @@
         private System.Windows.Forms.Button Bt_feedback_back;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox Tb_feedback_name;
-        private System.Windows.Forms.CheckBox CB_music;
+        public System.Windows.Forms.CheckBox CB_music;
     }
 }

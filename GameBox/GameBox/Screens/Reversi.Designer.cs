@@ -1228,7 +1228,7 @@
         private System.Windows.Forms.Label Lb_Score2;
         private System.Windows.Forms.Button Bt_Reversi_back;
         private System.Windows.Forms.Button Bt_reversi_exit;
-        private System.Windows.Forms.Button CB_music;
+        public System.Windows.Forms.Button CB_music;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label4;

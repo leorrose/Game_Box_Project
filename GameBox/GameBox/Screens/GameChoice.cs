@@ -19,22 +19,18 @@ namespace GameBox
         public GameChoice(Form form)
         {
             InitializeComponent();
-            if (Program.music_OnOff == false)
-            {
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else
-            {
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Shown += GameChoice_Shown;
+            Program.Update_music_bt();
             if (Program.cnt_players != 2)
                 bt_reversi.Enabled = false;
             return_back = form;
         }
+        private void GameChoice_Shown(Object sender, EventArgs e)
+        {
+            Program.Update_music_bt();
+        }
 
-       private void Bt_Exit_Click(object sender, EventArgs e)  //exit the program
+        private void Bt_Exit_Click(object sender, EventArgs e)  //exit the program
         {
             Program.Exit();
         }
@@ -64,20 +60,7 @@ namespace GameBox
 
         private void CB_music_click(object sender, EventArgs e)
         {
-            if (Program.music_OnOff == true)  //pause music
-            {
-                Program.music_OnOff = false;
-                GameBox.Program.Wmp.controls.pause();
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else     //play music
-            {
-                Program.music_OnOff = true;
-                GameBox.Program.Wmp.controls.play();
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Program.Music_on_off();
         }
 
         private void reversi_insruction_Click(object sender, EventArgs e)

@@ -16,17 +16,12 @@ namespace GameBox
         public Managers_option(Form form)
         {
             InitializeComponent();
-            if (Program.music_OnOff == false)
-            {
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else
-            {
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Shown += Managers_option_Shown;
             return_back = form;
+        }
+        private void Managers_option_Shown(Object sender, EventArgs e)
+        {
+            Program.Update_music_bt();
         }
 
         private void Bt_login_exit_Click(object sender, EventArgs e) /* function to exit from all the program */
@@ -84,20 +79,7 @@ namespace GameBox
 
         private void CB_music_CheckedChanged(object sender, EventArgs e)
         {
-            if (Program.music_OnOff == true)  //pause music
-            {
-                Program.music_OnOff = false;
-                GameBox.Program.Wmp.controls.pause();
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else     //play music
-            {
-                Program.music_OnOff = true;
-                GameBox.Program.Wmp.controls.play();
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Program.Music_on_off();
         }
     }
 }

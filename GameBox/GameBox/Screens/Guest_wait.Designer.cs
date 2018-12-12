@@ -168,6 +168,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button Bt_guistwait_back;
         private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.CheckBox CB_music;
+        public  System.Windows.Forms.CheckBox CB_music;
     }
 }

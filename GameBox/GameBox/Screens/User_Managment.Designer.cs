@@ -281,6 +281,6 @@
         private System.Windows.Forms.Button Remove_user_show;
         private System.Windows.Forms.Button Add_user_show;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox CB_music;
+        public System.Windows.Forms.CheckBox CB_music;
     }
 }

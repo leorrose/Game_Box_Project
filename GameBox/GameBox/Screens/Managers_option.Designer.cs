@@ -210,6 +210,6 @@
         private System.Windows.Forms.Button Bt_feedback;
         private System.Windows.Forms.Button Bt_manager_tips;
         private System.Windows.Forms.Button Bt_manager_back;
-        private System.Windows.Forms.CheckBox CB_music;
+        public  System.Windows.Forms.CheckBox CB_music;
     }
 }

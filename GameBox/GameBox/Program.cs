@@ -308,5 +308,392 @@ namespace GameBox
                 Environment.Exit(0); /* close all */
             }
         }
+        public static void Music_on_off() /* turn Bt mussic on/off for all screens */
+        {
+            if (music_OnOff == false)
+            {
+                music_OnOff = true;
+                Program.Wmp.controls.play();
+            }
+            else
+            {
+                music_OnOff = false;
+                Program.Wmp.controls.pause();
+            }
+            foreach (Form f in Application.OpenForms)
+            {
+
+                if (f.GetType() == typeof(MainForm))
+                {
+                    MainForm Newform = (GameBox.MainForm)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(GameChoice))
+                {
+                    GameChoice Newform = (GameBox.GameChoice)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Guest_wait))
+                {
+                    Guest_wait Newform = (GameBox.Guest_wait)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(login_form))
+                {
+                    login_form Newform = (GameBox.login_form)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Managers_option))
+                {
+                    Managers_option Newform = (GameBox.Managers_option)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Manager_Managment))
+                {
+                    Manager_Managment Newform = (GameBox.Manager_Managment)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Reports))
+                {
+                    Reports Newform = (GameBox.Reports)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(User_Managment))
+                {
+                    User_Managment Newform = (GameBox.User_Managment)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Users_options))
+                {
+                    Users_options Newform = (GameBox.Users_options)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Change_details))
+                {
+                    Change_details Newform = (GameBox.Change_details)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Feedback_form))
+                {
+                    Feedback_form Newform = (GameBox.Feedback_form)f;
+                    if (music_OnOff == true)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Reversi))
+                {
+                    Reversi Newform = (GameBox.Reversi)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Green_mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Green_music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Snake_and_ladders))
+                {
+                    Snake_and_ladders Newform = (GameBox.Snake_and_ladders)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.bt_music.BackgroundImage = Properties.Resources.Mute_red;
+                        Newform.bt_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.bt_music.BackgroundImage = Properties.Resources.Music_red;
+                        Newform.bt_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+            } 
+        }
+        public static void Update_music_bt() /* update Bt mussic on/off for all screens before opening */
+        {
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.GetType() == typeof(MainForm))
+                {
+                    MainForm Newform = (GameBox.MainForm)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(GameChoice))
+                {
+                    GameChoice Newform = (GameBox.GameChoice)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Guest_wait))
+                {
+                    Guest_wait Newform = (GameBox.Guest_wait)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(login_form))
+                {
+                    login_form Newform = (GameBox.login_form)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Managers_option))
+                {
+                    Managers_option Newform = (GameBox.Managers_option)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Manager_Managment))
+                {
+                    Manager_Managment Newform = (GameBox.Manager_Managment)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Reports))
+                {
+                    Reports Newform = (GameBox.Reports)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(User_Managment))
+                {
+                    User_Managment Newform = (GameBox.User_Managment)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Users_options))
+                {
+                    Users_options Newform = (GameBox.Users_options)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Change_details))
+                {
+                    Change_details Newform = (GameBox.Change_details)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Feedback_form))
+                {
+                    Feedback_form Newform = (GameBox.Feedback_form)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Reversi))
+                {
+                    Reversi Newform = (GameBox.Reversi)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Green_mute;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.CB_music.BackgroundImage = Properties.Resources.Green_music;
+                        Newform.CB_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+                else if (f.GetType() == typeof(Snake_and_ladders))
+                {
+                    Snake_and_ladders Newform = (GameBox.Snake_and_ladders)f;
+                    if (music_OnOff == false)
+                    {
+                        Newform.bt_music.BackgroundImage = Properties.Resources.Mute_red;
+                        Newform.bt_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                    else
+                    {
+                        Newform.bt_music.BackgroundImage = Properties.Resources.Music_red;
+                        Newform.bt_music.BackgroundImageLayout = ImageLayout.Stretch;
+                    }
+                }
+            }
+        }
     }
 }

@@ -223,6 +223,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button Bt_login_exit;
         private System.Windows.Forms.Button Bt_login_back;
-        private System.Windows.Forms.CheckBox CB_music;
+        public  System.Windows.Forms.CheckBox CB_music;
     }
 }

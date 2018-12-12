@@ -64,34 +64,43 @@
             // 
             // bt_music
             // 
+            this.bt_music.BackgroundImage = global::GameBox.Properties.Resources.Music_red;
+            this.bt_music.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_music.FlatAppearance.BorderSize = 0;
+            this.bt_music.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bt_music.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_music.Location = new System.Drawing.Point(1086, 12);
+            this.bt_music.Location = new System.Drawing.Point(1108, 73);
             this.bt_music.Name = "bt_music";
-            this.bt_music.Size = new System.Drawing.Size(75, 44);
+            this.bt_music.Size = new System.Drawing.Size(215, 55);
             this.bt_music.TabIndex = 2;
-            this.bt_music.Text = "music";
             this.bt_music.UseVisualStyleBackColor = true;
             this.bt_music.Click += new System.EventHandler(this.bt_music_Click);
             // 
             // bt_Exit
             // 
+            this.bt_Exit.BackgroundImage = global::GameBox.Properties.Resources.Exit_red;
+            this.bt_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_Exit.FlatAppearance.BorderSize = 0;
+            this.bt_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bt_Exit.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Exit.Location = new System.Drawing.Point(1248, 12);
+            this.bt_Exit.Location = new System.Drawing.Point(1223, 12);
             this.bt_Exit.Name = "bt_Exit";
-            this.bt_Exit.Size = new System.Drawing.Size(75, 44);
+            this.bt_Exit.Size = new System.Drawing.Size(100, 55);
             this.bt_Exit.TabIndex = 3;
-            this.bt_Exit.Text = "Exit";
             this.bt_Exit.UseVisualStyleBackColor = true;
             this.bt_Exit.Click += new System.EventHandler(this.bt_Exit_Click);
             // 
             // Bt_SAL_back
             // 
+            this.Bt_SAL_back.BackgroundImage = global::GameBox.Properties.Resources.Back_red;
+            this.Bt_SAL_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_SAL_back.FlatAppearance.BorderSize = 0;
+            this.Bt_SAL_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_SAL_back.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_SAL_back.Location = new System.Drawing.Point(1167, 12);
+            this.Bt_SAL_back.Location = new System.Drawing.Point(1108, 12);
             this.Bt_SAL_back.Name = "Bt_SAL_back";
-            this.Bt_SAL_back.Size = new System.Drawing.Size(75, 44);
+            this.Bt_SAL_back.Size = new System.Drawing.Size(100, 55);
             this.Bt_SAL_back.TabIndex = 4;
-            this.Bt_SAL_back.Text = "Back";
             this.Bt_SAL_back.UseVisualStyleBackColor = true;
             this.Bt_SAL_back.Click += new System.EventHandler(this.Bt_SAL_back_Click);
             // 
@@ -176,11 +185,14 @@
             // 
             // bt_instraction
             // 
-            this.bt_instraction.Location = new System.Drawing.Point(1158, 735);
+            this.bt_instraction.BackgroundImage = global::GameBox.Properties.Resources.Instructions_red;
+            this.bt_instraction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_instraction.FlatAppearance.BorderSize = 0;
+            this.bt_instraction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_instraction.Location = new System.Drawing.Point(1108, 735);
             this.bt_instraction.Name = "bt_instraction";
-            this.bt_instraction.Size = new System.Drawing.Size(106, 42);
+            this.bt_instraction.Size = new System.Drawing.Size(213, 55);
             this.bt_instraction.TabIndex = 12;
-            this.bt_instraction.Text = "Instractions";
             this.bt_instraction.UseVisualStyleBackColor = true;
             this.bt_instraction.Click += new System.EventHandler(this.bt_instraction_Click);
             // 
@@ -220,7 +232,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button bt_music;
+        public System.Windows.Forms.Button bt_music;
         private System.Windows.Forms.Button bt_Exit;
         private System.Windows.Forms.Button Bt_SAL_back;
         private System.Windows.Forms.PictureBox pb_player2;

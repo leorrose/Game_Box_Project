@@ -23,18 +23,13 @@ namespace GameBox
         public Snake_and_ladders(Form back,Form EndGame)
         {
             InitializeComponent();
-            if (Program.music_OnOff == false)
-            {
-                bt_music.BackgroundImage = Properties.Resources.Mute_red;
-                bt_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else
-            {
-                bt_music.BackgroundImage = Properties.Resources.Music_red;
-                bt_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Shown += Snake_and_ladders_Shown;
             return_back = back;
             return_end = EndGame;
+        }
+        private void Snake_and_ladders_Shown(Object sender, EventArgs e)
+        {
+            Program.Update_music_bt();
         }
 
         private void bt_instraction_Click(object sender, EventArgs e)
@@ -47,20 +42,7 @@ namespace GameBox
 
         private void bt_music_Click(object sender, EventArgs e)
         {
-            if (Program.music_OnOff == true)  //pause music
-            {
-                Program.music_OnOff = false;
-                GameBox.Program.Wmp.controls.pause();
-                bt_music.BackgroundImage = Properties.Resources.Mute;
-                bt_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else     //play music
-            {
-                Program.music_OnOff = true;
-                GameBox.Program.Wmp.controls.play();
-                bt_music.BackgroundImage = Properties.Resources.Music;
-                bt_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Program.Music_on_off();
         }
 
         private void Bt_SAL_back_Click(object sender, EventArgs e)

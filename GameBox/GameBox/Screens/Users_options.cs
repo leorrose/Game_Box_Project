@@ -16,16 +16,7 @@ namespace GameBox
         public Users_options(Form form)
         {
             InitializeComponent();
-            if(Program.music_OnOff == false)
-            {
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else
-            {
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Shown += Users_options_Shown;
             return_back = form;
             if(Program.TypeUser==false)
             {
@@ -34,8 +25,12 @@ namespace GameBox
                 Bt_top_players.Enabled = false;
                 Bt_Givefeedback.Enabled = false;
             }
+           
         }
-
+        private void Users_options_Shown(Object sender, EventArgs e)
+        {
+            Program.Update_music_bt();
+        }
         private void Bt_UserOptions_exit_Click(object sender, EventArgs e) /*exit function */
         {
             Program.Exit();
@@ -70,20 +65,7 @@ namespace GameBox
 
         private void CB_music_CheckedChanged(object sender, EventArgs e)
         {
-            if (Program.music_OnOff == true)  //pause music
-            {
-                Program.music_OnOff = false;
-                GameBox.Program.Wmp.controls.pause();
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else     //play music
-            {
-                Program.music_OnOff = true;
-                GameBox.Program.Wmp.controls.play();
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Program.Music_on_off();
         }
 
         private void Bt_get_tip_click(object sender, EventArgs e)

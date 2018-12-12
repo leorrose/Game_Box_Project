@@ -231,6 +231,6 @@ namespace GameBox
         private System.Windows.Forms.Button button8;
         private Button Bt_Continue_change_details;
         private Label Lb_title;
-        private CheckBox CB_music;
+        public CheckBox CB_music;
     }
 }

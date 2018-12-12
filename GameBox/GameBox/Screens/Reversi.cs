@@ -20,16 +20,7 @@ namespace GameBox
         public Reversi(Form form , Form End )
         {
             InitializeComponent();
-            if (Program.music_OnOff == false)
-            {
-                CB_music.BackgroundImage = Properties.Resources.Green_mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else
-            {
-                CB_music.BackgroundImage = Properties.Resources.Green_music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Shown += Reversi_Shown;
             Lb_Player_turn.Text = Program.user1;
             Lb_player1.Text = Program.user1;
             Lb_player2.Text = Program.user2;
@@ -46,6 +37,10 @@ namespace GameBox
             arr[3, 4] = 1;
             arr[4, 3] = 1;
             arr[4, 4] = 2;
+        }
+        private void Reversi_Shown(Object sender, EventArgs e)
+        {
+            Program.Update_music_bt();
         }
 
         private void Print_table()
@@ -1491,20 +1486,7 @@ namespace GameBox
 
         private void Bt_reversi_music(object sender, EventArgs e)
         {
-            if (Program.music_OnOff == true)  //pause music
-            {
-                Program.music_OnOff = false;
-                GameBox.Program.Wmp.controls.pause();
-                CB_music.BackgroundImage = Properties.Resources.Green_mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else     //play music
-            {
-                Program.music_OnOff = true;
-                GameBox.Program.Wmp.controls.play();
-                CB_music.BackgroundImage = Properties.Resources.Green_music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Program.Music_on_off();
         }
 
         private void Bt_Reversi_back_click(object sender, EventArgs e)

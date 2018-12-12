@@ -146,6 +146,6 @@
         private System.Windows.Forms.Button Bt_Reports_Exit;
         private System.Windows.Forms.Button Bt_Reports_Back;
         private System.Windows.Forms.Label lb_title;
-        private System.Windows.Forms.CheckBox CB_music;
+        public System.Windows.Forms.CheckBox CB_music;
     }
 }

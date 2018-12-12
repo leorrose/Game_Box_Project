@@ -16,23 +16,19 @@ namespace GameBox
         public Change_details(Form form)
         {
             InitializeComponent();
-            if (Program.music_OnOff == false)
-            {
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else
-            {
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Shown += Change_details_Shown;
+            Program.Update_music_bt();
             return_back = form;
         }
-
+        private void Change_details_Shown(Object sender, EventArgs e)
+        {
+            Program.Update_music_bt();
+        }
         private void Bt_Change_details_exit_Click(object sender, EventArgs e)
         {
             Program.Exit();
         }
+
 
         private void Bt_Update_Click(object sender, EventArgs e)
         {
@@ -77,20 +73,7 @@ namespace GameBox
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            if (Program.music_OnOff == true)  //pause music
-            {
-                Program.music_OnOff = false;
-                GameBox.Program.Wmp.controls.pause();
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else     //play music
-            {
-                Program.music_OnOff = true;
-                GameBox.Program.Wmp.controls.play();
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Program.Music_on_off();
         }
     }
 }

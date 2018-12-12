@@ -20,22 +20,16 @@ namespace GameBox
         public login_form(Form form)
         {
             InitializeComponent();
-            if (Program.music_OnOff == false)
-            {
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else
-            {
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Shown += login_form_Shown;
             COB_user2.SelectedIndex = 0;
             return_back = form;
             Program.cnt_players = 1;
             Program.user2 = "";
         }
-
+        private void login_form_Shown(Object sender, EventArgs e)
+        {
+            Program.Update_music_bt();
+        }
         private void Bt_login_exit_Click(object sender, EventArgs e) /* function to exit */
         {
             Program.Exit();
@@ -44,9 +38,9 @@ namespace GameBox
 
         private void Bt_Player2_continue_Click(object sender, EventArgs e) /* login player 2 */
         {
-            if(TB_user_name2.Text==Program.user1)
+            if (TB_user_name2.Text == Program.user1)
             {
-                MessageBox.Show(Program.user1+" is allready conected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Program.user1 + " is allready conected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -67,7 +61,7 @@ namespace GameBox
                     MessageBox.Show("Invalid Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-                
+
             }
             else if (COB_user2.Text == "Sign up") /* if conbo box is on sign up */
             {
@@ -91,7 +85,7 @@ namespace GameBox
 
         private void Bt_back_Click(object sender, EventArgs e) /* go back function*/
         {
-            MessageBox.Show(Program.user1+" disconected", "Sign out", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(Program.user1 + " disconected", "Sign out", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return_back.Show(); /* show last screen*/
             this.Close(); /* hide this screen*/
         }
@@ -99,20 +93,7 @@ namespace GameBox
 
         private void Cb_music(object sender, EventArgs e)
         {
-            if (Program.music_OnOff == true)  //pause music
-            {
-                Program.music_OnOff = false;
-                GameBox.Program.Wmp.controls.pause();
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else     //play music
-            {
-                Program.music_OnOff = true;
-                GameBox.Program.Wmp.controls.play();
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Program.Music_on_off();
         }
-    }     
+    }
 }

@@ -199,7 +199,7 @@
         private System.Windows.Forms.Button Bt_selectgame_back;
         private System.Windows.Forms.Button bt_reversi;
         private System.Windows.Forms.Button bt_snake_and_ladders;
-        private System.Windows.Forms.CheckBox CB_music;
+        public  System.Windows.Forms.CheckBox CB_music;
         private System.Windows.Forms.Button SAl_instruction;
         private System.Windows.Forms.Button reversi_insruction;
     }

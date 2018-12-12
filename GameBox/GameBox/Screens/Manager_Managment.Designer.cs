@@ -281,6 +281,6 @@
         private System.Windows.Forms.Button Bt_remove;
         private System.Windows.Forms.Button Bt_add_manager;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.CheckBox CB_music;
+        public System.Windows.Forms.CheckBox CB_music;
     }
 }

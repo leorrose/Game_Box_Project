@@ -254,6 +254,6 @@
         private System.Windows.Forms.Button Bt_Change_details_exit;
         private System.Windows.Forms.Button Bt_Change_Details_back;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox CB_music;
+        public System.Windows.Forms.CheckBox CB_music;
     }
 }

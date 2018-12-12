@@ -415,7 +415,7 @@
         private System.Windows.Forms.Label lb_password_manager;
         private System.Windows.Forms.Label lb_player_name;
         private System.Windows.Forms.Button Bt_credits;
-        private System.Windows.Forms.CheckBox CB_music;
+        public System.Windows.Forms.CheckBox CB_music;
         private System.Windows.Forms.Button Bt_MainForm_exit;
         private System.Windows.Forms.Label lb_password_player;
         private System.Windows.Forms.Label lb_guest_name;

@@ -18,21 +18,16 @@ namespace GameBox
         public Reports(Form form,string PrintType)
         {
             InitializeComponent();
-            if (Program.music_OnOff == false)
-            {
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else
-            {
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Shown += Reports_Shown;
             Return_back = form;
             Print = PrintType;
             Choose_print();
             lb_title.Text = PrintType + " :";
             
+        }
+        private void Reports_Shown(Object sender, EventArgs e)
+        {
+            Program.Update_music_bt();
         }
 
         private void Choose_print()
@@ -92,20 +87,7 @@ namespace GameBox
 
         private void CB_music_click(object sender, EventArgs e)
         {
-            if (Program.music_OnOff == true)  //pause music
-            {
-                Program.music_OnOff = false;
-                GameBox.Program.Wmp.controls.pause();
-                CB_music.BackgroundImage = Properties.Resources.Mute;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
-            else     //play music
-            {
-                Program.music_OnOff = true;
-                GameBox.Program.Wmp.controls.play();
-                CB_music.BackgroundImage = Properties.Resources.Music;
-                CB_music.BackgroundImageLayout = ImageLayout.Stretch;
-            }
+            Program.Music_on_off();
         }
     }
 }
