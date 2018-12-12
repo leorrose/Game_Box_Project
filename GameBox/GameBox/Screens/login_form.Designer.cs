@@ -47,7 +47,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 34.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Beige;
-            this.label1.Location = new System.Drawing.Point(64, 99);
+            this.label1.Location = new System.Drawing.Point(388, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(410, 67);
             this.label1.TabIndex = 0;
@@ -57,21 +57,23 @@
             // 
             this.TB_user_name2.BackColor = System.Drawing.Color.Salmon;
             this.TB_user_name2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_user_name2.Location = new System.Drawing.Point(191, 232);
+            this.TB_user_name2.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_user_name2.Location = new System.Drawing.Point(318, 210);
             this.TB_user_name2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_user_name2.Name = "TB_user_name2";
-            this.TB_user_name2.Size = new System.Drawing.Size(165, 22);
+            this.TB_user_name2.Size = new System.Drawing.Size(165, 36);
             this.TB_user_name2.TabIndex = 1;
             // 
             // TB_password2
             // 
             this.TB_password2.BackColor = System.Drawing.Color.Salmon;
             this.TB_password2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TB_password2.Location = new System.Drawing.Point(191, 266);
+            this.TB_password2.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_password2.Location = new System.Drawing.Point(318, 259);
             this.TB_password2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TB_password2.Name = "TB_password2";
             this.TB_password2.PasswordChar = '*';
-            this.TB_password2.Size = new System.Drawing.Size(165, 22);
+            this.TB_password2.Size = new System.Drawing.Size(165, 36);
             this.TB_password2.TabIndex = 6;
             // 
             // Bt_user_continue
@@ -81,10 +83,10 @@
             this.Bt_user_continue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_user_continue.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_user_continue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_user_continue.Location = new System.Drawing.Point(191, 346);
+            this.Bt_user_continue.Location = new System.Drawing.Point(318, 366);
             this.Bt_user_continue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_user_continue.Name = "Bt_user_continue";
-            this.Bt_user_continue.Size = new System.Drawing.Size(165, 50);
+            this.Bt_user_continue.Size = new System.Drawing.Size(165, 55);
             this.Bt_user_continue.TabIndex = 8;
             this.Bt_user_continue.Text = "Continue As User";
             this.Bt_user_continue.UseVisualStyleBackColor = false;
@@ -95,25 +97,27 @@
             this.COB_user2.BackColor = System.Drawing.Color.Salmon;
             this.COB_user2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.COB_user2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.COB_user2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.COB_user2.FormattingEnabled = true;
+            this.COB_user2.ItemHeight = 22;
             this.COB_user2.Items.AddRange(new object[] {
             "Sign in",
             "Sign up"});
-            this.COB_user2.Location = new System.Drawing.Point(191, 300);
+            this.COB_user2.Location = new System.Drawing.Point(318, 319);
             this.COB_user2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.COB_user2.Name = "COB_user2";
-            this.COB_user2.Size = new System.Drawing.Size(165, 24);
+            this.COB_user2.Size = new System.Drawing.Size(165, 30);
             this.COB_user2.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label3.Font = new System.Drawing.Font("Modern No. 20", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Beige;
-            this.label3.Location = new System.Drawing.Point(40, 232);
+            this.label3.Location = new System.Drawing.Point(85, 225);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 17);
+            this.label3.Size = new System.Drawing.Size(152, 21);
             this.label3.TabIndex = 10;
             this.label3.Text = "Name(2-10 chars)";
             // 
@@ -121,11 +125,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label5.Font = new System.Drawing.Font("Modern No. 20", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Beige;
-            this.label5.Location = new System.Drawing.Point(40, 266);
+            this.label5.Location = new System.Drawing.Point(85, 274);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(143, 17);
+            this.label5.Size = new System.Drawing.Size(157, 21);
             this.label5.TabIndex = 12;
             this.label5.Text = "Password(5 chars)";
             // 
@@ -137,7 +141,7 @@
             this.Bt_login_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_login_exit.FlatAppearance.BorderSize = 0;
             this.Bt_login_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_login_exit.Location = new System.Drawing.Point(886, 11);
+            this.Bt_login_exit.Location = new System.Drawing.Point(1061, 16);
             this.Bt_login_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_login_exit.Name = "Bt_login_exit";
             this.Bt_login_exit.Size = new System.Drawing.Size(100, 55);
@@ -152,7 +156,7 @@
             this.Bt_login_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_login_back.FlatAppearance.BorderSize = 0;
             this.Bt_login_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_login_back.Location = new System.Drawing.Point(780, 11);
+            this.Bt_login_back.Location = new System.Drawing.Point(955, 16);
             this.Bt_login_back.Name = "Bt_login_back";
             this.Bt_login_back.Size = new System.Drawing.Size(100, 55);
             this.Bt_login_back.TabIndex = 31;
@@ -172,7 +176,7 @@
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CB_music.Location = new System.Drawing.Point(13, 13);
+            this.CB_music.Location = new System.Drawing.Point(23, 18);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
@@ -189,7 +193,7 @@
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(998, 562);
+            this.ClientSize = new System.Drawing.Size(1182, 703);
             this.ControlBox = false;
             this.Controls.Add(this.CB_music);
             this.Controls.Add(this.Bt_login_back);
@@ -202,8 +206,8 @@
             this.Controls.Add(this.TB_user_name2);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.MaximumSize = new System.Drawing.Size(1016, 609);
-            this.MinimumSize = new System.Drawing.Size(1016, 609);
+            this.MaximumSize = new System.Drawing.Size(1200, 750);
+            this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "login_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "login_form";

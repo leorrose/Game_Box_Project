@@ -38,9 +38,9 @@
             this.Bt_ok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_ok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_ok.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_ok.Location = new System.Drawing.Point(657, 474);
+            this.Bt_ok.Location = new System.Drawing.Point(772, 609);
             this.Bt_ok.Name = "Bt_ok";
-            this.Bt_ok.Size = new System.Drawing.Size(112, 50);
+            this.Bt_ok.Size = new System.Drawing.Size(112, 55);
             this.Bt_ok.TabIndex = 0;
             this.Bt_ok.Text = "OK";
             this.Bt_ok.UseVisualStyleBackColor = true;
@@ -52,11 +52,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(998, 562);
+            this.ClientSize = new System.Drawing.Size(1182, 703);
             this.ControlBox = false;
             this.Controls.Add(this.Bt_ok);
-            this.MaximumSize = new System.Drawing.Size(1016, 609);
-            this.MinimumSize = new System.Drawing.Size(1016, 609);
+            this.MaximumSize = new System.Drawing.Size(1200, 750);
+            this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Credits";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Credits";

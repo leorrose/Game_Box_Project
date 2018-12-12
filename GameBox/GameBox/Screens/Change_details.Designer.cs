@@ -50,9 +50,9 @@
             this.Bt_Update.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Update.BackgroundImage")));
             this.Bt_Update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_Update.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Update.Location = new System.Drawing.Point(264, 403);
+            this.Bt_Update.Location = new System.Drawing.Point(308, 469);
             this.Bt_Update.Name = "Bt_Update";
-            this.Bt_Update.Size = new System.Drawing.Size(176, 44);
+            this.Bt_Update.Size = new System.Drawing.Size(176, 55);
             this.Bt_Update.TabIndex = 0;
             this.Bt_Update.Text = "Update";
             this.Bt_Update.UseVisualStyleBackColor = false;
@@ -62,49 +62,57 @@
             // 
             this.Tb_Existing_Password.BackColor = System.Drawing.Color.DarkSalmon;
             this.Tb_Existing_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Tb_Existing_Password.Location = new System.Drawing.Point(264, 219);
+            this.Tb_Existing_Password.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Existing_Password.Location = new System.Drawing.Point(308, 289);
+            this.Tb_Existing_Password.Multiline = true;
             this.Tb_Existing_Password.Name = "Tb_Existing_Password";
             this.Tb_Existing_Password.PasswordChar = '*';
-            this.Tb_Existing_Password.Size = new System.Drawing.Size(176, 22);
+            this.Tb_Existing_Password.Size = new System.Drawing.Size(176, 30);
             this.Tb_Existing_Password.TabIndex = 2;
             // 
             // Tb_New_Password
             // 
             this.Tb_New_Password.BackColor = System.Drawing.Color.DarkSalmon;
             this.Tb_New_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Tb_New_Password.Location = new System.Drawing.Point(264, 329);
+            this.Tb_New_Password.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_New_Password.Location = new System.Drawing.Point(308, 399);
+            this.Tb_New_Password.Multiline = true;
             this.Tb_New_Password.Name = "Tb_New_Password";
             this.Tb_New_Password.PasswordChar = '*';
-            this.Tb_New_Password.Size = new System.Drawing.Size(176, 22);
+            this.Tb_New_Password.Size = new System.Drawing.Size(176, 30);
             this.Tb_New_Password.TabIndex = 3;
             // 
             // Tb_New_Name
             // 
             this.Tb_New_Name.BackColor = System.Drawing.Color.DarkSalmon;
             this.Tb_New_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Tb_New_Name.Location = new System.Drawing.Point(264, 289);
+            this.Tb_New_Name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_New_Name.Location = new System.Drawing.Point(308, 359);
+            this.Tb_New_Name.Multiline = true;
             this.Tb_New_Name.Name = "Tb_New_Name";
-            this.Tb_New_Name.Size = new System.Drawing.Size(176, 22);
+            this.Tb_New_Name.Size = new System.Drawing.Size(176, 30);
             this.Tb_New_Name.TabIndex = 4;
             // 
             // Tb_Existing_Name
             // 
             this.Tb_Existing_Name.BackColor = System.Drawing.Color.DarkSalmon;
             this.Tb_Existing_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Tb_Existing_Name.Location = new System.Drawing.Point(264, 178);
+            this.Tb_Existing_Name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Existing_Name.Location = new System.Drawing.Point(308, 248);
+            this.Tb_Existing_Name.Multiline = true;
             this.Tb_Existing_Name.Name = "Tb_Existing_Name";
-            this.Tb_Existing_Name.Size = new System.Drawing.Size(176, 22);
+            this.Tb_Existing_Name.Size = new System.Drawing.Size(176, 30);
             this.Tb_Existing_Name.TabIndex = 5;
             // 
             // lb_manager_name
             // 
             this.lb_manager_name.AutoSize = true;
             this.lb_manager_name.BackColor = System.Drawing.Color.Transparent;
-            this.lb_manager_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lb_manager_name.Font = new System.Drawing.Font("Modern No. 20", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_manager_name.ForeColor = System.Drawing.Color.Beige;
-            this.lb_manager_name.Location = new System.Drawing.Point(43, 181);
+            this.lb_manager_name.Location = new System.Drawing.Point(31, 248);
             this.lb_manager_name.Name = "lb_manager_name";
-            this.lb_manager_name.Size = new System.Drawing.Size(200, 17);
+            this.lb_manager_name.Size = new System.Drawing.Size(228, 21);
             this.lb_manager_name.TabIndex = 21;
             this.lb_manager_name.Text = "Existing Name(2-10 chars)";
             // 
@@ -112,11 +120,11 @@
             // 
             this.lb_password_player.AutoSize = true;
             this.lb_password_player.BackColor = System.Drawing.Color.Transparent;
-            this.lb_password_player.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.lb_password_player.Font = new System.Drawing.Font("Modern No. 20", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_password_player.ForeColor = System.Drawing.Color.Beige;
-            this.lb_password_player.Location = new System.Drawing.Point(43, 224);
+            this.lb_password_player.Location = new System.Drawing.Point(31, 289);
             this.lb_password_player.Name = "lb_password_player";
-            this.lb_password_player.Size = new System.Drawing.Size(204, 17);
+            this.lb_password_player.Size = new System.Drawing.Size(233, 21);
             this.lb_password_player.TabIndex = 31;
             this.lb_password_player.Text = "Existing Password(5 chars)";
             // 
@@ -124,11 +132,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Beige;
-            this.label1.Location = new System.Drawing.Point(43, 289);
+            this.label1.Location = new System.Drawing.Point(31, 359);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 17);
+            this.label1.Size = new System.Drawing.Size(192, 21);
             this.label1.TabIndex = 32;
             this.label1.Text = "New Name(2-10 chars)";
             // 
@@ -136,11 +144,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Beige;
-            this.label2.Location = new System.Drawing.Point(43, 329);
+            this.label2.Location = new System.Drawing.Point(31, 399);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 17);
+            this.label2.Size = new System.Drawing.Size(197, 21);
             this.label2.TabIndex = 33;
             this.label2.Text = "New Password(5 chars)";
             // 
@@ -152,7 +160,7 @@
             this.Bt_Change_details_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Change_details_exit.FlatAppearance.BorderSize = 0;
             this.Bt_Change_details_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Change_details_exit.Location = new System.Drawing.Point(886, 3);
+            this.Bt_Change_details_exit.Location = new System.Drawing.Point(1070, 11);
             this.Bt_Change_details_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_Change_details_exit.Name = "Bt_Change_details_exit";
             this.Bt_Change_details_exit.Size = new System.Drawing.Size(100, 55);
@@ -167,7 +175,7 @@
             this.Bt_Change_Details_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_Change_Details_back.FlatAppearance.BorderSize = 0;
             this.Bt_Change_Details_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Change_Details_back.Location = new System.Drawing.Point(780, 3);
+            this.Bt_Change_Details_back.Location = new System.Drawing.Point(964, 11);
             this.Bt_Change_Details_back.Name = "Bt_Change_Details_back";
             this.Bt_Change_Details_back.Size = new System.Drawing.Size(100, 55);
             this.Bt_Change_Details_back.TabIndex = 35;
@@ -178,11 +186,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Modern No. 20", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Modern No. 20", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Beige;
-            this.label3.Location = new System.Drawing.Point(372, 64);
+            this.label3.Location = new System.Drawing.Point(405, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(275, 41);
+            this.label3.Size = new System.Drawing.Size(406, 62);
             this.label3.TabIndex = 37;
             this.label3.Text = "Change Details";
             // 
@@ -199,7 +207,7 @@
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CB_music.Location = new System.Drawing.Point(13, 5);
+            this.CB_music.Location = new System.Drawing.Point(22, 14);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
@@ -215,7 +223,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(998, 562);
+            this.ClientSize = new System.Drawing.Size(1182, 703);
             this.ControlBox = false;
             this.Controls.Add(this.CB_music);
             this.Controls.Add(this.label3);
@@ -230,8 +238,8 @@
             this.Controls.Add(this.Tb_New_Password);
             this.Controls.Add(this.Tb_Existing_Password);
             this.Controls.Add(this.Bt_Update);
-            this.MaximumSize = new System.Drawing.Size(1016, 609);
-            this.MinimumSize = new System.Drawing.Size(1016, 609);
+            this.MaximumSize = new System.Drawing.Size(1200, 750);
+            this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Change_details";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change_details";

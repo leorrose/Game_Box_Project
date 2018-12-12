@@ -46,7 +46,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(177)));
             this.label1.ForeColor = System.Drawing.Color.Beige;
-            this.label1.Location = new System.Drawing.Point(476, 370);
+            this.label1.Location = new System.Drawing.Point(577, 557);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 32);
             this.label1.TabIndex = 1;
@@ -64,7 +64,7 @@
             this.bt_guistwait_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_guistwait_exit.FlatAppearance.BorderSize = 0;
             this.bt_guistwait_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_guistwait_exit.Location = new System.Drawing.Point(886, 12);
+            this.bt_guistwait_exit.Location = new System.Drawing.Point(1070, 10);
             this.bt_guistwait_exit.Name = "bt_guistwait_exit";
             this.bt_guistwait_exit.Size = new System.Drawing.Size(100, 55);
             this.bt_guistwait_exit.TabIndex = 2;
@@ -77,7 +77,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Beige;
-            this.label2.Location = new System.Drawing.Point(287, 253);
+            this.label2.Location = new System.Drawing.Point(396, 320);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(390, 25);
             this.label2.TabIndex = 3;
@@ -89,7 +89,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Modern No. 20", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Beige;
-            this.label3.Location = new System.Drawing.Point(398, 322);
+            this.label3.Location = new System.Drawing.Point(499, 509);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(201, 34);
             this.label3.TabIndex = 4;
@@ -102,7 +102,7 @@
             this.Bt_guistwait_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_guistwait_back.FlatAppearance.BorderSize = 0;
             this.Bt_guistwait_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_guistwait_back.Location = new System.Drawing.Point(780, 12);
+            this.Bt_guistwait_back.Location = new System.Drawing.Point(964, 10);
             this.Bt_guistwait_back.Name = "Bt_guistwait_back";
             this.Bt_guistwait_back.Size = new System.Drawing.Size(100, 55);
             this.Bt_guistwait_back.TabIndex = 5;
@@ -126,7 +126,7 @@
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CB_music.Location = new System.Drawing.Point(13, 12);
+            this.CB_music.Location = new System.Drawing.Point(25, 13);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
@@ -142,7 +142,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(998, 562);
+            this.ClientSize = new System.Drawing.Size(1182, 703);
             this.ControlBox = false;
             this.Controls.Add(this.CB_music);
             this.Controls.Add(this.Bt_guistwait_back);
@@ -150,8 +150,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bt_guistwait_exit);
             this.Controls.Add(this.label1);
-            this.MaximumSize = new System.Drawing.Size(1016, 609);
-            this.MinimumSize = new System.Drawing.Size(1016, 609);
+            this.MaximumSize = new System.Drawing.Size(1200, 750);
+            this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Guest_wait";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Guest_wait";

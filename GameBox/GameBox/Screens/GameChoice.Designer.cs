@@ -45,7 +45,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Beige;
-            this.label1.Location = new System.Drawing.Point(292, 467);
+            this.label1.Location = new System.Drawing.Point(374, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(444, 64);
@@ -62,7 +62,7 @@
             this.Bt_selectgame_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_selectgame_Exit.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_selectgame_Exit.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Bt_selectgame_Exit.Location = new System.Drawing.Point(885, 9);
+            this.Bt_selectgame_Exit.Location = new System.Drawing.Point(1069, 13);
             this.Bt_selectgame_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.Bt_selectgame_Exit.Name = "Bt_selectgame_Exit";
             this.Bt_selectgame_Exit.Size = new System.Drawing.Size(100, 55);
@@ -78,7 +78,7 @@
             this.Bt_selectgame_back.FlatAppearance.BorderSize = 0;
             this.Bt_selectgame_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_selectgame_back.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_selectgame_back.Location = new System.Drawing.Point(776, 9);
+            this.Bt_selectgame_back.Location = new System.Drawing.Point(962, 13);
             this.Bt_selectgame_back.Name = "Bt_selectgame_back";
             this.Bt_selectgame_back.Size = new System.Drawing.Size(100, 55);
             this.Bt_selectgame_back.TabIndex = 11;
@@ -91,7 +91,7 @@
             this.bt_reversi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_reversi.BackgroundImage")));
             this.bt_reversi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_reversi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_reversi.Location = new System.Drawing.Point(98, 245);
+            this.bt_reversi.Location = new System.Drawing.Point(105, 245);
             this.bt_reversi.Name = "bt_reversi";
             this.bt_reversi.Size = new System.Drawing.Size(141, 86);
             this.bt_reversi.TabIndex = 12;
@@ -105,7 +105,7 @@
             this.bt_snake_and_ladders.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_snake_and_ladders.BackgroundImage")));
             this.bt_snake_and_ladders.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_snake_and_ladders.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_snake_and_ladders.Location = new System.Drawing.Point(776, 245);
+            this.bt_snake_and_ladders.Location = new System.Drawing.Point(934, 245);
             this.bt_snake_and_ladders.Name = "bt_snake_and_ladders";
             this.bt_snake_and_ladders.Size = new System.Drawing.Size(141, 86);
             this.bt_snake_and_ladders.TabIndex = 13;
@@ -126,7 +126,7 @@
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.CB_music.Location = new System.Drawing.Point(13, 9);
+            this.CB_music.Location = new System.Drawing.Point(24, 15);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
@@ -141,7 +141,7 @@
             this.SAl_instruction.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SAl_instruction.BackgroundImage")));
             this.SAl_instruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SAl_instruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SAl_instruction.Location = new System.Drawing.Point(776, 354);
+            this.SAl_instruction.Location = new System.Drawing.Point(934, 354);
             this.SAl_instruction.Name = "SAl_instruction";
             this.SAl_instruction.Size = new System.Drawing.Size(141, 39);
             this.SAl_instruction.TabIndex = 31;
@@ -154,7 +154,7 @@
             this.reversi_insruction.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("reversi_insruction.BackgroundImage")));
             this.reversi_insruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.reversi_insruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.reversi_insruction.Location = new System.Drawing.Point(98, 354);
+            this.reversi_insruction.Location = new System.Drawing.Point(105, 354);
             this.reversi_insruction.Name = "reversi_insruction";
             this.reversi_insruction.Size = new System.Drawing.Size(141, 39);
             this.reversi_insruction.TabIndex = 32;
@@ -169,7 +169,7 @@
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(998, 562);
+            this.ClientSize = new System.Drawing.Size(1182, 703);
             this.ControlBox = false;
             this.Controls.Add(this.reversi_insruction);
             this.Controls.Add(this.SAl_instruction);
@@ -182,8 +182,8 @@
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.MaximumSize = new System.Drawing.Size(1016, 609);
-            this.MinimumSize = new System.Drawing.Size(1016, 609);
+            this.MaximumSize = new System.Drawing.Size(1200, 750);
+            this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "GameChoice";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameBox";

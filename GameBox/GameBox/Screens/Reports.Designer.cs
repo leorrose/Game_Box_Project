@@ -46,11 +46,11 @@
             this.dataGridView1.BackgroundColor = System.Drawing.Color.DarkSlateBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.GridColor = System.Drawing.Color.DarkSlateBlue;
-            this.dataGridView1.Location = new System.Drawing.Point(33, 81);
+            this.dataGridView1.Location = new System.Drawing.Point(69, 122);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(700, 456);
+            this.dataGridView1.Size = new System.Drawing.Size(887, 542);
             this.dataGridView1.StandardTab = true;
             this.dataGridView1.TabIndex = 0;
             // 
@@ -61,7 +61,7 @@
             this.Bt_Reports_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_Reports_Exit.FlatAppearance.BorderSize = 0;
             this.Bt_Reports_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Reports_Exit.Location = new System.Drawing.Point(886, 12);
+            this.Bt_Reports_Exit.Location = new System.Drawing.Point(1070, 12);
             this.Bt_Reports_Exit.Name = "Bt_Reports_Exit";
             this.Bt_Reports_Exit.Size = new System.Drawing.Size(100, 55);
             this.Bt_Reports_Exit.TabIndex = 1;
@@ -75,7 +75,7 @@
             this.Bt_Reports_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_Reports_Back.FlatAppearance.BorderSize = 0;
             this.Bt_Reports_Back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Reports_Back.Location = new System.Drawing.Point(780, 12);
+            this.Bt_Reports_Back.Location = new System.Drawing.Point(964, 12);
             this.Bt_Reports_Back.Name = "Bt_Reports_Back";
             this.Bt_Reports_Back.Size = new System.Drawing.Size(100, 55);
             this.Bt_Reports_Back.TabIndex = 2;
@@ -86,11 +86,11 @@
             // 
             this.lb_title.AutoSize = true;
             this.lb_title.BackColor = System.Drawing.Color.Transparent;
-            this.lb_title.Font = new System.Drawing.Font("Modern No. 20", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_title.Font = new System.Drawing.Font("Modern No. 20", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_title.ForeColor = System.Drawing.Color.Beige;
-            this.lb_title.Location = new System.Drawing.Point(239, 24);
+            this.lb_title.Location = new System.Drawing.Point(333, 23);
             this.lb_title.Name = "lb_title";
-            this.lb_title.Size = new System.Drawing.Size(0, 41);
+            this.lb_title.Size = new System.Drawing.Size(0, 62);
             this.lb_title.TabIndex = 50;
             // 
             // CB_music
@@ -122,15 +122,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(998, 562);
+            this.ClientSize = new System.Drawing.Size(1182, 703);
             this.ControlBox = false;
             this.Controls.Add(this.CB_music);
             this.Controls.Add(this.lb_title);
             this.Controls.Add(this.Bt_Reports_Back);
             this.Controls.Add(this.Bt_Reports_Exit);
             this.Controls.Add(this.dataGridView1);
-            this.MaximumSize = new System.Drawing.Size(1016, 609);
-            this.MinimumSize = new System.Drawing.Size(1016, 609);
+            this.MaximumSize = new System.Drawing.Size(1200, 750);
+            this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Reports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reports";
