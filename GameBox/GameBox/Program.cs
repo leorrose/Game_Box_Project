@@ -287,6 +287,73 @@ namespace GameBox
                 Environment.Exit(0); /* close all */
             }
         }
+        public static void Update_Win_reversi(string Name)
+        {
+
+            string UserConectionString = ConectionString("Scores");
+            using (SqlConnection con = new SqlConnection(UserConectionString))
+            {
+                con.Open();
+                SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Scores WHERE Name='" + Name + "'", con);
+                SqlDataReader Read = sqlCommand.ExecuteReader();
+                Read.Read();
+                int Wins = Convert.ToInt32(Read["wins"]);
+                int Reversi_Wins = Convert.ToInt32(Read["Reversi Wins"]);
+                int Game_Count = Convert.ToInt32(Read["Game Count"]);
+                Read.Close();
+                Wins++;
+                Reversi_Wins++;
+                Game_Count++;
+                string cmd = "UPDATE Scores SET Wins='" + Wins +"',[Game Count]='"+ Game_Count + "',[Reversi Wins]='" + Reversi_Wins +"'WHERE Name='" + Name + "'";
+                SqlCommand cmd1 = new SqlCommand(cmd, con);
+                cmd1.ExecuteNonQuery();
+                con.Close();
+            }
+        }
+        public static void Update_Win_SAl(string Name)
+        {
+
+            string UserConectionString = ConectionString("Scores");
+            using (SqlConnection con = new SqlConnection(UserConectionString))
+            {
+                con.Open();
+                SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Scores WHERE Name='" + Name + "'", con);
+                SqlDataReader Read = sqlCommand.ExecuteReader();
+                Read.Read();
+                int Wins = Convert.ToInt32(Read["wins"]);
+                int SAL_Wins = Convert.ToInt32(Read["Snake And Ladders Wins"]);
+                int Game_Count = Convert.ToInt32(Read["Game Count"]);
+                Read.Close();
+                Wins++;
+                SAL_Wins++;
+                Game_Count++;
+                string cmd = "UPDATE Scores SET Wins='" + Wins + "',[Game Count]='" + Game_Count + "',[Snake And Ladders Wins]='" + SAL_Wins + "'WHERE Name='" + Name + "'";
+                SqlCommand cmd1 = new SqlCommand(cmd, con);
+                cmd1.ExecuteNonQuery();
+                con.Close();
+            }
+        }
+        public static void Update_Lose(string Name)
+        {
+
+            string UserConectionString = ConectionString("Scores");
+            using (SqlConnection con = new SqlConnection(UserConectionString))
+            {
+                con.Open();
+                SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Scores WHERE Name='" + Name + "'", con);
+                SqlDataReader Read = sqlCommand.ExecuteReader();
+                Read.Read();
+                int Loses = Convert.ToInt32(Read["Loses"]);
+                int Game_Count = Convert.ToInt32(Read["Game Count"]);
+                Read.Close();
+                Loses++;
+                Game_Count++;
+                string cmd = "UPDATE Scores SET Loses='" + Loses + "',[Game Count]='" + Game_Count + "'WHERE Name='" + Name + "'";
+                SqlCommand cmd1 = new SqlCommand(cmd, con);
+                cmd1.ExecuteNonQuery();
+                con.Close();
+            }
+        }
         /* functions on Feedback Database */
         public static void Insert_Feedback(string Name, string Report)  /* function to insurt feedback in feedbacks database*/
         {

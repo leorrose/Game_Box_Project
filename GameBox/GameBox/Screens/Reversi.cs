@@ -1473,14 +1473,26 @@ namespace GameBox
             if (flag == 0)
             {
                 if (Sum1 > Sum2)
-                    MessageBox.Show("The winner is " + Program.user1 +" !!");
-                else if(Sum2>Sum1)
-                    MessageBox.Show("The winner is " + Program.user2 + " !!");
+                {
+                    Winner Win = new Winner(Program.user1, options, this,ReturnForm);
+                    Win.Show();
+                    Program.Update_Win_reversi(Program.user1);
+                    Program.Update_Lose(Program.user2);
+                }
+                else if (Sum2 > Sum1)
+                {
+                    Winner Win = new Winner(Program.user2, options, this,ReturnForm);
+                    Win.Show();
+                    Program.Update_Win_reversi(Program.user2);
+                    Program.Update_Lose(Program.user1);
+                }
                 else
-                    MessageBox.Show("its a tie!!");
-                this.Close();
-                options.Show();
-                
+                {
+                    Winner Win = new Winner("Its a tie!!", options, this,ReturnForm);
+                    Win.Show();
+                    Program.Update_Win_reversi(Program.user1);
+                    Program.Update_Win_reversi(Program.user2);
+                }
             }
         }
 
