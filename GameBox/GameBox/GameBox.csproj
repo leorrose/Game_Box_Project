@@ -66,6 +66,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Screens\Logo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\Logo.Designer.cs">
+      <DependentUpon>Logo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Reversi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Feedback_form.resx">
       <DependentUpon>Feedback_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\Logo.resx">
+      <DependentUpon>Logo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\Reversi.resx">
       <DependentUpon>Reversi.cs</DependentUpon>
@@ -304,6 +313,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Players.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Logo.gif" />
     <None Include="Resources\roll.gif" />
     <None Include="Resources\tips.gif" />
     <None Include="Resources\Fanta.gif" />
