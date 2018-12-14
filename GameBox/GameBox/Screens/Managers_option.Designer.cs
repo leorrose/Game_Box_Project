@@ -47,7 +47,7 @@
             this.Bt_user_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_user_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_user_add.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_user_add.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_user_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_user_add.Location = new System.Drawing.Point(49, 275);
             this.Bt_user_add.Name = "Bt_user_add";
             this.Bt_user_add.Size = new System.Drawing.Size(236, 68);
@@ -62,8 +62,8 @@
             this.BT_login_reports.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BT_login_reports.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BT_login_reports.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.BT_login_reports.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BT_login_reports.Location = new System.Drawing.Point(864, 275);
+            this.BT_login_reports.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BT_login_reports.Location = new System.Drawing.Point(891, 275);
             this.BT_login_reports.Name = "BT_login_reports";
             this.BT_login_reports.Size = new System.Drawing.Size(236, 68);
             this.BT_login_reports.TabIndex = 1;
@@ -77,7 +77,7 @@
             this.Bt_manager_add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_manager_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_manager_add.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_manager_add.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_manager_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_manager_add.Location = new System.Drawing.Point(49, 370);
             this.Bt_manager_add.Name = "Bt_manager_add";
             this.Bt_manager_add.Size = new System.Drawing.Size(236, 68);
@@ -92,8 +92,8 @@
             this.Bt_score_report.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_score_report.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_score_report.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_score_report.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_score_report.Location = new System.Drawing.Point(864, 370);
+            this.Bt_score_report.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_score_report.Location = new System.Drawing.Point(891, 370);
             this.Bt_score_report.Name = "Bt_score_report";
             this.Bt_score_report.Size = new System.Drawing.Size(236, 68);
             this.Bt_score_report.TabIndex = 3;
@@ -123,8 +123,8 @@
             this.Bt_feedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_feedback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_feedback.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_feedback.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_feedback.Location = new System.Drawing.Point(864, 464);
+            this.Bt_feedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_feedback.Location = new System.Drawing.Point(891, 464);
             this.Bt_feedback.Name = "Bt_feedback";
             this.Bt_feedback.Size = new System.Drawing.Size(236, 68);
             this.Bt_feedback.TabIndex = 29;
@@ -138,7 +138,7 @@
             this.Bt_manager_tips.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_manager_tips.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_manager_tips.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_manager_tips.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_manager_tips.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_manager_tips.Location = new System.Drawing.Point(49, 464);
             this.Bt_manager_tips.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_manager_tips.Name = "Bt_manager_tips";
@@ -174,7 +174,7 @@
             this.CB_music.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CB_music.FlatAppearance.BorderSize = 0;
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CB_music.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CB_music.Location = new System.Drawing.Point(26, 9);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
@@ -190,11 +190,11 @@
             // 
             this.Lb_title.AutoSize = true;
             this.Lb_title.BackColor = System.Drawing.Color.Transparent;
-            this.Lb_title.Font = new System.Drawing.Font("Modern No. 20", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lb_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_title.ForeColor = System.Drawing.Color.Beige;
             this.Lb_title.Location = new System.Drawing.Point(404, 70);
             this.Lb_title.Name = "Lb_title";
-            this.Lb_title.Size = new System.Drawing.Size(377, 62);
+            this.Lb_title.Size = new System.Drawing.Size(413, 69);
             this.Lb_title.TabIndex = 34;
             this.Lb_title.Text = "Menu Options";
             // 

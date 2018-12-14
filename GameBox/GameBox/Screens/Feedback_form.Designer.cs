@@ -53,11 +53,11 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Beige;
             this.label1.Location = new System.Drawing.Point(248, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(417, 62);
+            this.label1.Size = new System.Drawing.Size(600, 62);
             this.label1.TabIndex = 2;
             this.label1.Text = "Leave a feedback:";
             // 
@@ -67,7 +67,7 @@
             this.Bt_insert_feedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_insert_feedback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_insert_feedback.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_insert_feedback.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_insert_feedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_insert_feedback.Location = new System.Drawing.Point(949, 604);
             this.Bt_insert_feedback.Name = "Bt_insert_feedback";
             this.Bt_insert_feedback.Size = new System.Drawing.Size(178, 55);
@@ -110,11 +110,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Beige;
-            this.label2.Location = new System.Drawing.Point(826, 558);
+            this.label2.Location = new System.Drawing.Point(819, 558);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 22);
+            this.label2.Size = new System.Drawing.Size(119, 25);
             this.label2.TabIndex = 6;
             this.label2.Text = "User Name";
             // 
@@ -123,7 +123,7 @@
             this.Tb_feedback_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_feedback_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_feedback_name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_feedback_name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_feedback_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_feedback_name.Location = new System.Drawing.Point(949, 551);
             this.Tb_feedback_name.Multiline = true;
             this.Tb_feedback_name.Name = "Tb_feedback_name";
@@ -141,7 +141,7 @@
             this.CB_music.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CB_music.FlatAppearance.BorderSize = 0;
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CB_music.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CB_music.Location = new System.Drawing.Point(13, 14);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);

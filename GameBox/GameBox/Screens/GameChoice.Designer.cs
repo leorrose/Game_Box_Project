@@ -43,12 +43,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Beige;
             this.label1.Location = new System.Drawing.Point(374, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(444, 64);
+            this.label1.Size = new System.Drawing.Size(390, 58);
             this.label1.TabIndex = 0;
             this.label1.Text = "SELECT GAME";
             // 
@@ -60,7 +60,7 @@
             this.Bt_selectgame_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_selectgame_Exit.FlatAppearance.BorderSize = 0;
             this.Bt_selectgame_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_selectgame_Exit.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_selectgame_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_selectgame_Exit.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Bt_selectgame_Exit.Location = new System.Drawing.Point(1069, 13);
             this.Bt_selectgame_Exit.Margin = new System.Windows.Forms.Padding(4);
@@ -78,7 +78,7 @@
             this.Bt_selectgame_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_selectgame_back.FlatAppearance.BorderSize = 0;
             this.Bt_selectgame_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_selectgame_back.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_selectgame_back.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_selectgame_back.Location = new System.Drawing.Point(962, 13);
             this.Bt_selectgame_back.Name = "Bt_selectgame_back";
             this.Bt_selectgame_back.Size = new System.Drawing.Size(100, 55);
@@ -93,7 +93,7 @@
             this.bt_reversi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_reversi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_reversi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_reversi.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_reversi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_reversi.Location = new System.Drawing.Point(105, 245);
             this.bt_reversi.Name = "bt_reversi";
             this.bt_reversi.Size = new System.Drawing.Size(175, 86);
@@ -109,7 +109,7 @@
             this.bt_snake_and_ladders.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_snake_and_ladders.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_snake_and_ladders.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.bt_snake_and_ladders.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bt_snake_and_ladders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_snake_and_ladders.Location = new System.Drawing.Point(934, 245);
             this.bt_snake_and_ladders.Name = "bt_snake_and_ladders";
             this.bt_snake_and_ladders.Size = new System.Drawing.Size(175, 86);
@@ -129,7 +129,7 @@
             this.CB_music.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CB_music.FlatAppearance.BorderSize = 0;
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CB_music.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CB_music.Location = new System.Drawing.Point(24, 15);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
@@ -147,7 +147,7 @@
             this.SAl_instruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SAl_instruction.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SAl_instruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.SAl_instruction.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SAl_instruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SAl_instruction.Location = new System.Drawing.Point(934, 354);
             this.SAl_instruction.Name = "SAl_instruction";
             this.SAl_instruction.Size = new System.Drawing.Size(175, 57);
@@ -162,7 +162,7 @@
             this.reversi_insruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.reversi_insruction.Cursor = System.Windows.Forms.Cursors.Hand;
             this.reversi_insruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.reversi_insruction.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reversi_insruction.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reversi_insruction.Location = new System.Drawing.Point(105, 354);
             this.reversi_insruction.Name = "reversi_insruction";
             this.reversi_insruction.Size = new System.Drawing.Size(175, 57);

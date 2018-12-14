@@ -76,11 +76,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Beige;
-            this.label2.Location = new System.Drawing.Point(396, 320);
+            this.label2.Location = new System.Drawing.Point(377, 321);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(390, 25);
+            this.label2.Size = new System.Drawing.Size(432, 29);
             this.label2.TabIndex = 3;
             this.label2.Text = "Registered users don\'t need to wait!";
             // 
@@ -88,11 +88,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Modern No. 20", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Beige;
             this.label3.Location = new System.Drawing.Point(499, 509);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(201, 34);
+            this.label3.Size = new System.Drawing.Size(225, 38);
             this.label3.TabIndex = 4;
             this.label3.Text = "Please wait...";
             // 
@@ -126,7 +126,7 @@
             this.CB_music.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CB_music.FlatAppearance.BorderSize = 0;
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CB_music.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CB_music.Location = new System.Drawing.Point(25, 13);
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
