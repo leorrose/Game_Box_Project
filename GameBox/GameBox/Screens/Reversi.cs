@@ -982,16 +982,6 @@ namespace GameBox
             pictureBox_C5.Enabled = false;
         }
 
-        private void pictureBox_D5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox_E5_Click(object sender, EventArgs e)
-        {
-           
-        }
-
         private void pictureBox_F5_Click(object sender, EventArgs e)
         {
             UpdateArr(4, 5);
@@ -1020,16 +1010,6 @@ namespace GameBox
         {
             UpdateArr(3 ,5);
             pictureBox_F4.Enabled = false;
-        }
-
-        private void pictureBox_E4_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void pictureBox_D4_Click(object sender, EventArgs e)
-        {
-           
         }
 
         private void picture_C4_Click(object sender, EventArgs e)
@@ -1503,7 +1483,7 @@ namespace GameBox
 
         private void Bt_Reversi_back_click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Data will not be saved!", "Leave Game?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult res = MessageBox.Show("Are you sure? Any unsaved data will be lost", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (res == DialogResult.Yes)
             {
                 this.Close();
@@ -1513,14 +1493,16 @@ namespace GameBox
 
         private void Bt_Reversi_Exit_click(object sender, EventArgs e)
         {
-            Program.Exit();
+            DialogResult res = MessageBox.Show("Are you sure? Any unsaved data will be lost", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+                Environment.Exit(0);
         }
 
         private void Bt_reversi_instuctions_Click(object sender, EventArgs e)
         {
             Program.GameChoice = true;
             Print_instructions ins = new Print_instructions();
-            ins.Show();
+            ins.ShowDialog();
         }
     }
 }

@@ -49,10 +49,12 @@
             // 
             this.Add_Manager_show.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Add_Manager_show.BackgroundImage")));
             this.Add_Manager_show.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Add_Manager_show.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Add_Manager_show.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Add_Manager_show.Location = new System.Drawing.Point(919, 242);
+            this.Add_Manager_show.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Add_Manager_show.Location = new System.Drawing.Point(913, 244);
             this.Add_Manager_show.Name = "Add_Manager_show";
-            this.Add_Manager_show.Size = new System.Drawing.Size(161, 83);
+            this.Add_Manager_show.Size = new System.Drawing.Size(168, 83);
             this.Add_Manager_show.TabIndex = 50;
             this.Add_Manager_show.Text = "Add Manager";
             this.Add_Manager_show.UseVisualStyleBackColor = true;
@@ -62,10 +64,12 @@
             // 
             this.Remove_Manager_show.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Remove_Manager_show.BackgroundImage")));
             this.Remove_Manager_show.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Remove_Manager_show.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Remove_Manager_show.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Remove_Manager_show.Location = new System.Drawing.Point(79, 242);
+            this.Remove_Manager_show.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Remove_Manager_show.Location = new System.Drawing.Point(104, 242);
             this.Remove_Manager_show.Name = "Remove_Manager_show";
-            this.Remove_Manager_show.Size = new System.Drawing.Size(161, 83);
+            this.Remove_Manager_show.Size = new System.Drawing.Size(168, 83);
             this.Remove_Manager_show.TabIndex = 49;
             this.Remove_Manager_show.Text = "Remove Manager";
             this.Remove_Manager_show.UseVisualStyleBackColor = true;
@@ -73,7 +77,7 @@
             // 
             // Bt_User_Managment_exit
             // 
-            this.Bt_User_Managment_exit.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_User_Managment_exit.BackColor = System.Drawing.Color.Black;
             this.Bt_User_Managment_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_User_Managment_exit.BackgroundImage")));
             this.Bt_User_Managment_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_User_Managment_exit.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -89,7 +93,7 @@
             // 
             // Bt_User_managment_back
             // 
-            this.Bt_User_managment_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_User_managment_back.BackColor = System.Drawing.Color.Black;
             this.Bt_User_managment_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_User_managment_back.BackgroundImage")));
             this.Bt_User_managment_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_User_managment_back.FlatAppearance.BorderSize = 0;
@@ -107,9 +111,9 @@
             this.lb_remove_name.BackColor = System.Drawing.Color.Transparent;
             this.lb_remove_name.Font = new System.Drawing.Font("Modern No. 20", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_remove_name.ForeColor = System.Drawing.Color.Beige;
-            this.lb_remove_name.Location = new System.Drawing.Point(12, 341);
+            this.lb_remove_name.Location = new System.Drawing.Point(9, 354);
             this.lb_remove_name.Name = "lb_remove_name";
-            this.lb_remove_name.Size = new System.Drawing.Size(152, 21);
+            this.lb_remove_name.Size = new System.Drawing.Size(164, 21);
             this.lb_remove_name.TabIndex = 45;
             this.lb_remove_name.Text = "Name(2-10 chars)";
             this.lb_remove_name.Visible = false;
@@ -120,9 +124,9 @@
             this.lb_add_password.BackColor = System.Drawing.Color.Transparent;
             this.lb_add_password.Font = new System.Drawing.Font("Modern No. 20", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_add_password.ForeColor = System.Drawing.Color.Beige;
-            this.lb_add_password.Location = new System.Drawing.Point(824, 378);
+            this.lb_add_password.Location = new System.Drawing.Point(824, 389);
             this.lb_add_password.Name = "lb_add_password";
-            this.lb_add_password.Size = new System.Drawing.Size(157, 21);
+            this.lb_add_password.Size = new System.Drawing.Size(169, 21);
             this.lb_add_password.TabIndex = 44;
             this.lb_add_password.Text = "Password(5 chars)";
             this.lb_add_password.Visible = false;
@@ -133,9 +137,9 @@
             this.lb_add_name.BackColor = System.Drawing.Color.Transparent;
             this.lb_add_name.Font = new System.Drawing.Font("Modern No. 20", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_add_name.ForeColor = System.Drawing.Color.Beige;
-            this.lb_add_name.Location = new System.Drawing.Point(824, 341);
+            this.lb_add_name.Location = new System.Drawing.Point(824, 352);
             this.lb_add_name.Name = "lb_add_name";
-            this.lb_add_name.Size = new System.Drawing.Size(152, 21);
+            this.lb_add_name.Size = new System.Drawing.Size(164, 21);
             this.lb_add_name.TabIndex = 43;
             this.lb_add_name.Text = "Name(2-10 chars)";
             this.lb_add_name.Visible = false;
@@ -144,11 +148,12 @@
             // 
             this.Tb_Manager_remove_Name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_Manager_remove_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tb_Manager_remove_Name.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_Manager_remove_Name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_Manager_remove_Name.Location = new System.Drawing.Point(205, 341);
+            this.Tb_Manager_remove_Name.Location = new System.Drawing.Point(198, 352);
             this.Tb_Manager_remove_Name.Multiline = true;
             this.Tb_Manager_remove_Name.Name = "Tb_Manager_remove_Name";
-            this.Tb_Manager_remove_Name.Size = new System.Drawing.Size(125, 30);
+            this.Tb_Manager_remove_Name.Size = new System.Drawing.Size(141, 30);
             this.Tb_Manager_remove_Name.TabIndex = 42;
             this.Tb_Manager_remove_Name.Visible = false;
             // 
@@ -156,12 +161,13 @@
             // 
             this.Tb_Manager_add_Password.BackColor = System.Drawing.Color.Salmon;
             this.Tb_Manager_add_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tb_Manager_add_Password.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_Manager_add_Password.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_Manager_add_Password.Location = new System.Drawing.Point(1022, 369);
+            this.Tb_Manager_add_Password.Location = new System.Drawing.Point(1015, 381);
             this.Tb_Manager_add_Password.Multiline = true;
             this.Tb_Manager_add_Password.Name = "Tb_Manager_add_Password";
             this.Tb_Manager_add_Password.PasswordChar = '*';
-            this.Tb_Manager_add_Password.Size = new System.Drawing.Size(125, 30);
+            this.Tb_Manager_add_Password.Size = new System.Drawing.Size(132, 30);
             this.Tb_Manager_add_Password.TabIndex = 41;
             this.Tb_Manager_add_Password.Visible = false;
             // 
@@ -169,11 +175,12 @@
             // 
             this.Tb_Manager_add_Name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_Manager_add_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tb_Manager_add_Name.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_Manager_add_Name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_Manager_add_Name.Location = new System.Drawing.Point(1022, 333);
+            this.Tb_Manager_add_Name.Location = new System.Drawing.Point(1015, 345);
             this.Tb_Manager_add_Name.Multiline = true;
             this.Tb_Manager_add_Name.Name = "Tb_Manager_add_Name";
-            this.Tb_Manager_add_Name.Size = new System.Drawing.Size(125, 30);
+            this.Tb_Manager_add_Name.Size = new System.Drawing.Size(132, 30);
             this.Tb_Manager_add_Name.TabIndex = 40;
             this.Tb_Manager_add_Name.Visible = false;
             // 
@@ -181,12 +188,14 @@
             // 
             this.Bt_remove.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_remove.BackgroundImage")));
             this.Bt_remove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_remove.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_remove.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_remove.Location = new System.Drawing.Point(205, 407);
+            this.Bt_remove.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_remove.Location = new System.Drawing.Point(198, 427);
             this.Bt_remove.Name = "Bt_remove";
-            this.Bt_remove.Size = new System.Drawing.Size(125, 55);
+            this.Bt_remove.Size = new System.Drawing.Size(141, 55);
             this.Bt_remove.TabIndex = 39;
-            this.Bt_remove.Text = "Remove Manager";
+            this.Bt_remove.Text = "Remove";
             this.Bt_remove.UseVisualStyleBackColor = true;
             this.Bt_remove.Visible = false;
             this.Bt_remove.Click += new System.EventHandler(this.Bt_remove_manager_click);
@@ -195,12 +204,14 @@
             // 
             this.Bt_add_manager.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_add_manager.BackgroundImage")));
             this.Bt_add_manager.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_add_manager.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_add_manager.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_add_manager.Location = new System.Drawing.Point(1022, 420);
+            this.Bt_add_manager.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_add_manager.Location = new System.Drawing.Point(1015, 427);
             this.Bt_add_manager.Name = "Bt_add_manager";
-            this.Bt_add_manager.Size = new System.Drawing.Size(125, 55);
+            this.Bt_add_manager.Size = new System.Drawing.Size(132, 55);
             this.Bt_add_manager.TabIndex = 38;
-            this.Bt_add_manager.Text = "Add Manager";
+            this.Bt_add_manager.Text = "Add ";
             this.Bt_add_manager.UseVisualStyleBackColor = true;
             this.Bt_add_manager.Visible = false;
             this.Bt_add_manager.Click += new System.EventHandler(this.Bt_add_manager_click);
@@ -211,7 +222,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Beige;
-            this.label2.Location = new System.Drawing.Point(374, 58);
+            this.label2.Location = new System.Drawing.Point(362, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(480, 62);
             this.label2.TabIndex = 51;
@@ -262,11 +273,12 @@
             this.Controls.Add(this.Tb_Manager_add_Name);
             this.Controls.Add(this.Bt_remove);
             this.Controls.Add(this.Bt_add_manager);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaximumSize = new System.Drawing.Size(1200, 750);
             this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Manager_Managment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Manager_Managment";
+            this.Text = "GameBox";
             this.ResumeLayout(false);
             this.PerformLayout();
 

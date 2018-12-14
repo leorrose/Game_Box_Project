@@ -56,9 +56,10 @@
             // 
             // Bt_Reports_Exit
             // 
-            this.Bt_Reports_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_Reports_Exit.BackColor = System.Drawing.Color.Black;
             this.Bt_Reports_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Reports_Exit.BackgroundImage")));
             this.Bt_Reports_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Reports_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Reports_Exit.FlatAppearance.BorderSize = 0;
             this.Bt_Reports_Exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_Reports_Exit.Location = new System.Drawing.Point(1070, 12);
@@ -70,9 +71,10 @@
             // 
             // Bt_Reports_Back
             // 
-            this.Bt_Reports_Back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_Reports_Back.BackColor = System.Drawing.Color.Black;
             this.Bt_Reports_Back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Reports_Back.BackgroundImage")));
             this.Bt_Reports_Back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Reports_Back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Reports_Back.FlatAppearance.BorderSize = 0;
             this.Bt_Reports_Back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_Reports_Back.Location = new System.Drawing.Point(964, 12);
@@ -96,7 +98,7 @@
             // CB_music
             // 
             this.CB_music.Appearance = System.Windows.Forms.Appearance.Button;
-            this.CB_music.BackColor = System.Drawing.Color.Transparent;
+            this.CB_music.BackColor = System.Drawing.Color.Black;
             this.CB_music.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CB_music.BackgroundImage")));
             this.CB_music.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CB_music.Checked = true;
@@ -133,7 +135,7 @@
             this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Reports";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Reports";
+            this.Text = "GameBox";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -24,8 +24,16 @@ namespace GameBox
 
         private void BT_New_game_Click(object sender, EventArgs e)
         {
-            Reversi NewGame = new Reversi(GameBack,return_back);
-            NewGame.Show();
+            if (Program.GameChoice == true)
+            {
+                Reversi NewGame = new Reversi(GameBack, return_back);
+                NewGame.Show();
+            }
+            else
+            {
+                Snake_and_ladders NewGame = new Snake_and_ladders(GameBack, return_back);
+                NewGame.Show();
+            }
             GameEnd.Close();
             this.Close();
         }

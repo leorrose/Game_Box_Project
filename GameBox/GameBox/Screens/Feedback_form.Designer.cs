@@ -43,6 +43,7 @@
             // 
             this.Tb_Feedback.BackColor = System.Drawing.Color.SeaShell;
             this.Tb_Feedback.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Tb_Feedback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_Feedback.Location = new System.Drawing.Point(85, 107);
             this.Tb_Feedback.Name = "Tb_Feedback";
             this.Tb_Feedback.Size = new System.Drawing.Size(720, 552);
@@ -52,7 +53,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Modern No. 20", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 25.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Beige;
             this.label1.Location = new System.Drawing.Point(248, 42);
             this.label1.Name = "label1";
@@ -64,10 +65,12 @@
             // 
             this.Bt_insert_feedback.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_insert_feedback.BackgroundImage")));
             this.Bt_insert_feedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_insert_feedback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_insert_feedback.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_insert_feedback.Location = new System.Drawing.Point(989, 604);
+            this.Bt_insert_feedback.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_insert_feedback.Location = new System.Drawing.Point(949, 604);
             this.Bt_insert_feedback.Name = "Bt_insert_feedback";
-            this.Bt_insert_feedback.Size = new System.Drawing.Size(138, 55);
+            this.Bt_insert_feedback.Size = new System.Drawing.Size(178, 55);
             this.Bt_insert_feedback.TabIndex = 3;
             this.Bt_insert_feedback.Text = "Insert Feedback";
             this.Bt_insert_feedback.UseVisualStyleBackColor = true;
@@ -75,12 +78,13 @@
             // 
             // Bt_feedback_exit
             // 
-            this.Bt_feedback_exit.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_feedback_exit.BackColor = System.Drawing.Color.Black;
             this.Bt_feedback_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_feedback_exit.BackgroundImage")));
             this.Bt_feedback_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_feedback_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_feedback_exit.FlatAppearance.BorderSize = 0;
             this.Bt_feedback_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_feedback_exit.Location = new System.Drawing.Point(1070, 12);
+            this.Bt_feedback_exit.Location = new System.Drawing.Point(1055, 12);
             this.Bt_feedback_exit.Name = "Bt_feedback_exit";
             this.Bt_feedback_exit.Size = new System.Drawing.Size(100, 55);
             this.Bt_feedback_exit.TabIndex = 4;
@@ -89,12 +93,13 @@
             // 
             // Bt_feedback_back
             // 
-            this.Bt_feedback_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_feedback_back.BackColor = System.Drawing.Color.Black;
             this.Bt_feedback_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_feedback_back.BackgroundImage")));
             this.Bt_feedback_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_feedback_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_feedback_back.FlatAppearance.BorderSize = 0;
             this.Bt_feedback_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_feedback_back.Location = new System.Drawing.Point(964, 12);
+            this.Bt_feedback_back.Location = new System.Drawing.Point(949, 12);
             this.Bt_feedback_back.Name = "Bt_feedback_back";
             this.Bt_feedback_back.Size = new System.Drawing.Size(100, 55);
             this.Bt_feedback_back.TabIndex = 5;
@@ -107,7 +112,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Beige;
-            this.label2.Location = new System.Drawing.Point(843, 551);
+            this.label2.Location = new System.Drawing.Point(826, 558);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(107, 22);
             this.label2.TabIndex = 6;
@@ -117,11 +122,12 @@
             // 
             this.Tb_feedback_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_feedback_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tb_feedback_name.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_feedback_name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_feedback_name.Location = new System.Drawing.Point(989, 551);
+            this.Tb_feedback_name.Location = new System.Drawing.Point(949, 551);
             this.Tb_feedback_name.Multiline = true;
             this.Tb_feedback_name.Name = "Tb_feedback_name";
-            this.Tb_feedback_name.Size = new System.Drawing.Size(138, 30);
+            this.Tb_feedback_name.Size = new System.Drawing.Size(178, 30);
             this.Tb_feedback_name.TabIndex = 7;
             // 
             // CB_music
@@ -167,7 +173,7 @@
             this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Feedback_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Feedback_form";
+            this.Text = "GameBox";
             this.ResumeLayout(false);
             this.PerformLayout();
 

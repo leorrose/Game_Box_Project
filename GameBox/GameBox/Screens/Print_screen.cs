@@ -15,18 +15,19 @@ namespace GameBox
         public Print_screen(string type)
         {
             InitializeComponent();
-            string Game;
             if (type == "Tips")
             {
                 Random index = new Random();
                 string UserConectionString = Program.ConectionString("Tips");
+                PB_Gifs.Image = Properties.Resources.tips;
+                PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
                 using (SqlConnection con = new SqlConnection(UserConectionString))
                 {
                     con.Open();
                     SqlCommand sqlCommand = new SqlCommand("SELECT Tip FROM Tips WHERE Number="+ index.Next(1,34).ToString() ,con);
                     SqlDataReader Read = sqlCommand.ExecuteReader();
                     Read.Read();
-                    label1.Text = Read.GetString(0);
+                    Lb_Print.Text = Read.GetString(0);
                     con.Close();
                 }
 
@@ -34,17 +35,50 @@ namespace GameBox
             else if (type == "Ads")
             {
                 Random index = new Random();
+                int number = index.Next(1, 8);
                 string UserConectionString = Program.ConectionString("Ads");
                 using (SqlConnection con = new SqlConnection(UserConectionString))
                 {
                     con.Open();
-                    SqlCommand sqlCommand = new SqlCommand("SELECT Ad FROM Ads WHERE Number=" + index.Next(1,6).ToString(), con);
+                    SqlCommand sqlCommand = new SqlCommand("SELECT Ad FROM Ads WHERE Number=" + number.ToString(), con);
                     SqlDataReader Read = sqlCommand.ExecuteReader();
                     Read.Read();
-                    label1.Text = Read.GetString(0);
+                    Lb_Print.Text = Read.GetString(0);
                     con.Close();
                 }
 
+                switch(number)
+                {
+                    case 1:
+                        PB_Gifs.Image = Properties.Resources.plumber;
+                        PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage; 
+                        break;
+                    case 2:
+                        PB_Gifs.Image = Properties.Resources.pizza;
+                        PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 3:
+                        PB_Gifs.Image = Properties.Resources.burgerking;
+                        PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 4:
+                        PB_Gifs.Image = Properties.Resources.Fanta;
+                        PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 5:
+                        PB_Gifs.Image = Properties.Resources.mcdonalds;
+                        PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 6:
+                        PB_Gifs.Image = Properties.Resources.ice_cream;
+                        PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+                    case 7:
+                        PB_Gifs.Image = Properties.Resources.hapoel;
+                        PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
+                        break;
+
+                }
             }
         }
 

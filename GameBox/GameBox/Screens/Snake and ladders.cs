@@ -16,8 +16,6 @@ namespace GameBox
         Random ran = new Random();
         int x1, y1,x2,y2, p1 = 1, p2 = 1, start_x, start_y, seconds1 = 0, seconds2 = 0, dice_value,seconds3=0;
 
-     
-
         bool turn = true; // true= player1 turn, false = player2/comuter turn;
         Form return_back, return_end;
         public Snake_and_ladders(Form back,Form EndGame)
@@ -47,8 +45,12 @@ namespace GameBox
 
         private void Bt_SAL_back_Click(object sender, EventArgs e)
         {
-            this.Close();
-            return_back.Show();
+            DialogResult res = MessageBox.Show("Are you sure? Any unsaved data will be lost", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+            {
+                this.Close();
+                return_back.Show();
+            }
         }
 
         private void Snake_and_ladders_Load(object sender, EventArgs e)
@@ -64,7 +66,10 @@ namespace GameBox
             timer3.Interval = 400;
             timer4.Interval = 400;
             timer1.Stop();
-            bt_roll.Text = Program.user1 + " ROLL!";
+            if(Program.TypeUser)
+                bt_roll.Text = Program.user1 + " ROLL!";
+            else
+                bt_roll.Text = Program.guest + " ROLL!";
             labels();     
         }
 
@@ -72,17 +77,17 @@ namespace GameBox
         {
             if (Program.TypeUser) // if the player is a user.
             {
-                lb_player1_name.Text = Program.user1 + " position: " + p1.ToString();
+                lb_player1_name.Text = Program.user1 + ": " + p1.ToString();
                 if (Program.cnt_players == 2)
-                    lb_player2_name.Text = Program.user2 + " position: " + p2.ToString();
+                    lb_player2_name.Text = Program.user2 + ": " + p2.ToString();
                 else
-                    lb_player2_name.Text = "Computer position: " + p2.ToString();
+                    lb_player2_name.Text = "Computer: " + p2.ToString();
                   
             }
             else  // if the player is a guest.
             {
-                lb_player1_name.Text = Program.guest + " position: " + p1.ToString();
-                lb_player2_name.Text = "Com position: " + p2.ToString();
+                lb_player1_name.Text = Program.guest + ": " + p1.ToString();
+                lb_player2_name.Text = "Computer: " + p2.ToString();
             }
         }
 
@@ -158,8 +163,14 @@ namespace GameBox
                 y1 = 16;
                 pb_player1.Location = new Point(x1, y1);
                 timer3.Stop();
-                MessageBox.Show("player 1 win");
-
+                if (Program.TypeUser == true)
+                {
+                    Program.Update_Win_SAl(Program.user1);
+                    if (Program.cnt_players == 2)
+                        Program.Update_Lose(Program.user2);
+                }
+                Winner NewWinner = new Winner(Program.user1, return_end, this, return_back);
+                NewWinner.ShowDialog();
             }
             seconds3--;
             labels();
@@ -205,8 +216,19 @@ namespace GameBox
                 y2 = 16;
                 pb_player2.Location = new Point(x2, y2);
                 timer4.Stop();
-                MessageBox.Show("player 2 win");
-
+                if (Program.cnt_players == 2)
+                {
+                    Program.Update_Win_SAl(Program.user2);
+                    Program.Update_Lose(Program.user1);
+                    Winner NewWinner = new Winner(Program.user2, return_end, this, return_back);
+                    NewWinner.ShowDialog();
+                }
+                else
+                {
+                    Program.Update_Lose(Program.user1);
+                    Winner NewWinner = new Winner("Computer", return_end, this, return_back);
+                    NewWinner.ShowDialog();
+                }
             }
             seconds3--;
             labels();
@@ -399,7 +421,9 @@ namespace GameBox
 
         private void bt_Exit_Click(object sender, EventArgs e)
         {
-            Program.Exit();
+            DialogResult res = MessageBox.Show("Are you sure? Any unsaved data will be lost", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+                Environment.Exit(0);
         }
 
         

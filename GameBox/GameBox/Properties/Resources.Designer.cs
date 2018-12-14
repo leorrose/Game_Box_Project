@@ -183,6 +183,16 @@ namespace GameBox.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap animated_snake_image_0050 {
+            get {
+                object obj = ResourceManager.GetObject("animated_snake_image_0050", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Back_red {
             get {
                 object obj = ResourceManager.GetObject("Back_red", resourceCulture);
@@ -196,6 +206,16 @@ namespace GameBox.Properties {
         internal static System.Drawing.Bitmap Black_piece {
             get {
                 object obj = ResourceManager.GetObject("Black_piece", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap burgerking {
+            get {
+                object obj = ResourceManager.GetObject("burgerking", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +246,16 @@ namespace GameBox.Properties {
         internal static System.Drawing.Bitmap Exit_red {
             get {
                 object obj = ResourceManager.GetObject("Exit_red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fanta {
+            get {
+                object obj = ResourceManager.GetObject("Fanta", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -281,11 +311,31 @@ namespace GameBox.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hapoel {
+            get {
+                object obj = ResourceManager.GetObject("hapoel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ice_cream {
+            get {
+                object obj = ResourceManager.GetObject("ice_cream", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        internal static System.Drawing.Icon if_game_512535 {
+        internal static System.Drawing.Icon icon_game {
             get {
-                object obj = ResourceManager.GetObject("if_game_512535", resourceCulture);
+                object obj = ResourceManager.GetObject("icon_game", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }
@@ -296,6 +346,16 @@ namespace GameBox.Properties {
         internal static System.Drawing.Bitmap Instructions_red {
             get {
                 object obj = ResourceManager.GetObject("Instructions_red", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mcdonalds {
+            get {
+                object obj = ResourceManager.GetObject("mcdonalds", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -341,12 +401,32 @@ namespace GameBox.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pizza {
+            get {
+                object obj = ResourceManager.GetObject("pizza", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] PlayMusic {
             get {
                 object obj = ResourceManager.GetObject("PlayMusic", resourceCulture);
                 return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plumber {
+            get {
+                object obj = ResourceManager.GetObject("plumber", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -373,6 +453,16 @@ namespace GameBox.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap roll {
+            get {
+                object obj = ResourceManager.GetObject("roll", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Roll_the_dice {
             get {
                 object obj = ResourceManager.GetObject("Roll_the_dice", resourceCulture);
@@ -386,6 +476,16 @@ namespace GameBox.Properties {
         internal static System.Drawing.Bitmap snakeandladders {
             get {
                 object obj = ResourceManager.GetObject("snakeandladders", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tips {
+            get {
+                object obj = ResourceManager.GetObject("tips", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

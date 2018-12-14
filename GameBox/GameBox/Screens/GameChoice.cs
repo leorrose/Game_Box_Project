@@ -21,13 +21,16 @@ namespace GameBox
             InitializeComponent();
             Shown += GameChoice_Shown;
             Program.Update_music_bt();
-            if (Program.cnt_players != 2)
-                bt_reversi.Enabled = false;
             return_back = form;
         }
         private void GameChoice_Shown(Object sender, EventArgs e)
         {
             Program.Update_music_bt();
+            if (Program.cnt_players != 2)
+            {
+                bt_reversi.Enabled = false;
+                bt_reversi.Cursor = Cursors.No;
+            }
         }
 
         private void Bt_Exit_Click(object sender, EventArgs e)  //exit the program
@@ -47,6 +50,7 @@ namespace GameBox
         private void Bt_reversi_Click(object sender, EventArgs e)
         {
             Reversi NewGame = new Reversi(this,return_back);
+            Program.GameChoice = true;
             this.Hide();
             NewGame.Show();
         }
@@ -54,6 +58,7 @@ namespace GameBox
         private void Bt_snake_and_ladders_Click(object sender, EventArgs e)
         {
             this.Hide();
+            Program.GameChoice = false;
             Snake_and_ladders game = new Snake_and_ladders(this, return_back);
             game.Show();
         }
@@ -67,14 +72,14 @@ namespace GameBox
         {
             Program.GameChoice = true;
             Print_instructions ins = new Print_instructions();
-            ins.Show();
+            ins.ShowDialog();
         }
 
         private void SAl_instruction_Click(object sender, EventArgs e)
         {
             Program.GameChoice = false;
             Print_instructions ins = new Print_instructions();
-            ins.Show();
+            ins.ShowDialog();
         }
     }
 }

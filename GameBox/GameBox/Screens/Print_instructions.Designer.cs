@@ -37,10 +37,12 @@
             // 
             this.Bt_ok.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_ok.BackgroundImage")));
             this.Bt_ok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_ok.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_ok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_ok.Location = new System.Drawing.Point(1050, 636);
+            this.Bt_ok.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_ok.Location = new System.Drawing.Point(1027, 625);
             this.Bt_ok.Name = "Bt_ok";
-            this.Bt_ok.Size = new System.Drawing.Size(120, 55);
+            this.Bt_ok.Size = new System.Drawing.Size(143, 66);
             this.Bt_ok.TabIndex = 2;
             this.Bt_ok.Text = "OK";
             this.Bt_ok.UseVisualStyleBackColor = true;
@@ -52,13 +54,13 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightPink;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label1.Location = new System.Drawing.Point(375, 87);
+            this.label1.Location = new System.Drawing.Point(325, 151);
             this.label1.MaximumSize = new System.Drawing.Size(600, 500);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(404, 30);
+            this.label1.Size = new System.Drawing.Size(164, 30);
             this.label1.TabIndex = 3;
-            this.label1.Text = "joijioh ouhuih iughiug iohuigh";
+            this.label1.Text = "Instructions";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // Print_instructions
             // 
@@ -74,7 +76,7 @@
             this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Print_instructions";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Print_instructions";
+            this.Text = "GameBox";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -47,10 +47,12 @@ namespace GameBox
             // 
             this.Bt_Givefeedback.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Givefeedback.BackgroundImage")));
             this.Bt_Givefeedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Givefeedback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Givefeedback.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Givefeedback.Location = new System.Drawing.Point(468, 456);
+            this.Bt_Givefeedback.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_Givefeedback.Location = new System.Drawing.Point(448, 459);
             this.Bt_Givefeedback.Name = "Bt_Givefeedback";
-            this.Bt_Givefeedback.Size = new System.Drawing.Size(200, 55);
+            this.Bt_Givefeedback.Size = new System.Drawing.Size(238, 65);
             this.Bt_Givefeedback.TabIndex = 1;
             this.Bt_Givefeedback.Text = "Give Feedback";
             this.Bt_Givefeedback.UseVisualStyleBackColor = true;
@@ -60,10 +62,12 @@ namespace GameBox
             // 
             this.Bt_top_players.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_top_players.BackgroundImage")));
             this.Bt_top_players.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_top_players.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_top_players.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_top_players.Location = new System.Drawing.Point(468, 395);
+            this.Bt_top_players.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_top_players.Location = new System.Drawing.Point(448, 365);
             this.Bt_top_players.Name = "Bt_top_players";
-            this.Bt_top_players.Size = new System.Drawing.Size(200, 55);
+            this.Bt_top_players.Size = new System.Drawing.Size(238, 65);
             this.Bt_top_players.TabIndex = 3;
             this.Bt_top_players.Text = "Top players";
             this.Bt_top_players.UseVisualStyleBackColor = true;
@@ -73,10 +77,12 @@ namespace GameBox
             // 
             this.Bt_personal_scores.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_personal_scores.BackgroundImage")));
             this.Bt_personal_scores.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_personal_scores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_personal_scores.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_personal_scores.Location = new System.Drawing.Point(468, 273);
+            this.Bt_personal_scores.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_personal_scores.Location = new System.Drawing.Point(448, 280);
             this.Bt_personal_scores.Name = "Bt_personal_scores";
-            this.Bt_personal_scores.Size = new System.Drawing.Size(200, 55);
+            this.Bt_personal_scores.Size = new System.Drawing.Size(238, 65);
             this.Bt_personal_scores.TabIndex = 4;
             this.Bt_personal_scores.Text = "Personal Scores";
             this.Bt_personal_scores.UseVisualStyleBackColor = true;
@@ -86,10 +92,12 @@ namespace GameBox
             // 
             this.Bt_play_game.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_play_game.BackgroundImage")));
             this.Bt_play_game.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_play_game.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_play_game.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_play_game.Location = new System.Drawing.Point(468, 334);
+            this.Bt_play_game.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_play_game.Location = new System.Drawing.Point(448, 188);
             this.Bt_play_game.Name = "Bt_play_game";
-            this.Bt_play_game.Size = new System.Drawing.Size(200, 55);
+            this.Bt_play_game.Size = new System.Drawing.Size(238, 65);
             this.Bt_play_game.TabIndex = 5;
             this.Bt_play_game.Text = "Play Game";
             this.Bt_play_game.UseVisualStyleBackColor = true;
@@ -99,10 +107,12 @@ namespace GameBox
             // 
             this.Bt_get_tip.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_get_tip.BackgroundImage")));
             this.Bt_get_tip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_get_tip.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_get_tip.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_get_tip.Location = new System.Drawing.Point(970, 636);
+            this.Bt_get_tip.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_get_tip.Location = new System.Drawing.Point(1014, 626);
             this.Bt_get_tip.Name = "Bt_get_tip";
-            this.Bt_get_tip.Size = new System.Drawing.Size(200, 55);
+            this.Bt_get_tip.Size = new System.Drawing.Size(156, 65);
             this.Bt_get_tip.TabIndex = 6;
             this.Bt_get_tip.Text = "Get Tip";
             this.Bt_get_tip.UseVisualStyleBackColor = true;
@@ -110,7 +120,7 @@ namespace GameBox
             // 
             // Bt_usersOptions_exit
             // 
-            this.Bt_usersOptions_exit.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_usersOptions_exit.BackColor = System.Drawing.Color.Black;
             this.Bt_usersOptions_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_usersOptions_exit.BackgroundImage")));
             this.Bt_usersOptions_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_usersOptions_exit.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -126,7 +136,7 @@ namespace GameBox
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackColor = System.Drawing.Color.Black;
             this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -144,12 +154,14 @@ namespace GameBox
             // 
             this.Bt_Continue_change_details.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Continue_change_details.BackgroundImage")));
             this.Bt_Continue_change_details.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Continue_change_details.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Continue_change_details.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.Bt_Continue_change_details.Location = new System.Drawing.Point(468, 212);
+            this.Bt_Continue_change_details.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_Continue_change_details.Location = new System.Drawing.Point(448, 550);
             this.Bt_Continue_change_details.Name = "Bt_Continue_change_details";
-            this.Bt_Continue_change_details.Size = new System.Drawing.Size(200, 55);
+            this.Bt_Continue_change_details.Size = new System.Drawing.Size(238, 65);
             this.Bt_Continue_change_details.TabIndex = 32;
-            this.Bt_Continue_change_details.Text = "Change Personal Details";
+            this.Bt_Continue_change_details.Text = "Edit Personal Details";
             this.Bt_Continue_change_details.UseVisualStyleBackColor = true;
             this.Bt_Continue_change_details.Click += new System.EventHandler(this.Bt_Change_Details);
             // 
@@ -159,11 +171,11 @@ namespace GameBox
             this.Lb_title.BackColor = System.Drawing.Color.Transparent;
             this.Lb_title.Font = new System.Drawing.Font("Modern No. 20", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_title.ForeColor = System.Drawing.Color.Beige;
-            this.Lb_title.Location = new System.Drawing.Point(455, 66);
+            this.Lb_title.Location = new System.Drawing.Point(383, 71);
             this.Lb_title.Name = "Lb_title";
-            this.Lb_title.Size = new System.Drawing.Size(219, 62);
+            this.Lb_title.Size = new System.Drawing.Size(377, 62);
             this.Lb_title.TabIndex = 33;
-            this.Lb_title.Text = "Options";
+            this.Lb_title.Text = "Menu Options";
             // 
             // CB_music
             // 
@@ -206,11 +218,12 @@ namespace GameBox
             this.Controls.Add(this.Bt_personal_scores);
             this.Controls.Add(this.Bt_top_players);
             this.Controls.Add(this.Bt_Givefeedback);
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MaximumSize = new System.Drawing.Size(1200, 750);
             this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Users_options";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Users_options";
+            this.Text = "GameBox";
             this.ResumeLayout(false);
             this.PerformLayout();
 

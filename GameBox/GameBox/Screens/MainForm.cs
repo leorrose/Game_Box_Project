@@ -27,7 +27,12 @@ namespace GameBox
         private void MainForm_Shown(Object sender, EventArgs e)
         {
             Program.Update_music_bt();
+            Program.user1 = "";
+            Program.user2 = "";
+            Program.guest = "";
+            Program.cnt_players = 0;
         }
+    
 
         private void Bt_MainForm_exit_Click(object sender, EventArgs e) /* function to exit all program! */
         {

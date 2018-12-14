@@ -61,6 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Screens\Reversi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -203,14 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Screens\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
@@ -304,11 +304,22 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Players.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\roll.gif" />
+    <None Include="Resources\tips.gif" />
+    <None Include="Resources\Fanta.gif" />
+    <None Include="Resources\pizza.gif" />
+    <None Include="Resources\burgerking.gif" />
+    <None Include="Resources\plumber.gif" />
+    <None Include="Resources\mcdonalds.gif" />
+    <None Include="Resources\ice_cream.gif" />
+    <None Include="Resources\hapoel.gif" />
+    <None Include="Resources\iconfinder_game_512535.ico" />
     <None Include="Resources\Instructions_red.png" />
-    <None Include="Resources\Mute_red.png" />
     <None Include="Resources\Back_red.png" />
     <None Include="Resources\Exit_red.png" />
     <None Include="Resources\Music_red.png" />
+    <None Include="Resources\Mute_red.png" />
+    <None Include="Resources\animated-snake-image-0050.gif" />
     <None Include="Resources\button %2810%29.png" />
     <None Include="Resources\button %288%29.png" />
     <None Include="Resources\Bit Rush Arcade Ahri  Login Screen - League of Legends2.mp3" />

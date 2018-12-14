@@ -57,6 +57,7 @@
             // 
             this.Tb_user_password.BackColor = System.Drawing.Color.Salmon;
             this.Tb_user_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tb_user_password.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_user_password.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_user_password.Location = new System.Drawing.Point(508, 368);
             this.Tb_user_password.Multiline = true;
@@ -70,6 +71,7 @@
             // 
             this.Tb_manager_password.BackColor = System.Drawing.Color.Salmon;
             this.Tb_manager_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tb_manager_password.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_manager_password.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_manager_password.Location = new System.Drawing.Point(508, 210);
             this.Tb_manager_password.Multiline = true;
@@ -83,6 +85,7 @@
             // 
             this.Tb_user_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_user_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tb_user_name.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_user_name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_user_name.Location = new System.Drawing.Point(508, 322);
             this.Tb_user_name.Multiline = true;
@@ -95,6 +98,7 @@
             // 
             this.Tb_guest_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_guest_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tb_guest_name.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_guest_name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_guest_name.Location = new System.Drawing.Point(508, 536);
             this.Tb_guest_name.Multiline = true;
@@ -107,6 +111,7 @@
             // 
             this.Tb_manager_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_manager_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tb_manager_name.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_manager_name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_manager_name.Location = new System.Drawing.Point(508, 166);
             this.Tb_manager_name.Multiline = true;
@@ -118,6 +123,7 @@
             // comboBox1
             // 
             this.comboBox1.BackColor = System.Drawing.Color.Salmon;
+            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DisplayMember = "0";
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,6 +142,7 @@
             // 
             this.Bt_User_login.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_User_login.BackgroundImage")));
             this.Bt_User_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_User_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_User_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_User_login.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_User_login.Location = new System.Drawing.Point(732, 335);
@@ -151,7 +158,7 @@
             // 
             this.Bt_manager_login.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_manager_login.BackgroundImage")));
             this.Bt_manager_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bt_manager_login.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Bt_manager_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_manager_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_manager_login.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_manager_login.Location = new System.Drawing.Point(732, 166);
@@ -167,6 +174,7 @@
             // 
             this.Bt_Guest_login.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Guest_login.BackgroundImage")));
             this.Bt_Guest_login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Guest_login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Guest_login.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_Guest_login.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_Guest_login.Location = new System.Drawing.Point(732, 521);
@@ -200,7 +208,7 @@
             this.lb_manager_name.ForeColor = System.Drawing.Color.Beige;
             this.lb_manager_name.Location = new System.Drawing.Point(296, 166);
             this.lb_manager_name.Name = "lb_manager_name";
-            this.lb_manager_name.Size = new System.Drawing.Size(157, 21);
+            this.lb_manager_name.Size = new System.Drawing.Size(170, 21);
             this.lb_manager_name.TabIndex = 20;
             this.lb_manager_name.Text = "Name (2-10 chars)";
             this.lb_manager_name.Visible = false;
@@ -213,7 +221,7 @@
             this.lb_password_manager.ForeColor = System.Drawing.Color.Beige;
             this.lb_password_manager.Location = new System.Drawing.Point(296, 210);
             this.lb_password_manager.Name = "lb_password_manager";
-            this.lb_password_manager.Size = new System.Drawing.Size(162, 21);
+            this.lb_password_manager.Size = new System.Drawing.Size(175, 21);
             this.lb_password_manager.TabIndex = 21;
             this.lb_password_manager.Text = "Password (5 chars)";
             this.lb_password_manager.Visible = false;
@@ -226,7 +234,7 @@
             this.lb_player_name.ForeColor = System.Drawing.Color.Beige;
             this.lb_player_name.Location = new System.Drawing.Point(296, 322);
             this.lb_player_name.Name = "lb_player_name";
-            this.lb_player_name.Size = new System.Drawing.Size(157, 21);
+            this.lb_player_name.Size = new System.Drawing.Size(170, 21);
             this.lb_player_name.TabIndex = 23;
             this.lb_player_name.Text = "Name (2-10 chars)";
             this.lb_player_name.Visible = false;
@@ -236,6 +244,7 @@
             this.Bt_credits.BackColor = System.Drawing.Color.Transparent;
             this.Bt_credits.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_credits.BackgroundImage")));
             this.Bt_credits.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_credits.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_credits.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_credits.Location = new System.Drawing.Point(1033, 636);
             this.Bt_credits.Name = "Bt_credits";
@@ -258,7 +267,7 @@
             this.CB_music.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CB_music.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CB_music.Location = new System.Drawing.Point(26, 13);
-            this.CB_music.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
             this.CB_music.TabIndex = 28;
@@ -269,6 +278,7 @@
             // 
             // Bt_MainForm_exit
             // 
+            this.Bt_MainForm_exit.BackColor = System.Drawing.Color.Black;
             this.Bt_MainForm_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_MainForm_exit.BackgroundImage")));
             this.Bt_MainForm_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_MainForm_exit.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -281,7 +291,7 @@
             this.Bt_MainForm_exit.Name = "Bt_MainForm_exit";
             this.Bt_MainForm_exit.Size = new System.Drawing.Size(100, 55);
             this.Bt_MainForm_exit.TabIndex = 29;
-            this.Bt_MainForm_exit.UseVisualStyleBackColor = true;
+            this.Bt_MainForm_exit.UseVisualStyleBackColor = false;
             this.Bt_MainForm_exit.Click += new System.EventHandler(this.Bt_MainForm_exit_Click);
             // 
             // lb_password_player
@@ -292,7 +302,7 @@
             this.lb_password_player.ForeColor = System.Drawing.Color.Beige;
             this.lb_password_player.Location = new System.Drawing.Point(296, 376);
             this.lb_password_player.Name = "lb_password_player";
-            this.lb_password_player.Size = new System.Drawing.Size(162, 21);
+            this.lb_password_player.Size = new System.Drawing.Size(175, 21);
             this.lb_password_player.TabIndex = 30;
             this.lb_password_player.Text = "Password (5 chars)";
             this.lb_password_player.Visible = false;
@@ -305,7 +315,7 @@
             this.lb_guest_name.ForeColor = System.Drawing.Color.Beige;
             this.lb_guest_name.Location = new System.Drawing.Point(296, 534);
             this.lb_guest_name.Name = "lb_guest_name";
-            this.lb_guest_name.Size = new System.Drawing.Size(157, 21);
+            this.lb_guest_name.Size = new System.Drawing.Size(170, 21);
             this.lb_guest_name.TabIndex = 31;
             this.lb_guest_name.Text = "Name (2-10 chars)";
             this.lb_guest_name.Visible = false;
@@ -321,7 +331,7 @@
             this.Bt_Continue_As_Manager.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_Continue_As_Manager.Location = new System.Drawing.Point(88, 151);
             this.Bt_Continue_As_Manager.Name = "Bt_Continue_As_Manager";
-            this.Bt_Continue_As_Manager.Size = new System.Drawing.Size(168, 80);
+            this.Bt_Continue_As_Manager.Size = new System.Drawing.Size(168, 89);
             this.Bt_Continue_As_Manager.TabIndex = 32;
             this.Bt_Continue_As_Manager.Text = "Continue As Manager";
             this.Bt_Continue_As_Manager.UseVisualStyleBackColor = false;
@@ -331,12 +341,12 @@
             // 
             this.Bt_Continue_As_Player.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Continue_As_Player.BackgroundImage")));
             this.Bt_Continue_As_Player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Bt_Continue_As_Player.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Bt_Continue_As_Player.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Continue_As_Player.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_Continue_As_Player.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_Continue_As_Player.Location = new System.Drawing.Point(88, 322);
             this.Bt_Continue_As_Player.Name = "Bt_Continue_As_Player";
-            this.Bt_Continue_As_Player.Size = new System.Drawing.Size(168, 80);
+            this.Bt_Continue_As_Player.Size = new System.Drawing.Size(168, 90);
             this.Bt_Continue_As_Player.TabIndex = 33;
             this.Bt_Continue_As_Player.Text = "Continue As Player";
             this.Bt_Continue_As_Player.UseVisualStyleBackColor = true;
@@ -346,11 +356,12 @@
             // 
             this.Bt_Continue_As_Guest.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Continue_As_Guest.BackgroundImage")));
             this.Bt_Continue_As_Guest.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Continue_As_Guest.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Continue_As_Guest.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_Continue_As_Guest.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_Continue_As_Guest.Location = new System.Drawing.Point(88, 494);
+            this.Bt_Continue_As_Guest.Location = new System.Drawing.Point(88, 499);
             this.Bt_Continue_As_Guest.Name = "Bt_Continue_As_Guest";
-            this.Bt_Continue_As_Guest.Size = new System.Drawing.Size(168, 80);
+            this.Bt_Continue_As_Guest.Size = new System.Drawing.Size(168, 90);
             this.Bt_Continue_As_Guest.TabIndex = 34;
             this.Bt_Continue_As_Guest.Text = "Continue As Guest";
             this.Bt_Continue_As_Guest.UseVisualStyleBackColor = true;
@@ -359,6 +370,7 @@
             // cob_players
             // 
             this.cob_players.BackColor = System.Drawing.Color.Salmon;
+            this.cob_players.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cob_players.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.cob_players.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cob_players.FormattingEnabled = true;
@@ -405,7 +417,7 @@
             this.MinimumSize = new System.Drawing.Size(1031, 588);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainForm";
+            this.Text = "GameBox";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -54,7 +54,7 @@
             // 
             // Bt_selectgame_Exit
             // 
-            this.Bt_selectgame_Exit.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_selectgame_Exit.BackColor = System.Drawing.Color.Black;
             this.Bt_selectgame_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_selectgame_Exit.BackgroundImage")));
             this.Bt_selectgame_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_selectgame_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -72,9 +72,10 @@
             // 
             // Bt_selectgame_back
             // 
-            this.Bt_selectgame_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_selectgame_back.BackColor = System.Drawing.Color.Black;
             this.Bt_selectgame_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_selectgame_back.BackgroundImage")));
             this.Bt_selectgame_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_selectgame_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_selectgame_back.FlatAppearance.BorderSize = 0;
             this.Bt_selectgame_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_selectgame_back.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -90,10 +91,12 @@
             this.bt_reversi.BackColor = System.Drawing.Color.Transparent;
             this.bt_reversi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_reversi.BackgroundImage")));
             this.bt_reversi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_reversi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_reversi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_reversi.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_reversi.Location = new System.Drawing.Point(105, 245);
             this.bt_reversi.Name = "bt_reversi";
-            this.bt_reversi.Size = new System.Drawing.Size(141, 86);
+            this.bt_reversi.Size = new System.Drawing.Size(175, 86);
             this.bt_reversi.TabIndex = 12;
             this.bt_reversi.Text = "Reversi";
             this.bt_reversi.UseVisualStyleBackColor = false;
@@ -104,10 +107,12 @@
             this.bt_snake_and_ladders.BackColor = System.Drawing.Color.Transparent;
             this.bt_snake_and_ladders.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_snake_and_ladders.BackgroundImage")));
             this.bt_snake_and_ladders.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_snake_and_ladders.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_snake_and_ladders.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bt_snake_and_ladders.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bt_snake_and_ladders.Location = new System.Drawing.Point(934, 245);
             this.bt_snake_and_ladders.Name = "bt_snake_and_ladders";
-            this.bt_snake_and_ladders.Size = new System.Drawing.Size(141, 86);
+            this.bt_snake_and_ladders.Size = new System.Drawing.Size(175, 86);
             this.bt_snake_and_ladders.TabIndex = 13;
             this.bt_snake_and_ladders.Text = "Snake and Ladders";
             this.bt_snake_and_ladders.UseVisualStyleBackColor = false;
@@ -140,10 +145,12 @@
             // 
             this.SAl_instruction.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SAl_instruction.BackgroundImage")));
             this.SAl_instruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.SAl_instruction.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SAl_instruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.SAl_instruction.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SAl_instruction.Location = new System.Drawing.Point(934, 354);
             this.SAl_instruction.Name = "SAl_instruction";
-            this.SAl_instruction.Size = new System.Drawing.Size(141, 39);
+            this.SAl_instruction.Size = new System.Drawing.Size(175, 57);
             this.SAl_instruction.TabIndex = 31;
             this.SAl_instruction.Text = "Instructions";
             this.SAl_instruction.UseVisualStyleBackColor = true;
@@ -153,10 +160,12 @@
             // 
             this.reversi_insruction.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("reversi_insruction.BackgroundImage")));
             this.reversi_insruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.reversi_insruction.Cursor = System.Windows.Forms.Cursors.Hand;
             this.reversi_insruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.reversi_insruction.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reversi_insruction.Location = new System.Drawing.Point(105, 354);
             this.reversi_insruction.Name = "reversi_insruction";
-            this.reversi_insruction.Size = new System.Drawing.Size(141, 39);
+            this.reversi_insruction.Size = new System.Drawing.Size(175, 57);
             this.reversi_insruction.TabIndex = 32;
             this.reversi_insruction.Text = "Instructions";
             this.reversi_insruction.UseVisualStyleBackColor = true;

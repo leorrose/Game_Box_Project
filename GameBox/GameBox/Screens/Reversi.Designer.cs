@@ -259,7 +259,6 @@
             this.pictureBox_D5.Size = new System.Drawing.Size(96, 93);
             this.pictureBox_D5.TabIndex = 64;
             this.pictureBox_D5.TabStop = false;
-            this.pictureBox_D5.Click += new System.EventHandler(this.pictureBox_D5_Click);
             // 
             // pictureBox_E4
             // 
@@ -271,7 +270,6 @@
             this.pictureBox_E4.Size = new System.Drawing.Size(96, 93);
             this.pictureBox_E4.TabIndex = 63;
             this.pictureBox_E4.TabStop = false;
-            this.pictureBox_E4.Click += new System.EventHandler(this.pictureBox_E4_Click);
             // 
             // pictureBox_D8
             // 
@@ -363,7 +361,6 @@
             this.pictureBox_E5.Size = new System.Drawing.Size(96, 93);
             this.pictureBox_E5.TabIndex = 54;
             this.pictureBox_E5.TabStop = false;
-            this.pictureBox_E5.Click += new System.EventHandler(this.pictureBox_E5_Click);
             // 
             // pictureBox_G2
             // 
@@ -655,7 +652,6 @@
             this.pictureBox_D4.Size = new System.Drawing.Size(96, 93);
             this.pictureBox_D4.TabIndex = 25;
             this.pictureBox_D4.TabStop = false;
-            this.pictureBox_D4.Click += new System.EventHandler(this.pictureBox_D4_Click);
             // 
             // pictureBox_A6
             // 
@@ -904,11 +900,11 @@
             this.Lb_player2.BackColor = System.Drawing.Color.Transparent;
             this.Lb_player2.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_player2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Lb_player2.Location = new System.Drawing.Point(1175, 345);
+            this.Lb_player2.Location = new System.Drawing.Point(1063, 571);
             this.Lb_player2.Name = "Lb_player2";
-            this.Lb_player2.Size = new System.Drawing.Size(114, 31);
+            this.Lb_player2.Size = new System.Drawing.Size(159, 31);
             this.Lb_player2.TabIndex = 1;
-            this.Lb_player2.Text = "Player2";
+            this.Lb_player2.Text = "Player2254";
             this.Lb_player2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Lb_player1
@@ -917,7 +913,7 @@
             this.Lb_player1.BackColor = System.Drawing.Color.Transparent;
             this.Lb_player1.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_player1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Lb_player1.Location = new System.Drawing.Point(1055, 345);
+            this.Lb_player1.Location = new System.Drawing.Point(1062, 372);
             this.Lb_player1.Name = "Lb_player1";
             this.Lb_player1.Size = new System.Drawing.Size(114, 31);
             this.Lb_player1.TabIndex = 2;
@@ -930,7 +926,7 @@
             this.Lb_Score1.BackColor = System.Drawing.Color.Transparent;
             this.Lb_Score1.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Score1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Lb_Score1.Location = new System.Drawing.Point(1087, 391);
+            this.Lb_Score1.Location = new System.Drawing.Point(1256, 372);
             this.Lb_Score1.Name = "Lb_Score1";
             this.Lb_Score1.Size = new System.Drawing.Size(29, 31);
             this.Lb_Score1.TabIndex = 4;
@@ -942,7 +938,7 @@
             this.Lb_Score2.BackColor = System.Drawing.Color.Transparent;
             this.Lb_Score2.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Score2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Lb_Score2.Location = new System.Drawing.Point(1221, 391);
+            this.Lb_Score2.Location = new System.Drawing.Point(1256, 571);
             this.Lb_Score2.Name = "Lb_Score2";
             this.Lb_Score2.Size = new System.Drawing.Size(29, 31);
             this.Lb_Score2.TabIndex = 5;
@@ -953,6 +949,7 @@
             this.Bt_Reversi_back.BackColor = System.Drawing.Color.Transparent;
             this.Bt_Reversi_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Reversi_back.BackgroundImage")));
             this.Bt_Reversi_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_Reversi_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Reversi_back.FlatAppearance.BorderSize = 0;
             this.Bt_Reversi_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_Reversi_back.Location = new System.Drawing.Point(1131, 8);
@@ -967,6 +964,7 @@
             this.Bt_reversi_exit.BackColor = System.Drawing.Color.Transparent;
             this.Bt_reversi_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_reversi_exit.BackgroundImage")));
             this.Bt_reversi_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_reversi_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_reversi_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_reversi_exit.Location = new System.Drawing.Point(1219, 7);
             this.Bt_reversi_exit.Name = "Bt_reversi_exit";
@@ -979,6 +977,7 @@
             // 
             this.CB_music.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CB_music.BackgroundImage")));
             this.CB_music.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.CB_music.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CB_music.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CB_music.Location = new System.Drawing.Point(12, 8);
             this.CB_music.Name = "CB_music";
@@ -992,7 +991,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.LimeGreen;
             this.pictureBox1.BackgroundImage = global::GameBox.Properties.Resources.white_piece;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1073, 262);
+            this.pictureBox1.Location = new System.Drawing.Point(1068, 310);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(63, 54);
             this.pictureBox1.TabIndex = 65;
@@ -1003,7 +1002,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.LimeGreen;
             this.pictureBox2.BackgroundImage = global::GameBox.Properties.Resources.Black_piece;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(1204, 262);
+            this.pictureBox2.Location = new System.Drawing.Point(1068, 510);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(63, 54);
             this.pictureBox2.TabIndex = 65;
@@ -1013,11 +1012,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label4.Location = new System.Drawing.Point(1125, 211);
+            this.label4.Location = new System.Drawing.Point(1128, 237);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 31);
+            this.label4.Size = new System.Drawing.Size(94, 34);
             this.label4.TabIndex = 66;
             this.label4.Text = "score:";
             // 
@@ -1027,7 +1026,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label5.Location = new System.Drawing.Point(1075, 510);
+            this.label5.Location = new System.Drawing.Point(12, 310);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(192, 31);
             this.label5.TabIndex = 67;
@@ -1039,7 +1038,7 @@
             this.Lb_Player_turn.BackColor = System.Drawing.Color.Transparent;
             this.Lb_Player_turn.Font = new System.Drawing.Font("Modern No. 20", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Player_turn.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Lb_Player_turn.Location = new System.Drawing.Point(1099, 561);
+            this.Lb_Player_turn.Location = new System.Drawing.Point(12, 370);
             this.Lb_Player_turn.MinimumSize = new System.Drawing.Size(150, 32);
             this.Lb_Player_turn.Name = "Lb_Player_turn";
             this.Lb_Player_turn.Size = new System.Drawing.Size(150, 32);
@@ -1051,6 +1050,7 @@
             // 
             this.Bt_reversi_instuctions.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_reversi_instuctions.BackgroundImage")));
             this.Bt_reversi_instuctions.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_reversi_instuctions.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_reversi_instuctions.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_reversi_instuctions.Location = new System.Drawing.Point(1131, 62);
             this.Bt_reversi_instuctions.Name = "Bt_reversi_instuctions";
@@ -1082,7 +1082,7 @@
             this.Controls.Add(this.panel_board);
             this.Name = "Reversi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "GameBox";
             this.panel_board.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_D5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_E4)).EndInit();

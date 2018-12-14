@@ -59,9 +59,10 @@
             // 
             // bt_guistwait_exit
             // 
-            this.bt_guistwait_exit.BackColor = System.Drawing.Color.Transparent;
+            this.bt_guistwait_exit.BackColor = System.Drawing.Color.Black;
             this.bt_guistwait_exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_guistwait_exit.BackgroundImage")));
             this.bt_guistwait_exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bt_guistwait_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_guistwait_exit.FlatAppearance.BorderSize = 0;
             this.bt_guistwait_exit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bt_guistwait_exit.Location = new System.Drawing.Point(1070, 10);
@@ -97,9 +98,10 @@
             // 
             // Bt_guistwait_back
             // 
-            this.Bt_guistwait_back.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_guistwait_back.BackColor = System.Drawing.Color.Black;
             this.Bt_guistwait_back.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_guistwait_back.BackgroundImage")));
             this.Bt_guistwait_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_guistwait_back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_guistwait_back.FlatAppearance.BorderSize = 0;
             this.Bt_guistwait_back.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_guistwait_back.Location = new System.Drawing.Point(964, 10);
@@ -150,11 +152,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bt_guistwait_exit);
             this.Controls.Add(this.label1);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.MaximumSize = new System.Drawing.Size(1200, 750);
             this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Guest_wait";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Guest_wait";
+            this.Text = "GameBox";
             this.ResumeLayout(false);
             this.PerformLayout();
 

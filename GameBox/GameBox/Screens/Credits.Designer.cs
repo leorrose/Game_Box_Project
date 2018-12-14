@@ -36,6 +36,7 @@
             // 
             this.Bt_ok.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_ok.BackgroundImage")));
             this.Bt_ok.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Bt_ok.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_ok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_ok.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_ok.Location = new System.Drawing.Point(772, 609);
@@ -59,7 +60,7 @@
             this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Credits";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Credits";
+            this.Text = "GameBox";
             this.ResumeLayout(false);
 
         }
