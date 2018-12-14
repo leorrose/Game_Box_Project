@@ -31,6 +31,7 @@ namespace GameBox
             Url += "Resources\\PlayMusic.mp3";
             Program.Wmp.URL = Url;
             Program.Wmp.controls.play();
+            Program.Wmp.settings.volume = 5;
             Application.Run(new Logo());
 
         }

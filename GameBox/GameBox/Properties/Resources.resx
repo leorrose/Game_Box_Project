@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="copyright" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\copyright-black-metal-sign-background-copyspace-32441277.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="snakeandladders" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\snakeandladders.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -135,9 +132,6 @@
   </data>
   <data name="reversi_board" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Game-Board-8x8-grid(Green)(Reversi).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Roll_the_dice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Roll the dice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="_1r" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1r.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,9 +190,6 @@
   <data name="Green_mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PlayMusic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bit Rush Arcade Ahri  Login Screen - League of Legends1.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="Music" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button (10).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -222,9 +213,6 @@
   </data>
   <data name="animated_snake_image_0050" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\animated-snake-image-0050.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_game" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\iconfinder_game_512535.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="burgerking" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\burgerking.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -255,5 +243,8 @@
   </data>
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayMusic1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlayMusic.mp3;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

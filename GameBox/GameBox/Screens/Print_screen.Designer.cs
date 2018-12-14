@@ -69,9 +69,11 @@
             // PB_Gifs
             // 
             this.PB_Gifs.BackColor = System.Drawing.Color.Transparent;
-            this.PB_Gifs.Location = new System.Drawing.Point(241, 168);
+            this.PB_Gifs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PB_Gifs.Location = new System.Drawing.Point(265, 158);
             this.PB_Gifs.Name = "PB_Gifs";
-            this.PB_Gifs.Size = new System.Drawing.Size(390, 226);
+            this.PB_Gifs.Size = new System.Drawing.Size(331, 220);
+            this.PB_Gifs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PB_Gifs.TabIndex = 2;
             this.PB_Gifs.TabStop = false;
             // 

@@ -233,16 +233,6 @@ namespace GameBox.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap copyright {
-            get {
-                object obj = ResourceManager.GetObject("copyright", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Exit_red {
             get {
                 object obj = ResourceManager.GetObject("Exit_red", resourceCulture);
@@ -331,16 +321,6 @@ namespace GameBox.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
-        /// </summary>
-        internal static System.Drawing.Icon icon_game {
-            get {
-                object obj = ResourceManager.GetObject("icon_game", resourceCulture);
-                return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap Instructions_red {
@@ -423,9 +403,9 @@ namespace GameBox.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        internal static byte[] PlayMusic {
+        internal static byte[] PlayMusic1 {
             get {
-                object obj = ResourceManager.GetObject("PlayMusic", resourceCulture);
+                object obj = ResourceManager.GetObject("PlayMusic1", resourceCulture);
                 return ((byte[])(obj));
             }
         }
@@ -466,16 +446,6 @@ namespace GameBox.Properties {
         internal static System.Drawing.Bitmap roll {
             get {
                 object obj = ResourceManager.GetObject("roll", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Roll_the_dice {
-            get {
-                object obj = ResourceManager.GetObject("Roll_the_dice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

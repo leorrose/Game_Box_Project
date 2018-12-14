@@ -26,10 +26,11 @@ namespace GameBox
                 using (SqlConnection con = new SqlConnection(UserConectionString))
                 {
                     con.Open();
-                    SqlCommand sqlCommand = new SqlCommand("SELECT Tip FROM Tips WHERE Number="+ index.Next(1,34).ToString() ,con);
+                    SqlCommand sqlCommand = new SqlCommand("SELECT Tip FROM Tips WHERE Number="+ index.Next(1,24).ToString() ,con);
                     SqlDataReader Read = sqlCommand.ExecuteReader();
                     Read.Read();
                     Lb_Print.Text = Read.GetString(0);
+                    Lb_Print.Text = Lb_Print.Text.Replace("\\n", "\r\n");
                     con.Close();
                 }
 
@@ -51,8 +52,7 @@ namespace GameBox
                     Lb_Print.Text = Read.GetString(0);
                     con.Close();
                 }
-
-                switch(number)
+                switch (number)
                 {
                     case 1:
                         PB_Gifs.Image = Properties.Resources.plumber;
@@ -84,6 +84,7 @@ namespace GameBox
                         break;
 
                 }
+                
             }
         }
 

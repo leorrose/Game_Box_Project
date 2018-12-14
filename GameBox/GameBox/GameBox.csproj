@@ -313,6 +313,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Players.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\PlayMusic.mp3" />
+    <None Include="Resources\Back_red.png" />
     <None Include="Resources\Logo.gif" />
     <None Include="Resources\roll.gif" />
     <None Include="Resources\tips.gif" />
@@ -323,18 +325,13 @@
     <None Include="Resources\mcdonalds.gif" />
     <None Include="Resources\ice_cream.gif" />
     <None Include="Resources\hapoel.gif" />
-    <None Include="Resources\iconfinder_game_512535.ico" />
     <None Include="Resources\Instructions_red.png" />
-    <None Include="Resources\Back_red.png" />
     <None Include="Resources\Exit_red.png" />
     <None Include="Resources\Music_red.png" />
     <None Include="Resources\Mute_red.png" />
     <None Include="Resources\animated-snake-image-0050.gif" />
     <None Include="Resources\button %2810%29.png" />
     <None Include="Resources\button %288%29.png" />
-    <None Include="Resources\Bit Rush Arcade Ahri  Login Screen - League of Legends2.mp3" />
-    <None Include="Resources\Bit Rush Arcade Ahri  Login Screen - League of Legends1.mp3" />
-    <None Include="Resources\Bit Rush Arcade Ahri  Login Screen - League of Legends.mp3" />
     <None Include="Resources\button_instructions.png" />
     <None Include="Resources\button_exit.png" />
     <None Include="Resources\button_back.png" />
@@ -354,17 +351,11 @@
     <None Include="Resources\5r.png" />
     <None Include="Resources\4r.png" />
     <None Include="Resources\3r.png" />
-    <None Include="Resources\Roll the dice.png" />
-    <None Include="Resources\28e2ab88a124342560aca2cc0fbc3ceb.png" />
-    <None Include="Resources\backbutton2.png" />
-    <None Include="Resources\copyright-black-metal-sign-background-copyspace-32441277.jpg" />
     <None Include="Resources\snakeandladders.jpg" />
     <None Include="Resources\red.png" />
     <None Include="Resources\yellow.png" />
     <None Include="Resources\Game-Board-8x8-grid%28Green%29%28Reversi%29.gif" />
     <None Include="Resources\images %282%29.jpg" />
-    <None Include="Resources\הורד %282%29.png" />
-    <None Include="Resources\הורד %281%29.png" />
     <Content Include="DataBase\Scores.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -379,7 +370,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Tips.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\if_game_512535.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
