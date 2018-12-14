@@ -69,7 +69,7 @@ namespace GameBox
             this.Bt_top_players.Name = "Bt_top_players";
             this.Bt_top_players.Size = new System.Drawing.Size(238, 65);
             this.Bt_top_players.TabIndex = 3;
-            this.Bt_top_players.Text = "Top players";
+            this.Bt_top_players.Text = "Top Players";
             this.Bt_top_players.UseVisualStyleBackColor = true;
             this.Bt_top_players.Click += new System.EventHandler(this.Bt_Top_Players_click);
             // 

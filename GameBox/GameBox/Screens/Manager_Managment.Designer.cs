@@ -149,8 +149,8 @@
             this.Tb_Manager_remove_Name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_Manager_remove_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_Manager_remove_Name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_Manager_remove_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_Manager_remove_Name.Location = new System.Drawing.Point(198, 353);
+            this.Tb_Manager_remove_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Manager_remove_Name.Location = new System.Drawing.Point(209, 352);
             this.Tb_Manager_remove_Name.Multiline = true;
             this.Tb_Manager_remove_Name.Name = "Tb_Manager_remove_Name";
             this.Tb_Manager_remove_Name.Size = new System.Drawing.Size(141, 30);
@@ -162,8 +162,8 @@
             this.Tb_Manager_add_Password.BackColor = System.Drawing.Color.Salmon;
             this.Tb_Manager_add_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_Manager_add_Password.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_Manager_add_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_Manager_add_Password.Location = new System.Drawing.Point(1015, 385);
+            this.Tb_Manager_add_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Manager_add_Password.Location = new System.Drawing.Point(1038, 389);
             this.Tb_Manager_add_Password.Multiline = true;
             this.Tb_Manager_add_Password.Name = "Tb_Manager_add_Password";
             this.Tb_Manager_add_Password.PasswordChar = '*';
@@ -176,8 +176,8 @@
             this.Tb_Manager_add_Name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_Manager_add_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_Manager_add_Name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_Manager_add_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_Manager_add_Name.Location = new System.Drawing.Point(1015, 349);
+            this.Tb_Manager_add_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Manager_add_Name.Location = new System.Drawing.Point(1038, 349);
             this.Tb_Manager_add_Name.Multiline = true;
             this.Tb_Manager_add_Name.Name = "Tb_Manager_add_Name";
             this.Tb_Manager_add_Name.Size = new System.Drawing.Size(132, 30);
@@ -191,7 +191,7 @@
             this.Bt_remove.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_remove.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_remove.Location = new System.Drawing.Point(198, 428);
+            this.Bt_remove.Location = new System.Drawing.Point(209, 429);
             this.Bt_remove.Name = "Bt_remove";
             this.Bt_remove.Size = new System.Drawing.Size(141, 55);
             this.Bt_remove.TabIndex = 39;
@@ -207,7 +207,7 @@
             this.Bt_add_manager.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_add_manager.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_add_manager.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_add_manager.Location = new System.Drawing.Point(1015, 431);
+            this.Bt_add_manager.Location = new System.Drawing.Point(1038, 441);
             this.Bt_add_manager.Name = "Bt_add_manager";
             this.Bt_add_manager.Size = new System.Drawing.Size(132, 55);
             this.Bt_add_manager.TabIndex = 38;

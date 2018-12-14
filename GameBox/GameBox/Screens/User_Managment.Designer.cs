@@ -52,7 +52,7 @@
             this.Bt_add.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_add.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_add.Location = new System.Drawing.Point(1006, 451);
+            this.Bt_add.Location = new System.Drawing.Point(1032, 448);
             this.Bt_add.Name = "Bt_add";
             this.Bt_add.Size = new System.Drawing.Size(138, 55);
             this.Bt_add.TabIndex = 0;
@@ -68,7 +68,7 @@
             this.Bt_remove.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_remove.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_remove.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_remove.Location = new System.Drawing.Point(190, 410);
+            this.Bt_remove.Location = new System.Drawing.Point(216, 412);
             this.Bt_remove.Name = "Bt_remove";
             this.Bt_remove.Size = new System.Drawing.Size(141, 55);
             this.Bt_remove.TabIndex = 1;
@@ -82,8 +82,8 @@
             this.Tb_User_add_Name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_User_add_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_User_add_Name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_User_add_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_User_add_Name.Location = new System.Drawing.Point(1006, 350);
+            this.Tb_User_add_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_User_add_Name.Location = new System.Drawing.Point(1032, 348);
             this.Tb_User_add_Name.Multiline = true;
             this.Tb_User_add_Name.Name = "Tb_User_add_Name";
             this.Tb_User_add_Name.Size = new System.Drawing.Size(138, 30);
@@ -95,8 +95,8 @@
             this.Tb_User_add_Password.BackColor = System.Drawing.Color.Salmon;
             this.Tb_User_add_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_User_add_Password.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_User_add_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_User_add_Password.Location = new System.Drawing.Point(1006, 399);
+            this.Tb_User_add_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_User_add_Password.Location = new System.Drawing.Point(1032, 397);
             this.Tb_User_add_Password.Multiline = true;
             this.Tb_User_add_Password.Name = "Tb_User_add_Password";
             this.Tb_User_add_Password.PasswordChar = '*';
@@ -109,8 +109,8 @@
             this.Tb_User_remove_Name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_User_remove_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_User_remove_Name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_User_remove_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_User_remove_Name.Location = new System.Drawing.Point(190, 352);
+            this.Tb_User_remove_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_User_remove_Name.Location = new System.Drawing.Point(216, 350);
             this.Tb_User_remove_Name.Multiline = true;
             this.Tb_User_remove_Name.Name = "Tb_User_remove_Name";
             this.Tb_User_remove_Name.Size = new System.Drawing.Size(141, 30);

@@ -65,7 +65,7 @@
             this.Tb_Existing_Password.BackColor = System.Drawing.Color.DarkSalmon;
             this.Tb_Existing_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_Existing_Password.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_Existing_Password.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Existing_Password.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_Existing_Password.Location = new System.Drawing.Point(353, 289);
             this.Tb_Existing_Password.Multiline = true;
             this.Tb_Existing_Password.Name = "Tb_Existing_Password";
@@ -78,7 +78,7 @@
             this.Tb_New_Password.BackColor = System.Drawing.Color.DarkSalmon;
             this.Tb_New_Password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_New_Password.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_New_Password.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_New_Password.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_New_Password.Location = new System.Drawing.Point(353, 399);
             this.Tb_New_Password.Multiline = true;
             this.Tb_New_Password.Name = "Tb_New_Password";
@@ -91,7 +91,7 @@
             this.Tb_New_Name.BackColor = System.Drawing.Color.DarkSalmon;
             this.Tb_New_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_New_Name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_New_Name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_New_Name.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_New_Name.Location = new System.Drawing.Point(353, 359);
             this.Tb_New_Name.Multiline = true;
             this.Tb_New_Name.Name = "Tb_New_Name";
@@ -103,7 +103,7 @@
             this.Tb_Existing_Name.BackColor = System.Drawing.Color.DarkSalmon;
             this.Tb_Existing_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_Existing_Name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_Existing_Name.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_Existing_Name.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_Existing_Name.Location = new System.Drawing.Point(353, 248);
             this.Tb_Existing_Name.Multiline = true;
             this.Tb_Existing_Name.Name = "Tb_Existing_Name";

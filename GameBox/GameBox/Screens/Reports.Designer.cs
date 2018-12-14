@@ -94,6 +94,7 @@
             this.lb_title.Name = "lb_title";
             this.lb_title.Size = new System.Drawing.Size(0, 62);
             this.lb_title.TabIndex = 50;
+            this.lb_title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CB_music
             // 

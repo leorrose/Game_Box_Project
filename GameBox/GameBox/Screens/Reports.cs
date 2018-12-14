@@ -22,7 +22,7 @@ namespace GameBox
             Return_back = form;
             Print = PrintType;
             Choose_print();
-            lb_title.Text = PrintType + " :";
+            lb_title.Text = PrintType + ":";
             
         }
         private void Reports_Shown(Object sender, EventArgs e)

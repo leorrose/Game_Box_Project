@@ -58,7 +58,7 @@
             this.Tb_user_password.BackColor = System.Drawing.Color.Salmon;
             this.Tb_user_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_user_password.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_user_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_user_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_user_password.Location = new System.Drawing.Point(508, 368);
             this.Tb_user_password.Multiline = true;
             this.Tb_user_password.Name = "Tb_user_password";
@@ -72,7 +72,7 @@
             this.Tb_manager_password.BackColor = System.Drawing.Color.Salmon;
             this.Tb_manager_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_manager_password.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_manager_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_manager_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_manager_password.Location = new System.Drawing.Point(508, 210);
             this.Tb_manager_password.Multiline = true;
             this.Tb_manager_password.Name = "Tb_manager_password";
@@ -86,7 +86,7 @@
             this.Tb_user_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_user_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_user_name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_user_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_user_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_user_name.Location = new System.Drawing.Point(508, 322);
             this.Tb_user_name.Multiline = true;
             this.Tb_user_name.Name = "Tb_user_name";
@@ -99,7 +99,7 @@
             this.Tb_guest_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_guest_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_guest_name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_guest_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_guest_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_guest_name.Location = new System.Drawing.Point(508, 536);
             this.Tb_guest_name.Multiline = true;
             this.Tb_guest_name.Name = "Tb_guest_name";
@@ -112,7 +112,7 @@
             this.Tb_manager_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_manager_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_manager_name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_manager_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_manager_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_manager_name.Location = new System.Drawing.Point(508, 166);
             this.Tb_manager_name.Multiline = true;
             this.Tb_manager_name.Name = "Tb_manager_name";

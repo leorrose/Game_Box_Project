@@ -99,7 +99,7 @@ namespace GameBox
 
         private void Bt_Personal_scores_click(object sender, EventArgs e)
         {
-            Reports rep = new Reports(this, "Personal scores");
+            Reports rep = new Reports(this, "Personal Scores");
             this.Hide();
             rep.Show();
         }

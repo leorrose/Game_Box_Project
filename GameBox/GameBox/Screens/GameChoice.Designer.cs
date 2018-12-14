@@ -43,14 +43,14 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Beige;
-            this.label1.Location = new System.Drawing.Point(374, 58);
+            this.label1.Location = new System.Drawing.Point(419, 61);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(390, 58);
+            this.label1.Size = new System.Drawing.Size(333, 62);
             this.label1.TabIndex = 0;
-            this.label1.Text = "SELECT GAME";
+            this.label1.Text = "Select Game";
             // 
             // Bt_selectgame_Exit
             // 
@@ -114,7 +114,7 @@
             this.bt_snake_and_ladders.Name = "bt_snake_and_ladders";
             this.bt_snake_and_ladders.Size = new System.Drawing.Size(175, 86);
             this.bt_snake_and_ladders.TabIndex = 13;
-            this.bt_snake_and_ladders.Text = "Snake and Ladders";
+            this.bt_snake_and_ladders.Text = "Snake And Ladders";
             this.bt_snake_and_ladders.UseVisualStyleBackColor = false;
             this.bt_snake_and_ladders.Click += new System.EventHandler(this.Bt_snake_and_ladders_Click);
             // 

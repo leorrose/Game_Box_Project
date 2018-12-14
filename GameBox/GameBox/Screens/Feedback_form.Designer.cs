@@ -44,6 +44,7 @@
             this.Tb_Feedback.BackColor = System.Drawing.Color.SeaShell;
             this.Tb_Feedback.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Tb_Feedback.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Tb_Feedback.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_Feedback.Location = new System.Drawing.Point(85, 107);
             this.Tb_Feedback.Name = "Tb_Feedback";
             this.Tb_Feedback.Size = new System.Drawing.Size(720, 552);
@@ -59,7 +60,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(600, 62);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Leave a feedback:";
+            this.label1.Text = "Leave A Feedback:";
             // 
             // Bt_insert_feedback
             // 
@@ -123,7 +124,7 @@
             this.Tb_feedback_name.BackColor = System.Drawing.Color.Salmon;
             this.Tb_feedback_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_feedback_name.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Tb_feedback_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tb_feedback_name.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_feedback_name.Location = new System.Drawing.Point(949, 551);
             this.Tb_feedback_name.Multiline = true;
             this.Tb_feedback_name.Name = "Tb_feedback_name";

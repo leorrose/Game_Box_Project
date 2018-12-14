@@ -43,7 +43,7 @@
             this.Lb_Print.BackColor = System.Drawing.Color.Transparent;
             this.Lb_Print.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Print.ForeColor = System.Drawing.Color.LightPink;
-            this.Lb_Print.Location = new System.Drawing.Point(192, 54);
+            this.Lb_Print.Location = new System.Drawing.Point(197, 42);
             this.Lb_Print.MaximumSize = new System.Drawing.Size(600, 500);
             this.Lb_Print.Name = "Lb_Print";
             this.Lb_Print.Size = new System.Drawing.Size(496, 101);
@@ -70,9 +70,9 @@
             // 
             this.PB_Gifs.BackColor = System.Drawing.Color.Transparent;
             this.PB_Gifs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PB_Gifs.Location = new System.Drawing.Point(265, 158);
+            this.PB_Gifs.Location = new System.Drawing.Point(300, 216);
             this.PB_Gifs.Name = "PB_Gifs";
-            this.PB_Gifs.Size = new System.Drawing.Size(331, 220);
+            this.PB_Gifs.Size = new System.Drawing.Size(288, 182);
             this.PB_Gifs.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PB_Gifs.TabIndex = 2;
             this.PB_Gifs.TabStop = false;

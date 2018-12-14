@@ -170,7 +170,7 @@
             this.TB_user_name2.BackColor = System.Drawing.Color.Salmon;
             this.TB_user_name2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_user_name2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TB_user_name2.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_user_name2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_user_name2.Location = new System.Drawing.Point(318, 222);
             this.TB_user_name2.Multiline = true;
             this.TB_user_name2.Name = "TB_user_name2";
@@ -182,7 +182,7 @@
             this.TB_password2.BackColor = System.Drawing.Color.Salmon;
             this.TB_password2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_password2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TB_password2.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_password2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_password2.Location = new System.Drawing.Point(318, 270);
             this.TB_password2.Multiline = true;
             this.TB_password2.Name = "TB_password2";

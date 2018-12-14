@@ -52,7 +52,7 @@
             this.Bt_user_add.Name = "Bt_user_add";
             this.Bt_user_add.Size = new System.Drawing.Size(236, 68);
             this.Bt_user_add.TabIndex = 0;
-            this.Bt_user_add.Text = "Add/Remove user";
+            this.Bt_user_add.Text = "Add/Remove User";
             this.Bt_user_add.UseVisualStyleBackColor = true;
             this.Bt_user_add.Click += new System.EventHandler(this.Bt_add_remove_user);
             // 
@@ -67,7 +67,7 @@
             this.BT_login_reports.Name = "BT_login_reports";
             this.BT_login_reports.Size = new System.Drawing.Size(236, 68);
             this.BT_login_reports.TabIndex = 1;
-            this.BT_login_reports.Text = "Logins report";
+            this.BT_login_reports.Text = "Logins Report";
             this.BT_login_reports.UseVisualStyleBackColor = true;
             this.BT_login_reports.Click += new System.EventHandler(this.Bt_logins_report);
             // 
@@ -82,7 +82,7 @@
             this.Bt_manager_add.Name = "Bt_manager_add";
             this.Bt_manager_add.Size = new System.Drawing.Size(236, 68);
             this.Bt_manager_add.TabIndex = 2;
-            this.Bt_manager_add.Text = "Add/Remove manager";
+            this.Bt_manager_add.Text = "Add/Remove Manager";
             this.Bt_manager_add.UseVisualStyleBackColor = true;
             this.Bt_manager_add.Click += new System.EventHandler(this.Bt_add_remove_manager);
             // 
@@ -97,7 +97,7 @@
             this.Bt_score_report.Name = "Bt_score_report";
             this.Bt_score_report.Size = new System.Drawing.Size(236, 68);
             this.Bt_score_report.TabIndex = 3;
-            this.Bt_score_report.Text = "Scores report";
+            this.Bt_score_report.Text = "Scores Report";
             this.Bt_score_report.UseVisualStyleBackColor = true;
             this.Bt_score_report.Click += new System.EventHandler(this.Bt_scores_report);
             // 
@@ -128,7 +128,7 @@
             this.Bt_feedback.Name = "Bt_feedback";
             this.Bt_feedback.Size = new System.Drawing.Size(236, 68);
             this.Bt_feedback.TabIndex = 29;
-            this.Bt_feedback.Text = "Feedback report";
+            this.Bt_feedback.Text = "Feedback Report";
             this.Bt_feedback.UseVisualStyleBackColor = true;
             this.Bt_feedback.Click += new System.EventHandler(this.Bt_FeedBack_report);
             // 

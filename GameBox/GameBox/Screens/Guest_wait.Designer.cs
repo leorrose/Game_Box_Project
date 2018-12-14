@@ -74,13 +74,12 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Beige;
-            this.label2.Location = new System.Drawing.Point(377, 321);
+            this.label2.Location = new System.Drawing.Point(348, 317);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(432, 29);
+            this.label2.Size = new System.Drawing.Size(485, 45);
             this.label2.TabIndex = 3;
             this.label2.Text = "Registered users don\'t need to wait!";
             // 

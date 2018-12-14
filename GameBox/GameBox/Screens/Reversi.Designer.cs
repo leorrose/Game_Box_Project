@@ -1016,9 +1016,9 @@
             this.label4.ForeColor = System.Drawing.Color.OrangeRed;
             this.label4.Location = new System.Drawing.Point(1128, 237);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 34);
+            this.label4.Size = new System.Drawing.Size(99, 34);
             this.label4.TabIndex = 66;
-            this.label4.Text = "score:";
+            this.label4.Text = "Score:";
             // 
             // label5
             // 
