@@ -31,7 +31,7 @@ namespace GameBox
             Url += "Resources\\PlayMusic.mp3";
             Program.Wmp.URL = Url;
             Program.Wmp.controls.play();
-            Application.Run(new MainForm());
+            Application.Run(new Logo());
 
         }
         public static string user1 = "", user2 = "";

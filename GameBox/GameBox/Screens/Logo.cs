@@ -15,6 +15,24 @@ namespace GameBox
         public Logo()
         {
             InitializeComponent();
+            timer1.Interval = 1000;
+            timer1.Start();
+        }
+
+        int duration = 5;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (duration > 0)
+                duration--;
+            else
+            {
+                timer1.Stop();
+                MainForm mf = new MainForm();
+                mf.Show();
+                this.Hide();
+            }
+              
         }
     }
 }

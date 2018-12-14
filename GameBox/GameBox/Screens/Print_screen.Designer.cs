@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Print_screen));
             this.Lb_Print = new System.Windows.Forms.Label();
             this.Bt_ok = new System.Windows.Forms.Button();
             this.PB_Gifs = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lb_time = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Gifs)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,6 +75,23 @@
             this.PB_Gifs.TabIndex = 2;
             this.PB_Gifs.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lb_time
+            // 
+            this.lb_time.AutoSize = true;
+            this.lb_time.BackColor = System.Drawing.Color.Transparent;
+            this.lb_time.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_time.ForeColor = System.Drawing.Color.LightPink;
+            this.lb_time.Location = new System.Drawing.Point(805, 401);
+            this.lb_time.Name = "lb_time";
+            this.lb_time.Size = new System.Drawing.Size(27, 30);
+            this.lb_time.TabIndex = 3;
+            this.lb_time.Text = "5";
+            this.lb_time.Visible = false;
+            // 
             // Print_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -80,6 +100,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(882, 453);
             this.ControlBox = false;
+            this.Controls.Add(this.lb_time);
             this.Controls.Add(this.PB_Gifs);
             this.Controls.Add(this.Bt_ok);
             this.Controls.Add(this.Lb_Print);
@@ -90,6 +111,7 @@
             this.Text = "GameBox";
             ((System.ComponentModel.ISupportInitialize)(this.PB_Gifs)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -98,5 +120,7 @@
         private System.Windows.Forms.Label Lb_Print;
         private System.Windows.Forms.Button Bt_ok;
         private System.Windows.Forms.PictureBox PB_Gifs;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lb_time;
     }
 }
