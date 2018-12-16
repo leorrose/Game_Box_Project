@@ -39,7 +39,7 @@ namespace GameBox
 
                     Print_table("SELECT Top (10) * FROM Scores ORDER BY Wins DESC", "Scores");
                     break;
-                case "Personal scores":
+                case "Personal Scores":
                     if(Program.cnt_players==2)
                         Print_table("SELECT * FROM Scores WHERE Name='"+Program.user1 + "' OR Name ='" + Program.user2 +"'", "Scores");
                     else
