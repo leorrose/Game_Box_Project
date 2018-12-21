@@ -38,6 +38,11 @@ namespace GameBox
 
         private void Bt_Player2_continue_Click(object sender, EventArgs e) /* login player 2 */
         {
+            if (Program.Test_Insert_Text(TB_user_name2.Text) == false || Program.Test_Insert_Text(TB_password2.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (TB_user_name2.Text == Program.user1)
             {
                 MessageBox.Show(Program.user1 + " is allready conected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

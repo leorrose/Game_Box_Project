@@ -12,7 +12,7 @@ namespace GameBox
 {
     public partial class Feedback_form : Form
     {
-       Form return_back;
+        Form return_back;
         public Feedback_form(Form form)
         {
             InitializeComponent();
@@ -43,12 +43,16 @@ namespace GameBox
 
         private void Bt_Insert_feedback_click(object sender, EventArgs e)
         {
+            if (Program.Test_Insert_Text(Tb_Feedback.Text) == false || Program.Test_Insert_Text(Tb_feedback_name.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (Tb_feedback_name.Text != GameBox.Program.user1 && Tb_feedback_name.Text != GameBox.Program.user2)
             {
                 MessageBox.Show("Invalid Name!");
                 return;
             }
-
             else if (Tb_Feedback.Text.ToString().Length > 0)
             {
                 GameBox.Program.Insert_Feedback(Tb_feedback_name.Text, Tb_Feedback.Text);

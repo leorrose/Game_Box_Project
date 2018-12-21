@@ -50,6 +50,11 @@ namespace GameBox
 
         private void Bt_add_manager_click(object sender, EventArgs e)
         {
+            if (Program.Test_Insert_Text(Tb_Manager_add_Name.Text) == false || Program.Test_Insert_Text(Tb_Manager_add_Password.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (GameBox.Program.User_Check(Tb_Manager_add_Name.Text) == false || GameBox.Program.Password_Check(Tb_Manager_add_Password.Text) == false) /* check if name and password a valid */
             {
                 MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -71,6 +76,11 @@ namespace GameBox
 
         private void Bt_remove_manager_click(object sender, EventArgs e)
         {
+            if (Program.Test_Insert_Text(Tb_Manager_remove_Name.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (GameBox.Program.User_Check(Tb_Manager_remove_Name.Text) == false)/* check if name and password a valid */
             {
                 MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

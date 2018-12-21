@@ -32,6 +32,11 @@ namespace GameBox
 
         private void Bt_Update_Click(object sender, EventArgs e)
         {
+            if (Program.Test_Insert_Text(Tb_Existing_Name.Text) == false || Program.Test_Insert_Text(Tb_Existing_Password.Text) == false || Program.Test_Insert_Text(Tb_New_Name.Text) == false || Program.Test_Insert_Text(Tb_New_Password.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (GameBox.Program.Check_NAME_exsist(Tb_Existing_Name.Text, "Players") == 0)
             {
                 MessageBox.Show("Invalid Existing User Name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

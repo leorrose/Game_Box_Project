@@ -26,6 +26,11 @@ namespace GameBox
 
         private void Bt_Remove_user(object sender, EventArgs e)
         {
+            if (Program.Test_Insert_Text(Tb_User_remove_Name.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (GameBox.Program.User_Check(Tb_User_remove_Name.Text) == false)/* check if name and password a valid */
             {
                 MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -44,6 +49,11 @@ namespace GameBox
 
         private void Bt_Add_user(object sender, EventArgs e) /* function to add user to database */
         {
+            if (Program.Test_Insert_Text(Tb_User_add_Password.Text) == false || Program.Test_Insert_Text(Tb_User_add_Name.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (GameBox.Program.User_Check(Tb_User_add_Name.Text) == false || GameBox.Program.Password_Check(Tb_User_add_Password.Text) == false) /* check if name and password a valid */
             {
                 MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

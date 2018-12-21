@@ -41,6 +41,16 @@ namespace GameBox
 
         private void Bt_manager_login_Click(object sender, EventArgs e) /* manager login */
         {
+            if (Program.Test_Insert_Text(Tb_manager_name.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (Program.Test_Insert_Text(Tb_manager_password.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (GameBox.Program.User_Check(Tb_manager_name.Text) == false || GameBox.Program.Password_Check(Tb_manager_password.Text) == false) /* check if name and password a valid */
             {
                 MessageBox.Show("Invalid input","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
@@ -67,6 +77,16 @@ namespace GameBox
 
         private void Bt_User_login_Click(object sender, EventArgs e) /* Player login */
         {
+            if (Program.Test_Insert_Text(Tb_user_name.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (Program.Test_Insert_Text(Tb_user_password.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (GameBox.Program.User_Check(Tb_user_name.Text) == false || GameBox.Program.Password_Check(Tb_user_password.Text) == false) /* check if name and password a valid */
             {
                 MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -121,6 +141,11 @@ namespace GameBox
 
         private void Bt_Guest_login_Click(object sender, EventArgs e) /* guest login */
         {
+            if (Program.Test_Insert_Text(Tb_guest_name.Text) == false)
+            {
+                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (GameBox.Program.User_Check(Tb_guest_name.Text) == false)  /* check if name is valid */
             {
                 MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
