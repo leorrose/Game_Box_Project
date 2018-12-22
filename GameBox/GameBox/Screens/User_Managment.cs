@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GameBox
@@ -19,11 +12,14 @@ namespace GameBox
             Shown += User_Managment_Shown;
             Return_back = form;
         }
-        private void User_Managment_Shown(Object sender, EventArgs e)
+        private void User_Managment_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
+        private void Bt_User_Managment_exit_Click(object sender, EventArgs e) => Program.Exit();
+        private void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
+        private void Bt_User_managment_back_Click(object sender, EventArgs e)
         {
-            Program.Update_music_bt();
+            Return_back.Show();
+            this.Close();
         }
-
         private void Bt_Remove_user(object sender, EventArgs e)
         {
             if (Program.Test_Insert_Text(Tb_User_remove_Name.Text) == false)
@@ -46,7 +42,6 @@ namespace GameBox
                 MessageBox.Show("user dose not exsist!");
             Tb_User_remove_Name.Text = "";
         }
-
         private void Bt_Add_user(object sender, EventArgs e) /* function to add user to database */
         {
             if (Program.Test_Insert_Text(Tb_User_add_Password.Text) == false || Program.Test_Insert_Text(Tb_User_add_Name.Text) == false)
@@ -72,18 +67,6 @@ namespace GameBox
             Tb_User_add_Name.Text = "";
             Tb_User_add_Password.Text = "";
         }
-
-        private void Bt_User_Managment_exit_Click(object sender, EventArgs e)
-        {
-            Program.Exit();
-        }
-
-        private void Bt_User_managment_back_Click(object sender, EventArgs e)
-        {
-            Return_back.Show();
-            this.Close();
-        }
-
         private void Add_user_show_Click(object sender, EventArgs e)
         {
             lb_add_name.Visible = true;
@@ -95,7 +78,6 @@ namespace GameBox
             Tb_User_remove_Name.Visible = false;
             Bt_remove.Visible = false;
         }
-
         private void Remove_user_show_Click(object sender, EventArgs e)
         {
             lb_add_name.Visible = false;
@@ -106,11 +88,6 @@ namespace GameBox
             Lb_remove_name.Visible = true;
             Tb_User_remove_Name.Visible = true;
             Bt_remove.Visible = true;
-        }
-
-        private void CB_music_click(object sender, EventArgs e)
-        {
-            Program.Music_on_off();
         }
     }
 }

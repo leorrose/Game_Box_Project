@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GameBox
@@ -20,27 +13,14 @@ namespace GameBox
             Program.Update_music_bt();
             return_back = form;
         }
-        private void Feedback_form_Shown(Object sender, EventArgs e)
-        {
-            Program.Update_music_bt();
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            Program.Music_on_off();
-        }
-
+        private void Feedback_form_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
+        private void checkBox1_CheckedChanged(object sender, EventArgs e) => Program.Music_on_off();
+        private void Bt_Feedback_exit_click(object sender, EventArgs e) => Program.Exit();
         private void Bt_Feedback_back_click(object sender, EventArgs e)
         {
             return_back.Show();
             this.Close();
         }
-
-        private void Bt_Feedback_exit_click(object sender, EventArgs e)
-        {
-            Program.Exit();
-        }
-
         private void Bt_Insert_feedback_click(object sender, EventArgs e)
         {
             if (Program.Test_Insert_Text(Tb_Feedback.Text) == false || Program.Test_Insert_Text(Tb_feedback_name.Text) == false)
@@ -57,7 +37,6 @@ namespace GameBox
             {
                 GameBox.Program.Insert_Feedback(Tb_feedback_name.Text, Tb_Feedback.Text);
                 MessageBox.Show("Thank you for your feedback!");
-
             }
             else
             {

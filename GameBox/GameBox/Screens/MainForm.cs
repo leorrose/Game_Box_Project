@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GameBox
@@ -32,13 +25,13 @@ namespace GameBox
             Program.guest = "";
             Program.cnt_players = 0;
         }
-    
-
-        private void Bt_MainForm_exit_Click(object sender, EventArgs e) /* function to exit all program! */
+        private void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
+        private void Bt_MainForm_exit_Click(object sender, EventArgs e) => Program.Exit();
+        private void Bt_credits_Click(object sender, EventArgs e) /* continue to credits screen */
         {
-            Program.Exit();
+            Credits cr = new Credits();
+            cr.ShowDialog();
         }
-
         private void Bt_manager_login_Click(object sender, EventArgs e) /* manager login */
         {
             if (Program.Test_Insert_Text(Tb_manager_name.Text) == false)
@@ -56,7 +49,6 @@ namespace GameBox
                 MessageBox.Show("Invalid input","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 return;
             }
-
             if (GameBox.Program.Check_NAME_exsist(Tb_manager_name.Text,"Managers") == 0) /* check if name exisist in database */
             {
                 MessageBox.Show("Invalid User Name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -74,7 +66,6 @@ namespace GameBox
             man.Show(); /* next screen */
             this.Hide(); /* hide this screen */
         }
-
         private void Bt_User_login_Click(object sender, EventArgs e) /* Player login */
         {
             if (Program.Test_Insert_Text(Tb_user_name.Text) == false)
@@ -134,11 +125,7 @@ namespace GameBox
                 log.Show();
                 this.Hide();
             }
-           
-           
-        
         }
-
         private void Bt_Guest_login_Click(object sender, EventArgs e) /* guest login */
         {
             if (Program.Test_Insert_Text(Tb_guest_name.Text) == false)
@@ -160,10 +147,7 @@ namespace GameBox
             Program.GameChoice = false;
             g.Show(); /* open nex screen */
             this.Hide(); /* hide this screen */
-
         }
-
-
         private void Bt_Continue_As_Player_Click(object sender, EventArgs e) /* hide players buttons and lable */
         {
             lb_manager_name.Visible = false;
@@ -182,7 +166,6 @@ namespace GameBox
             comboBox1.Visible = true;
             cob_players.Visible = true;
         }
-
         private void Bt_Continue_As_Manager_Click(object sender, EventArgs e) /* hide managers buttons and lable */
         {
             lb_manager_name.Visible = true;
@@ -201,7 +184,6 @@ namespace GameBox
             comboBox1.Visible = false;
             cob_players.Visible = false;
         }
-
         private void Bt_Continue_As_Guest_Click(object sender, EventArgs e) /* hide guest buttons and lable */
         {
             lb_manager_name.Visible = false;
@@ -219,17 +201,6 @@ namespace GameBox
             Tb_user_password.Visible = false;
             comboBox1.Visible = false;
             cob_players.Visible = false;
-        }
-
-        private void Bt_credits_Click(object sender, EventArgs e) /* continue to credits screen */
-        {
-            Credits cr = new Credits();
-            cr.ShowDialog();
-        }
-
-        private void CB_music_click(object sender, EventArgs e)
-        {
-            Program.Music_on_off();
         }
     }
 }

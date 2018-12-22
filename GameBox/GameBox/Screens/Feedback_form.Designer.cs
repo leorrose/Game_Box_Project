@@ -71,7 +71,7 @@
             this.Bt_insert_feedback.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Bt_insert_feedback.Location = new System.Drawing.Point(949, 604);
             this.Bt_insert_feedback.Name = "Bt_insert_feedback";
-            this.Bt_insert_feedback.Size = new System.Drawing.Size(178, 55);
+            this.Bt_insert_feedback.Size = new System.Drawing.Size(206, 55);
             this.Bt_insert_feedback.TabIndex = 3;
             this.Bt_insert_feedback.Text = "Insert Feedback";
             this.Bt_insert_feedback.UseVisualStyleBackColor = true;
@@ -113,7 +113,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Beige;
-            this.label2.Location = new System.Drawing.Point(819, 558);
+            this.label2.Location = new System.Drawing.Point(811, 556);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 25);
             this.label2.TabIndex = 6;
@@ -128,7 +128,7 @@
             this.Tb_feedback_name.Location = new System.Drawing.Point(949, 551);
             this.Tb_feedback_name.Multiline = true;
             this.Tb_feedback_name.Name = "Tb_feedback_name";
-            this.Tb_feedback_name.Size = new System.Drawing.Size(178, 30);
+            this.Tb_feedback_name.Size = new System.Drawing.Size(206, 30);
             this.Tb_feedback_name.TabIndex = 7;
             // 
             // CB_music

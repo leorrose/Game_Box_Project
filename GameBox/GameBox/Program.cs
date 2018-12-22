@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using WMPLib; 
+using WMPLib;
 using System.Windows.Forms;
-using System.Data.SqlClient; 
-using System.IO;  
+using System.Data.SqlClient;
 using System.Reflection;
 
 
@@ -49,9 +42,7 @@ namespace GameBox
             DialogResult res = MessageBox.Show("Are you sure you want to exit? ", "Exit?", MessageBoxButtons.YesNo, MessageBoxIcon.Question); //dialog to user 
             if (res == DialogResult.Yes)
                 Environment.Exit(0); /* close all */
-
         }
-
         public static Boolean Password_Check(string pass) /* function to check if password length is correct */
         {
             if (pass.Length == 5)
@@ -68,12 +59,11 @@ namespace GameBox
         {
             foreach (char i in text)
             {
-                if ((i < 97 && i > 90) || i > 122 || (i < 65 && i > 57) || i < 48)
+                if ((i < 97 && i > 90) || i > 122 || (i < 65 && i > 57) || i==47 || (i<46 && i> 33))
                     return false;
             }
             return true;
         }
-
         /* all database function */
         public static string ConectionString(string DBName) /* function to get database conection string */
         {
@@ -93,7 +83,6 @@ namespace GameBox
             }
             
          }
-
         public static int Check_NAME_exsist(string Name, string DataBaseName)  /* check if name exsist in database */
         {
             try
@@ -116,7 +105,6 @@ namespace GameBox
                 return -1;
             }
         }
-
         public static Boolean Check_Password_Is_correct(string Name, string Password, string DataBaseName) /* check if Password exsist in database */
         {
             try
@@ -162,7 +150,6 @@ namespace GameBox
                 Environment.Exit(0); /* close all */
             }
         }
-
         /* functions on players database */
         public static Boolean Insert_User_PLayers(string Name, string Password) /* insert user to playes database */
         {
@@ -192,7 +179,6 @@ namespace GameBox
                 return false;
             }
         }
-
         public static void Upadte_User_players(string Name, string Password, string NewName) /* update user info in database */
         {
             try

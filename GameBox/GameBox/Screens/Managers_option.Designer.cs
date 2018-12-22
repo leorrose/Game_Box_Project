@@ -146,7 +146,7 @@
             this.Bt_manager_tips.TabIndex = 30;
             this.Bt_manager_tips.Text = "Get Tip";
             this.Bt_manager_tips.UseVisualStyleBackColor = true;
-            this.Bt_manager_tips.Click += new System.EventHandler(this.button6_Click);
+            this.Bt_manager_tips.Click += new System.EventHandler(this.Bt_get_tips_Click);
             // 
             // Bt_manager_back
             // 

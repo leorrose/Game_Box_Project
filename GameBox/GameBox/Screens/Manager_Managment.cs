@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GameBox
@@ -19,11 +12,14 @@ namespace GameBox
             Shown += Manager_Managment_Shown;
             Return_back = form;
         }
-        private void Manager_Managment_Shown(Object sender, EventArgs e)
+        private void Manager_Managment_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
+        private void Bt_Manager_Managment_exit_Click(object sender, EventArgs e) => Program.Exit();
+        private void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
+        private void Bt_Manager_managment_back_Click(object sender, EventArgs e)
         {
-            Program.Update_music_bt();
+            Return_back.Show();
+            this.Close();
         }
-
         private void Add_Manager_show_click(object sender, EventArgs e)
         {
             lb_add_name.Visible = true;
@@ -35,7 +31,6 @@ namespace GameBox
             Tb_Manager_remove_Name.Visible = false;
             Bt_remove.Visible = false;
         }
-
         private void Remove_Manager_show_click(object sender, EventArgs e)
         {
             lb_add_name.Visible = false;
@@ -47,7 +42,6 @@ namespace GameBox
             Tb_Manager_remove_Name.Visible = true;
             Bt_remove.Visible = true;
         }
-
         private void Bt_add_manager_click(object sender, EventArgs e)
         {
             if (Program.Test_Insert_Text(Tb_Manager_add_Name.Text) == false || Program.Test_Insert_Text(Tb_Manager_add_Password.Text) == false)
@@ -73,7 +67,6 @@ namespace GameBox
             Tb_Manager_add_Name.Text = "";
             Tb_Manager_add_Password.Text = "";
         }
-
         private void Bt_remove_manager_click(object sender, EventArgs e)
         {
             if (Program.Test_Insert_Text(Tb_Manager_remove_Name.Text) == false)
@@ -94,23 +87,6 @@ namespace GameBox
             else
                 MessageBox.Show("Manager dose not exsist!");
             Tb_Manager_remove_Name.Text = "";
-        }
-
-        private void Bt_Manager_managment_back_Click(object sender, EventArgs e)
-        {
-            Return_back.Show();
-            this.Close();
-        }
-
-        private void Bt_Manager_Managment_exit_Click(object sender, EventArgs e)
-        {
-            Program.Exit();
-        }
-
-
-        private void CB_music_click(object sender, EventArgs e)
-        {
-            Program.Music_on_off();
         }
     }
 }

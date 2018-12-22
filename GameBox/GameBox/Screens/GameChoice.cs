@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using WMPLib;
-
 
 namespace GameBox
 {
-    
     public partial class GameChoice : Form
     {
         Form return_back;
@@ -32,21 +22,13 @@ namespace GameBox
                 bt_reversi.Cursor = Cursors.No;
             }
         }
-
-        private void Bt_Exit_Click(object sender, EventArgs e)  //exit the program
-        {
-            Program.Exit();
-        }
-
-
+        private void Bt_Exit_Click(object sender, EventArgs e) => Program.Exit();
+        private void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
         private void Bt_back_Click(object sender, EventArgs e) /* function to go back */
         {
             return_back.Show(); /*show last screen */
             this.Close(); /* hide this screen */
         }
-
-    
-
         private void Bt_reversi_Click(object sender, EventArgs e)
         {
             Reversi NewGame = new Reversi(this,return_back);
@@ -54,7 +36,6 @@ namespace GameBox
             this.Hide();
             NewGame.Show();
         }
-
         private void Bt_snake_and_ladders_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -62,19 +43,12 @@ namespace GameBox
             Snake_and_ladders game = new Snake_and_ladders(this, return_back);
             game.Show();
         }
-
-        private void CB_music_click(object sender, EventArgs e)
-        {
-            Program.Music_on_off();
-        }
-
         private void reversi_insruction_Click(object sender, EventArgs e)
         {
             Program.GameChoice = true;
             Print_instructions ins = new Print_instructions();
             ins.ShowDialog();
         }
-
         private void SAl_instruction_Click(object sender, EventArgs e)
         {
             Program.GameChoice = false;

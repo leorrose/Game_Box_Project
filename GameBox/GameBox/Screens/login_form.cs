@@ -1,16 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using WMPLib; // צריך להוסיף
-using System.Data.SqlClient; //צריך להוסיף
-using System.IO;  //צריך להוסיף
-using System.Reflection; //צריך להוסיף
 
 namespace GameBox
 {
@@ -26,35 +15,27 @@ namespace GameBox
             Program.cnt_players = 1;
             Program.user2 = "";
         }
-        private void login_form_Shown(Object sender, EventArgs e)
-        {
-            Program.Update_music_bt();
-        }
-        private void Bt_login_exit_Click(object sender, EventArgs e) /* function to exit */
-        {
-            Program.Exit();
-
-        }
-
+        private void Cb_music(object sender, EventArgs e) => Program.Music_on_off();
+        private void login_form_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
+        private void Bt_login_exit_Click(object sender, EventArgs e) => Program.Exit();
         private void Bt_Player2_continue_Click(object sender, EventArgs e) /* login player 2 */
         {
             if (Program.Test_Insert_Text(TB_user_name2.Text) == false || Program.Test_Insert_Text(TB_password2.Text) == false)
             {
-                MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Only English Characters And Numbers Allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (TB_user_name2.Text == Program.user1)
             {
-                MessageBox.Show(Program.user1 + " is allready conected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(Program.user1 + " Is allready conected", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
             if (GameBox.Program.User_Check(TB_user_name2.Text) == false || GameBox.Program.Password_Check(TB_password2.Text) == false) /* check if name and password a valid */
             {
-                MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (COB_user2.Text == "Sign in") /* if combo box is on login */
+            if (COB_user2.Text == "Sign In") /* if combo box is on login */
             {
                 if (GameBox.Program.Check_NAME_exsist(TB_user_name2.Text, "Players") == 0) /* check if name exisist in database */
                 {
@@ -66,9 +47,8 @@ namespace GameBox
                     MessageBox.Show("Invalid Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-
             }
-            else if (COB_user2.Text == "Sign up") /* if conbo box is on sign up */
+            else if (COB_user2.Text == "Sign Up") /* if conbo box is on sign up */
             {
                 if (GameBox.Program.Insert_User_PLayers(TB_user_name2.Text, TB_password2.Text) == false) /* insurt user to players database */
                 {
@@ -87,18 +67,11 @@ namespace GameBox
             this.Hide();  /* open nex screen */
             uo.Show(); /* hide this screen */
         }
-
         private void Bt_back_Click(object sender, EventArgs e) /* go back function*/
         {
             return_back.Show(); /* show last screen*/
-            MessageBox.Show(Program.user1 + " disconected", "Sign out", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(Program.user1 + " Disconected", "Sign out", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close(); /* hide this screen*/
-        }
-
-
-        private void Cb_music(object sender, EventArgs e)
-        {
-            Program.Music_on_off();
         }
     }
 }

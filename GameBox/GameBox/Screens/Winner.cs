@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GameBox
@@ -21,7 +14,6 @@ namespace GameBox
             GameEnd = Game;
             GameBack = BackGame;
         }
-
         private void BT_New_game_Click(object sender, EventArgs e)
         {
             if (Program.GameChoice == true)
@@ -37,7 +29,6 @@ namespace GameBox
             GameEnd.Close();
             this.Close();
         }
-
         private void Bt_continue_Click(object sender, EventArgs e)
         {
             GameEnd.Close();

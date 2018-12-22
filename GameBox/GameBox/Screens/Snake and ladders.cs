@@ -1,23 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace GameBox
 {
     public partial class Snake_and_ladders : Form
     {
+        Form return_back, return_end;
         Random ran = new Random();
         int x1, y1,x2,y2, p1 = 1, p2 = 1, start_x, start_y, seconds1 = 0, seconds2 = 0, dice_value,seconds3=0,flag=0;
-
         bool turn = true; // true= player1 turn, false = player2/comuter turn;
-        Form return_back, return_end;
         public Snake_and_ladders(Form back,Form EndGame)
         {
             InitializeComponent();
@@ -25,24 +17,14 @@ namespace GameBox
             return_back = back;
             return_end = EndGame;
         }
-        private void Snake_and_ladders_Shown(Object sender, EventArgs e)
-        {
-            Program.Update_music_bt();
-        }
-
+        private void Snake_and_ladders_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
+        private void bt_music_Click(object sender, EventArgs e) => Program.Music_on_off();
         private void bt_instraction_Click(object sender, EventArgs e)
         {
             Program.GameChoice = false;
             Print_instructions ins = new Print_instructions();
             ins.ShowDialog();
         }
-
-
-        private void bt_music_Click(object sender, EventArgs e)
-        {
-            Program.Music_on_off();
-        }
-
         private void Bt_SAL_back_Click(object sender, EventArgs e)
         {
             DialogResult res = MessageBox.Show("Are you sure? Any unsaved data will be lost", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -52,7 +34,12 @@ namespace GameBox
                 return_back.Show();
             }
         }
-
+        private void bt_Exit_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Are you sure? Any unsaved data will be lost", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.Yes)
+                Environment.Exit(0);
+        }
         private void Snake_and_ladders_Load(object sender, EventArgs e)
         {
             start_x = pb_player1.Location.X ;
@@ -72,7 +59,6 @@ namespace GameBox
                 bt_roll.Text = Program.guest + " ROLL!";
             labels();     
         }
-
         private void labels()
         {
             if (Program.TypeUser) // if the player is a user.
@@ -82,7 +68,6 @@ namespace GameBox
                     lb_player2_name.Text = Program.user2 + ": " + p2.ToString();
                 else
                     lb_player2_name.Text = "Computer: " + p2.ToString();
-                  
             }
             else  // if the player is a guest.
             {
@@ -90,7 +75,6 @@ namespace GameBox
                 lb_player2_name.Text = "Computer: " + p2.ToString();
             }
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             int num;
@@ -106,7 +90,6 @@ namespace GameBox
                 pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
-
         private void timer2_Tick(object sender, EventArgs e)
         {
             bt_roll.Visible = false;
@@ -123,11 +106,9 @@ namespace GameBox
                turn = true;
             }
         }
-
         private void timer3_Tick(object sender, EventArgs e) //timer for the moves of player1.
         {
-            if (seconds3 > dice_value) ; //pause to wait for shuffle dice to end.
-                
+           if (seconds3 > dice_value) ; //pause to wait for shuffle dice to end.
            else if (seconds3 > 0)
             {
                     if (p1 == 10 || p1 == 20 || p1 == 30 || p1 == 40 || p1 == 50 || p1 == 60 || p1 == 70 || p1 == 80 || p1 == 90)
@@ -142,9 +123,7 @@ namespace GameBox
                         p1++;
                     }
                     pb_player1.Location = new Point(x1, y1);
-               
             }
-
             else
             {
                 timer3.Stop();
@@ -178,11 +157,9 @@ namespace GameBox
                     NewWinner.ShowDialog();
                 }
             }
-            
             seconds3--;
             labels();
         }
-
         private void timer4_Tick(object sender, EventArgs e)
         {
             if (seconds3 > dice_value) ; //pause to wait for shuffle dice to end.
@@ -203,7 +180,6 @@ namespace GameBox
                 pb_player2.Location = new Point(x2, y2);
 
             }
-
             else
             {
                 timer4.Stop();
@@ -241,7 +217,6 @@ namespace GameBox
             seconds3--;
             labels();
         }
-
         private void bt_roll_Click(object sender, EventArgs e)
         {
             bt_roll.Visible = false;
@@ -272,7 +247,6 @@ namespace GameBox
             }
             labels();
         }
-
         private void shuffle_dice(int num , PictureBox pb , bool turn)
         {
             switch(num)
@@ -292,7 +266,6 @@ namespace GameBox
                         pb.Image = Properties.Resources._2r;
                     pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
-
                 case 3:
                     if (turn)  // player 1 turn, dice should be red
                         pb.Image = Properties.Resources._3y;
@@ -300,7 +273,6 @@ namespace GameBox
                         pb.Image = Properties.Resources._3r;
                     pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
-
                 case 4:
                     if (turn)  // player 1 turn, dice should be red
                         pb.Image = Properties.Resources._4y;
@@ -308,7 +280,6 @@ namespace GameBox
                         pb.Image = Properties.Resources._4r;
                     pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
-
                 case 5:
                     if (turn)  // player 1 turn, dice should be red
                         pb.Image = Properties.Resources._5y;
@@ -316,7 +287,6 @@ namespace GameBox
                         pb.Image = Properties.Resources._5r;
                     pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
-
                 case 6:
                     if (turn)  // player 1 turn, dice should be red
                         pb.Image = Properties.Resources._6y;
@@ -325,14 +295,10 @@ namespace GameBox
                     pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
                     break;
             }
-
         }
-       
-
         private void snakes_ladders(ref int x,ref int y,ref int pos, PictureBox pb)
         {
             int S_OR_L = 0;   //1 = snake, 2 = ladder;
-
             //--------------------------snakes-------------------------------
               if (pos == 25)
             {
@@ -340,9 +306,7 @@ namespace GameBox
                 x = 342;
                 y = start_y;
                 S_OR_L = 1;
-               
             }
-
             else if (pos == 34)
             {
                 pos = 1;
@@ -350,7 +314,6 @@ namespace GameBox
                 y = start_y;
                 S_OR_L = 1;
             }
-
             else if (pos == 47)
             {
                 pos = 19;
@@ -358,7 +321,6 @@ namespace GameBox
                 y = 533;
                 S_OR_L = 1;
             }
-
             else if (pos == 65)
             {
                 pos = 52;
@@ -366,7 +328,6 @@ namespace GameBox
                 y = 277;
                 S_OR_L = 1;
             }
-
             else if (pos == 91)
             {
                 pos = 61;
@@ -374,14 +335,12 @@ namespace GameBox
                 y = 213;
                 S_OR_L = 1;
             }
-
             else if (pos == 87)
             {
                 pos = 57;
                 y = 277;
                 S_OR_L = 1;
             }
-
             else if (pos == 99)
             {
                 pos = 69;
@@ -429,8 +388,7 @@ namespace GameBox
                 y = 16;
                 S_OR_L = 2;
             }
-
-              if(S_OR_L==1) //if the position of the player is on snake.
+            if(S_OR_L==1) //if the position of the player is on snake.
             {
                 if(flag == 1)  // if player1 turn
                 {
@@ -458,17 +416,7 @@ namespace GameBox
                 else if (flag == 3)
                     MessageBox.Show("The computer got a ladder!", "", MessageBoxButtons.OK);
             }
-
             pb.Location = new Point(x, y);
         }
-
-        private void bt_Exit_Click(object sender, EventArgs e)
-        {
-            DialogResult res = MessageBox.Show("Are you sure? Any unsaved data will be lost", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (res == DialogResult.Yes)
-                Environment.Exit(0);
-        }
-
-        
     }
 }

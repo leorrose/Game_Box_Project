@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace GameBox
@@ -23,17 +16,24 @@ namespace GameBox
                 string UserConectionString = Program.ConectionString("Tips");
                 PB_Gifs.Image = Properties.Resources.tips;
                 PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
-                using (SqlConnection con = new SqlConnection(UserConectionString))
+                try
                 {
-                    con.Open();
-                    SqlCommand sqlCommand = new SqlCommand("SELECT Tip FROM Tips WHERE Number="+ index.Next(1,24).ToString() ,con);
-                    SqlDataReader Read = sqlCommand.ExecuteReader();
-                    Read.Read();
-                    Lb_Print.Text = Read.GetString(0);
-                    Lb_Print.Text = Lb_Print.Text.Replace("\\n", "\r\n");
-                    con.Close();
+                    using (SqlConnection con = new SqlConnection(UserConectionString))
+                    {
+                        con.Open();
+                        SqlCommand sqlCommand = new SqlCommand("SELECT Tip FROM Tips WHERE Number=" + index.Next(1, 24).ToString(), con);
+                        SqlDataReader Read = sqlCommand.ExecuteReader();
+                        Read.Read();
+                        Lb_Print.Text = Read.GetString(0);
+                        Lb_Print.Text = Lb_Print.Text.Replace("\\n", "\r\n");
+                        con.Close();
+                    }
                 }
-
+                catch (Exception e)
+                {
+                    MessageBox.Show("Error accorred", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Environment.Exit(0); /* close all */
+                }
             }
             else if (type == "Ads")
             {
@@ -42,15 +42,23 @@ namespace GameBox
                 lb_time.Visible = true;
                 Random index = new Random();
                 int number = index.Next(1, 8);
-                string UserConectionString = Program.ConectionString("Ads");
-                using (SqlConnection con = new SqlConnection(UserConectionString))
+                try
                 {
-                    con.Open();
-                    SqlCommand sqlCommand = new SqlCommand("SELECT Ad FROM Ads WHERE Number=" + number.ToString(), con);
-                    SqlDataReader Read = sqlCommand.ExecuteReader();
-                    Read.Read();
-                    Lb_Print.Text = Read.GetString(0);
-                    con.Close();
+                    string UserConectionString = Program.ConectionString("Ads");
+                    using (SqlConnection con = new SqlConnection(UserConectionString))
+                    {
+                        con.Open();
+                        SqlCommand sqlCommand = new SqlCommand("SELECT Ad FROM Ads WHERE Number=" + number.ToString(), con);
+                        SqlDataReader Read = sqlCommand.ExecuteReader();
+                        Read.Read();
+                        Lb_Print.Text = Read.GetString(0);
+                        con.Close();
+                    }
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("Error accorred", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    Environment.Exit(0); /* close all */
                 }
                 switch (number)
                 {
@@ -82,18 +90,10 @@ namespace GameBox
                         PB_Gifs.Image = Properties.Resources.hapoel;
                         PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
-
-                }
-                
+                }            
             }
         }
-
-        private void Bt_ok_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-      
+        private void Bt_ok_Click(object sender, EventArgs e) => this.Close();
         private void timer1_Tick(object sender, EventArgs e)
         {
             Bt_ok.Visible = false;
@@ -108,7 +108,6 @@ namespace GameBox
                 Bt_ok.Visible = true;
                 timer1.Stop();
             }
-               
         }
     }
 }
