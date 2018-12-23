@@ -47,7 +47,7 @@
             // Bt_Update
             // 
             this.Bt_Update.BackColor = System.Drawing.Color.LightGray;
-            this.Bt_Update.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_Update.BackgroundImage")));
+            this.Bt_Update.BackgroundImage = global::GameBox.Properties.Resources.Button_background;
             this.Bt_Update.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_Update.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Update.FlatStyle = System.Windows.Forms.FlatStyle.Popup;

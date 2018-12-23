@@ -313,6 +313,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Players.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\coca cola.gif" />
+    <None Include="Resources\plumber.jpg" />
     <None Include="Resources\PlayMusic.mp3" />
     <None Include="Resources\Back_red.png" />
     <None Include="Resources\Logo.gif" />

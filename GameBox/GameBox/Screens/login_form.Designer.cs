@@ -56,7 +56,7 @@
             // Bt_user_continue
             // 
             this.Bt_user_continue.BackColor = System.Drawing.Color.DarkGray;
-            this.Bt_user_continue.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_user_continue.BackgroundImage")));
+            this.Bt_user_continue.BackgroundImage = global::GameBox.Properties.Resources.Button_background;
             this.Bt_user_continue.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_user_continue.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_user_continue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;

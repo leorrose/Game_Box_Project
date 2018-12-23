@@ -42,6 +42,7 @@ namespace GameBox
                 lb_time.Visible = true;
                 Random index = new Random();
                 int number = index.Next(1, 8);
+                number = index.Next(1, 8);
                 try
                 {
                     string UserConectionString = Program.ConectionString("Ads");
@@ -87,7 +88,7 @@ namespace GameBox
                         PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                     case 7:
-                        PB_Gifs.Image = Properties.Resources.hapoel;
+                        PB_Gifs.Image = Properties.Resources.coca_cola;
                         PB_Gifs.SizeMode = PictureBoxSizeMode.StretchImage;
                         break;
                 }            

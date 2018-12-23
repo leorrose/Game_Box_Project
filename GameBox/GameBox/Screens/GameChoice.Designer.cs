@@ -89,7 +89,7 @@
             // bt_reversi
             // 
             this.bt_reversi.BackColor = System.Drawing.Color.Transparent;
-            this.bt_reversi.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_reversi.BackgroundImage")));
+            this.bt_reversi.BackgroundImage = global::GameBox.Properties.Resources.Button_background;
             this.bt_reversi.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_reversi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_reversi.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -105,7 +105,7 @@
             // bt_snake_and_ladders
             // 
             this.bt_snake_and_ladders.BackColor = System.Drawing.Color.Transparent;
-            this.bt_snake_and_ladders.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bt_snake_and_ladders.BackgroundImage")));
+            this.bt_snake_and_ladders.BackgroundImage = global::GameBox.Properties.Resources.Button_background;
             this.bt_snake_and_ladders.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bt_snake_and_ladders.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bt_snake_and_ladders.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -143,7 +143,7 @@
             // 
             // SAl_instruction
             // 
-            this.SAl_instruction.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SAl_instruction.BackgroundImage")));
+            this.SAl_instruction.BackgroundImage = global::GameBox.Properties.Resources.Button_background;
             this.SAl_instruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SAl_instruction.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SAl_instruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -158,7 +158,7 @@
             // 
             // reversi_insruction
             // 
-            this.reversi_insruction.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("reversi_insruction.BackgroundImage")));
+            this.reversi_insruction.BackgroundImage = global::GameBox.Properties.Resources.Button_background;
             this.reversi_insruction.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.reversi_insruction.Cursor = System.Windows.Forms.Cursors.Hand;
             this.reversi_insruction.FlatStyle = System.Windows.Forms.FlatStyle.Popup;

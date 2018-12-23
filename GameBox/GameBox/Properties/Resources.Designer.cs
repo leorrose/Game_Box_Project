@@ -233,6 +233,16 @@ namespace GameBox.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coca_cola {
+            get {
+                object obj = ResourceManager.GetObject("coca_cola", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Exit_red {
             get {
                 object obj = ResourceManager.GetObject("Exit_red", resourceCulture);
@@ -296,16 +306,6 @@ namespace GameBox.Properties {
         internal static System.Drawing.Bitmap Green_mute {
             get {
                 object obj = ResourceManager.GetObject("Green_mute", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap hapoel {
-            get {
-                object obj = ResourceManager.GetObject("hapoel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

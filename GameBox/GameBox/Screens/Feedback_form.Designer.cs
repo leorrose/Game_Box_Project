@@ -64,7 +64,7 @@
             // 
             // Bt_insert_feedback
             // 
-            this.Bt_insert_feedback.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bt_insert_feedback.BackgroundImage")));
+            this.Bt_insert_feedback.BackgroundImage = global::GameBox.Properties.Resources.Button_background;
             this.Bt_insert_feedback.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Bt_insert_feedback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_insert_feedback.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
