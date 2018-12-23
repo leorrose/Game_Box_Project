@@ -25,7 +25,7 @@ namespace GameBox
             Program.guest = "";
             Program.cnt_players = 0;
         }
-        private void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
+        public void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
         private void Bt_MainForm_exit_Click(object sender, EventArgs e) => Program.Exit();
         private void Bt_credits_Click(object sender, EventArgs e) /* continue to credits screen */
         {
