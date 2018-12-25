@@ -18,7 +18,7 @@ namespace GameBox
             return_end = EndGame;
         }
         private void Snake_and_ladders_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
-        private void bt_music_Click(object sender, EventArgs e) => Program.Music_on_off();
+        public  void bt_music_Click(object sender, EventArgs e) => Program.Music_on_off();
         private void bt_instraction_Click(object sender, EventArgs e)
         {
             Program.GameChoice = false;

@@ -21,7 +21,7 @@ namespace GameBox
         }
         private void Reports_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
         private void Bt_Reports_Exit_click(object sender, EventArgs e) => Program.Exit();
-        private void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
+        public  void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
         private void Bt_reports_Back_click(object sender, EventArgs e)
         {
             Return_back.Show();

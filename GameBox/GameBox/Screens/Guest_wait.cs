@@ -16,7 +16,7 @@ namespace GameBox
             timer1.Start();
         }
         private void Guest_wait_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
-        private void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
+        public  void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
         private void bt_exit_Click(object sender, EventArgs e) => Program.Exit();
         private void timer1_Tick(object sender, EventArgs e)
         {

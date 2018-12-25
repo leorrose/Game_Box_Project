@@ -252,8 +252,8 @@
             // pictureBox_D5
             // 
             this.pictureBox_D5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_D5.BackgroundImage = global::GameBox.Properties.Resources.white_piece;
-            this.pictureBox_D5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_D5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_D5.ErrorImage = null;
             this.pictureBox_D5.Location = new System.Drawing.Point(303, 404);
             this.pictureBox_D5.Name = "pictureBox_D5";
             this.pictureBox_D5.Size = new System.Drawing.Size(96, 93);
@@ -263,8 +263,7 @@
             // pictureBox_E4
             // 
             this.pictureBox_E4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_E4.BackgroundImage = global::GameBox.Properties.Resources.white_piece;
-            this.pictureBox_E4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_E4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox_E4.Location = new System.Drawing.Point(403, 304);
             this.pictureBox_E4.Name = "pictureBox_E4";
             this.pictureBox_E4.Size = new System.Drawing.Size(96, 93);
@@ -354,8 +353,8 @@
             // pictureBox_E5
             // 
             this.pictureBox_E5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_E5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_E5.BackgroundImage")));
-            this.pictureBox_E5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_E5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_E5.ErrorImage = null;
             this.pictureBox_E5.Location = new System.Drawing.Point(403, 404);
             this.pictureBox_E5.Name = "pictureBox_E5";
             this.pictureBox_E5.Size = new System.Drawing.Size(96, 93);
@@ -645,8 +644,8 @@
             // pictureBox_D4
             // 
             this.pictureBox_D4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox_D4.BackgroundImage = global::GameBox.Properties.Resources.Black_piece;
-            this.pictureBox_D4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox_D4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox_D4.ErrorImage = null;
             this.pictureBox_D4.Location = new System.Drawing.Point(303, 304);
             this.pictureBox_D4.Name = "pictureBox_D4";
             this.pictureBox_D4.Size = new System.Drawing.Size(96, 93);
@@ -1224,8 +1223,8 @@
         private System.Windows.Forms.PictureBox pictureBox_C3;
         private System.Windows.Forms.Label Lb_player2;
         private System.Windows.Forms.Label Lb_player1;
-        private System.Windows.Forms.Label Lb_Score1;
-        private System.Windows.Forms.Label Lb_Score2;
+        public System.Windows.Forms.Label Lb_Score1;
+        public System.Windows.Forms.Label Lb_Score2;
         private System.Windows.Forms.Button Bt_Reversi_back;
         private System.Windows.Forms.Button Bt_reversi_exit;
         public System.Windows.Forms.Button CB_music;

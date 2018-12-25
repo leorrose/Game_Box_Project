@@ -110,9 +110,6 @@
             this.Bt_guistwait_back.UseVisualStyleBackColor = false;
             this.Bt_guistwait_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
-            // timer2
-            // 
-            // 
             // CB_music
             // 
             this.CB_music.Appearance = System.Windows.Forms.Appearance.Button;
@@ -150,7 +147,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.bt_guistwait_exit);
             this.Controls.Add(this.label1);
-            this.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MaximumSize = new System.Drawing.Size(1200, 750);
             this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "Guest_wait";

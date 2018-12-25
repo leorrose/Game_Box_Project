@@ -7,8 +7,8 @@ namespace GameBox
     {
         Form ReturnForm;
         Form options;
-        private int[,] arr = new int[8,8];
-        int playerTurn =0;
+        public int[,] arr = new int[8,8];
+        public int playerTurn =0;
         public Reversi(Form form , Form End )
         {
             InitializeComponent();
@@ -30,8 +30,15 @@ namespace GameBox
             arr[4, 3] = 1;
             arr[4, 4] = 2;
         }
-        private void Reversi_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
-        private void Bt_reversi_music(object sender, EventArgs e) => Program.Music_on_off();
+        private void Reversi_Shown(Object sender, EventArgs e)
+        {
+            Program.Update_music_bt();
+            Turn_picture_box_Black(pictureBox_D4);
+            Turn_picture_box_Black(pictureBox_E5);
+            Turn_picture_box_White(pictureBox_D5);
+            Turn_picture_box_White(pictureBox_E4);
+        }
+        public void Bt_reversi_music(object sender, EventArgs e) => Program.Music_on_off();
         private void Bt_Reversi_back_click(object sender, EventArgs e)
         {
             DialogResult res = MessageBox.Show("Are you sure? Any unsaved data will be lost", "", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -54,12 +61,12 @@ namespace GameBox
             Print_instructions ins = new Print_instructions();
             ins.ShowDialog();
         }
-        private void Turn_picture_box_Black(PictureBox pic)
+        public void Turn_picture_box_Black(PictureBox pic)
         {
             pic.BackgroundImage = Properties.Resources.Black_piece;
             pic.BackgroundImageLayout = ImageLayout.Stretch;
         }
-        private void Turn_picture_box_White(PictureBox pic)
+        public void Turn_picture_box_White(PictureBox pic)
         {
             pic.BackgroundImage = Properties.Resources.white_piece;
             pic.BackgroundImageLayout = ImageLayout.Stretch;
@@ -83,7 +90,7 @@ namespace GameBox
             Print_table();
             EndGame();
         }
-        private void sum()
+        public void sum()
         {
             int Sum1 = 0, Sum2 = 0;
             for (int i = 0; i < 8; ++i)
@@ -111,7 +118,7 @@ namespace GameBox
             Right_Down_slant_check(i, j, player);
 
         }
-        private void Up_col_check(int i, int j, int player)
+        public void Up_col_check(int i, int j, int player)
         {
             int index = -1, flag = 0;
             for (int k = i - 1; k >= 0; --k)
@@ -135,7 +142,7 @@ namespace GameBox
                 }
             }
         }
-        private void Down_col_check(int i, int j, int player)
+        public void Down_col_check(int i, int j, int player)
         {
             int index = -1, flag = 0;
             for (int k = i + 1; k <= 7; ++k)
@@ -159,7 +166,7 @@ namespace GameBox
                 }
             }
         }
-        private void right_row_check(int i, int j, int player)
+        public void right_row_check(int i, int j, int player)
         {
             int index = -1, flag = 0;
             for (int k = j + 1; k <= 7; ++k)
@@ -183,7 +190,7 @@ namespace GameBox
                 }
             }
         }
-        private void Left_row_check(int i, int j, int player)
+        public void Left_row_check(int i, int j, int player)
         {
             int index = -1, flag = 0;
             for (int k = j - 1; k >= 0; --k)
@@ -207,7 +214,7 @@ namespace GameBox
                 }
             }
         }
-        private void Left_Up_slant_check(int i, int j, int player)
+        public void Left_Up_slant_check(int i, int j, int player)
         {
             int indexX = -1, indexY = -1, flag = 0;
             for (int k = i - 1, z = j - 1; k >= 0 && z >= 0; --k, --z)
@@ -233,7 +240,7 @@ namespace GameBox
                 }
             }
         }
-        private void Right_Up_slant_check(int i, int j, int player)
+        public void Right_Up_slant_check(int i, int j, int player)
         {
             int indexX = -1, indexY = -1, flag = 0;
             for (int k = i - 1, z = j + 1; k >= 0 && z <= 7; --k, ++z)
@@ -259,7 +266,7 @@ namespace GameBox
                 }
             }
         }
-        private void left_Down_slant_check(int i, int j, int player)
+        public void left_Down_slant_check(int i, int j, int player)
         {
             int indexX = -1, indexY = -1, flag = 0;
             for (int k = i + 1, z = j - 1; k <= 7 && z >= 0; ++k, --z)
@@ -285,7 +292,7 @@ namespace GameBox
                 }
             }
         }
-        private void Right_Down_slant_check(int i, int j, int player)
+        public void Right_Down_slant_check(int i, int j, int player)
         {
             int indexX = -1, indexY = -1, flag = 0;
             for (int k = i + 1, z = j + 1; k <= 7 && z <= 7; ++k, ++z)

@@ -26,7 +26,7 @@ namespace GameBox
         }
         private void Users_options_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
         private void Bt_UserOptions_exit_Click(object sender, EventArgs e) => Program.Exit();
-        private void CB_music_CheckedChanged(object sender, EventArgs e) => Program.Music_on_off();
+        public  void CB_music_CheckedChanged(object sender, EventArgs e) => Program.Music_on_off();
         private void Bt_Change_Details(object sender, EventArgs e) /* function to change user deatails */
         {
             Change_details temp = new Change_details(this);

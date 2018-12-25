@@ -14,7 +14,7 @@ namespace GameBox
         }
         private void Managers_option_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
         private void Bt_login_exit_Click(object sender, EventArgs e) => Program.Exit();
-        private void CB_music_CheckedChanged(object sender, EventArgs e) => Program.Music_on_off();
+        public  void CB_music_CheckedChanged(object sender, EventArgs e) => Program.Music_on_off();
         private void Bt_back_Click(object sender, EventArgs e) /* go back screen */
         {
             return_back.Show(); /*upon last screen */

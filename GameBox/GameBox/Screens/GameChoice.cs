@@ -23,7 +23,7 @@ namespace GameBox
             }
         }
         private void Bt_Exit_Click(object sender, EventArgs e) => Program.Exit();
-        private void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
+        public  void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
         private void Bt_back_Click(object sender, EventArgs e) /* function to go back */
         {
             return_back.Show(); /*show last screen */

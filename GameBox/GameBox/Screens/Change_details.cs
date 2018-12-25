@@ -15,7 +15,7 @@ namespace GameBox
         }
         private void Change_details_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
         private void Bt_Change_details_exit_Click(object sender, EventArgs e)=> Program.Exit();
-        private void checkBox1_CheckedChanged(object sender, EventArgs e) => Program.Music_on_off();
+        public void checkBox1_CheckedChanged(object sender, EventArgs e) => Program.Music_on_off();
         private void Bt_Change_Details_back_Click(object sender, EventArgs e)
         {
             return_back.Show();

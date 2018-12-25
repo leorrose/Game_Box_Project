@@ -15,7 +15,7 @@ namespace GameBox
             Program.cnt_players = 1;
             Program.user2 = "";
         }
-        private void Cb_music(object sender, EventArgs e) => Program.Music_on_off();
+        public  void Cb_music(object sender, EventArgs e) => Program.Music_on_off();
         private void login_form_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
         private void Bt_login_exit_Click(object sender, EventArgs e) => Program.Exit();
         private void Bt_Player2_continue_Click(object sender, EventArgs e) /* login player 2 */

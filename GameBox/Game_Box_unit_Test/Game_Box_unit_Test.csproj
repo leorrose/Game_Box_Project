@@ -47,11 +47,25 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Change_details_test.cs" />
+    <Compile Include="Feedback_form_test.cs" />
+    <Compile Include="GusetWait_test.cs" />
+    <Compile Include="login_form_test.cs" />
+    <Compile Include="MainForm_test.cs" />
+    <Compile Include="Managers_option_test.cs" />
+    <Compile Include="Manager_Managment_test.cs" />
     <Compile Include="Program_test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports_test.cs" />
+    <Compile Include="Reversi_unit_test.cs" />
+    <Compile Include="GameChoice_test.cs" />
+    <Compile Include="Snake and ladders_test.cs" />
+    <Compile Include="UserOptios_test.cs" />
+    <Compile Include="User_Managment_test.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -14,7 +14,7 @@ namespace GameBox
             return_back = form;
         }
         private void Feedback_form_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
-        private void checkBox1_CheckedChanged(object sender, EventArgs e) => Program.Music_on_off();
+        public  void checkBox1_CheckedChanged(object sender, EventArgs e) => Program.Music_on_off();
         private void Bt_Feedback_exit_click(object sender, EventArgs e) => Program.Exit();
         private void Bt_Feedback_back_click(object sender, EventArgs e)
         {
