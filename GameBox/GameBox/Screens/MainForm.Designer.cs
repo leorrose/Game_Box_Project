@@ -51,6 +51,7 @@
             this.Bt_Continue_As_Player = new System.Windows.Forms.Button();
             this.Bt_Continue_As_Guest = new System.Windows.Forms.Button();
             this.cob_players = new System.Windows.Forms.ComboBox();
+            this.Bt_why_to_register = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Tb_user_password
@@ -100,10 +101,10 @@
             this.Tb_guest_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Tb_guest_name.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_guest_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tb_guest_name.Location = new System.Drawing.Point(508, 536);
+            this.Tb_guest_name.Location = new System.Drawing.Point(508, 521);
             this.Tb_guest_name.Multiline = true;
             this.Tb_guest_name.Name = "Tb_guest_name";
-            this.Tb_guest_name.Size = new System.Drawing.Size(168, 30);
+            this.Tb_guest_name.Size = new System.Drawing.Size(168, 32);
             this.Tb_guest_name.TabIndex = 3;
             this.Tb_guest_name.Visible = false;
             // 
@@ -204,11 +205,11 @@
             // 
             this.lb_manager_name.AutoSize = true;
             this.lb_manager_name.BackColor = System.Drawing.Color.Transparent;
-            this.lb_manager_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_manager_name.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_manager_name.ForeColor = System.Drawing.Color.Beige;
             this.lb_manager_name.Location = new System.Drawing.Point(296, 166);
             this.lb_manager_name.Name = "lb_manager_name";
-            this.lb_manager_name.Size = new System.Drawing.Size(182, 24);
+            this.lb_manager_name.Size = new System.Drawing.Size(174, 22);
             this.lb_manager_name.TabIndex = 20;
             this.lb_manager_name.Text = "Name (2-10 chars)";
             this.lb_manager_name.Visible = false;
@@ -217,11 +218,11 @@
             // 
             this.lb_password_manager.AutoSize = true;
             this.lb_password_manager.BackColor = System.Drawing.Color.Transparent;
-            this.lb_password_manager.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_password_manager.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_password_manager.ForeColor = System.Drawing.Color.Beige;
             this.lb_password_manager.Location = new System.Drawing.Point(296, 210);
             this.lb_password_manager.Name = "lb_password_manager";
-            this.lb_password_manager.Size = new System.Drawing.Size(188, 24);
+            this.lb_password_manager.Size = new System.Drawing.Size(180, 22);
             this.lb_password_manager.TabIndex = 21;
             this.lb_password_manager.Text = "Password (5 chars)";
             this.lb_password_manager.Visible = false;
@@ -230,11 +231,11 @@
             // 
             this.lb_player_name.AutoSize = true;
             this.lb_player_name.BackColor = System.Drawing.Color.Transparent;
-            this.lb_player_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_player_name.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_player_name.ForeColor = System.Drawing.Color.Beige;
             this.lb_player_name.Location = new System.Drawing.Point(296, 322);
             this.lb_player_name.Name = "lb_player_name";
-            this.lb_player_name.Size = new System.Drawing.Size(182, 24);
+            this.lb_player_name.Size = new System.Drawing.Size(174, 22);
             this.lb_player_name.TabIndex = 23;
             this.lb_player_name.Text = "Name (2-10 chars)";
             this.lb_player_name.Visible = false;
@@ -298,11 +299,11 @@
             // 
             this.lb_password_player.AutoSize = true;
             this.lb_password_player.BackColor = System.Drawing.Color.Transparent;
-            this.lb_password_player.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_password_player.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_password_player.ForeColor = System.Drawing.Color.Beige;
             this.lb_password_player.Location = new System.Drawing.Point(296, 376);
             this.lb_password_player.Name = "lb_password_player";
-            this.lb_password_player.Size = new System.Drawing.Size(188, 24);
+            this.lb_password_player.Size = new System.Drawing.Size(180, 22);
             this.lb_password_player.TabIndex = 30;
             this.lb_password_player.Text = "Password (5 chars)";
             this.lb_password_player.Visible = false;
@@ -311,11 +312,11 @@
             // 
             this.lb_guest_name.AutoSize = true;
             this.lb_guest_name.BackColor = System.Drawing.Color.Transparent;
-            this.lb_guest_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_guest_name.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_guest_name.ForeColor = System.Drawing.Color.Beige;
-            this.lb_guest_name.Location = new System.Drawing.Point(296, 534);
+            this.lb_guest_name.Location = new System.Drawing.Point(296, 526);
             this.lb_guest_name.Name = "lb_guest_name";
-            this.lb_guest_name.Size = new System.Drawing.Size(182, 24);
+            this.lb_guest_name.Size = new System.Drawing.Size(174, 22);
             this.lb_guest_name.TabIndex = 31;
             this.lb_guest_name.Text = "Name (2-10 chars)";
             this.lb_guest_name.Visible = false;
@@ -383,6 +384,23 @@
             this.cob_players.TabIndex = 35;
             this.cob_players.Visible = false;
             // 
+            // Bt_why_to_register
+            // 
+            this.Bt_why_to_register.BackColor = System.Drawing.Color.Transparent;
+            this.Bt_why_to_register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Bt_why_to_register.FlatAppearance.BorderSize = 0;
+            this.Bt_why_to_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Bt_why_to_register.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_why_to_register.ForeColor = System.Drawing.Color.Beige;
+            this.Bt_why_to_register.Location = new System.Drawing.Point(461, 570);
+            this.Bt_why_to_register.Name = "Bt_why_to_register";
+            this.Bt_why_to_register.Size = new System.Drawing.Size(258, 33);
+            this.Bt_why_to_register.TabIndex = 36;
+            this.Bt_why_to_register.Text = "Why should i register ?";
+            this.Bt_why_to_register.UseVisualStyleBackColor = false;
+            this.Bt_why_to_register.Visible = false;
+            this.Bt_why_to_register.Click += new System.EventHandler(this.Bt_why_to_register_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -391,6 +409,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 703);
             this.ControlBox = false;
+            this.Controls.Add(this.Bt_why_to_register);
             this.Controls.Add(this.cob_players);
             this.Controls.Add(this.Bt_Continue_As_Guest);
             this.Controls.Add(this.Bt_Continue_As_Player);
@@ -447,5 +466,6 @@
         private System.Windows.Forms.Button Bt_Continue_As_Player;
         private System.Windows.Forms.Button Bt_Continue_As_Guest;
         private System.Windows.Forms.ComboBox cob_players;
+        private System.Windows.Forms.Button Bt_why_to_register;
     }
 }

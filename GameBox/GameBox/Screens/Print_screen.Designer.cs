@@ -35,6 +35,7 @@
             this.PB_Gifs = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lb_time = new System.Windows.Forms.Label();
+            this.lb_why_to_register = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PB_Gifs)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,12 +44,12 @@
             this.Lb_Print.BackColor = System.Drawing.Color.Transparent;
             this.Lb_Print.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Lb_Print.ForeColor = System.Drawing.Color.LightPink;
-            this.Lb_Print.Location = new System.Drawing.Point(197, 42);
+            this.Lb_Print.Location = new System.Drawing.Point(197, 40);
             this.Lb_Print.MaximumSize = new System.Drawing.Size(600, 500);
             this.Lb_Print.Name = "Lb_Print";
-            this.Lb_Print.Size = new System.Drawing.Size(496, 101);
+            this.Lb_Print.Size = new System.Drawing.Size(496, 125);
             this.Lb_Print.TabIndex = 0;
-            this.Lb_Print.Text = "joijioh ouhuih iughiug iohuigh";
+            this.Lb_Print.Text = "tips and ads";
             this.Lb_Print.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Bt_ok
@@ -94,6 +95,20 @@
             this.lb_time.Text = "5";
             this.lb_time.Visible = false;
             // 
+            // lb_why_to_register
+            // 
+            this.lb_why_to_register.AutoSize = true;
+            this.lb_why_to_register.BackColor = System.Drawing.Color.Transparent;
+            this.lb_why_to_register.Font = new System.Drawing.Font("Modern No. 20", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_why_to_register.ForeColor = System.Drawing.Color.LightPink;
+            this.lb_why_to_register.Location = new System.Drawing.Point(197, 40);
+            this.lb_why_to_register.MaximumSize = new System.Drawing.Size(600, 500);
+            this.lb_why_to_register.Name = "lb_why_to_register";
+            this.lb_why_to_register.Size = new System.Drawing.Size(195, 30);
+            this.lb_why_to_register.TabIndex = 4;
+            this.lb_why_to_register.Text = "why to register";
+            this.lb_why_to_register.Visible = false;
+            // 
             // Print_screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -102,6 +117,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(882, 453);
             this.ControlBox = false;
+            this.Controls.Add(this.lb_why_to_register);
             this.Controls.Add(this.lb_time);
             this.Controls.Add(this.PB_Gifs);
             this.Controls.Add(this.Bt_ok);
@@ -124,5 +140,6 @@
         private System.Windows.Forms.PictureBox PB_Gifs;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lb_time;
+        private System.Windows.Forms.Label lb_why_to_register;
     }
 }

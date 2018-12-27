@@ -93,6 +93,18 @@ namespace GameBox
                         break;
                 }            
             }
+
+        else if(type == "why to register")
+            {
+                string str = "* Registered users do not need to wait.\n\r\n\r* Registered users skip ads.\n\r\n\r" +
+                    "* Results of registered users are saved.\n\r\n\r*Registered users can watch the high scores table.\n\r\n\r" +
+                    "* Registered users can play VS other user.\n\r\n\r* Registered users can play reversi.";
+                Bt_ok.Visible = true;
+                PB_Gifs.Visible = false;
+                Lb_Print.Visible = false;
+                lb_why_to_register.Visible = true;
+                lb_why_to_register.Text = str;
+            }
         }
         private void Bt_ok_Click(object sender, EventArgs e) => this.Close();
         private void timer1_Tick(object sender, EventArgs e)
