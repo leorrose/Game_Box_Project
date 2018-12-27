@@ -761,7 +761,7 @@ namespace GameBox
         private void pictureBox_G4_Click(object sender, EventArgs e) => Picture_box_clicked(3, 6, pictureBox_G4);
         private void pictureBox_G3_Click(object sender, EventArgs e) => Picture_box_clicked(2, 6, pictureBox_G3);
         private void pictureBox_G2_Click(object sender, EventArgs e) => Picture_box_clicked(1, 6, pictureBox_G2);
-        private void pictureBox_G1_Click(object sender, EventArgs e) => Picture_box_clicked(6, 6, pictureBox_G1);
+        private void pictureBox_G1_Click(object sender, EventArgs e) => Picture_box_clicked(0, 6, pictureBox_G1);
         private void pictureBox_H8_Click(object sender, EventArgs e) => Picture_box_clicked(7, 7, pictureBox_H8);
         private void pictureBox_H7_Click(object sender, EventArgs e) => Picture_box_clicked(6, 7, pictureBox_H7);
         private void pictureBox_H6_Click(object sender, EventArgs e) => Picture_box_clicked(5, 7, pictureBox_H6);
