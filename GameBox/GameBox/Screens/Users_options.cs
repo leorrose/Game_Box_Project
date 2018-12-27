@@ -16,7 +16,7 @@ namespace GameBox
                 Bt_Continue_change_details.Enabled = false;
                 Bt_personal_scores.Enabled = false;
                 Bt_top_players.Enabled = false;
-                Bt_Givefeedback.Enabled = false;
+               // Bt_Givefeedback.Enabled = false;
                 Bt_Continue_change_details.Cursor = Cursors.No;
                 Bt_personal_scores.Cursor = Cursors.No;
                 Bt_top_players.Cursor = Cursors.No;

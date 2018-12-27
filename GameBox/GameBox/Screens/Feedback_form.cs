@@ -28,7 +28,7 @@ namespace GameBox
                 MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (Tb_feedback_name.Text != GameBox.Program.user1 && Tb_feedback_name.Text != GameBox.Program.user2)
+            if (Tb_feedback_name.Text != GameBox.Program.user1 && Tb_feedback_name.Text != GameBox.Program.user2 && Tb_feedback_name.Text != Program.guest)
             {
                 MessageBox.Show("Invalid Name!");
                 return;
