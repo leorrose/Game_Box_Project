@@ -41,13 +41,13 @@ namespace GameBox
                         Print_table("SELECT * FROM Scores WHERE Name='" + Program.user1 + "'", "Scores");
                     break;
                 case "Logins":
-                    Print_table("SELECT * FROM Logins ORDER BY Date", "Logins");
+                    Print_table("SELECT * FROM Logins ORDER BY convert(datetime, Date, 103) DESC, convert(time, Time) DESC", "Logins");
                     break;
                 case "High Scores":
                     Print_table("SELECT * FROM Scores ORDER BY Wins DESC", "Scores");
                     break;
                 case "FeedBacks":
-                    Print_table("SELECT * FROM Feedbacks ORDER BY Date", "Feedbacks");
+                    Print_table("SELECT * FROM Feedbacks ORDER BY convert(datetime, Date, 103) DESC", "Feedbacks");
                     break;
                 default:
                     break;
@@ -65,6 +65,11 @@ namespace GameBox
                     DataTable Table = new DataTable();
                     SqlService.Fill(Table);
                     dataGridView1.DataSource = Table;
+                    if (DataBaseName == "Feedbacks")
+                    {
+                        dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.None;
+                        dataGridView1.Columns[1].Width = 430;
+                    }
                     con.Close();
                 }
             }
