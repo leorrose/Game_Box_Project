@@ -1079,6 +1079,8 @@
             this.Controls.Add(this.Lb_player1);
             this.Controls.Add(this.Lb_player2);
             this.Controls.Add(this.panel_board);
+            this.MaximumSize = new System.Drawing.Size(1331, 861);
+            this.MinimumSize = new System.Drawing.Size(1331, 861);
             this.Name = "Reversi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameBox";

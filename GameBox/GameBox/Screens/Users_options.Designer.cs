@@ -50,7 +50,7 @@ namespace GameBox
             this.Bt_Givefeedback.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Givefeedback.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_Givefeedback.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_Givefeedback.Location = new System.Drawing.Point(448, 459);
+            this.Bt_Givefeedback.Location = new System.Drawing.Point(448, 277);
             this.Bt_Givefeedback.Name = "Bt_Givefeedback";
             this.Bt_Givefeedback.Size = new System.Drawing.Size(238, 65);
             this.Bt_Givefeedback.TabIndex = 1;
@@ -65,7 +65,7 @@ namespace GameBox
             this.Bt_top_players.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_top_players.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_top_players.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_top_players.Location = new System.Drawing.Point(448, 365);
+            this.Bt_top_players.Location = new System.Drawing.Point(448, 465);
             this.Bt_top_players.Name = "Bt_top_players";
             this.Bt_top_players.Size = new System.Drawing.Size(238, 65);
             this.Bt_top_players.TabIndex = 3;
@@ -80,7 +80,7 @@ namespace GameBox
             this.Bt_personal_scores.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_personal_scores.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_personal_scores.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_personal_scores.Location = new System.Drawing.Point(448, 280);
+            this.Bt_personal_scores.Location = new System.Drawing.Point(448, 372);
             this.Bt_personal_scores.Name = "Bt_personal_scores";
             this.Bt_personal_scores.Size = new System.Drawing.Size(238, 65);
             this.Bt_personal_scores.TabIndex = 4;
@@ -95,7 +95,7 @@ namespace GameBox
             this.Bt_play_game.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_play_game.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_play_game.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_play_game.Location = new System.Drawing.Point(448, 188);
+            this.Bt_play_game.Location = new System.Drawing.Point(448, 185);
             this.Bt_play_game.Name = "Bt_play_game";
             this.Bt_play_game.Size = new System.Drawing.Size(238, 65);
             this.Bt_play_game.TabIndex = 5;
@@ -157,7 +157,7 @@ namespace GameBox
             this.Bt_Continue_change_details.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Bt_Continue_change_details.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Bt_Continue_change_details.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_Continue_change_details.Location = new System.Drawing.Point(448, 550);
+            this.Bt_Continue_change_details.Location = new System.Drawing.Point(448, 558);
             this.Bt_Continue_change_details.Name = "Bt_Continue_change_details";
             this.Bt_Continue_change_details.Size = new System.Drawing.Size(238, 65);
             this.Bt_Continue_change_details.TabIndex = 32;

@@ -133,6 +133,8 @@
             this.Controls.Add(this.Bt_continue);
             this.Controls.Add(this.Lb_winner);
             this.Controls.Add(this.label1);
+            this.MaximumSize = new System.Drawing.Size(900, 600);
+            this.MinimumSize = new System.Drawing.Size(900, 600);
             this.Name = "Winner";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameBox";

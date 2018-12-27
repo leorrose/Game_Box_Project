@@ -43,11 +43,15 @@ namespace GameBox
                 MessageBox.Show("Invalid New User Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (GameBox.Program.Check_NAME_exsist(Tb_New_Name.Text, "Players") > 1 )
+            if (Tb_New_Name.Text != Tb_Existing_Name.Text)
             {
-                MessageBox.Show("Invalid New User Name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                if (GameBox.Program.Check_NAME_exsist(Tb_New_Name.Text, "Players") >= 1)
+                {
+                    MessageBox.Show("User Name is already exists", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
             }
+
             Program.Upadte_User_players(Tb_Existing_Name.Text, Tb_New_Password.Text, Tb_New_Name.Text);
             Program.Upadte_User_Scores(Tb_Existing_Name.Text, Tb_New_Name.Text);
             Program.user1 = Tb_New_Name.Text;

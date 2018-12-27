@@ -157,7 +157,7 @@ namespace GameBox
             Tb_manager_password.Visible = false;
             lb_guest_name.Visible = false;
             Bt_Guest_login.Visible = false;
-            Bt_why_to_register.Visible = false;
+            LB_why_register.Visible = false;
             Tb_guest_name.Visible = false;
             lb_player_name.Visible = true;
             lb_password_player.Visible = true;
@@ -177,7 +177,7 @@ namespace GameBox
             lb_guest_name.Visible = false;
             Bt_Guest_login.Visible = false;
             Tb_guest_name.Visible = false;
-            Bt_why_to_register.Visible = false;
+            LB_why_register.Visible = false;
             lb_player_name.Visible = false;
             lb_password_player.Visible = false;
             Bt_User_login.Visible = false;
@@ -195,7 +195,7 @@ namespace GameBox
             Tb_manager_password.Visible = false;
             lb_guest_name.Visible = true;
             Bt_Guest_login.Visible = true;
-            Bt_why_to_register.Visible = true;
+            LB_why_register.Visible = true;
             Tb_guest_name.Visible = true;
             lb_player_name.Visible = false;
             lb_password_player.Visible = false;
@@ -206,7 +206,7 @@ namespace GameBox
             cob_players.Visible = false;
         }
 
-        private void Bt_why_to_register_Click(object sender, EventArgs e)
+        private void LB_why_register_Click(object sender, EventArgs e)
         {
             Print_screen prt = new Print_screen("why to register");
             prt.ShowDialog();

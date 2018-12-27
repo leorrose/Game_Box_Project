@@ -275,7 +275,7 @@
             this.Controls.Add(this.Bt_remove);
             this.Controls.Add(this.Bt_add);
             this.MaximumSize = new System.Drawing.Size(1200, 750);
-            this.MinimumSize = new System.Drawing.Size(1031, 588);
+            this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "User_Managment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameBox";

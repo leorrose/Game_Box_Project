@@ -51,7 +51,7 @@
             this.Bt_Continue_As_Player = new System.Windows.Forms.Button();
             this.Bt_Continue_As_Guest = new System.Windows.Forms.Button();
             this.cob_players = new System.Windows.Forms.ComboBox();
-            this.Bt_why_to_register = new System.Windows.Forms.Button();
+            this.LB_why_register = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Tb_user_password
@@ -384,22 +384,20 @@
             this.cob_players.TabIndex = 35;
             this.cob_players.Visible = false;
             // 
-            // Bt_why_to_register
+            // LB_why_register
             // 
-            this.Bt_why_to_register.BackColor = System.Drawing.Color.Transparent;
-            this.Bt_why_to_register.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Bt_why_to_register.FlatAppearance.BorderSize = 0;
-            this.Bt_why_to_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bt_why_to_register.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bt_why_to_register.ForeColor = System.Drawing.Color.Beige;
-            this.Bt_why_to_register.Location = new System.Drawing.Point(461, 570);
-            this.Bt_why_to_register.Name = "Bt_why_to_register";
-            this.Bt_why_to_register.Size = new System.Drawing.Size(258, 33);
-            this.Bt_why_to_register.TabIndex = 36;
-            this.Bt_why_to_register.Text = "Why should i register ?";
-            this.Bt_why_to_register.UseVisualStyleBackColor = false;
-            this.Bt_why_to_register.Visible = false;
-            this.Bt_why_to_register.Click += new System.EventHandler(this.Bt_why_to_register_Click);
+            this.LB_why_register.AutoSize = true;
+            this.LB_why_register.BackColor = System.Drawing.Color.Transparent;
+            this.LB_why_register.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LB_why_register.Font = new System.Drawing.Font("Modern No. 20", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LB_why_register.ForeColor = System.Drawing.Color.Beige;
+            this.LB_why_register.Location = new System.Drawing.Point(476, 570);
+            this.LB_why_register.Name = "LB_why_register";
+            this.LB_why_register.Size = new System.Drawing.Size(219, 22);
+            this.LB_why_register.TabIndex = 37;
+            this.LB_why_register.Text = "Why should i register ?";
+            this.LB_why_register.Visible = false;
+            this.LB_why_register.Click += new System.EventHandler(this.LB_why_register_Click);
             // 
             // MainForm
             // 
@@ -409,7 +407,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1182, 703);
             this.ControlBox = false;
-            this.Controls.Add(this.Bt_why_to_register);
+            this.Controls.Add(this.LB_why_register);
             this.Controls.Add(this.cob_players);
             this.Controls.Add(this.Bt_Continue_As_Guest);
             this.Controls.Add(this.Bt_Continue_As_Player);
@@ -433,7 +431,7 @@
             this.Controls.Add(this.Tb_manager_password);
             this.Controls.Add(this.Tb_user_password);
             this.MaximumSize = new System.Drawing.Size(1200, 750);
-            this.MinimumSize = new System.Drawing.Size(1031, 588);
+            this.MinimumSize = new System.Drawing.Size(1200, 750);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GameBox";
@@ -466,6 +464,6 @@
         private System.Windows.Forms.Button Bt_Continue_As_Player;
         private System.Windows.Forms.Button Bt_Continue_As_Guest;
         private System.Windows.Forms.ComboBox cob_players;
-        private System.Windows.Forms.Button Bt_why_to_register;
+        private System.Windows.Forms.Label LB_why_register;
     }
 }
