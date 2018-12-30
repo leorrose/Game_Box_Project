@@ -82,11 +82,23 @@ namespace GameBox
             if (GameBox.Program.Check_NAME_exsist(Tb_Manager_remove_Name.Text, "Managers") > 0)
             {
                 GameBox.Program.DeleteUser(Tb_Manager_remove_Name.Text, "Managers");
-                MessageBox.Show("User Removed!");
+                MessageBox.Show("Manager Removed!");
             }
             else
                 MessageBox.Show("Manager dose not exsist!");
             Tb_Manager_remove_Name.Text = "";
+        }
+
+        private void Bt_remove_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Bt_remove_manager_click(new object(), new EventArgs());
+        }
+
+        private void Bt_add_manager_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Bt_add_manager_click(new object(), new EventArgs());
         }
     }
 }

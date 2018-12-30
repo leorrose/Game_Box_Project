@@ -68,7 +68,8 @@
             this.bt_guistwait_exit.Location = new System.Drawing.Point(1070, 10);
             this.bt_guistwait_exit.Name = "bt_guistwait_exit";
             this.bt_guistwait_exit.Size = new System.Drawing.Size(100, 55);
-            this.bt_guistwait_exit.TabIndex = 2;
+            this.bt_guistwait_exit.TabIndex = 0;
+            this.bt_guistwait_exit.TabStop = false;
             this.bt_guistwait_exit.UseVisualStyleBackColor = false;
             this.bt_guistwait_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
@@ -106,7 +107,8 @@
             this.Bt_guistwait_back.Location = new System.Drawing.Point(964, 10);
             this.Bt_guistwait_back.Name = "Bt_guistwait_back";
             this.Bt_guistwait_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_guistwait_back.TabIndex = 5;
+            this.Bt_guistwait_back.TabIndex = 0;
+            this.Bt_guistwait_back.TabStop = false;
             this.Bt_guistwait_back.UseVisualStyleBackColor = false;
             this.Bt_guistwait_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
@@ -127,7 +129,8 @@
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
-            this.CB_music.TabIndex = 30;
+            this.CB_music.TabIndex = 0;
+            this.CB_music.TabStop = false;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;

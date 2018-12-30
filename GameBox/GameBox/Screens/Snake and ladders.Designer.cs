@@ -75,7 +75,8 @@
             this.bt_music.Location = new System.Drawing.Point(1121, 73);
             this.bt_music.Name = "bt_music";
             this.bt_music.Size = new System.Drawing.Size(215, 55);
-            this.bt_music.TabIndex = 2;
+            this.bt_music.TabIndex = 0;
+            this.bt_music.TabStop = false;
             this.bt_music.UseVisualStyleBackColor = true;
             this.bt_music.Click += new System.EventHandler(this.bt_music_Click);
             // 
@@ -90,7 +91,8 @@
             this.bt_Exit.Location = new System.Drawing.Point(1236, 12);
             this.bt_Exit.Name = "bt_Exit";
             this.bt_Exit.Size = new System.Drawing.Size(100, 55);
-            this.bt_Exit.TabIndex = 3;
+            this.bt_Exit.TabIndex = 0;
+            this.bt_Exit.TabStop = false;
             this.bt_Exit.UseVisualStyleBackColor = true;
             this.bt_Exit.Click += new System.EventHandler(this.bt_Exit_Click);
             // 
@@ -105,7 +107,8 @@
             this.Bt_SAL_back.Location = new System.Drawing.Point(1121, 12);
             this.Bt_SAL_back.Name = "Bt_SAL_back";
             this.Bt_SAL_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_SAL_back.TabIndex = 4;
+            this.Bt_SAL_back.TabIndex = 0;
+            this.Bt_SAL_back.TabStop = false;
             this.Bt_SAL_back.UseVisualStyleBackColor = true;
             this.Bt_SAL_back.Click += new System.EventHandler(this.Bt_SAL_back_Click);
             // 
@@ -117,7 +120,8 @@
             this.bt_roll.Location = new System.Drawing.Point(1103, 488);
             this.bt_roll.Name = "bt_roll";
             this.bt_roll.Size = new System.Drawing.Size(233, 60);
-            this.bt_roll.TabIndex = 7;
+            this.bt_roll.TabIndex = 0;
+            this.bt_roll.TabStop = false;
             this.bt_roll.Text = "Roll!";
             this.bt_roll.UseVisualStyleBackColor = false;
             this.bt_roll.Click += new System.EventHandler(this.bt_roll_Click);
@@ -202,7 +206,8 @@
             this.bt_instraction.Location = new System.Drawing.Point(1103, 733);
             this.bt_instraction.Name = "bt_instraction";
             this.bt_instraction.Size = new System.Drawing.Size(233, 55);
-            this.bt_instraction.TabIndex = 12;
+            this.bt_instraction.TabIndex = 0;
+            this.bt_instraction.TabStop = false;
             this.bt_instraction.UseVisualStyleBackColor = true;
             this.bt_instraction.Click += new System.EventHandler(this.bt_instraction_Click);
             // 

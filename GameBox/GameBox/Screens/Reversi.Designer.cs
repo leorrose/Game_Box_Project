@@ -954,7 +954,8 @@
             this.Bt_Reversi_back.Location = new System.Drawing.Point(1131, 8);
             this.Bt_Reversi_back.Name = "Bt_Reversi_back";
             this.Bt_Reversi_back.Size = new System.Drawing.Size(82, 48);
-            this.Bt_Reversi_back.TabIndex = 6;
+            this.Bt_Reversi_back.TabIndex = 0;
+            this.Bt_Reversi_back.TabStop = false;
             this.Bt_Reversi_back.UseVisualStyleBackColor = false;
             this.Bt_Reversi_back.Click += new System.EventHandler(this.Bt_Reversi_back_click);
             // 
@@ -968,7 +969,8 @@
             this.Bt_reversi_exit.Location = new System.Drawing.Point(1219, 7);
             this.Bt_reversi_exit.Name = "Bt_reversi_exit";
             this.Bt_reversi_exit.Size = new System.Drawing.Size(82, 48);
-            this.Bt_reversi_exit.TabIndex = 7;
+            this.Bt_reversi_exit.TabIndex = 0;
+            this.Bt_reversi_exit.TabStop = false;
             this.Bt_reversi_exit.UseVisualStyleBackColor = false;
             this.Bt_reversi_exit.Click += new System.EventHandler(this.Bt_Reversi_Exit_click);
             // 
@@ -981,7 +983,8 @@
             this.CB_music.Location = new System.Drawing.Point(12, 8);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(82, 48);
-            this.CB_music.TabIndex = 8;
+            this.CB_music.TabIndex = 0;
+            this.CB_music.TabStop = false;
             this.CB_music.UseVisualStyleBackColor = true;
             this.CB_music.Click += new System.EventHandler(this.Bt_reversi_music);
             // 
@@ -1054,7 +1057,8 @@
             this.Bt_reversi_instuctions.Location = new System.Drawing.Point(1131, 62);
             this.Bt_reversi_instuctions.Name = "Bt_reversi_instuctions";
             this.Bt_reversi_instuctions.Size = new System.Drawing.Size(170, 47);
-            this.Bt_reversi_instuctions.TabIndex = 69;
+            this.Bt_reversi_instuctions.TabIndex = 0;
+            this.Bt_reversi_instuctions.TabStop = false;
             this.Bt_reversi_instuctions.UseVisualStyleBackColor = true;
             this.Bt_reversi_instuctions.Click += new System.EventHandler(this.Bt_reversi_instuctions_Click);
             // 

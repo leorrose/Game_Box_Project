@@ -45,5 +45,11 @@ namespace GameBox
             }
             Tb_Feedback.Text = "";
         }
+
+        private void Bt_insert_feedback_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Bt_Insert_feedback_click(new object(), new EventArgs());
+        }
     }
 }

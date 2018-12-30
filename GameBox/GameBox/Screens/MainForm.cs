@@ -211,5 +211,24 @@ namespace GameBox
             Print_screen prt = new Print_screen("why to register");
             prt.ShowDialog();
         }
+
+        private void Bt_manager_login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Bt_Continue_As_Manager_Click(new object(), new EventArgs());
+        }
+
+        private void Bt_User_login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Bt_Continue_As_Player_Click(new object(), new EventArgs());
+        }
+
+        private void Bt_Guest_login_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Bt_Guest_login_Click(new object(), new EventArgs());
+        }
+
     }
 }

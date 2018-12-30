@@ -89,5 +89,15 @@ namespace GameBox
             Tb_User_remove_Name.Visible = true;
             Bt_remove.Visible = true;
         }
+        private void Bt_remove_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Bt_Remove_user(new object(), new EventArgs());
+        }
+        private void Bt_add_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Bt_Add_user(new object(), new EventArgs());
+        }
     }
 }

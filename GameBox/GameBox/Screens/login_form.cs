@@ -73,5 +73,11 @@ namespace GameBox
             MessageBox.Show(Program.user1 + " Disconected", "Sign out", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close(); /* hide this screen*/
         }
+
+        private void Bt_user_continue_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Bt_Player2_continue_Click(new object(), new EventArgs());
+        }
     }
 }

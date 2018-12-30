@@ -55,7 +55,8 @@
             this.Add_Manager_show.Location = new System.Drawing.Point(913, 244);
             this.Add_Manager_show.Name = "Add_Manager_show";
             this.Add_Manager_show.Size = new System.Drawing.Size(168, 83);
-            this.Add_Manager_show.TabIndex = 50;
+            this.Add_Manager_show.TabIndex = 0;
+            this.Add_Manager_show.TabStop = false;
             this.Add_Manager_show.Text = "Add Manager";
             this.Add_Manager_show.UseVisualStyleBackColor = true;
             this.Add_Manager_show.Click += new System.EventHandler(this.Add_Manager_show_click);
@@ -70,7 +71,8 @@
             this.Remove_Manager_show.Location = new System.Drawing.Point(104, 242);
             this.Remove_Manager_show.Name = "Remove_Manager_show";
             this.Remove_Manager_show.Size = new System.Drawing.Size(168, 83);
-            this.Remove_Manager_show.TabIndex = 49;
+            this.Remove_Manager_show.TabIndex = 0;
+            this.Remove_Manager_show.TabStop = false;
             this.Remove_Manager_show.Text = "Remove Manager";
             this.Remove_Manager_show.UseVisualStyleBackColor = true;
             this.Remove_Manager_show.Click += new System.EventHandler(this.Remove_Manager_show_click);
@@ -87,7 +89,8 @@
             this.Bt_User_Managment_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_User_Managment_exit.Name = "Bt_User_Managment_exit";
             this.Bt_User_Managment_exit.Size = new System.Drawing.Size(100, 55);
-            this.Bt_User_Managment_exit.TabIndex = 47;
+            this.Bt_User_Managment_exit.TabIndex = 0;
+            this.Bt_User_Managment_exit.TabStop = false;
             this.Bt_User_Managment_exit.UseVisualStyleBackColor = false;
             this.Bt_User_Managment_exit.Click += new System.EventHandler(this.Bt_Manager_Managment_exit_Click);
             // 
@@ -101,7 +104,8 @@
             this.Bt_User_managment_back.Location = new System.Drawing.Point(964, 10);
             this.Bt_User_managment_back.Name = "Bt_User_managment_back";
             this.Bt_User_managment_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_User_managment_back.TabIndex = 46;
+            this.Bt_User_managment_back.TabIndex = 0;
+            this.Bt_User_managment_back.TabStop = false;
             this.Bt_User_managment_back.UseVisualStyleBackColor = false;
             this.Bt_User_managment_back.Click += new System.EventHandler(this.Bt_Manager_managment_back_Click);
             // 
@@ -154,7 +158,7 @@
             this.Tb_Manager_remove_Name.Multiline = true;
             this.Tb_Manager_remove_Name.Name = "Tb_Manager_remove_Name";
             this.Tb_Manager_remove_Name.Size = new System.Drawing.Size(141, 30);
-            this.Tb_Manager_remove_Name.TabIndex = 42;
+            this.Tb_Manager_remove_Name.TabIndex = 1;
             this.Tb_Manager_remove_Name.Visible = false;
             // 
             // Tb_Manager_add_Password
@@ -168,7 +172,7 @@
             this.Tb_Manager_add_Password.Name = "Tb_Manager_add_Password";
             this.Tb_Manager_add_Password.PasswordChar = '*';
             this.Tb_Manager_add_Password.Size = new System.Drawing.Size(132, 30);
-            this.Tb_Manager_add_Password.TabIndex = 41;
+            this.Tb_Manager_add_Password.TabIndex = 2;
             this.Tb_Manager_add_Password.Visible = false;
             // 
             // Tb_Manager_add_Name
@@ -181,7 +185,7 @@
             this.Tb_Manager_add_Name.Multiline = true;
             this.Tb_Manager_add_Name.Name = "Tb_Manager_add_Name";
             this.Tb_Manager_add_Name.Size = new System.Drawing.Size(132, 30);
-            this.Tb_Manager_add_Name.TabIndex = 40;
+            this.Tb_Manager_add_Name.TabIndex = 1;
             this.Tb_Manager_add_Name.Visible = false;
             // 
             // Bt_remove
@@ -194,11 +198,12 @@
             this.Bt_remove.Location = new System.Drawing.Point(209, 429);
             this.Bt_remove.Name = "Bt_remove";
             this.Bt_remove.Size = new System.Drawing.Size(141, 55);
-            this.Bt_remove.TabIndex = 39;
+            this.Bt_remove.TabIndex = 2;
             this.Bt_remove.Text = "Remove";
             this.Bt_remove.UseVisualStyleBackColor = true;
             this.Bt_remove.Visible = false;
             this.Bt_remove.Click += new System.EventHandler(this.Bt_remove_manager_click);
+            this.Bt_remove.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Bt_remove_KeyDown);
             // 
             // Bt_add_manager
             // 
@@ -210,11 +215,12 @@
             this.Bt_add_manager.Location = new System.Drawing.Point(1038, 441);
             this.Bt_add_manager.Name = "Bt_add_manager";
             this.Bt_add_manager.Size = new System.Drawing.Size(132, 55);
-            this.Bt_add_manager.TabIndex = 38;
+            this.Bt_add_manager.TabIndex = 3;
             this.Bt_add_manager.Text = "Add ";
             this.Bt_add_manager.UseVisualStyleBackColor = true;
             this.Bt_add_manager.Visible = false;
             this.Bt_add_manager.Click += new System.EventHandler(this.Bt_add_manager_click);
+            this.Bt_add_manager.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Bt_add_manager_KeyDown);
             // 
             // label2
             // 
@@ -245,7 +251,8 @@
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
-            this.CB_music.TabIndex = 53;
+            this.CB_music.TabIndex = 0;
+            this.CB_music.TabStop = false;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;

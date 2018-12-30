@@ -53,7 +53,8 @@ namespace GameBox
             this.Bt_Givefeedback.Location = new System.Drawing.Point(448, 277);
             this.Bt_Givefeedback.Name = "Bt_Givefeedback";
             this.Bt_Givefeedback.Size = new System.Drawing.Size(238, 65);
-            this.Bt_Givefeedback.TabIndex = 1;
+            this.Bt_Givefeedback.TabIndex = 0;
+            this.Bt_Givefeedback.TabStop = false;
             this.Bt_Givefeedback.Text = "Give Feedback";
             this.Bt_Givefeedback.UseVisualStyleBackColor = true;
             this.Bt_Givefeedback.Click += new System.EventHandler(this.Bt_Give_feedback);
@@ -68,7 +69,8 @@ namespace GameBox
             this.Bt_top_players.Location = new System.Drawing.Point(448, 465);
             this.Bt_top_players.Name = "Bt_top_players";
             this.Bt_top_players.Size = new System.Drawing.Size(238, 65);
-            this.Bt_top_players.TabIndex = 3;
+            this.Bt_top_players.TabIndex = 0;
+            this.Bt_top_players.TabStop = false;
             this.Bt_top_players.Text = "Top Players";
             this.Bt_top_players.UseVisualStyleBackColor = true;
             this.Bt_top_players.Click += new System.EventHandler(this.Bt_Top_Players_click);
@@ -83,7 +85,8 @@ namespace GameBox
             this.Bt_personal_scores.Location = new System.Drawing.Point(448, 372);
             this.Bt_personal_scores.Name = "Bt_personal_scores";
             this.Bt_personal_scores.Size = new System.Drawing.Size(238, 65);
-            this.Bt_personal_scores.TabIndex = 4;
+            this.Bt_personal_scores.TabIndex = 0;
+            this.Bt_personal_scores.TabStop = false;
             this.Bt_personal_scores.Text = "Personal Scores";
             this.Bt_personal_scores.UseVisualStyleBackColor = true;
             this.Bt_personal_scores.Click += new System.EventHandler(this.Bt_Personal_scores_click);
@@ -98,7 +101,8 @@ namespace GameBox
             this.Bt_play_game.Location = new System.Drawing.Point(448, 185);
             this.Bt_play_game.Name = "Bt_play_game";
             this.Bt_play_game.Size = new System.Drawing.Size(238, 65);
-            this.Bt_play_game.TabIndex = 5;
+            this.Bt_play_game.TabIndex = 0;
+            this.Bt_play_game.TabStop = false;
             this.Bt_play_game.Text = "Play Game";
             this.Bt_play_game.UseVisualStyleBackColor = true;
             this.Bt_play_game.Click += new System.EventHandler(this.Bt_Play_game_click);
@@ -113,7 +117,8 @@ namespace GameBox
             this.Bt_get_tip.Location = new System.Drawing.Point(1014, 626);
             this.Bt_get_tip.Name = "Bt_get_tip";
             this.Bt_get_tip.Size = new System.Drawing.Size(156, 65);
-            this.Bt_get_tip.TabIndex = 6;
+            this.Bt_get_tip.TabIndex = 0;
+            this.Bt_get_tip.TabStop = false;
             this.Bt_get_tip.Text = "Get Tip";
             this.Bt_get_tip.UseVisualStyleBackColor = true;
             this.Bt_get_tip.Click += new System.EventHandler(this.Bt_get_tip_click);
@@ -130,7 +135,8 @@ namespace GameBox
             this.Bt_usersOptions_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_usersOptions_exit.Name = "Bt_usersOptions_exit";
             this.Bt_usersOptions_exit.Size = new System.Drawing.Size(100, 55);
-            this.Bt_usersOptions_exit.TabIndex = 30;
+            this.Bt_usersOptions_exit.TabIndex = 0;
+            this.Bt_usersOptions_exit.TabStop = false;
             this.Bt_usersOptions_exit.UseVisualStyleBackColor = false;
             this.Bt_usersOptions_exit.Click += new System.EventHandler(this.Bt_UserOptions_exit_Click);
             // 
@@ -146,7 +152,8 @@ namespace GameBox
             this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(100, 55);
-            this.button8.TabIndex = 31;
+            this.button8.TabIndex = 0;
+            this.button8.TabStop = false;
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.Bt_UserOPtions_Back);
             // 
@@ -160,7 +167,8 @@ namespace GameBox
             this.Bt_Continue_change_details.Location = new System.Drawing.Point(448, 558);
             this.Bt_Continue_change_details.Name = "Bt_Continue_change_details";
             this.Bt_Continue_change_details.Size = new System.Drawing.Size(238, 65);
-            this.Bt_Continue_change_details.TabIndex = 32;
+            this.Bt_Continue_change_details.TabIndex = 0;
+            this.Bt_Continue_change_details.TabStop = false;
             this.Bt_Continue_change_details.Text = "Edit Personal Details";
             this.Bt_Continue_change_details.UseVisualStyleBackColor = true;
             this.Bt_Continue_change_details.Click += new System.EventHandler(this.Bt_Change_Details);
@@ -194,7 +202,8 @@ namespace GameBox
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
-            this.CB_music.TabIndex = 34;
+            this.CB_music.TabIndex = 0;
+            this.CB_music.TabStop = false;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;

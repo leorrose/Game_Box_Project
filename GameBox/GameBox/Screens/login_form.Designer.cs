@@ -65,10 +65,11 @@
             this.Bt_user_continue.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_user_continue.Name = "Bt_user_continue";
             this.Bt_user_continue.Size = new System.Drawing.Size(204, 55);
-            this.Bt_user_continue.TabIndex = 8;
+            this.Bt_user_continue.TabIndex = 4;
             this.Bt_user_continue.Text = "Login";
             this.Bt_user_continue.UseVisualStyleBackColor = false;
             this.Bt_user_continue.Click += new System.EventHandler(this.Bt_Player2_continue_Click);
+            this.Bt_user_continue.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Bt_user_continue_KeyDown);
             // 
             // COB_user2
             // 
@@ -85,7 +86,7 @@
             this.COB_user2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.COB_user2.Name = "COB_user2";
             this.COB_user2.Size = new System.Drawing.Size(204, 30);
-            this.COB_user2.TabIndex = 13;
+            this.COB_user2.TabIndex = 3;
             // 
             // label3
             // 
@@ -123,7 +124,8 @@
             this.Bt_login_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_login_exit.Name = "Bt_login_exit";
             this.Bt_login_exit.Size = new System.Drawing.Size(100, 55);
-            this.Bt_login_exit.TabIndex = 30;
+            this.Bt_login_exit.TabIndex = 0;
+            this.Bt_login_exit.TabStop = false;
             this.Bt_login_exit.UseVisualStyleBackColor = false;
             this.Bt_login_exit.Click += new System.EventHandler(this.Bt_login_exit_Click);
             // 
@@ -138,7 +140,8 @@
             this.Bt_login_back.Location = new System.Drawing.Point(955, 16);
             this.Bt_login_back.Name = "Bt_login_back";
             this.Bt_login_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_login_back.TabIndex = 31;
+            this.Bt_login_back.TabIndex = 0;
+            this.Bt_login_back.TabStop = false;
             this.Bt_login_back.UseVisualStyleBackColor = false;
             this.Bt_login_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
@@ -159,7 +162,8 @@
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
-            this.CB_music.TabIndex = 33;
+            this.CB_music.TabIndex = 0;
+            this.CB_music.TabStop = false;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
@@ -170,25 +174,25 @@
             this.TB_user_name2.BackColor = System.Drawing.Color.Salmon;
             this.TB_user_name2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_user_name2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TB_user_name2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_user_name2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_user_name2.Location = new System.Drawing.Point(318, 222);
             this.TB_user_name2.Multiline = true;
             this.TB_user_name2.Name = "TB_user_name2";
             this.TB_user_name2.Size = new System.Drawing.Size(204, 32);
-            this.TB_user_name2.TabIndex = 34;
+            this.TB_user_name2.TabIndex = 1;
             // 
             // TB_password2
             // 
             this.TB_password2.BackColor = System.Drawing.Color.Salmon;
             this.TB_password2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TB_password2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TB_password2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TB_password2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_password2.Location = new System.Drawing.Point(318, 270);
             this.TB_password2.Multiline = true;
             this.TB_password2.Name = "TB_password2";
             this.TB_password2.PasswordChar = '*';
             this.TB_password2.Size = new System.Drawing.Size(204, 34);
-            this.TB_password2.TabIndex = 35;
+            this.TB_password2.TabIndex = 2;
             // 
             // login_form
             // 

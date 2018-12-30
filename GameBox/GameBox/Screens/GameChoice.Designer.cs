@@ -66,7 +66,8 @@
             this.Bt_selectgame_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.Bt_selectgame_Exit.Name = "Bt_selectgame_Exit";
             this.Bt_selectgame_Exit.Size = new System.Drawing.Size(100, 55);
-            this.Bt_selectgame_Exit.TabIndex = 8;
+            this.Bt_selectgame_Exit.TabIndex = 0;
+            this.Bt_selectgame_Exit.TabStop = false;
             this.Bt_selectgame_Exit.UseVisualStyleBackColor = false;
             this.Bt_selectgame_Exit.Click += new System.EventHandler(this.Bt_Exit_Click);
             // 
@@ -82,7 +83,8 @@
             this.Bt_selectgame_back.Location = new System.Drawing.Point(962, 13);
             this.Bt_selectgame_back.Name = "Bt_selectgame_back";
             this.Bt_selectgame_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_selectgame_back.TabIndex = 11;
+            this.Bt_selectgame_back.TabIndex = 0;
+            this.Bt_selectgame_back.TabStop = false;
             this.Bt_selectgame_back.UseVisualStyleBackColor = false;
             this.Bt_selectgame_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
@@ -97,7 +99,8 @@
             this.bt_reversi.Location = new System.Drawing.Point(105, 245);
             this.bt_reversi.Name = "bt_reversi";
             this.bt_reversi.Size = new System.Drawing.Size(175, 86);
-            this.bt_reversi.TabIndex = 12;
+            this.bt_reversi.TabIndex = 0;
+            this.bt_reversi.TabStop = false;
             this.bt_reversi.Text = "Reversi";
             this.bt_reversi.UseVisualStyleBackColor = false;
             this.bt_reversi.Click += new System.EventHandler(this.Bt_reversi_Click);
@@ -113,7 +116,8 @@
             this.bt_snake_and_ladders.Location = new System.Drawing.Point(934, 245);
             this.bt_snake_and_ladders.Name = "bt_snake_and_ladders";
             this.bt_snake_and_ladders.Size = new System.Drawing.Size(175, 86);
-            this.bt_snake_and_ladders.TabIndex = 13;
+            this.bt_snake_and_ladders.TabIndex = 0;
+            this.bt_snake_and_ladders.TabStop = false;
             this.bt_snake_and_ladders.Text = "Snake And Ladders";
             this.bt_snake_and_ladders.UseVisualStyleBackColor = false;
             this.bt_snake_and_ladders.Click += new System.EventHandler(this.Bt_snake_and_ladders_Click);
@@ -135,7 +139,8 @@
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
-            this.CB_music.TabIndex = 30;
+            this.CB_music.TabIndex = 0;
+            this.CB_music.TabStop = false;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;
@@ -151,7 +156,8 @@
             this.SAl_instruction.Location = new System.Drawing.Point(934, 354);
             this.SAl_instruction.Name = "SAl_instruction";
             this.SAl_instruction.Size = new System.Drawing.Size(175, 57);
-            this.SAl_instruction.TabIndex = 31;
+            this.SAl_instruction.TabIndex = 0;
+            this.SAl_instruction.TabStop = false;
             this.SAl_instruction.Text = "Instructions";
             this.SAl_instruction.UseVisualStyleBackColor = true;
             this.SAl_instruction.Click += new System.EventHandler(this.SAl_instruction_Click);
@@ -166,7 +172,8 @@
             this.reversi_insruction.Location = new System.Drawing.Point(105, 354);
             this.reversi_insruction.Name = "reversi_insruction";
             this.reversi_insruction.Size = new System.Drawing.Size(175, 57);
-            this.reversi_insruction.TabIndex = 32;
+            this.reversi_insruction.TabIndex = 0;
+            this.reversi_insruction.TabStop = false;
             this.reversi_insruction.Text = "Instructions";
             this.reversi_insruction.UseVisualStyleBackColor = true;
             this.reversi_insruction.Click += new System.EventHandler(this.reversi_insruction_Click);

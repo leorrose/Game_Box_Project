@@ -76,6 +76,7 @@
             this.Bt_insert_feedback.Text = "Insert Feedback";
             this.Bt_insert_feedback.UseVisualStyleBackColor = true;
             this.Bt_insert_feedback.Click += new System.EventHandler(this.Bt_Insert_feedback_click);
+            this.Bt_insert_feedback.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Bt_insert_feedback_KeyDown);
             // 
             // Bt_feedback_exit
             // 
@@ -88,7 +89,8 @@
             this.Bt_feedback_exit.Location = new System.Drawing.Point(1055, 12);
             this.Bt_feedback_exit.Name = "Bt_feedback_exit";
             this.Bt_feedback_exit.Size = new System.Drawing.Size(100, 55);
-            this.Bt_feedback_exit.TabIndex = 4;
+            this.Bt_feedback_exit.TabIndex = 0;
+            this.Bt_feedback_exit.TabStop = false;
             this.Bt_feedback_exit.UseVisualStyleBackColor = false;
             this.Bt_feedback_exit.Click += new System.EventHandler(this.Bt_Feedback_exit_click);
             // 
@@ -103,7 +105,8 @@
             this.Bt_feedback_back.Location = new System.Drawing.Point(949, 12);
             this.Bt_feedback_back.Name = "Bt_feedback_back";
             this.Bt_feedback_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_feedback_back.TabIndex = 5;
+            this.Bt_feedback_back.TabIndex = 0;
+            this.Bt_feedback_back.TabStop = false;
             this.Bt_feedback_back.UseVisualStyleBackColor = false;
             this.Bt_feedback_back.Click += new System.EventHandler(this.Bt_Feedback_back_click);
             // 
@@ -129,8 +132,8 @@
             this.Tb_feedback_name.Multiline = true;
             this.Tb_feedback_name.Name = "Tb_feedback_name";
             this.Tb_feedback_name.Size = new System.Drawing.Size(206, 30);
-            this.Tb_feedback_name.TabIndex = 7;
-            // 
+            this.Tb_feedback_name.TabIndex = 2;
+           // 
             // CB_music
             // 
             this.CB_music.Appearance = System.Windows.Forms.Appearance.Button;
@@ -148,7 +151,8 @@
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
-            this.CB_music.TabIndex = 30;
+            this.CB_music.TabIndex = 0;
+            this.CB_music.TabStop = false;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;

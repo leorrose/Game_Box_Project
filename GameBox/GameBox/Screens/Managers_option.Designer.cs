@@ -52,6 +52,7 @@
             this.Bt_user_add.Name = "Bt_user_add";
             this.Bt_user_add.Size = new System.Drawing.Size(236, 68);
             this.Bt_user_add.TabIndex = 0;
+            this.Bt_user_add.TabStop = false;
             this.Bt_user_add.Text = "Add/Remove User";
             this.Bt_user_add.UseVisualStyleBackColor = true;
             this.Bt_user_add.Click += new System.EventHandler(this.Bt_add_remove_user);
@@ -66,7 +67,8 @@
             this.BT_login_reports.Location = new System.Drawing.Point(891, 275);
             this.BT_login_reports.Name = "BT_login_reports";
             this.BT_login_reports.Size = new System.Drawing.Size(236, 68);
-            this.BT_login_reports.TabIndex = 1;
+            this.BT_login_reports.TabIndex = 0;
+            this.BT_login_reports.TabStop = false;
             this.BT_login_reports.Text = "Logins Report";
             this.BT_login_reports.UseVisualStyleBackColor = true;
             this.BT_login_reports.Click += new System.EventHandler(this.Bt_logins_report);
@@ -81,7 +83,8 @@
             this.Bt_manager_add.Location = new System.Drawing.Point(49, 370);
             this.Bt_manager_add.Name = "Bt_manager_add";
             this.Bt_manager_add.Size = new System.Drawing.Size(236, 68);
-            this.Bt_manager_add.TabIndex = 2;
+            this.Bt_manager_add.TabIndex = 0;
+            this.Bt_manager_add.TabStop = false;
             this.Bt_manager_add.Text = "Add/Remove Manager";
             this.Bt_manager_add.UseVisualStyleBackColor = true;
             this.Bt_manager_add.Click += new System.EventHandler(this.Bt_add_remove_manager);
@@ -96,7 +99,8 @@
             this.Bt_score_report.Location = new System.Drawing.Point(891, 370);
             this.Bt_score_report.Name = "Bt_score_report";
             this.Bt_score_report.Size = new System.Drawing.Size(236, 68);
-            this.Bt_score_report.TabIndex = 3;
+            this.Bt_score_report.TabIndex = 0;
+            this.Bt_score_report.TabStop = false;
             this.Bt_score_report.Text = "Scores Report";
             this.Bt_score_report.UseVisualStyleBackColor = true;
             this.Bt_score_report.Click += new System.EventHandler(this.Bt_scores_report);
@@ -113,7 +117,8 @@
             this.Bt_manager_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_manager_exit.Name = "Bt_manager_exit";
             this.Bt_manager_exit.Size = new System.Drawing.Size(100, 55);
-            this.Bt_manager_exit.TabIndex = 28;
+            this.Bt_manager_exit.TabIndex = 0;
+            this.Bt_manager_exit.TabStop = false;
             this.Bt_manager_exit.UseVisualStyleBackColor = false;
             this.Bt_manager_exit.Click += new System.EventHandler(this.Bt_login_exit_Click);
             // 
@@ -127,7 +132,8 @@
             this.Bt_feedback.Location = new System.Drawing.Point(891, 464);
             this.Bt_feedback.Name = "Bt_feedback";
             this.Bt_feedback.Size = new System.Drawing.Size(236, 68);
-            this.Bt_feedback.TabIndex = 29;
+            this.Bt_feedback.TabIndex = 0;
+            this.Bt_feedback.TabStop = false;
             this.Bt_feedback.Text = "Feedback Report";
             this.Bt_feedback.UseVisualStyleBackColor = true;
             this.Bt_feedback.Click += new System.EventHandler(this.Bt_FeedBack_report);
@@ -143,7 +149,8 @@
             this.Bt_manager_tips.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_manager_tips.Name = "Bt_manager_tips";
             this.Bt_manager_tips.Size = new System.Drawing.Size(236, 68);
-            this.Bt_manager_tips.TabIndex = 30;
+            this.Bt_manager_tips.TabIndex = 0;
+            this.Bt_manager_tips.TabStop = false;
             this.Bt_manager_tips.Text = "Get Tip";
             this.Bt_manager_tips.UseVisualStyleBackColor = true;
             this.Bt_manager_tips.Click += new System.EventHandler(this.Bt_get_tips_Click);
@@ -159,7 +166,8 @@
             this.Bt_manager_back.Location = new System.Drawing.Point(964, 7);
             this.Bt_manager_back.Name = "Bt_manager_back";
             this.Bt_manager_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_manager_back.TabIndex = 31;
+            this.Bt_manager_back.TabIndex = 0;
+            this.Bt_manager_back.TabStop = false;
             this.Bt_manager_back.UseVisualStyleBackColor = false;
             this.Bt_manager_back.Click += new System.EventHandler(this.Bt_back_Click);
             // 
@@ -180,7 +188,8 @@
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
-            this.CB_music.TabIndex = 32;
+            this.CB_music.TabIndex = 0;
+            this.CB_music.TabStop = false;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;

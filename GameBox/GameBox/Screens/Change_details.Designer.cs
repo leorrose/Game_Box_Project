@@ -55,10 +55,11 @@
             this.Bt_Update.Location = new System.Drawing.Point(353, 469);
             this.Bt_Update.Name = "Bt_Update";
             this.Bt_Update.Size = new System.Drawing.Size(176, 55);
-            this.Bt_Update.TabIndex = 0;
+            this.Bt_Update.TabIndex = 5;
             this.Bt_Update.Text = "Update";
             this.Bt_Update.UseVisualStyleBackColor = false;
             this.Bt_Update.Click += new System.EventHandler(this.Bt_Update_Click);
+            this.Bt_Update.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Bt_Update_key_press);
             // 
             // Tb_Existing_Password
             // 
@@ -84,7 +85,7 @@
             this.Tb_New_Password.Name = "Tb_New_Password";
             this.Tb_New_Password.PasswordChar = '*';
             this.Tb_New_Password.Size = new System.Drawing.Size(176, 30);
-            this.Tb_New_Password.TabIndex = 3;
+            this.Tb_New_Password.TabIndex = 4;
             // 
             // Tb_New_Name
             // 
@@ -96,7 +97,7 @@
             this.Tb_New_Name.Multiline = true;
             this.Tb_New_Name.Name = "Tb_New_Name";
             this.Tb_New_Name.Size = new System.Drawing.Size(176, 30);
-            this.Tb_New_Name.TabIndex = 4;
+            this.Tb_New_Name.TabIndex = 3;
             // 
             // Tb_Existing_Name
             // 
@@ -108,7 +109,7 @@
             this.Tb_Existing_Name.Multiline = true;
             this.Tb_Existing_Name.Name = "Tb_Existing_Name";
             this.Tb_Existing_Name.Size = new System.Drawing.Size(176, 30);
-            this.Tb_Existing_Name.TabIndex = 5;
+            this.Tb_Existing_Name.TabIndex = 1;
             // 
             // lb_manager_name
             // 
@@ -170,7 +171,8 @@
             this.Bt_Change_details_exit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Bt_Change_details_exit.Name = "Bt_Change_details_exit";
             this.Bt_Change_details_exit.Size = new System.Drawing.Size(100, 55);
-            this.Bt_Change_details_exit.TabIndex = 34;
+            this.Bt_Change_details_exit.TabIndex = 0;
+            this.Bt_Change_details_exit.TabStop = false;
             this.Bt_Change_details_exit.UseVisualStyleBackColor = false;
             this.Bt_Change_details_exit.Click += new System.EventHandler(this.Bt_Change_details_exit_Click);
             // 
@@ -184,7 +186,8 @@
             this.Bt_Change_Details_back.Location = new System.Drawing.Point(954, 11);
             this.Bt_Change_Details_back.Name = "Bt_Change_Details_back";
             this.Bt_Change_Details_back.Size = new System.Drawing.Size(100, 55);
-            this.Bt_Change_Details_back.TabIndex = 35;
+            this.Bt_Change_Details_back.TabIndex = 0;
+            this.Bt_Change_Details_back.TabStop = false;
             this.Bt_Change_Details_back.UseVisualStyleBackColor = false;
             this.Bt_Change_Details_back.Click += new System.EventHandler(this.Bt_Change_Details_back_Click);
             // 
@@ -217,7 +220,8 @@
             this.CB_music.Margin = new System.Windows.Forms.Padding(4);
             this.CB_music.Name = "CB_music";
             this.CB_music.Size = new System.Drawing.Size(157, 53);
-            this.CB_music.TabIndex = 39;
+            this.CB_music.TabIndex = 0;
+            this.CB_music.TabStop = false;
             this.CB_music.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.CB_music.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.CB_music.UseVisualStyleBackColor = false;

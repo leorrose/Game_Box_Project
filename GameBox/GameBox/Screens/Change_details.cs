@@ -61,5 +61,10 @@ namespace GameBox
             Tb_New_Password.Text = "";
             Tb_New_Name.Text = "";
         }
+        private void Bt_Update_key_press(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                Bt_Update_Click(new object(), new EventArgs());
+        }
     }
 }

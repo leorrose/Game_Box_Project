@@ -75,7 +75,8 @@
             this.Bt_continue.Location = new System.Drawing.Point(380, 401);
             this.Bt_continue.Name = "Bt_continue";
             this.Bt_continue.Size = new System.Drawing.Size(133, 55);
-            this.Bt_continue.TabIndex = 2;
+            this.Bt_continue.TabIndex = 0;
+            this.Bt_continue.TabStop = false;
             this.Bt_continue.Text = "Menu";
             this.Bt_continue.UseVisualStyleBackColor = false;
             this.Bt_continue.Click += new System.EventHandler(this.Bt_continue_Click);
@@ -92,7 +93,8 @@
             this.BT_New_game.Location = new System.Drawing.Point(380, 307);
             this.BT_New_game.Name = "BT_New_game";
             this.BT_New_game.Size = new System.Drawing.Size(133, 55);
-            this.BT_New_game.TabIndex = 3;
+            this.BT_New_game.TabIndex = 0;
+            this.BT_New_game.TabStop = false;
             this.BT_New_game.Text = "Rematch";
             this.BT_New_game.UseVisualStyleBackColor = false;
             this.BT_New_game.Click += new System.EventHandler(this.BT_New_game_Click);
