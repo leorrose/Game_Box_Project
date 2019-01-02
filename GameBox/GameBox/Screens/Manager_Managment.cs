@@ -20,7 +20,7 @@ namespace GameBox
             Return_back.Show();
             this.Close();
         }
-        private void Add_Manager_show_click(object sender, EventArgs e)
+        public void Add_Manager_show_click(object sender, EventArgs e)
         {
             lb_add_name.Visible = true;
             lb_add_password.Visible = true;
@@ -31,7 +31,7 @@ namespace GameBox
             Tb_Manager_remove_Name.Visible = false;
             Bt_remove.Visible = false;
         }
-        private void Remove_Manager_show_click(object sender, EventArgs e)
+        public void Remove_Manager_show_click(object sender, EventArgs e)
         {
             lb_add_name.Visible = false;
             lb_add_password.Visible = false;
@@ -49,19 +49,24 @@ namespace GameBox
                 MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (GameBox.Program.User_Check(Tb_Manager_add_Name.Text) == false || GameBox.Program.Password_Check(Tb_Manager_add_Password.Text) == false) /* check if name and password a valid */
+            if (GameBox.Program.User_Check(Tb_Manager_add_Name.Text) == false) /* check if name and password a valid */
             {
-                MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Manager Name - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (GameBox.Program.Password_Check(Tb_Manager_add_Password.Text) == false)
+            {
+                MessageBox.Show("Invalid Password - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else
             {
-                if (GameBox.Program.Check_NAME_exsist(Tb_Manager_add_Name.Text, "Managers") > 0 ) /* insurt user to players database */
+                if (GameBox.Program.Check_NAME_exsist(Tb_Manager_add_Name.Text, "Managers") > 0) /* insurt user to players database */
                 {
                     MessageBox.Show("Manager Name alreay exsist!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                GameBox.Program.InsertManager(Tb_Manager_add_Name.Text,Tb_Manager_add_Password.Text); /*insurt user to score database */
+                GameBox.Program.InsertManager(Tb_Manager_add_Name.Text, Tb_Manager_add_Password.Text); /*insurt user to score database */
                 MessageBox.Show("Manager Created!", "Succesfull", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             Tb_Manager_add_Name.Text = "";
@@ -76,7 +81,7 @@ namespace GameBox
             }
             if (GameBox.Program.User_Check(Tb_Manager_remove_Name.Text) == false)/* check if name and password a valid */
             {
-                MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Manager Name - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (GameBox.Program.Check_NAME_exsist(Tb_Manager_remove_Name.Text, "Managers") > 0)

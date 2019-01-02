@@ -46,3 +46,5 @@ C:\Users\ליאור רוז\Desktop\Poject_Yesodot_Group_6\GameBox\GameBox\obj\De
 C:\Users\ליאור רוז\Desktop\Poject_Yesodot_Group_6\GameBox\GameBox\obj\Debug\GameBox.csproj.CoreCompileInputs.cache
 C:\Users\ליאור רוז\Desktop\Poject_Yesodot_Group_6\GameBox\GameBox\obj\Debug\GameBox.exe
 C:\Users\ליאור רוז\Desktop\Poject_Yesodot_Group_6\GameBox\GameBox\obj\Debug\GameBox.pdb
+C:\Users\ליאור רוז\Desktop\‏‏תיקיה חדשה\Poject_Yesodot_Group_6\GameBox\GameBox\obj\Debug\GameBox.exe
+C:\Users\ליאור רוז\Desktop\‏‏תיקיה חדשה\Poject_Yesodot_Group_6\GameBox\GameBox\obj\Debug\GameBox.pdb

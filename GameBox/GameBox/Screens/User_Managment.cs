@@ -14,7 +14,7 @@ namespace GameBox
         }
         private void User_Managment_Shown(Object sender, EventArgs e) => Program.Update_music_bt();
         private void Bt_User_Managment_exit_Click(object sender, EventArgs e) => Program.Exit();
-        public  void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
+        public void CB_music_click(object sender, EventArgs e) => Program.Music_on_off();
         private void Bt_User_managment_back_Click(object sender, EventArgs e)
         {
             Return_back.Show();
@@ -29,7 +29,7 @@ namespace GameBox
             }
             if (GameBox.Program.User_Check(Tb_User_remove_Name.Text) == false)/* check if name and password a valid */
             {
-                MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid User Name - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (GameBox.Program.Check_NAME_exsist(Tb_User_remove_Name.Text, "Players") > 0)
@@ -49,9 +49,14 @@ namespace GameBox
                 MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (GameBox.Program.User_Check(Tb_User_add_Name.Text) == false || GameBox.Program.Password_Check(Tb_User_add_Password.Text) == false) /* check if name and password a valid */
+            if (GameBox.Program.User_Check(Tb_User_add_Name.Text) == false) /* check if name and password a valid */
             {
-                MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid User Name - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (GameBox.Program.Password_Check(Tb_User_add_Password.Text) == false)
+            {
+                MessageBox.Show("Invalid Password - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else
@@ -101,3 +106,4 @@ namespace GameBox
         }
     }
 }
+

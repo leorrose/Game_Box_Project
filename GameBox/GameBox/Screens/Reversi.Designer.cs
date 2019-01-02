@@ -1069,6 +1069,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1313, 814);
+            this.ControlBox = false;
             this.Controls.Add(this.Bt_reversi_instuctions);
             this.Controls.Add(this.Lb_Player_turn);
             this.Controls.Add(this.label5);

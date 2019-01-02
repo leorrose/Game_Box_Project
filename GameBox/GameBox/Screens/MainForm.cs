@@ -44,14 +44,19 @@ namespace GameBox
                 MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (GameBox.Program.User_Check(Tb_manager_name.Text) == false || GameBox.Program.Password_Check(Tb_manager_password.Text) == false) /* check if name and password a valid */
+            if (GameBox.Program.User_Check(Tb_manager_name.Text) == false) /* check if name and password a valid */
             {
-                MessageBox.Show("Invalid input","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Manager Name - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (GameBox.Program.Check_NAME_exsist(Tb_manager_name.Text,"Managers") == 0) /* check if name exisist in database */
+            if (GameBox.Program.Password_Check(Tb_manager_password.Text) == false)
             {
-                MessageBox.Show("Invalid User Name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Password - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (GameBox.Program.Check_NAME_exsist(Tb_manager_name.Text, "Managers") == 0) /* check if name exisist in database */
+            {
+                MessageBox.Show("Manager Name Does not Exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (GameBox.Program.Check_Password_Is_correct(Tb_manager_name.Text, Tb_manager_password.Text, "Managers") == false) /* check if password is correct */
@@ -59,7 +64,7 @@ namespace GameBox
                 MessageBox.Show("Invalid Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            GameBox.Program.ManagerConected = true; 
+            GameBox.Program.ManagerConected = true;
             Managers_option man = new Managers_option(this);
             Tb_manager_name.Text = "";
             Tb_manager_password.Text = "";
@@ -78,16 +83,21 @@ namespace GameBox
                 MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-            if (GameBox.Program.User_Check(Tb_user_name.Text) == false || GameBox.Program.Password_Check(Tb_user_password.Text) == false) /* check if name and password a valid */
+            if (GameBox.Program.User_Check(Tb_user_name.Text) == false)/* check if name and password a valid */
             {
-                MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid User Name - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (GameBox.Program.Password_Check(Tb_user_password.Text) == false)
+            {
+                MessageBox.Show("Invalid Password - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             if (comboBox1.Text == "Sign in") /* if combo box is on login */
             {
-                if (GameBox.Program.Check_NAME_exsist(Tb_user_name.Text,"Players") == 0) /* check if name exisist in database */
+                if (GameBox.Program.Check_NAME_exsist(Tb_user_name.Text, "Players") == 0) /* check if name exisist in database */
                 {
-                    MessageBox.Show("Invalid User Name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("User Name Does not Exist", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
                 if (GameBox.Program.Check_Password_Is_correct(Tb_user_name.Text, Tb_user_password.Text, "Players") == false) /* check if password is correct */
@@ -135,7 +145,7 @@ namespace GameBox
             }
             if (GameBox.Program.User_Check(Tb_guest_name.Text) == false)  /* check if name is valid */
             {
-                MessageBox.Show("Invalid input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Guest Name - Wrong Input", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             GameBox.Program.TypeUser = false;
@@ -148,7 +158,7 @@ namespace GameBox
             g.Show(); /* open nex screen */
             this.Hide(); /* hide this screen */
         }
-        private void Bt_Continue_As_Player_Click(object sender, EventArgs e) /* hide players buttons and lable */
+        public void Bt_Continue_As_Player_Click(object sender, EventArgs e) /* hide players buttons and lable */
         {
             lb_manager_name.Visible = false;
             lb_password_manager.Visible = false;
@@ -167,7 +177,7 @@ namespace GameBox
             comboBox1.Visible = true;
             cob_players.Visible = true;
         }
-        private void Bt_Continue_As_Manager_Click(object sender, EventArgs e) /* hide managers buttons and lable */
+        public void Bt_Continue_As_Manager_Click(object sender, EventArgs e) /* hide managers buttons and lable */
         {
             lb_manager_name.Visible = true;
             lb_password_manager.Visible = true;
@@ -186,7 +196,7 @@ namespace GameBox
             comboBox1.Visible = false;
             cob_players.Visible = false;
         }
-        private void Bt_Continue_As_Guest_Click(object sender, EventArgs e) /* hide guest buttons and lable */
+        public void Bt_Continue_As_Guest_Click(object sender, EventArgs e) /* hide guest buttons and lable */
         {
             lb_manager_name.Visible = false;
             lb_password_manager.Visible = false;
