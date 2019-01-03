@@ -452,28 +452,28 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox Tb_user_password;
-        private System.Windows.Forms.TextBox Tb_manager_password;
-        private System.Windows.Forms.TextBox Tb_user_name;
-        private System.Windows.Forms.TextBox Tb_guest_name;
-        private System.Windows.Forms.TextBox Tb_manager_name;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button Bt_User_login;
-        private System.Windows.Forms.Button Bt_manager_login;
-        private System.Windows.Forms.Button Bt_Guest_login;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label lb_manager_name;
-        private System.Windows.Forms.Label lb_password_manager;
-        private System.Windows.Forms.Label lb_player_name;
-        private System.Windows.Forms.Button Bt_credits;
+        public System.Windows.Forms.TextBox Tb_user_password;
+        public System.Windows.Forms.TextBox Tb_manager_password;
+        public System.Windows.Forms.TextBox Tb_user_name;
+        public System.Windows.Forms.TextBox Tb_guest_name;
+        public System.Windows.Forms.TextBox Tb_manager_name;
+        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.Button Bt_User_login;
+        public System.Windows.Forms.Button Bt_manager_login;
+        public System.Windows.Forms.Button Bt_Guest_login;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label lb_manager_name;
+        public System.Windows.Forms.Label lb_password_manager;
+        public System.Windows.Forms.Label lb_player_name;
+        public System.Windows.Forms.Button Bt_credits;
         public System.Windows.Forms.CheckBox CB_music;
-        private System.Windows.Forms.Button Bt_MainForm_exit;
-        private System.Windows.Forms.Label lb_password_player;
-        private System.Windows.Forms.Label lb_guest_name;
-        private System.Windows.Forms.Button Bt_Continue_As_Manager;
-        private System.Windows.Forms.Button Bt_Continue_As_Player;
-        private System.Windows.Forms.Button Bt_Continue_As_Guest;
-        private System.Windows.Forms.ComboBox cob_players;
-        private System.Windows.Forms.Label LB_why_register;
+        public System.Windows.Forms.Button Bt_MainForm_exit;
+        public System.Windows.Forms.Label lb_password_player;
+        public System.Windows.Forms.Label lb_guest_name;
+        public System.Windows.Forms.Button Bt_Continue_As_Manager;
+        public System.Windows.Forms.Button Bt_Continue_As_Player;
+        public System.Windows.Forms.Button Bt_Continue_As_Guest;
+        public System.Windows.Forms.ComboBox cob_players;
+        public System.Windows.Forms.Label LB_why_register;
     }
 }

@@ -5,7 +5,7 @@ using GameBox;
 namespace Game_Box_unit_Test
 {
     [TestClass]
-    public class UserOptios_test
+    public class UserOptions_test
     {
 
         [TestMethod]

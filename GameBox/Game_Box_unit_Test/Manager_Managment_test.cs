@@ -29,5 +29,57 @@ namespace Game_Box_unit_Test
             Assert.AreEqual(Program.music_OnOff, true);
             Assert.AreNotEqual(Program.music_OnOff, false);
         }
+        [TestMethod]
+        public void Add_Manager_show_click_test()
+        {
+            Manager_Managment Test = new Manager_Managment(new System.Windows.Forms.Form());
+            Test.Show();
+            Test.lb_add_name.Visible = true;
+            Test.lb_add_password.Visible = true;
+            Test.Tb_Manager_add_Name.Visible = true;
+            Test.Tb_Manager_add_Password.Visible = true;
+            Test.Bt_add_manager.Visible = true;
+            Test.lb_remove_name.Visible = false;
+            Test.Tb_Manager_remove_Name.Visible = false;
+            Test.Bt_remove.Visible = false;
+
+            Test.Add_Manager_show_click(new object(), new EventArgs());
+
+            Assert.AreEqual(Test.lb_add_name.Visible , true);
+            Assert.AreEqual(Test.lb_add_password.Visible , true);
+            Assert.AreEqual(Test.Tb_Manager_add_Name.Visible ,true);
+            Assert.AreEqual(Test.Tb_Manager_add_Password.Visible , true);
+            Assert.AreEqual(Test.Bt_add_manager.Visible , true);
+            Assert.AreEqual(Test.lb_remove_name.Visible , false);
+            Assert.AreEqual(Test.Tb_Manager_remove_Name.Visible , false);
+            Assert.AreEqual(Test.Bt_remove.Visible , false);
+            Test.Close();
+        }
+        [TestMethod]
+        public void Remove_Manager_show_click_test()
+        {
+            Manager_Managment Test = new Manager_Managment(new System.Windows.Forms.Form());
+            Test.Show();
+            Test.lb_add_name.Visible = true;
+            Test.lb_add_password.Visible = true;
+            Test.Tb_Manager_add_Name.Visible = true;
+            Test.Tb_Manager_add_Password.Visible = true;
+            Test.Bt_add_manager.Visible = true;
+            Test.lb_remove_name.Visible = false;
+            Test.Tb_Manager_remove_Name.Visible = false;
+            Test.Bt_remove.Visible = false;
+
+            Test.Remove_Manager_show_click(new object(), new EventArgs());
+
+            Assert.AreEqual(Test.lb_add_name.Visible , false);
+            Assert.AreEqual(Test.lb_add_password.Visible , false);
+            Assert.AreEqual(Test.Tb_Manager_add_Name.Visible , false);
+            Assert.AreEqual(Test.Tb_Manager_add_Password.Visible , false);
+            Assert.AreEqual(Test.Bt_add_manager.Visible , false);
+            Assert.AreEqual(Test.lb_remove_name.Visible , true);
+            Assert.AreEqual(Test.Tb_Manager_remove_Name.Visible , true);
+            Assert.AreEqual(Test.Bt_remove.Visible , true);
+            Test.Close();
+        }
     }
 }

@@ -293,19 +293,19 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Add_Manager_show;
-        private System.Windows.Forms.Button Remove_Manager_show;
-        private System.Windows.Forms.Button Bt_User_Managment_exit;
-        private System.Windows.Forms.Button Bt_User_managment_back;
-        private System.Windows.Forms.Label lb_remove_name;
-        private System.Windows.Forms.Label lb_add_password;
-        private System.Windows.Forms.Label lb_add_name;
-        private System.Windows.Forms.TextBox Tb_Manager_remove_Name;
-        private System.Windows.Forms.TextBox Tb_Manager_add_Password;
-        private System.Windows.Forms.TextBox Tb_Manager_add_Name;
-        private System.Windows.Forms.Button Bt_remove;
-        private System.Windows.Forms.Button Bt_add_manager;
-        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Button Add_Manager_show;
+        public System.Windows.Forms.Button Remove_Manager_show;
+        public System.Windows.Forms.Button Bt_User_Managment_exit;
+        public System.Windows.Forms.Button Bt_User_managment_back;
+        public System.Windows.Forms.Label lb_remove_name;
+        public System.Windows.Forms.Label lb_add_password;
+        public System.Windows.Forms.Label lb_add_name;
+        public System.Windows.Forms.TextBox Tb_Manager_remove_Name;
+        public System.Windows.Forms.TextBox Tb_Manager_add_Password;
+        public System.Windows.Forms.TextBox Tb_Manager_add_Name;
+        public System.Windows.Forms.Button Bt_remove;
+        public System.Windows.Forms.Button Bt_add_manager;
+        public System.Windows.Forms.Label label2;
         public System.Windows.Forms.CheckBox CB_music;
     }
 }

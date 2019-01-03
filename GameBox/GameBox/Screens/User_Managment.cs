@@ -72,7 +72,7 @@ namespace GameBox
             Tb_User_add_Name.Text = "";
             Tb_User_add_Password.Text = "";
         }
-        private void Add_user_show_Click(object sender, EventArgs e)
+        public void Add_user_show_Click(object sender, EventArgs e)
         {
             lb_add_name.Visible = true;
             lb_add_password.Visible = true;
@@ -83,7 +83,7 @@ namespace GameBox
             Tb_User_remove_Name.Visible = false;
             Bt_remove.Visible = false;
         }
-        private void Remove_user_show_Click(object sender, EventArgs e)
+        public void Remove_user_show_Click(object sender, EventArgs e)
         {
             lb_add_name.Visible = false;
             lb_add_password.Visible = false;

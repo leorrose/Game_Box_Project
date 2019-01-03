@@ -64,7 +64,7 @@
     <Compile Include="Reversi_unit_test.cs" />
     <Compile Include="GameChoice_test.cs" />
     <Compile Include="Snake and ladders_test.cs" />
-    <Compile Include="UserOptios_test.cs" />
+    <Compile Include="UserOptions_test.cs" />
     <Compile Include="User_Managment_test.cs" />
   </ItemGroup>
   <ItemGroup>
