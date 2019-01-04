@@ -6,7 +6,7 @@ namespace GameBox
     public partial class Guest_wait : Form
     {
         Form return_back;
-        int duration = 4;
+        int duration = 19;
         public Guest_wait(Form form)
         {
             InitializeComponent();

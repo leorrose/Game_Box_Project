@@ -75,7 +75,7 @@ namespace GameBox
                 lb_player2_name.Text = "Computer: " + p2.ToString();
             }
         }
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e) /* shuffle dice in picturebox */
         {
             int num;
             seconds1 += 1;
@@ -90,7 +90,7 @@ namespace GameBox
                 pb_dice.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
-        private void timer2_Tick(object sender, EventArgs e)
+        private void timer2_Tick(object sender, EventArgs e) /* time between computer and one player turn */
         {
             bt_roll.Visible = false;
             if (seconds2 >= 0)
@@ -300,7 +300,7 @@ namespace GameBox
         {
             int S_OR_L = 0;   //1 = snake, 2 = ladder;
             //--------------------------snakes-------------------------------
-              if (pos == 25)
+            if (pos == 25)
             {
                 pos = 5;
                 x = 342;
@@ -398,7 +398,7 @@ namespace GameBox
                         MessageBox.Show(Program.guest + " got a snake!", "", MessageBoxButtons.OK);
                 }
                 else if(flag==2)
-                    MessageBox.Show(Program.user2 + " got a snaake!", "", MessageBoxButtons.OK);
+                    MessageBox.Show(Program.user2 + " got a snake!", "", MessageBoxButtons.OK);
                 else if(flag == 3)
                     MessageBox.Show("The computer got a snake!", "", MessageBoxButtons.OK);
             }

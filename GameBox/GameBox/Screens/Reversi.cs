@@ -8,7 +8,7 @@ namespace GameBox
         Form ReturnForm;
         Form options;
         public int[,] arr = new int[8,8];
-        public int playerTurn =0;
+        public int playerTurn =0; /* white(%2==0) - player1 black(%2==1) - player2 */
         public Reversi(Form form , Form End )
         {
             InitializeComponent();
@@ -25,8 +25,8 @@ namespace GameBox
                    arr [i, j] = 0;
                 }
             }
-            arr[3, 3] = 2;
-            arr[3, 4] = 1;
+            arr[3, 3] = 2; /* black picture */
+            arr[3, 4] = 1; /* white picture */
             arr[4, 3] = 1;
             arr[4, 4] = 2;
         }

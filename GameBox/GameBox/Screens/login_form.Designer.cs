@@ -176,9 +176,8 @@
             this.TB_user_name2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TB_user_name2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_user_name2.Location = new System.Drawing.Point(318, 222);
-            this.TB_user_name2.Multiline = true;
             this.TB_user_name2.Name = "TB_user_name2";
-            this.TB_user_name2.Size = new System.Drawing.Size(204, 32);
+            this.TB_user_name2.Size = new System.Drawing.Size(204, 29);
             this.TB_user_name2.TabIndex = 1;
             // 
             // TB_password2
@@ -188,10 +187,9 @@
             this.TB_password2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.TB_password2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TB_password2.Location = new System.Drawing.Point(318, 270);
-            this.TB_password2.Multiline = true;
             this.TB_password2.Name = "TB_password2";
             this.TB_password2.PasswordChar = '*';
-            this.TB_password2.Size = new System.Drawing.Size(204, 34);
+            this.TB_password2.Size = new System.Drawing.Size(204, 29);
             this.TB_password2.TabIndex = 2;
             // 
             // login_form

@@ -77,7 +77,7 @@ namespace GameBox
             }
             catch(Exception e)
             {
-                MessageBox.Show("Error accorred", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error Occurred", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(0); /* close all */
                 return "";
             }
@@ -93,7 +93,7 @@ namespace GameBox
                     con.Open(); /* open database */
                     SqlCommand sqlCommand = new SqlCommand("SELECT Name FROM " + DataBaseName + " WHERE Name= " + "'" + Name + "'", con); /* sql commmand */
                     SqlDataAdapter SqlService = new SqlDataAdapter(sqlCommand); /* create adaptar to datatable of sql command */
-                    int countRows = SqlService.Fill(new DataTable()); /* crate data tabke with command */
+                    int countRows = SqlService.Fill(new DataTable()); /* crate data table with command */
                     con.Close(); /* close conection */
                     return countRows; /* return number of rows created by command */
                 }
@@ -406,7 +406,7 @@ namespace GameBox
             }
             foreach (Form f in Application.OpenForms)
             {
-
+             
                 if (f.GetType() == typeof(MainForm))
                 {
                     MainForm Newform = (GameBox.MainForm)f;

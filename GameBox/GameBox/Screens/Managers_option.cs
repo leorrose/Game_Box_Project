@@ -19,7 +19,7 @@ namespace GameBox
         {
             return_back.Show(); /*upon last screen */
             MessageBox.Show("Manager Disconected ", "Sign Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Close(); /* hide this screen */
+            this.Close(); /* close this screen */
         }
         private void Bt_logins_report(object sender, EventArgs e) /* function to show logins report*/
         {

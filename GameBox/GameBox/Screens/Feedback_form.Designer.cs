@@ -129,11 +129,10 @@
             this.Tb_feedback_name.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_feedback_name.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_feedback_name.Location = new System.Drawing.Point(949, 551);
-            this.Tb_feedback_name.Multiline = true;
             this.Tb_feedback_name.Name = "Tb_feedback_name";
-            this.Tb_feedback_name.Size = new System.Drawing.Size(206, 30);
+            this.Tb_feedback_name.Size = new System.Drawing.Size(206, 29);
             this.Tb_feedback_name.TabIndex = 2;
-           // 
+            // 
             // CB_music
             // 
             this.CB_music.Appearance = System.Windows.Forms.Appearance.Button;

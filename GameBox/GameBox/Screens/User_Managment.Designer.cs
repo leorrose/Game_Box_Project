@@ -86,7 +86,6 @@
             this.Tb_User_add_Name.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_User_add_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_User_add_Name.Location = new System.Drawing.Point(1032, 348);
-            this.Tb_User_add_Name.Multiline = true;
             this.Tb_User_add_Name.Name = "Tb_User_add_Name";
             this.Tb_User_add_Name.Size = new System.Drawing.Size(138, 30);
             this.Tb_User_add_Name.TabIndex = 1;
@@ -99,7 +98,6 @@
             this.Tb_User_add_Password.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_User_add_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_User_add_Password.Location = new System.Drawing.Point(1032, 397);
-            this.Tb_User_add_Password.Multiline = true;
             this.Tb_User_add_Password.Name = "Tb_User_add_Password";
             this.Tb_User_add_Password.PasswordChar = '*';
             this.Tb_User_add_Password.Size = new System.Drawing.Size(138, 30);
@@ -113,7 +111,6 @@
             this.Tb_User_remove_Name.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Tb_User_remove_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_User_remove_Name.Location = new System.Drawing.Point(216, 350);
-            this.Tb_User_remove_Name.Multiline = true;
             this.Tb_User_remove_Name.Name = "Tb_User_remove_Name";
             this.Tb_User_remove_Name.Size = new System.Drawing.Size(141, 30);
             this.Tb_User_remove_Name.TabIndex = 1;

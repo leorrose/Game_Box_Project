@@ -23,6 +23,11 @@ namespace GameBox
         }
         private void Bt_Insert_feedback_click(object sender, EventArgs e)
         {
+            if (Program.User_Check(Tb_feedback_name.Text) == false)
+            {
+                MessageBox.Show("Invalid Name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             if (Program.Test_Insert_Text(Tb_Feedback.Text) == false || Program.Test_Insert_Text(Tb_feedback_name.Text) == false)
             {
                 MessageBox.Show("Only english characters and numbers allowed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -30,7 +35,7 @@ namespace GameBox
             }
             if (Tb_feedback_name.Text != GameBox.Program.user1 && Tb_feedback_name.Text != GameBox.Program.user2 && Tb_feedback_name.Text != Program.guest)
             {
-                MessageBox.Show("Invalid Name!");
+                MessageBox.Show("Invalid Name!","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
             else if (Tb_Feedback.Text.ToString().Length > 0)
@@ -44,6 +49,7 @@ namespace GameBox
                 return;
             }
             Tb_Feedback.Text = "";
+            Tb_feedback_name.Text = "";
         }
 
         private void Bt_insert_feedback_KeyDown(object sender, KeyEventArgs e)
