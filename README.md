@@ -23,7 +23,7 @@ The project was tested only with visual studio.
 *Note: player one user and password: user1, player two user and password: user2. you can add more players if you want*
 
 ### Demo:
-![Reversi Demo Video](https://github.com/leorrose/Game_Box_Project/blob/master/demo.gif)
+![Game Box Demo Video](https://github.com/leorrose/Game_Box_Project/blob/master/demo.gif)
 
 Please let me know if you find bugs or something that needs to be fixed.
 
