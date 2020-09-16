@@ -2,7 +2,7 @@
 
 ### Project Explanation
 
-A simple WinForms desktop application of two games (Reversi , Snake & Ladders).
+A simple WinForms desktop application of a game box with two games (Reversi , Snake & Ladders), reports and more.
 
 This Project was created with <b> C# with basic GUI (WinForms) with SQL Server databases on .net framework</b> (only works on windows).
 
